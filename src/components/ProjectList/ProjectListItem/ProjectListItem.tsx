@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { Project } from "../../../types";
 import { ProjectListItemContainer, ProjectListItemImage, ProjectListItemIternalContainer, ProjectListItemTitle } from "./ProjectListItem.styles";
+import placeholderImage from './project-placeholder.jpg';
 
 interface ProjectListItemProps {
   project?: Project
@@ -10,7 +11,7 @@ interface ProjectListItemProps {
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const renderInternalContainer = () => (
     <ProjectListItemIternalContainer>
-      {project && <ProjectListItemImage src="/project-placeholder.jpg" />}
+      {project && <ProjectListItemImage src={placeholderImage} />}
       <ProjectListItemTitle $loading={true}>{project ? project.title : 'Loading...'}</ProjectListItemTitle>
     </ProjectListItemIternalContainer>
   );
