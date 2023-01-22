@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Project } from "../../../types";
 import { ProjectListItemContainer, ProjectListItemImage, ProjectListItemIternalContainer, ProjectListItemTitle } from "./ProjectListItem.styles";
 
 interface ProjectListItemProps {
-  node?: any
+  project?: Project
 };
 
-const ProjectListItem: React.FC<ProjectListItemProps> = ({ node }) => {
+const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const renderInternalContainer = () => (
     <ProjectListItemIternalContainer>
-      {node && <ProjectListItemImage src="/project-placeholder.jpg" />}
-      <ProjectListItemTitle $loading={true}>{node ? node.title : 'Loading...'}</ProjectListItemTitle>
+      {project && <ProjectListItemImage src="/project-placeholder.jpg" />}
+      <ProjectListItemTitle $loading={true}>{project ? project.title : 'Loading...'}</ProjectListItemTitle>
     </ProjectListItemIternalContainer>
   );
 
   return (
     <ProjectListItemContainer>
-      {node ? (
-        <Link to={`/project/${node.contentful_id}`}>
+      {project ? (
+        <Link to={`/project/${project.slug}`}>
           {renderInternalContainer()}
         </Link>
       ) : renderInternalContainer()}

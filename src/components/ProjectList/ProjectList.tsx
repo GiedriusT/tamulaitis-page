@@ -1,17 +1,8 @@
-import { gql, useQuery } from "@apollo/client";
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
+import { useProjectList } from "../../hooks/useProjectList";
 import { ProjectsContainer, ProjectsItemsListContainer } from "./ProjectList.styles";
 import ProjectListItem from "./ProjectListItem/ProjectListItem";
-
-const GET_PROJECTS = gql`
-  query GetProjects {
-    projectCollection {
-      items {
-        title
-      }
-    }
-  }
-`;
 
 const renderEmptyItem = (count: number) => {
   const emptyItems = [];
@@ -23,16 +14,15 @@ const renderEmptyItem = (count: number) => {
 
 const ProjectList: React.FC = () => {
 
-  const { loading, error, data } = useQuery(GET_PROJECTS);
+  const { projects } = useProjectList();
 
-  console.log(data);
+  console.log(projects);
 
   return (
     <ProjectsContainer>
       <h2>Projects</h2>
       <ProjectsItemsListContainer>
-        {data ? renderEmptyItem(3) : renderEmptyItem(6)}
-        {/* {data.allContentfulProject.edges.map(({ node }) => <ProjectListItem node={node} />)} */}
+        {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItem(6)}
       </ProjectsItemsListContainer>
     </ProjectsContainer>
   )
