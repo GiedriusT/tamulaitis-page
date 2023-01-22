@@ -1,5 +1,6 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { useParams } from "react-router-dom";
 import { ArticleTitle } from "../../components";
 import { GET_PROJECT, GetProjectQueryResponse, GetProjectQueryVariables } from "../../queries/GetProject";
@@ -22,7 +23,7 @@ const ProjectPage: React.FC = () => {
   return (
     <>
       <ArticleTitle>{project.title}</ArticleTitle>
-      {/* <div dangerouslySetInnerHTML={{ __html: data.contentfulProject?.article?.childMarkdownRemark?.html || '' }}></div> */}
+      <ReactMarkdown>{project.article}</ReactMarkdown>
     </>
   )
 }
