@@ -1,30 +1,20 @@
 import React from "react";
-import { Layout, ArticleTitle } from "../../components";
+import { useParams } from "react-router-dom";
+import { ArticleTitle } from "../../components";
 
-const ProjectPage = () => {
+const ProjectPage: React.FC = () => {
   const data: any = {
     contentfulProject: undefined
   };
 
+  const { slug } = useParams<{ slug: string }>();
+
   return (
-    <Layout>
-      <ArticleTitle>{data.contentfulProject?.title}</ArticleTitle>
+    <>
+      <ArticleTitle>{slug}{data.contentfulProject?.title}</ArticleTitle>
       <div dangerouslySetInnerHTML={{ __html: data.contentfulProject?.article?.childMarkdownRemark?.html || '' }}></div>
-    </Layout>
+    </>
   )
 }
-
-// export const query = graphql`
-//   query ContentfulProject($contentful_id: String) {
-//     contentfulProject(contentful_id: {eq: $contentful_id}) {
-//       title
-//       article {
-//         childMarkdownRemark {
-//           html
-//         }
-//       }
-//     }
-//   }
-// `
 
 export default ProjectPage
