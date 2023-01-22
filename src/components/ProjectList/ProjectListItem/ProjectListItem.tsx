@@ -10,7 +10,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ node }) => {
   const renderInternalContainer = () => (
     <ProjectListItemIternalContainer>
       {node && <ProjectListItemImage src="/project-placeholder.jpg" />}
-      <ProjectListItemTitle loading={true}>{node ? node.title : 'Loading...'}</ProjectListItemTitle>
+      <ProjectListItemTitle $loading={true}>{node ? node.title : 'Loading...'}</ProjectListItemTitle>
     </ProjectListItemIternalContainer>
   );
 
@@ -21,7 +21,6 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ node }) => {
           {renderInternalContainer()}
         </Link>
       ) : renderInternalContainer()}
-
     </ProjectListItemContainer>
   )
 }

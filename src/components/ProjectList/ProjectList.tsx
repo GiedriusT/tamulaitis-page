@@ -1,29 +1,31 @@
+import { gql, useQuery } from "@apollo/client";
 import React from "react";
 import { ProjectsContainer, ProjectsItemsListContainer } from "./ProjectList.styles";
 import ProjectListItem from "./ProjectListItem/ProjectListItem";
 
-const ProjectList: React.FC = () => {
-  // const data = useStaticQuery<AllContentfulProjectQuery>(graphql`
-  //   query AllContentfulProject {
-  //     allContentfulProject {
-  //       edges {
-  //         node {
-  //           contentful_id
-  //           title
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-  const data: any = null;
-
-  const renderEmptyItem = (count: number) => {
-    const emptyItems = [];
-    for (let i = 0; i < count; i++) {
-      emptyItems.push(<ProjectListItem key={i} />);
+const GET_PROJECTS = gql`
+  query GetProjects {
+    projectCollection {
+      items {
+        title
+      }
     }
-    return emptyItems;
   }
+`;
+
+const renderEmptyItem = (count: number) => {
+  const emptyItems = [];
+  for (let i = 0; i < count; i++) {
+    emptyItems.push(<ProjectListItem key={i} />);
+  }
+  return emptyItems;
+}
+
+const ProjectList: React.FC = () => {
+
+  const { loading, error, data } = useQuery(GET_PROJECTS);
+
+  console.log(data);
 
   return (
     <ProjectsContainer>
