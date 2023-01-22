@@ -15,11 +15,21 @@ const ProjectList: React.FC = () => {
   //     }
   //   }
   // `);
+  const data: any = null;
+
+  const renderEmptyItem = (count: number) => {
+    const emptyItems = [];
+    for (let i = 0; i < count; i++) {
+      emptyItems.push(<ProjectListItem key={i} />);
+    }
+    return emptyItems;
+  }
 
   return (
     <ProjectsContainer>
       <h2>Projects</h2>
       <ProjectsItemsListContainer>
+        {data ? renderEmptyItem(3) : renderEmptyItem(6)}
         {/* {data.allContentfulProject.edges.map(({ node }) => <ProjectListItem node={node} />)} */}
       </ProjectsItemsListContainer>
     </ProjectsContainer>

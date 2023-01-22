@@ -1,10 +1,12 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
+import router from './router';
 
 const App: React.FC = () => {
   return (
     <Layout>
-      Dumbeldoras
+      <RouterProvider router={router} />
     </Layout>
   );
 }

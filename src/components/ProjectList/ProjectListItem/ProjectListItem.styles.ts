@@ -9,6 +9,7 @@ export const ProjectListItemIternalContainer = styled.div`
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  background-color: rgba(0, 0, 0, 0.1);
 `;
 
 export const ProjectListItemImage = styled.img`
@@ -20,12 +21,12 @@ export const ProjectListItemImage = styled.img`
   object-fit: cover;
 `;
 
-export const ProjectListItemTitle = styled.h3`
+export const ProjectListItemTitle = styled.h3<{ loading?: boolean }>`
   position: absolute;
   bottom: 7px;
   left: 0;
   width: auto;
-  background-color: black;
+  background-color: ${props => !props.loading ? 'black' : 'rgba(0, 0, 0, 0.1)'};
   color: white;
   padding: 7px 20px;
   margin: 0;
