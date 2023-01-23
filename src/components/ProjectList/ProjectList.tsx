@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
-import { useProjectList } from "../../hooks/useProjectList";
+import { Project } from "../../types";
 import { ProjectsContainer, ProjectsItemsListContainer } from "./ProjectList.styles";
 import ProjectListItem from "./ProjectListItem/ProjectListItem";
 
@@ -12,10 +12,11 @@ const renderEmptyItem = (count: number) => {
   return emptyItems;
 }
 
-const ProjectList: React.FC = () => {
+interface ProjectListProps {
+  projects?: Project[]
+};
 
-  const { projects } = useProjectList();
-
+const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   console.log(projects);
 
   return (
