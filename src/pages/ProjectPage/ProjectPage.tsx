@@ -1,29 +1,33 @@
-import { useQuery } from "@apollo/client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { useParams } from "react-router-dom";
 import { ArticleTitle } from "../../components";
-import { GET_PROJECT, GetProjectQueryResponse, GetProjectQueryVariables } from "../../queries/GetProject";
+import projects from '../../projects';
+
+const nonExistentProject = (slug: string | undefined) => ({
+  title: 'Nothing found at this address',
+  article: `Maybe it got renamed. Please visit the [homepage](/) and try to find info related to '${slug}'.`
+});
 
 const ProjectPage: React.FC = () => {
+  const [article, setArticle] = useState<string>('');
   const { slug } = useParams<{ slug: string }>();
 
-  const { data } = useQuery<GetProjectQueryResponse, GetProjectQueryVariables>(
-    GET_PROJECT,
-    {
-      variables: { slug: slug || '' },
-      skip: !slug
+  const project = projects.find((project) => project.slug === slug);
+	useEffect(() => {
+    console.log({ project, slug });
+    if (!project) {
+      setArticle(nonExistentProject(slug).article);
+      return;
     }
-  );
 
-  if (!data) return null;
-
-  const project = data?.projectCollection?.items[0];
+		fetch(project.article).then(res => res.text()).then(text => setArticle(text));
+	}, [project, slug]);
 
   return (
     <>
-      <ArticleTitle>{project.title}</ArticleTitle>
-      <ReactMarkdown>{project.article}</ReactMarkdown>
+      <ArticleTitle>{project?.title || nonExistentProject(slug).title}</ArticleTitle>
+      <ReactMarkdown>{article}</ReactMarkdown>
     </>
   )
 }

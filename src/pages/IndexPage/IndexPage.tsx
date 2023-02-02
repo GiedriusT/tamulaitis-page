@@ -1,12 +1,8 @@
-import { useQuery } from "@apollo/client";
 import React from "react";
 import { ProjectList, Hero } from "../../components";
-import { GetProjectListResponse, GET_PROJECT_LIST } from "../../queries/GetProjectList";
+import projects from '../../projects';
 
 const IndexPage: React.FC = () => {
-  const { data } = useQuery<GetProjectListResponse>(GET_PROJECT_LIST);
-  const projects = data?.projectCollection?.items;
-
   return (
     <>
       <Hero />
