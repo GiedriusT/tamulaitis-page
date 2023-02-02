@@ -9,9 +9,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <LayoutContainer>
       <GlobalStyle />
       <Header />
-        <ContentContainer>
-          {children}
-        </ContentContainer>
+      <ContentContainer>
+        {children}
+      </ContentContainer>
       <Footer />
     </LayoutContainer>
   );
