@@ -1,6 +1,6 @@
-import socialSequencerMd from './social-sequencer.md';
-import shilMd from './shil.md';
-import dialrheaMd from './dialrhea.md';
+import socialSequencerMd from './social-sequencer/social-sequencer.md';
+import shilMd from './shil/shil.md';
+import dialrheaMd from './dialrhea/dialrhea.md';
 import { Project } from '../types';
 
 const projects: Project[] = [
