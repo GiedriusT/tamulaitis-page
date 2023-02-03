@@ -17,7 +17,7 @@ This is a repository with info about my art and technology projects.
 
 ## How to use it?
 
-Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), you can also read markdown files here directly. It is also possible to clone this repository and [run it locally](#running-locally).
+Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), you can also read markdown files here directly. It is also possible to clone this repository and [run the page locally](#running-locally) for whatever reason.
 
 
 ## Projects
