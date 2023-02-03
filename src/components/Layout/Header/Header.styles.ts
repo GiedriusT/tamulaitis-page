@@ -11,6 +11,9 @@ export const HeaderContainer = styled.div`
 
 export const TitleSectionContainer = styled.div`
   position: relative;
+`;
+
+export const TitleSectionWithBackLinkContainer = styled(TitleSectionContainer)`
   cursor: pointer;
 `;
 
@@ -22,7 +25,7 @@ export const BackArrow = styled.div`
   transform: translate(5px);
   transition: opacity 0.3s ease-out, transform 0.5s ease-out;
 
-  ${TitleSectionContainer}:hover & {
+  ${TitleSectionWithBackLinkContainer}:hover & {
     opacity: 1;
     transform: translate(0);
     transition: opacity 0.5s ease-out, transform 0.3s ease-out;
@@ -32,7 +35,7 @@ export const BackArrow = styled.div`
 export const HeaderTitle = styled.h3`
   transition: transform 0.5s ease-out;
 
-  ${TitleSectionContainer}:hover & {
+  ${TitleSectionWithBackLinkContainer}:hover & {
     transform: translate(30px);
     transition: transform 0.3s ease-out;
   }
