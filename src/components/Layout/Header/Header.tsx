@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ContactButton from "../../ContactButton/ContactButton";
-import { BackArrow, ContactButtonContainer, HeaderContainer, HeaderTitle, TitleSectionContainer } from "./Header.styles";
+import React from 'react';
+import ContactButton from '../../ContactButton/ContactButton';
+import { BackArrow, ContactButtonContainer, HeaderContainer, HeaderTitle, TitleSectionContainer } from './Header.styles';
 
 const Header: React.FC = () => {
   return (
@@ -16,7 +15,7 @@ const Header: React.FC = () => {
         <ContactButton />
       </ContactButtonContainer>
     </HeaderContainer>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

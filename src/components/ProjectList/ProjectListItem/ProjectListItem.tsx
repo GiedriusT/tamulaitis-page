@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Project } from "../../../types";
-import { ProjectListItemContainer, ProjectListItemImage, ProjectListItemIternalContainer, ProjectListItemTitle } from "./ProjectListItem.styles";
+import { Project } from '../../../types';
+import { ProjectListItemContainer, ProjectListItemImage, ProjectListItemIternalContainer, ProjectListItemTitle } from './ProjectListItem.styles';
 import placeholderImage from './project-placeholder.jpg';
 
 interface ProjectListItemProps {
   project?: Project
-};
+}
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const renderInternalContainer = () => (
@@ -24,7 +24,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
         </Link>
       ) : renderInternalContainer()}
     </ProjectListItemContainer>
-  )
-}
+  );
+};
 
-export default ProjectListItem
+export default ProjectListItem;

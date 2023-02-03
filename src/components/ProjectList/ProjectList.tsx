@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { Project } from "../../types";
-import { ProjectsContainer, ProjectsItemsListContainer } from "./ProjectList.styles";
-import ProjectListItem from "./ProjectListItem/ProjectListItem";
+import { Project } from '../../types';
+import { ProjectsContainer, ProjectsItemsListContainer } from './ProjectList.styles';
+import ProjectListItem from './ProjectListItem/ProjectListItem';
 
 const renderEmptyItem = (count: number) => {
   const emptyItems = [];
@@ -10,11 +10,11 @@ const renderEmptyItem = (count: number) => {
     emptyItems.push(<ProjectListItem key={i} />);
   }
   return emptyItems;
-}
+};
 
 interface ProjectListProps {
   projects?: Project[]
-};
+}
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   console.log(projects);
@@ -26,7 +26,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
         {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItem(6)}
       </ProjectsItemsListContainer>
     </ProjectsContainer>
-  )
-}
+  );
+};
 
-export default ProjectList
+export default ProjectList;

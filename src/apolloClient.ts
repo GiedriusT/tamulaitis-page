@@ -12,10 +12,10 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
       authorization: `Bearer ${CDA_TOKEN}`,
-    }
-  }
+    },
+  };
 });
 
 const client = new ApolloClient({

@@ -9,6 +9,6 @@ const App: React.FC = () => {
       <RouterProvider router={router} />
     </Layout>
   );
-}
+};
 
 export default App;

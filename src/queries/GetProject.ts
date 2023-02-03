@@ -1,5 +1,5 @@
-import { gql } from "@apollo/client";
-import { Project } from "../types";
+import { gql } from '@apollo/client';
+import { Project } from '../types';
 
 export const GET_PROJECT = gql`
   query GetProject($slug: String!) {
