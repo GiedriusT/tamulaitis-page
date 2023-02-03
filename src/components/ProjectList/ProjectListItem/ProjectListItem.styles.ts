@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProjectListItemContainer = styled.div`
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   @media (min-width: 785px) {
@@ -29,6 +29,17 @@ export const ProjectListItemImage = styled.img`
   width: 100%;
   height: 100%; 
   object-fit: cover;
+  pointer-events: none;
+`;
+
+export const ProjectListItemVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 `;
 
 export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`

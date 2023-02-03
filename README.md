@@ -35,4 +35,4 @@ Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), yo
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
 ## Documentation
-- [Creating animated GIFs for projects](docs/creating-gifs.md)
+- [Creating animated videos for projects](docs/creating-videos.md)

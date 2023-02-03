@@ -1,4 +1,6 @@
 import socialSequencerMd from './social-sequencer/social-sequencer.md';
+import socialSequencerThumb from './social-sequencer/social-sequencer.jpg';
+import socialSequencerVideo from './social-sequencer/social-sequencer.mp4';
 import shilMd from './shil/shil.md';
 import dialrheaMd from './dialrhea/dialrhea.md';
 import { Project } from '../types';
@@ -9,6 +11,8 @@ const projects: Project[] = [
     title: 'Social Sequencer',
     subtitle: 'interactive music device',
     article: socialSequencerMd,
+    thumb: socialSequencerThumb,
+    video: socialSequencerVideo,
   },
   {
     slug: 'shil',

@@ -3,4 +3,6 @@ export interface Project {
   title: string;
   subtitle: string;
   article: string;
+  thumb?: string;
+  video?: string;
 }
