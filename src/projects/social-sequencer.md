@@ -1,3 +1,5 @@
+# Social Sequencer
+
 Introducing the ultimate music-making experience - an interactive music device that transforms the way you create and compose music. Imagine having the power to bring your musical ideas to life by simply arranging colorful cubes on a sleek and intuitive board. Each cube represents a unique note or rhythm, allowing you to build and layer intricate melodies and beats with ease.
 
 ## The idea

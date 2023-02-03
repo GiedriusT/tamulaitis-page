@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Giedrius Tamulaitis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fusing the power of technology and the beauty of music, creating a harmonious blend of innovation and artistry.
 
-## Available Scripts
 
-In the project directory, you can run:
+## About me
 
-### `npm start`
+As a musician, I have been honing my craft and making a name for myself in the industry. My unique blend of genres, including rock, pop, and electronic, creates a sound that is both fresh and familiar. I have a natural talent for writing catchy hooks and memorable melodies which has helped me to gain a dedicated fan base. I pride myself on my creative approach to music and my undeniable stage presence. I am determined to continue making waves in the industry and am excited for what the future holds.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Contact me at: [giedrius@tamulaitis.lt](mailto:giedrius@tamulaitis.lt)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## What is this?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a repository with info about my art and technology projects.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to use it?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), you can also read markdown files here directly. It is also possible to clone this repository and [run it locally](#running-locally).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Projects
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### [Social Sequencer](src/projects/social-sequencer.md) - interactive music device
+### [Shil](src/projects/shil.md) - video game with unique art style
+### [Dialrhea](src/projects/dialrhea.md) - revolutionary shitty machine
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running locally
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Run `npm start` to start the development server
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
