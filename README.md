@@ -33,3 +33,6 @@ Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), yo
 2. Install dependencies with `npm install`
 3. Run `npm start` to start the development server
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
+
+## Documentation
+- [Creating animated GIFs for projects](docs/creating-gifs.md)
