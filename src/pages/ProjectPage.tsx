@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
-import projects from '../../projects';
+import projects from '../projects';
 
 const nonExistentProject = (slug: string | undefined) => ({
   title: 'Nothing found at this address',
