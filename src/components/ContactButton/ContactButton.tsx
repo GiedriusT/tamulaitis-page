@@ -1,8 +1,8 @@
 import React from 'react';
-import { ContactButtonStyled } from './ContactButton.styles';
+import * as S from './ContactButton.styles';
 
 const ContactButton: React.FC = () => (
-  <ContactButtonStyled>Contact Me</ContactButtonStyled>
+  <S.ContactButtonStyled>Contact Me</S.ContactButtonStyled>
 );
 
 export default ContactButton;

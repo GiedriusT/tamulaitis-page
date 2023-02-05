@@ -2,18 +2,18 @@ import React from 'react';
 import { GlobalStyle } from '../../theme/GlobalStyle';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import { LayoutContainer, ContentContainer } from './Layout.styles';
+import * as S from './Layout.styles';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <LayoutContainer>
+    <S.LayoutContainer>
       <GlobalStyle />
       <Header />
-      <ContentContainer>
+      <S.ContentContainer>
         {children}
-      </ContentContainer>
+      </S.ContentContainer>
       <Footer />
-    </LayoutContainer>
+    </S.LayoutContainer>
   );
 };
 

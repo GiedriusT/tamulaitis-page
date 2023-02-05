@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArticleTitleContainer } from './ArticleTitle.styles';
+import * as S from './ArticleTitle.styles';
 
 const ArticleTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <ArticleTitleContainer>
+    <S.ArticleTitleContainer>
       <h1>{children}</h1>
-    </ArticleTitleContainer>
+    </S.ArticleTitleContainer>
   );
 };
 

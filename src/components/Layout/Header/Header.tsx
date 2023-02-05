@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ContactButton from '../../ContactButton/ContactButton';
-import { BackArrow, ContactButtonContainer, HeaderContainer, HeaderTitle, TitleSectionContainer, TitleSectionWithBackLinkContainer } from './Header.styles';
+import * as S from './Header.styles';
 
 const Header: React.FC = () => {
   const { pathname } = useLocation();
@@ -10,23 +10,23 @@ const Header: React.FC = () => {
   const title = 'Giedrius Tamulaitis';
 
   return (
-    <HeaderContainer>
+    <S.HeaderContainer>
       {isHomepage ? (
-        <TitleSectionContainer>
-          <HeaderTitle>{title}</HeaderTitle>
-        </TitleSectionContainer>
+        <S.TitleSectionContainer>
+          <S.HeaderTitle>{title}</S.HeaderTitle>
+        </S.TitleSectionContainer>
       ) : (
-        <TitleSectionWithBackLinkContainer>
+        <S.TitleSectionWithBackLinkContainer>
           <Link to='/'>
-            <BackArrow><h3>&lt;</h3></BackArrow>
-            <HeaderTitle>{title}</HeaderTitle>
+            <S.BackArrow><h3>&lt;</h3></S.BackArrow>
+            <S.HeaderTitle>{title}</S.HeaderTitle>
           </Link>
-        </TitleSectionWithBackLinkContainer>
+        </S.TitleSectionWithBackLinkContainer>
       )}
-      <ContactButtonContainer>
+      <S.ContactButtonContainer>
         <ContactButton />
-      </ContactButtonContainer>
-    </HeaderContainer>
+      </S.ContactButtonContainer>
+    </S.HeaderContainer>
   );
 };
 

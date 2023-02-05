@@ -2,7 +2,7 @@ import React, { createRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
-import { ProjectListItemContainer, ProjectListItemIternalContainer, ProjectListItemSubtitle, ProjectListItemImage, ProjectListItemTitle, ProjectListItemVideo } from './ProjectListItem.styles';
+import * as S from './ProjectListItem.styles'
 import placeholderImage from './project-placeholder.jpg';
 
 interface ProjectListItemProps {
@@ -44,28 +44,28 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   };
 
   const renderInternalContainer = () => (
-    <ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      {project && <ProjectListItemImage src={project.thumb || placeholderImage} />}
+    <S.ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      {project && <S.ProjectListItemImage src={project.thumb || placeholderImage} />}
       {project && doRenderVideo && (
-        <ProjectListItemVideo onEnded={handleVideoEnded} ref={itemVideoRef} key={key} controls={false} autoPlay={true} muted={true} loop={false}>
+        <S.ProjectListItemVideo onEnded={handleVideoEnded} ref={itemVideoRef} key={key} controls={false} autoPlay={true} muted={true} loop={false}>
           <source src={project.video} type="video/mp4" />
           Sorry, your browser doesn't support videos.
-        </ProjectListItemVideo>
+        </S.ProjectListItemVideo>
       )}
-      {project && !doRenderVideo && <ProjectListItemImage src={project.thumb || placeholderImage} />}
-      <ProjectListItemSubtitle $loading={!project}>{project ? project.subtitle : 'Loading...'}</ProjectListItemSubtitle>
-      <ProjectListItemTitle $loading={!project}>{project ? project.title : 'Loading...'}</ProjectListItemTitle>
-    </ProjectListItemIternalContainer>
+      {project && !doRenderVideo && <S.ProjectListItemImage src={project.thumb || placeholderImage} />}
+      <S.ProjectListItemSubtitle $loading={!project}>{project ? project.subtitle : 'Loading...'}</S.ProjectListItemSubtitle>
+      <S.ProjectListItemTitle $loading={!project}>{project ? project.title : 'Loading...'}</S.ProjectListItemTitle>
+    </S.ProjectListItemIternalContainer>
   );
 
   return (
-    <ProjectListItemContainer>
+    <S.ProjectListItemContainer>
       {project ? (
         <Link to={`/project/${project.slug}`}>
           {renderInternalContainer()}
         </Link>
       ) : renderInternalContainer()}
-    </ProjectListItemContainer>
+    </S.ProjectListItemContainer>
   );
 };
 
