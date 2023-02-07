@@ -1,4 +1,4 @@
-import dialrheaMd from './dialrhea.md';
+import dialrheaMd from './README.md';
 import dialrheaThumb from './dialrhea.jpg';
 import dialrheaVideo from './dialrhea.mp4';
 import { Project } from '../../types';

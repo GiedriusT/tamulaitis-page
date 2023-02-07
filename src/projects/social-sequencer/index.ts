@@ -1,4 +1,4 @@
-import socialSequencerMd from './social-sequencer.md';
+import socialSequencerMd from './README.md';
 import socialSequencerThumb from './social-sequencer.jpg';
 import socialSequencerVideo from './social-sequencer.mp4';
 import { Project } from '../../types';

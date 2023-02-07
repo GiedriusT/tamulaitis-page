@@ -22,9 +22,9 @@ Live version can be viewed at [https://tamulaitis.lt](https://tamulaitis.lt), yo
 
 ## Projects
 
-### [Social Sequencer](src/projects/social-sequencer/social-sequencer.md) - interactive music device
-### [Shil](src/projects/shil/shil.md) - video game with unique art style
-### [Dialrhea](src/projects/dialrhea/dialrhea.md) - revolutionary shitty machine
+### [Social Sequencer](src/projects/social-sequencer/README.md) - interactive music device
+### [Shil](src/projects/shil/README.md) - video game with unique art style
+### [Dialrhea](src/projects/dialrhea/README.md) - revolutionary shitty machine
 
 
 ## Running locally

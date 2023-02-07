@@ -1,4 +1,4 @@
-import shilMd from './shil.md';
+import shilMd from './README.md';
 import shilThumb from './shil.jpg';
 import shilVideo from './shil.mp4';
 import { Project } from '../../types';
