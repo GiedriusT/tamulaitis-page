@@ -1,9 +1,11 @@
-import React, { createRef, useState } from 'react';
+import React, { createRef, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
-import * as S from './ProjectListItem.styles'
+import * as S from './ProjectListItem.styles';
 import placeholderImage from './project-placeholder.jpg';
+
+const SWITCH_BACK_TO_THUMBNAIL_DELAY = 1000;
 
 interface ProjectListItemProps {
   project?: Project
@@ -12,14 +14,15 @@ interface ProjectListItemProps {
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const [doRenderVideo, setDoRenderVideo] = useState(false);
   const [key, setKey] = useState(uuidv4());
-  const [waitingForVideoToFinish, setWaitingForVideoToFinish] = useState(false);
   const itemVideoRef = createRef<HTMLVideoElement>();
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = () => {
-    if (waitingForVideoToFinish) {
-      setWaitingForVideoToFinish(false);
-      if (itemVideoRef.current)
-        itemVideoRef.current.playbackRate = 1;
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+
+      itemVideoRef.current?.play();
       return;
     }
 
@@ -27,20 +30,21 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
     setKey(uuidv4());
   };
 
-  const handleMouseLeave = () => {
-    setWaitingForVideoToFinish(true);
-    if (itemVideoRef.current)
-      itemVideoRef.current.playbackRate = 10;
+  const handleVideoEnded = () => {
+    itemVideoRef.current?.play();
   };
 
-  const handleVideoEnded = () => {
-    if (!waitingForVideoToFinish) {
-      itemVideoRef.current?.play();
-      return;
-    }
-
+  const switchBackToThumbnail = () => {
     setDoRenderVideo(false);
-    setWaitingForVideoToFinish(false);
+  };
+
+  const handleMouseLeave = () => {
+    itemVideoRef.current?.pause();
+    
+    timeoutRef.current = setTimeout(() => {
+      switchBackToThumbnail();
+      timeoutRef.current = null;
+    }, SWITCH_BACK_TO_THUMBNAIL_DELAY);
   };
 
   const renderInternalContainer = () => (
