@@ -43,7 +43,7 @@ function wrapLettersInSpan(html: string, word: string) {
 }
 ```
 
-The function uses two variables, index and newHtml, to keep track of the current position in the word and to build the new HTML string with the wrapped letters. It loops through each character in the original HTML string, and if the current character matches the next letter in the word, it adds a <span> element around that character. If the word has been completely processed, the index is reset to 0. The final newHtml string is returned.
+The function uses two variables, index and newHtml, to keep track of the current position in the word and to build the new HTML string with the wrapped letters. It loops through each character in the original HTML string, and if the current character matches the next letter in the word, it adds a ```<span>``` element around that character. If the word has been completely processed, the index is reset to 0. The final newHtml string is returned.
 
 **Prompt**: 
 adjust it so it stops after it finds all the letters from the word
@@ -258,12 +258,12 @@ const BoldLetters: React.FC<Props> = ({ html, word }) => {
 export default BoldLetters;
 ```
 
-In this version, instead of building a string, an array of React components is built instead. The components are added to the front of the array using the unshift method, and the rest of the HTML is added to the front of the array using the map method. Finally, the array is rendered using the JSX spread operator (...). The characters inside HTML tags are wrapped in <span> elements, and the characters from the word are wrapped in <b> elements.
+In this version, instead of building a string, an array of React components is built instead. The components are added to the front of the array using the unshift method, and the rest of the HTML is added to the front of the array using the map method. Finally, the array is rendered using the JSX spread operator (...). The characters inside HTML tags are wrapped in ```<span>``` elements, and the characters from the word are wrapped in ```<b>``` elements.
 
 **Prompt**: 
 can  you modify the code to reduce the number of span elements that are created
 
-Yes, here's a modified version of the component that reduces the number of <span> elements:
+Yes, here's a modified version of the component that reduces the number of ```<span>``` elements:
 
 ```typescript
 import React from "react";
@@ -324,12 +324,12 @@ const BoldLetters: React.FC<Props> = ({ html, word }) => {
 export default BoldLetters;
 ```
 
-In this version, the <span> elements are only added to the array when a character inside an HTML tag is encountered. The <span> element is only added if there is no previous <span> element in the array or if the previous element ends with ">", which indicates the start of a new HTML tag. The new <span> element is created with the current character and the previous <span> element is removed from the front of the array. This reduces the number of <span> elements created.
+In this version, the ```<span>``` elements are only added to the array when a character inside an HTML tag is encountered. The ```<span>``` element is only added if there is no previous ```<span>``` element in the array or if the previous element ends with ">", which indicates the start of a new HTML tag. The new ```<span>``` element is created with the current character and the previous ```<span>``` element is removed from the front of the array. This reduces the number of ```<span>``` elements created.
 
 **Prompt**: 
 but can we just create separate elements for letters we want to make bold, and group the characters in between them into spans
 
-Yes, you can create separate elements for the letters you want to make bold and group the characters in between them into <span> elements. Here's the updated code:
+Yes, you can create separate elements for the letters you want to make bold and group the characters in between them into ```<span>``` elements. Here's the updated code:
 
 ```typescript
 import React from "react";
@@ -404,7 +404,7 @@ const BoldLetters: React.FC<Props> = ({ html, word }) => {
 export default BoldLetters;
 ```
 
-In this version, the characters inside HTML tags are added to the array as strings, and the characters outside of the tags are added to the array as <b> elements. Then, a separate loop is used to group the characters inside <span> elements based on whether they are strings or not. This reduces the number of <span> elements created, while still allowing the bolded characters to be separate elements.
+In this version, the characters inside HTML tags are added to the array as strings, and the characters outside of the tags are added to the array as ```<b>``` elements. Then, a separate loop is used to group the characters inside ```<span>``` elements based on whether they are strings or not. This reduces the number of ```<span>``` elements created, while still allowing the bolded characters to be separate elements.
 
 **Prompt**: 
 this one didn't work properly, let's get back to previous version and to it can you add event handlers for hover and click events on highlighted letters, handlers should be passed via props
@@ -462,7 +462,7 @@ const BoldLetters: React.FC<Props> = ({ html, word, onHover, onClick }) => {
 export default BoldLetters;
 ```
 
-In this version of the code, the onHover and onClick handlers are added as props to the <b> elements. When a bolded letter is hovered over or clicked, the corresponding event handler will be triggered. Note that onMouseEnter and onMouseLeave events are used to handle the hover events, so that the onHover handler will be triggered both when the mouse enters and leaves the bolded letters.
+In this version of the code, the onHover and onClick handlers are added as props to the ```<b>``` elements. When a bolded letter is hovered over or clicked, the corresponding event handler will be triggered. Note that onMouseEnter and onMouseLeave events are used to handle the hover events, so that the onHover handler will be triggered both when the mouse enters and leaves the bolded letters.
 
 **Prompt**: 
 now onHover is called both when mouse enters and when it leaves, can we call different functions for each event?
@@ -526,7 +526,7 @@ const BoldLetters: React.FC<Props> = ({ html, word, onMouseEnter, onMouseLeave, 
 export default BoldLetters;
 ```
 
-In this version of the code, separate event handlers onMouseEnter and onMouseLeave are added to the <b> elements. These handlers will be called when the mouse enters and leaves the bolded letters, respectively.
+In this version of the code, separate event handlers onMouseEnter and onMouseLeave are added to the ```<b>``` elements. These handlers will be called when the mouse enters and leaves the bolded letters, respectively.
 
 **Prompt**: 
 instead of exposing onmouseenter and onmouseleave as props can you write a handler for them inside BoldLetters component that would toggle state variable isHovered and then pass it to all highlighted letters and make them twice as big as they are if we are hovering on any of the letters
@@ -598,7 +598,7 @@ const BoldLetters: React.FC<Props> = ({ html, word, onClick }) => {
 export default BoldLetters;
 ```
 
-In this version of the code, two event handlers handleMouseEnter and handleMouseLeave are added inside the component, and they toggle the isHovered state variable. The style prop on the <b> element is then used to control the font size of the bolded letters based on the value of isHovered. When isHovered is true, the font size will be twice as big, and when it is false, the font size will be the default size.
+In this version of the code, two event handlers handleMouseEnter and handleMouseLeave are added inside the component, and they toggle the isHovered state variable. The style prop on the ```<b>``` element is then used to control the font size of the bolded letters based on the value of isHovered. When isHovered is true, the font size will be twice as big, and when it is false, the font size will be the default size.
 
 **Prompt**: 
 can you use transform property instead of fontsize to resize the letters
