@@ -1,10 +1,11 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../types';
+import BoldLetters from '../HighlighWord/HighlightWord';
 import * as S from './ProjectList.styles';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 
-const renderEmptyItem = (count: number) => {
+const renderEmptyItems = (count: number) => {
   const emptyItems = [];
   for (let i = 0; i < count; i++) {
     emptyItems.push(<ProjectListItem key={i} />);
@@ -17,14 +18,14 @@ interface ProjectListProps {
 }
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
-  console.log(projects);
 
   return (
     <S.ProjectsContainer>
       <h2>Projects</h2>
       <S.ProjectsItemsListContainer>
-        {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItem(6)}
+        {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItems(6)}
       </S.ProjectsItemsListContainer>
+      <BoldLetters html="It's a sentence that does'n make real sense to anybody." word="secret" onClick={() => { console.log('You found a secret'); }} />
     </S.ProjectsContainer>
   );
 };

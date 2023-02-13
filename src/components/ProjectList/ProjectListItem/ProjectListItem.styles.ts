@@ -5,11 +5,8 @@ export const BACK_TO_IMAGE_FADE_DURATION = 700;
 
 export const ProjectListItemContainer = styled.div`
   width: 100%;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   @media (min-width: 785px) {
-    width: 47%;
+    width: 49%;
   }
   @media (min-width: 1112px) {
     width: 32%;

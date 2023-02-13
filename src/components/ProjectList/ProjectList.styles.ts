@@ -9,5 +9,6 @@ export const ProjectsItemsListContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 20px;
+  column-gap: 2%;
 `;
