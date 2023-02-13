@@ -1,62 +1,74 @@
 import React, { createRef, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Transition } from 'react-transition-group';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
 import * as S from './ProjectListItem.styles';
 import placeholderImage from './project-placeholder.jpg';
-
-const SWITCH_BACK_TO_THUMBNAIL_DELAY = 1000;
 
 interface ProjectListItemProps {
   project?: Project
 }
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
+  const [hoverState, setHoverState] = useState(false);
   const [doRenderVideo, setDoRenderVideo] = useState(false);
-  const [key, setKey] = useState(uuidv4());
-  const itemVideoRef = createRef<HTMLVideoElement>();
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [videoKey, setVideoKey] = useState(uuidv4());
+  const videoRef = createRef<HTMLVideoElement>();
+  const fadeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const switchToVideo = () => {
+    setHoverState(true);
+    setDoRenderVideo(true);
+    setVideoKey(uuidv4());
+  };
+
+  const switchBackToImage = () => {
+    videoRef.current?.pause();
+    setHoverState(false);
+    fadeTimeoutRef.current = setTimeout(() => {
+      setDoRenderVideo(false);
+      fadeTimeoutRef.current = null;
+    }, S.BACK_TO_IMAGE_FADE_DURATION);
+  };
+
+  const resumeVideo = () => {
+    setHoverState(true);
+    videoRef.current?.play();
+  };
 
   const handleMouseEnter = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
+    if (fadeTimeoutRef.current) {
+      clearTimeout(fadeTimeoutRef.current);
+      fadeTimeoutRef.current = null;
 
-      itemVideoRef.current?.play();
+      resumeVideo();
       return;
     }
 
-    setDoRenderVideo(true);
-    setKey(uuidv4());
-  };
-
-  const handleVideoEnded = () => {
-    itemVideoRef.current?.play();
-  };
-
-  const switchBackToThumbnail = () => {
-    setDoRenderVideo(false);
+    switchToVideo();
   };
 
   const handleMouseLeave = () => {
-    itemVideoRef.current?.pause();
-    
-    timeoutRef.current = setTimeout(() => {
-      switchBackToThumbnail();
-      timeoutRef.current = null;
-    }, SWITCH_BACK_TO_THUMBNAIL_DELAY);
+    switchBackToImage();
   };
 
   const renderInternalContainer = () => (
     <S.ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      {project && <S.ProjectListItemImage src={project.thumb || placeholderImage} />}
-      {project && doRenderVideo && (
-        <S.ProjectListItemVideo onEnded={handleVideoEnded} ref={itemVideoRef} key={key} controls={false} autoPlay={true} muted={true} loop={false}>
-          <source src={project.video} type="video/mp4" />
-          Sorry, your browser doesn't support videos.
-        </S.ProjectListItemVideo>
+      {project && (
+        <>
+          <S.ProjectListItemBackgroundImage src={project.thumb || placeholderImage} />
+          {doRenderVideo && (
+            <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
+              <source src={project.video} type="video/mp4" />
+              Sorry, your browser doesn't support videos.
+            </S.ProjectListItemVideo>
+          )}
+          <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }}>
+            {status => <S.ProjectListItemImage src={project.thumb || placeholderImage} $status={status} />}
+          </Transition>
+        </>
       )}
-      {project && !doRenderVideo && <S.ProjectListItemImage src={project.thumb || placeholderImage} />}
       <S.ProjectListItemSubtitle $loading={!project}>{project ? project.subtitle : 'Loading...'}</S.ProjectListItemSubtitle>
       <S.ProjectListItemTitle $loading={!project}>{project ? project.title : 'Loading...'}</S.ProjectListItemTitle>
     </S.ProjectListItemIternalContainer>

@@ -1,4 +1,7 @@
-import styled from 'styled-components';
+import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
+import { TransitionStatus } from 'react-transition-group';
+
+export const BACK_TO_IMAGE_FADE_DURATION = 700;
 
 export const ProjectListItemContainer = styled.div`
   width: 100%;
@@ -22,7 +25,7 @@ export const ProjectListItemIternalContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ProjectListItemImage = styled.img`
+const ProjectListItemImageBase = styled.img`
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +33,31 @@ export const ProjectListItemImage = styled.img`
   height: 100%; 
   object-fit: cover;
   pointer-events: none;
+`;
+
+export const ProjectListItemBackgroundImage = styled(ProjectListItemImageBase)``;
+
+const transitionStatusStyles: { [key in TransitionStatus]: FlattenSimpleInterpolation } = {
+  entering: css`
+    opacity: 0;
+  `,
+  entered: css`
+    opacity: 0;
+  `,
+  exiting: css`
+    opacity: 1;
+    transition: opacity ${BACK_TO_IMAGE_FADE_DURATION / 1000}s ease-out;
+  `,
+  exited: css`
+    opacity: 1;
+  `,
+  unmounted: css`
+    display: none;
+  `,
+};
+
+export const ProjectListItemImage = styled(ProjectListItemImageBase)<{ $status: TransitionStatus }>`
+  ${props =>  transitionStatusStyles[props.$status]}
 `;
 
 export const ProjectListItemVideo = styled.video`
