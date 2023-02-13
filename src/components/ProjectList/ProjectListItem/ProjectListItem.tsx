@@ -16,6 +16,9 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const [videoKey, setVideoKey] = useState(uuidv4());
   const videoRef = createRef<HTMLVideoElement>();
   const fadeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  // This is needed for react-transition-group, without it warning is thrown
+  // in React.StrictMode
+  const transitionRef = useRef<HTMLImageElement | null>(null);
 
   const switchToVideo = () => {
     setHoverState(true);
@@ -64,8 +67,8 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
               Sorry, your browser doesn't support videos.
             </S.ProjectListItemVideo>
           )}
-          <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }}>
-            {status => <S.ProjectListItemImage src={project.thumb || placeholderImage} $status={status} />}
+          <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }} nodeRef={transitionRef}>
+            {status => <S.ProjectListItemImage ref={transitionRef} src={project.thumb || placeholderImage} $status={status} />}
           </Transition>
         </>
       )}
