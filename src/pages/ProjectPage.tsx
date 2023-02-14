@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
 import projects from '../projects';
@@ -23,8 +24,13 @@ const ProjectPage: React.FC = () => {
     fetch(project.article).then(res => res.text()).then(text => setArticle(text));
   }, [project, slug]);
 
+  const title = project ? `${project.title} - ${project.subtitle}` : nonExistentProject(slug).title;
+
   return (
     <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <ReactMarkdown>{article}</ReactMarkdown>
     </>
   );
