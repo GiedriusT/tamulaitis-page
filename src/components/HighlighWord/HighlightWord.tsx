@@ -1,5 +1,12 @@
 // This is not used for now, will be used in future for some secret. The code is written
 // by ChatGPT from start to finish.
+
+// Example:
+// <BoldLetters
+//   html="It's a sentence that does'n make real sense to anybody."
+//   word="secret"
+//   onClick={() => { console.log('You found a secret'); }
+// />
 import React, { useState } from 'react';
 
 interface HighlightWordProps {

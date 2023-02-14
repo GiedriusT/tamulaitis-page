@@ -1,7 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../types';
-import BoldLetters from '../HighlighWord/HighlightWord';
 import * as S from './ProjectList.styles';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 
@@ -25,7 +24,6 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
       <S.ProjectsItemsListContainer>
         {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItems(6)}
       </S.ProjectsItemsListContainer>
-      <BoldLetters html="It's a sentence that does'n make real sense to anybody." word="secret" onClick={() => { console.log('You found a secret'); }} />
     </S.ProjectsContainer>
   );
 };
