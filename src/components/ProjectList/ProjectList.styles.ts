@@ -11,4 +11,8 @@ export const ProjectsItemsListContainer = styled.div`
   align-items: center;
   row-gap: 20px;
   column-gap: 2%;
+  &::after {
+    content: "";
+    flex: auto;
+  }
 `;
