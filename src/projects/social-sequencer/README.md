@@ -9,3 +9,5 @@ The idea to create an interactive music device was born from the desire to combi
 The concept of using cubes and a board to create music was inspired by the traditional concept of a sequencer, which is a tool used to create electronic music by arranging and manipulating sound samples. The creators wanted to take this concept and make it more tactile and interactive by allowing users to physically place and arrange the cubes on the board.
 
 They also wanted to make the device as intuitive and user-friendly as possible, so that anyone can pick it up and start creating music right away. After many months of prototyping, testing and fine-tuning the design, the interactive music device was finally brought to life, offering a new and exciting way for people to make music.
+
+This gibberish was written by ChatGPT.

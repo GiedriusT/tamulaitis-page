@@ -9,3 +9,5 @@ The device is made using an Arduino microcontroller, which is a popular platform
 During the hackathon, the device was built and tested by a team of makers, programmers and gamers, who were able to get the device working and connect it to the game. The device was then tested out by famous Lithuanian entrepreneurs like Vladas Lašas, who were impressed by the unique concept and the level of creativity involved in the project. They were also able to experience the nostalgia of using an old rotary phone to control a classic game and found it to be an enjoyable and fun experience.
 
 Overall, the device is a great example of how old technology can be repurposed in creative ways to create something new and unique. The device is a great reminder that with a little bit of creativity and a lot of hard work, anything is possible.
+
+This gibberish was written by ChatGPT.
