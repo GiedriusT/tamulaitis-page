@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
 import projects from '../projects';
