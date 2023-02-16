@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Footer.styles';
 import ContactButton from '../../ContactButton/ContactButton';
-import profilePicture from './profile-picture.png';
+import profilePicture from './giedrius-tamulaitis-profile-picture.jpg';
 
 const Footer: React.FC = () => {
   return (
