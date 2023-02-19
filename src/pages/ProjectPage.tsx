@@ -6,7 +6,7 @@ import projects from '../projects';
 
 const nonExistentProject = (slug: string | undefined) => ({
   title: 'Nothing found at this address',
-  article: `Maybe it got renamed. Please visit the [homepage](/) and try to find info related to '${slug}'.`,
+  article: `# Nothing found at this address\n\nMaybe it got renamed. Please visit the [homepage](/) and try to find info related to '${slug}'.`,
 });
 
 const ProjectPage: React.FC = () => {
