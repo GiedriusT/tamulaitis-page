@@ -1,6 +1,14 @@
-# Dialrhea
+# Dialrhea - revolutionary shitty machine
 
-This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. The phone's rotary dial is used to navigate through the game's menus and the buttons on the phone are used to control the game's actions such as movement and firing weapons. The device connects to a computer running the game via Bluetooth, allowing for a unique and nostalgic gaming experience.
+This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. The phone's rotary dial is used to control the game's actions such as movement and firing weapons. The device connects to a computer running the game via Bluetooth, and is built on Arduino microcontroller.
+
+We also made a proper "slick" promotional video for the device:
+
+[Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+
+<!-- [![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI) -->
+
+This device was built in two days during Internet Of Shit hackathon organised by Technarium crew in Vilnius, Lithuania. The purpose of this hackathon is to build devices that are completely useless from practical poinnt of view, but must be functional and actually work, and you only have two days to do it.
 
 ## The Story
 

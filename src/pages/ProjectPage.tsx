@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
+import { ArticleMarkdown } from '../components';
 import projects from '../projects';
 
 const nonExistentProject = (slug: string | undefined) => ({
@@ -31,7 +31,7 @@ const ProjectPage: React.FC = () => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <ReactMarkdown>{article}</ReactMarkdown>
+      <ArticleMarkdown>{article}</ArticleMarkdown>
     </>
   );
 };
