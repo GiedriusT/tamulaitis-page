@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     color: black;
-    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 `;

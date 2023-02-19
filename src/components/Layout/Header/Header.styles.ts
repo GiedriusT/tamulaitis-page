@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
@@ -17,6 +18,10 @@ export const TitleSectionWithBackLinkContainer = styled(TitleSectionContainer)`
   cursor: pointer;
 `;
 
+export const BackLink = styled(Link)`
+  text-decoration: none;
+`;
+
 export const BackArrow = styled.div`
   position: absolute;
   top: 0;
@@ -33,6 +38,7 @@ export const BackArrow = styled.div`
 `;
 
 export const HeaderTitle = styled.h3`
+  text-decoration: none;
   transition: transform 0.5s ease-out;
 
   ${TitleSectionWithBackLinkContainer}:hover & {

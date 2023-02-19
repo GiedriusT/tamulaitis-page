@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import ContactButton from '../../ContactButton/ContactButton';
 import * as S from './Header.styles';
 
@@ -17,10 +17,10 @@ const Header: React.FC = () => {
         </S.TitleSectionContainer>
       ) : (
         <S.TitleSectionWithBackLinkContainer>
-          <Link to='/'>
+          <S.BackLink to='/'>
             <S.BackArrow><h3>&lt;</h3></S.BackArrow>
             <S.HeaderTitle>{title}</S.HeaderTitle>
-          </Link>
+          </S.BackLink>
         </S.TitleSectionWithBackLinkContainer>
       )}
       <S.ContactButtonContainer>
