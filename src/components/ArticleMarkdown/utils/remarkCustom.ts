@@ -3,7 +3,7 @@ import { visit } from 'unist-util-visit';
 // Defining subset type here, because wasn't able to find it in any package
 // List of supported node types: https://github.com/syntax-tree/mdast
 interface AstNode {
-  type: 'root' | 'link' | 'html' | 'text';
+  type: 'root' | 'link' | 'html' | 'text' | 'image';
   value: string;
   children?: AstNode[];
 }
@@ -15,6 +15,11 @@ interface AstLinkNode extends AstNode {
 const processLink = (node: AstLinkNode) => {
   console.log(node);
   if (node.url.indexOf('https://www.youtube.com/') === 0) {
+    if (node.children?.find((child) => child.type === 'image')) {
+      node.type = 'text';
+      node.value = '';
+      return;
+    }
     const url = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
     node.type = 'html';

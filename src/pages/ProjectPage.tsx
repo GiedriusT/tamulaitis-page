@@ -13,6 +13,7 @@ const ProjectPage: React.FC = () => {
   const [article, setArticle] = useState<string>('');
   const { slug } = useParams<{ slug: string }>();
 
+  // TODO: maybe move this to custom hook
   const project = projects.find((obj) => obj.slug === slug);
   useEffect(() => {
     console.log({ project, slug });

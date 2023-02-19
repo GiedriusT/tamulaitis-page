@@ -6,7 +6,7 @@ We also made a proper "slick" promotional video for the device:
 
 [Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
-<!-- [![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI) -->
+[![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
 This device was built in two days during Internet Of Shit hackathon organised by Technarium crew in Vilnius, Lithuania. The purpose of this hackathon is to build devices that are completely useless from practical poinnt of view, but must be functional and actually work, and you only have two days to do it.
 
