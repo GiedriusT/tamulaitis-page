@@ -1,10 +1,11 @@
 import React from 'react';
+import { WHO_I_AM } from '../../constants';
 import * as S from './Hero.styles';
 
 const Hero: React.FC = () => {
   return (
     <S.HeroContainer>
-      <S.HeroTitle>Fusing the power of technology and the beauty of music, creating a harmonious blend of innovation and artistry.</S.HeroTitle>
+      <S.HeroTitle>{WHO_I_AM}</S.HeroTitle>
     </S.HeroContainer>
   );
 };
