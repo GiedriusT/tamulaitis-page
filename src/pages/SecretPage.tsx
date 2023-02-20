@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
+import { ArticleMarkdown } from '../components';
 import { BRAND_NAME } from '../constants';
 import { secretBySlug } from '../utils/secdec';
 
@@ -21,7 +21,7 @@ const ProjectPage: React.FC = () => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <ReactMarkdown>{article}</ReactMarkdown>
+      <ArticleMarkdown>{article}</ArticleMarkdown>
     </>
   );
 };

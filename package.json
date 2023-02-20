@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "generate:secrets": "npx ts-node --esm src/utils/secgen.ts"
+    "generate:secrets": "npx ts-node --esm src/utils/secgen.ts",
+    "generate:md": "npx ts-node --esm src/utils/mdgen.ts"
   },
   "dependencies": {
     "crypto-js": "^4.1.1",
