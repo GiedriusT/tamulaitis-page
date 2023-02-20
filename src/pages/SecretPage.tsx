@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
+import { BRAND_NAME } from '../constants';
 import { secretBySlug } from '../utils/secdec';
 
 const nonExistentSecret = {
@@ -13,7 +14,7 @@ const ProjectPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
 
   const article = secretBySlug(slug || '') || nonExistentSecret.article;
-  const title = article ? 'This is a secret page!' : nonExistentSecret.title;
+  const title = article ? `This is a secret page! - ${BRAND_NAME}` : nonExistentSecret.title;
 
   return (
     <>

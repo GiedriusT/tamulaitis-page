@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { ArticleMarkdown } from '../components';
+import { BRAND_NAME } from '../constants';
 import projects from '../projects';
 
 const nonExistentProject = (slug: string | undefined) => ({
@@ -25,7 +26,7 @@ const ProjectPage: React.FC = () => {
     fetch(project.article).then(res => res.text()).then(text => setArticle(text));
   }, [project, slug]);
 
-  const title = project ? `${project.title} - ${project.subtitle}` : nonExistentProject(slug).title;
+  const title = project ? `${project.title} - ${project.subtitle} - ${BRAND_NAME}` : nonExistentProject(slug).title;
 
   return (
     <>
