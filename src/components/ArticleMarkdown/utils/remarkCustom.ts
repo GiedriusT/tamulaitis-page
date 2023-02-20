@@ -1,7 +1,6 @@
 import { visit } from 'unist-util-visit';
 
 // Defining subset type here, because wasn't able to find it in any package
-// List of supported node types: https://github.com/syntax-tree/mdast
 interface AstNode {
   type: 'root' | 'link' | 'html' | 'text' | 'image';
   value: string;
@@ -33,7 +32,7 @@ const processLink = (node: AstLinkNode) => {
     const url = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
     node.type = 'html';
-    node.value = `<iframe width="560" height="315" src="${url}" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    node.value = `<div class="youtube-embed"><iframe src="${url}" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
     delete node.children;
   } else if (isYoutubeImageLink(node)) {
     node.type = 'text';
@@ -43,6 +42,7 @@ const processLink = (node: AstLinkNode) => {
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/
+// List of supported node types: https://github.com/syntax-tree/mdast
 const remarkCustom = () => {
   return function transformer(tree: AstNode) {
     visit(tree, 'link', processLink);

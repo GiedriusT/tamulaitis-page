@@ -20,4 +20,17 @@ export const GlobalStyle = createGlobalStyle`
       text-decoration: none;
     }
   }
+
+  // We use class name for YouTube embeds, because the style is added by Remark
+  // plugin and we can't use styled-components.
+  .youtube-embed {
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    & iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  }
 `;
