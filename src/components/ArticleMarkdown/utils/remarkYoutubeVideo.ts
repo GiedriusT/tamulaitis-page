@@ -43,10 +43,10 @@ const processLink = (node: AstLinkNode) => {
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/
 // List of supported node types: https://github.com/syntax-tree/mdast
-const remarkCustom = () => {
+const remarkYoutubeVideo = () => {
   return function transformer(tree: AstNode) {
     visit(tree, 'link', processLink);
   };
 };
 
-export default remarkCustom;
+export default remarkYoutubeVideo;
