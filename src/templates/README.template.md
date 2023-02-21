@@ -17,9 +17,7 @@ Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read mar
 
 ## Projects
 
-### [Social Sequencer](src/projects/social-sequencer/README.md) - interactive music device
-### [Shil](src/projects/shil/README.md) - video game with unique art style
-### [Dialrhea](src/projects/dialrhea/README.md) - revolutionary shitty machine
+{{PROJECT_LIST}}
 
 
 ## Running locally
