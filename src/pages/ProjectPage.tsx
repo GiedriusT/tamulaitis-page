@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { ArticleMarkdown } from '../components';
 import { MY_NAME } from '../constants';
 import projects from '../projects';
+import { getProjectMedia } from '../projects/utils';
 
 const nonExistentProject = (slug: string | undefined) => ({
   title: 'Nothing found at this address',
@@ -23,7 +24,7 @@ const ProjectPage: React.FC = () => {
       return;
     }
 
-    fetch(project.article).then(res => res.text()).then(text => setArticle(text));
+    getProjectMedia(slug).then(projectMedia => setArticle(projectMedia?.article || ''));
   }, [project, slug]);
 
   const title = project ? `${project.title} - ${project.subtitle} - ${MY_NAME}` : nonExistentProject(slug).title;

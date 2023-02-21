@@ -1,16 +1,19 @@
-import React, { createRef, useRef, useState } from 'react';
+import React, { createRef, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Transition } from 'react-transition-group';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
 import * as S from './ProjectListItem.styles';
 import placeholderImage from './project-placeholder.jpg';
+import { getProjectMedia } from '../../../projects/utils';
 
 interface ProjectListItemProps {
   project?: Project
 }
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
+  const [thumbUrl, setThumbUrl] = useState<string | null>(null);
+  const [videoUrl, setVideoUrl] = useState<string | null>(null);
   const [hoverState, setHoverState] = useState(false);
   const [doRenderVideo, setDoRenderVideo] = useState(false);
   const [videoKey, setVideoKey] = useState(uuidv4());
@@ -19,6 +22,13 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   // This is needed for react-transition-group, without it warning is thrown
   // in React.StrictMode
   const transitionRef = useRef<HTMLImageElement | null>(null);
+
+  useEffect(() => {
+    getProjectMedia(project?.slug).then((projectMedia) => {
+      setThumbUrl(projectMedia?.thumbUrl || null);
+      setVideoUrl(projectMedia?.videoUrl || null);
+    });
+  }, [project?.slug]);
 
   const switchToVideo = () => {
     setHoverState(true);
@@ -60,16 +70,16 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
     <S.ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {project && (
         <>
-          <S.ProjectListItemBackgroundImage src={project.thumb || placeholderImage} />
-          {doRenderVideo && (
+          {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl || placeholderImage} />}
+          {videoUrl && doRenderVideo && (
             <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
-              <source src={project.video} type="video/mp4" />
+              <source src={videoUrl} type="video/mp4" />
               Sorry, your browser doesn't support videos.
             </S.ProjectListItemVideo>
           )}
-          <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }} nodeRef={transitionRef}>
-            {status => <S.ProjectListItemImage ref={transitionRef} src={project.thumb || placeholderImage} $status={status} />}
-          </Transition>
+          {thumbUrl && <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }} nodeRef={transitionRef}>
+            {status => <S.ProjectListItemImage ref={transitionRef} src={thumbUrl || placeholderImage} $status={status} />}
+          </Transition>}
         </>
       )}
       <S.ProjectListItemSubtitle $loading={!project}>{project ? project.subtitle : 'Loading...'}</S.ProjectListItemSubtitle>
