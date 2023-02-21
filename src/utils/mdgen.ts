@@ -7,10 +7,14 @@ const MARKDOWN_FILES = [
     templateFilename: './src/templates/README.template.md',
     outputFilename: './README.md',
   },
+  {
+    templateFilename: './src/templates/projects-README.template.md',
+    outputFilename: './src/projects/README.md',
+  },
 ];
 
 const generateProjectList = (): string => {
-  return projects.map(project => `### [${project.title}](src/projects/${project.slug}/README.md) - ${project.subtitle}`).join('\n');
+  return projects.map(project => `### [${project.title}](/src/projects/${project.slug}/README.md) - ${project.subtitle}`).join('\n');
 };
 
 const processTemplate = (template: string): string => {
@@ -30,4 +34,4 @@ for (const { templateFilename, outputFilename } of MARKDOWN_FILES) {
   fs.writeFileSync(outputFilename, output);
 }
 
-console.log(`Markdown files ${MARKDOWN_FILES.map(obj => `'${obj.outputFilename}'`).join(', ')} generated!`);
+console.log(`Generated files ${MARKDOWN_FILES.map(obj => `'${obj.outputFilename}'`).join(', ')}!`);

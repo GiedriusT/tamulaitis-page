@@ -17,11 +17,11 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 
 ## Projects
 
-### [Social Sequencer](src/projects/social-sequencer/README.md) - interactive music device
-### [Shil](src/projects/shil/README.md) - video game with unique art style
-### [Dialrhea](src/projects/dialrhea/README.md) - revolutionary shitty machine
-### [Skraidantis Radijas](src/projects/skraidantis-radijas/README.md) - no nonsense independent radio with nonsense
-### [Sewers EP](src/projects/sewers/README.md) - album released as a game console cartidge
+### [Social Sequencer](/src/projects/social-sequencer/README.md) - interactive music device
+### [Shil](/src/projects/shil/README.md) - video game with unique art style
+### [Dialrhea](/src/projects/dialrhea/README.md) - revolutionary shitty machine
+### [Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md) - no nonsense independent radio with nonsense
+### [Sewers EP](/src/projects/sewers/README.md) - album released as a game console cartidge
 
 
 ## Running locally
