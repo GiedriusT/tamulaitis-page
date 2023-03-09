@@ -1,6 +1,6 @@
-# Giedrius Tamulaitis - exploring the sweet spot where art and technology collides
+# Giedrius Tamulaitis - passionate about technology and art, and the sweet spot where the two collide
 
-Fusing the power of technology and the beauty of music, creating a harmonious blend of innovation and artistry.
+I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. I love technology and art. Here I share the stories about my projects.
 
 
 ## About me
@@ -17,11 +17,11 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 
 ## Projects
 
-### [Social Sequencer](/src/projects/social-sequencer/README.md) - interactive music device
-### [Shil](/src/projects/shil/README.md) - video game with unique art style
-### [Dialrhea](/src/projects/dialrhea/README.md) - revolutionary shitty machine
-### [Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md) - no nonsense independent radio with nonsense
-### [Sewers EP](/src/projects/sewers/README.md) - album released as a game console cartidge
+### **[Social Sequencer](/src/projects/social-sequencer/README.md)** - interactive music device
+### **[Shil](/src/projects/shil/README.md)** - unique game in monochrome world
+### **[Dialrhea](/src/projects/dialrhea/README.md)** - revolutionary shitty machine
+### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartidge
+### **Skraidantis Radijas** - no nonsense independent radio with nonsense (coming soon)
 
 
 ## Running locally
