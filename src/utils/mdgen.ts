@@ -14,7 +14,10 @@ const MARKDOWN_FILES = [
 ];
 
 const generateProjectList = (): string => {
-  return projects.map(project => `### [${project.title}](/src/projects/${project.slug}/README.md) - ${project.subtitle}`).join('\n');
+  let output = projects.filter(obj => !obj.isComingSoon).map(project => `### **[${project.title}](/src/projects/${project.slug}/README.md)** - ${project.subtitle}`).join('\n');
+  output += '\n';
+  output += projects.filter(obj => obj.isComingSoon).map(project => `### **${project.title}** - ${project.subtitle} (coming soon)`).join('\n');
+  return output;
 };
 
 const processTemplate = (template: string): string => {
