@@ -5,6 +5,7 @@ import { default as dialrhea } from './dialrhea';
 import { default as skraidantisRadijas } from './skraidantis-radijas';
 import { default as sewers } from './sewers';
 import { default as moonLove } from './moon-love';
+import { default as wavetwistersVr } from './wavetwisters-vr';
 
 const projects: Project[] = [
   socialSequencer,
@@ -13,6 +14,7 @@ const projects: Project[] = [
   skraidantisRadijas,
   sewers,
   moonLove,
+  wavetwistersVr,
 ];
 
 export default projects;
