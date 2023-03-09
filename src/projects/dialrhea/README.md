@@ -1,21 +1,52 @@
 # Dialrhea - revolutionary shitty machine
 
-This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. The phone's rotary dial is used to control the game's actions such as movement and firing weapons. The device connects to a computer running the game via Bluetooth, and is built on Arduino microcontroller.
+This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organised by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Dialrhea in action at Vilnius TechPark:
 
-We also made a proper "slick" promotional video for the device:
+[![Dialrhea](https://img.youtube.com/vi/R2ZWpkTSonE/0.jpg)](https://www.youtube.com/watch?v=R2ZWpkTSonE)
 
-[Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+[Watch Dialrhea in action](https://www.youtube.com/watch?v=R2ZWpkTSonE)
+
+Of course the device of such nonsensity wouldn't be complete without a "slick" promotional video showing how life without the device is just impossible. Here you can see video we used for the presentation.
 
 [![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
-This device was built in two days during Internet Of Shit hackathon organised by Technarium crew in Vilnius, Lithuania. The purpose of this hackathon is to build devices that are completely useless from practical poinnt of view, but must be functional and actually work, and you only have two days to do it.
+[Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+
+
+## What's next?
+
+Dialrhea workshops and Doom deathmatch.
+
 
 ## The Story
 
-The device is made using an Arduino microcontroller, which is a popular platform for DIY projects and maker projects. The Arduino is used to read the inputs from the rotary dial and buttons on the phone and translate them into commands that can be sent to the computer running the game via Bluetooth. The device was created during a hackathon called "Internet of Shit", which is a playful name for a hackathon that focuses on repurposing and repurposing old or discarded technology in creative ways.
+Internet Of Shit hackathon.
 
-During the hackathon, the device was built and tested by a team of makers, programmers and gamers, who were able to get the device working and connect it to the game. The device was then tested out by famous Lithuanian entrepreneurs like Vladas Lašas, who were impressed by the unique concept and the level of creativity involved in the project. They were also able to experience the nostalgia of using an old rotary phone to control a classic game and found it to be an enjoyable and fun experience.
+#### Internet Of Shit hackathon award categories
 
-Overall, the device is a great example of how old technology can be repurposed in creative ways to create something new and unique. The device is a great reminder that with a little bit of creativity and a lot of hard work, anything is possible.
+- Fire Means It’s Working
+- Dead Unicorn (the lowest ROI solution)
+- Least Private On-line Gadget
+- Something Something Blockchain
+- Shittiest AI (artificial idiocy) Solution
+- Social Courage Award (if it makes you feel awkward to use it in public)
+- Most Hacker-friendly award (for least secure = most dangerous IoT device)
+- This is Likely Illegal 
+- Public Prize
+- Artisanal Piece of Shit (hands-down the worst project)
+- Least Shitty project (a consolation prize for the losers)
 
-This gibberish was written by ChatGPT.
+### Vilnius TechPark Birthday
+
+### Kazkoks renginys energetikos muziejuje
+
+### No Trolls Allowed
+
+### Empty Brain Resort
+
+
+## Technical details
+
+Built on Arduino, working via Bluetooth.
+
+### How rotary dials work
