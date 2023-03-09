@@ -1,4 +1,4 @@
-# {{MY_NAME}} - {{TAGLINE}}
+# {{MY_NAME}}
 
 {{WHO_I_AM}}
 

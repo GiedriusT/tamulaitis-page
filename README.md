@@ -1,4 +1,4 @@
-# Giedrius Tamulaitis - passionate about technology and art, and the sweet spot where the two collide
+# Giedrius Tamulaitis
 
 I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinated by technology and arts, and the sweet spot where the two collide. Here I share the stories about my projects.
 
