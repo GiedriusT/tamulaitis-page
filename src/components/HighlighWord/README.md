@@ -2,11 +2,11 @@
 
 This component was written fully by ChatGPT. The idea was not to change any code myself and just use ChatGPT prompt to persuade him to code what I need.
 
-It actually did a decent job and [HighlightWord component](./HighlightWord.tsx) is fully written by ChatGPT, I just added few steles and that is it. It took quite a long time thou, mostly because ChatGPT was slow with big chunks of code. But I think we still finished faster than I would have written it myself, code is not extremely clean, but it's ok.
+It actually did a decent job and in the end produced [all code for this component](./HighlightWord.tsx), I just added few styles and that is it. It took quite a long time thou, mostly because ChatGPT was slow with big chunks of code. But I think we still finished faster than I would have written it myself, code is not extremely clean, but it's ok.
 
 I lost ChatGPT in the end as it changed code quite dramatically at one point and I wasn't able to make him go back properly and branch off from there.
 
-Anyway it was a really interesting experiment and decent results.
+Anyway it was a really interesting experiment with decent results.
 
 ## Conversation
 
