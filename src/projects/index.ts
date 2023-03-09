@@ -7,6 +7,7 @@ import { default as sewers } from './sewers';
 import { default as moonLove } from './moon-love';
 import { default as wavetwistersVr } from './wavetwisters-vr';
 import { default as captainBadass } from './captain-badass';
+import { default as bembisBembioMotina } from './bembis-bembio-motina';
 
 const projects: Project[] = [
   socialSequencer,
@@ -17,6 +18,7 @@ const projects: Project[] = [
   moonLove,
   wavetwistersVr,
   captainBadass,
+  bembisBembioMotina,
 ];
 
 export default projects;
