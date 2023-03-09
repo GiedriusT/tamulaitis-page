@@ -71,7 +71,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
       {project && (
         <>
           {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl || placeholderImage} />}
-          {videoUrl && doRenderVideo && (
+          {videoUrl && doRenderVideo && !project.isComingSoon && (
             <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
               <source src={videoUrl} type="video/mp4" />
               Sorry, your browser doesn't support videos.
@@ -80,6 +80,11 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
           {thumbUrl && <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }} nodeRef={transitionRef}>
             {status => <S.ProjectListItemImage ref={transitionRef} src={thumbUrl || placeholderImage} $status={status} />}
           </Transition>}
+          {project.isComingSoon && (
+            <S.ProjectListItemComingSoon>
+              Coming soon
+            </S.ProjectListItemComingSoon>
+          )}
         </>
       )}
       <S.ProjectListItemSubtitle $loading={!project}>{project ? project.subtitle : 'Loading...'}</S.ProjectListItemSubtitle>
@@ -89,7 +94,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
 
   return (
     <S.ProjectListItemContainer>
-      {project ? (
+      {project && !project.isComingSoon ? (
         <Link to={`/project/${project.slug}`}>
           {renderInternalContainer()}
         </Link>

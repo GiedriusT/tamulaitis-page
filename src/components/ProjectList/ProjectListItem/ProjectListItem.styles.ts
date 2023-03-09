@@ -22,7 +22,7 @@ export const ProjectListItemIternalContainer = styled.div`
   overflow: hidden;
 `;
 
-const ProjectListItemImageBase = styled.img`
+const projectListItemLayer = css`
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +30,10 @@ const ProjectListItemImageBase = styled.img`
   height: 100%; 
   object-fit: cover;
   pointer-events: none;
+`;
+
+const ProjectListItemImageBase = styled.img`
+  ${projectListItemLayer}
 `;
 
 export const ProjectListItemBackgroundImage = styled(ProjectListItemImageBase)``;
@@ -58,23 +62,37 @@ export const ProjectListItemImage = styled(ProjectListItemImageBase)<{ $status: 
 `;
 
 export const ProjectListItemVideo = styled.video`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
+  ${projectListItemLayer}
 `;
 
-export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
+export const ProjectListItemComingSoon = styled.div`
+  ${projectListItemLayer}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color 0.7s ease-out;
+  ${ProjectListItemIternalContainer}:hover & {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.17s ease-out;
+  }
+`;
+
+const projectListItemText = css<{ $loading?: boolean }>`
   position: absolute;
   left: 0;
   width: auto;
-  bottom: 7%;
+  margin: 0;
   color: white;
   background-color: ${props => !props.$loading ? 'black' : 'rgba(0, 0, 0, 0.1)'};
-  margin: 0;
+`;
+
+export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
+  ${projectListItemText}
+  bottom: 7%;
   padding: 7px 20px;
   transition: bottom 0.6s ease-out;
   ${ProjectListItemIternalContainer}:hover & {
@@ -84,13 +102,8 @@ export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
 `;
 
 export const ProjectListItemSubtitle = styled.p<{ $loading?: boolean }>`
-  position: absolute;
-  left: 0;
-  width: auto;
+  ${projectListItemText}
   bottom: 11%;
-  color: white;
-  background-color: ${props => !props.$loading ? 'black' : 'rgba(0, 0, 0, 0.1)'};
-  margin: 0;
   padding: 5px 20px 5px 20px;
   transform: translate(-100%, 0);
   transition: transform 0.6s ease-out;
