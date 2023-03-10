@@ -35,6 +35,15 @@ export const ProfileDescription = styled.p`
   text-align: center;
 `;
 
+export const ProfileLinks = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const ProfileLink = styled.a`
+  margin: 0 5px;
+`;
+
 export const ContactButtonContainer = styled.div`
   padding-top: 20px;
   text-align: center;

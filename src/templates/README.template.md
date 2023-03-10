@@ -7,7 +7,9 @@
 
 {{WHAT_I_DO}}
 
-Contact me at: [{{CONTACT_EMAIL}}](mailto:{{CONTACT_EMAIL}})
+Contact me at [{{CONTACT_EMAIL}}](mailto:{{CONTACT_EMAIL}})
+
+Find me on [LinkedIn]({{LINKEDIN_URL}})
 
 
 ## How to use the repo?

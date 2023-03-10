@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Footer.styles';
 import ContactButton from '../../ContactButton/ContactButton';
 import profilePicture from './giedrius-tamulaitis-profile-picture.jpg';
-import { WHAT_I_DO, MY_NAME } from '../../../constants';
+import { WHAT_I_DO, MY_NAME, LINKEDIN_URL, GITHUB_URL } from '../../../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -13,6 +13,10 @@ const Footer: React.FC = () => {
         </S.ProfilePictureContainer>
         <S.ProfileTitle>{MY_NAME}</S.ProfileTitle>
         <S.ProfileDescription>{WHAT_I_DO}</S.ProfileDescription>
+        <S.ProfileLinks>
+          <S.ProfileLink href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</S.ProfileLink>
+          <S.ProfileLink href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</S.ProfileLink>
+        </S.ProfileLinks>
         <S.ContactButtonContainer>
           <ContactButton />
         </S.ContactButtonContainer>
