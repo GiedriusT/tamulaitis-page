@@ -6,7 +6,7 @@ This device is a modified rotary phone that has been repurposed to control the c
 
 [Watch Dialrhea in action](https://www.youtube.com/watch?v=R2ZWpkTSonE)
 
-Of course the device of such nonsensity wouldn't be complete without a "slick" promotional video showing how life without the device is just impossible. Here you can see video we used for the presentation.
+During the same weekend we also made a "slick" promotional video illustrating how life without this device is just a nightmare.
 
 [![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
@@ -15,38 +15,46 @@ Of course the device of such nonsensity wouldn't be complete without a "slick" p
 
 ## What's next?
 
-Dialrhea workshops and Doom deathmatch.
+I would like to host a workshop where we would build at least three more devices, and then play a Doom deathmatch using these devices. Ideal setting would be some hackercamp or similar event.
+
+No concrete plans for that yet, if you want to suggest a good place for such event, please contact me.
 
 
 ## The Story
 
-Internet Of Shit hackathon.
+The device was built during "Internet Of Shit" hackathon. It's an amazing event that was hosted by Technarium crew in Vilnius, Lithuania in 2017 and 2018. Award categories included the likes of "Fire Means It’s Working", "Least Private On-line Gadget", "This is Likely Illegal", and the teams were competing hard to embody these concepts into a working piece of technology.
 
-#### Internet Of Shit hackathon award categories
+Our device won the "Least Shitty project" award, and we were also awarded the "Public Prize" for the most popular project. It is worth mentioning that the prize was a rubber drainage cleaning pump sprayed with gold paint.
 
-- Fire Means It’s Working
-- Dead Unicorn (the lowest ROI solution)
-- Least Private On-line Gadget
-- Something Something Blockchain
-- Shittiest AI (artificial idiocy) Solution
-- Social Courage Award (if it makes you feel awkward to use it in public)
-- Most Hacker-friendly award (for least secure = most dangerous IoT device)
-- This is Likely Illegal 
-- Public Prize
-- Artisanal Piece of Shit (hands-down the worst project)
-- Least Shitty project (a consolation prize for the losers)
+The ingenious idea was generated after a few beers with Donatas Valiulis and Džiugas Bartkus. The tree of us carried out the whole operation with me and Donatas taking care of technical aspects and Džiugas responsible for video production and promotional aspects of the project.
 
-### Vilnius TechPark Birthday
+Džiugas also made a nice trippy video about the making of the device and the whole hackathon in general.
 
-### Kazkoks renginys energetikos muziejuje
+[![Dialrhea making of video](https://img.youtube.com/vi/nAaBJcYIFyU/0.jpg)](https://www.youtube.com/watch?v=nAaBJcYIFyU)
 
-### No Trolls Allowed
+[Watch the making of video](https://www.youtube.com/watch?v=nAaBJcYIFyU)
 
-### Empty Brain Resort
+There were lots of other absurd project built during the event, if you are interested, [here is the full one hour long presentation](https://www.youtube.com/watch?v=fujuv8Wm4F8) of all projects of "Internet of Shit 2017" including Dialrhea.
+
+## Appearances
+
+In addition to the hackathon, the device was also presented at the following events:
+
+- Vilnius TechPark Birthday
+- Maker Faire at The Energy and Technology Museum
+- No Trolls Allowed hacker camp
+- Empty Brain Resort cultural space
 
 
 ## Technical details
 
-Built on Arduino, working via Bluetooth.
+The device is built on Arduino, and uses Bluetooth LE to communicate to the computer wirelessly. Full source code and more details are available in [Dialrhea GitHub repository](https://github.com/GiedriusT/dialrhea).
+
+There are multiple modes of operation:
+- **Doom** - in this mode the device acts as a game controller, and is configured to control classic Doom game (using Doomsday Engine)
+- **Emoji** - this mode is best used with mobile phones and allows you to type emoji's and send them to your friends
+- **Boring** - in this mode Dialrhea just outputs the dialed numbers (not recommended)
 
 ### How rotary dials work
+
+The most interesting learning during the process was how the rotary dial actually works from electrical point of view. I am from the generation who still remember using rotary phones so it was really interesting to understand both how simple the mechanism actually is and why I was getting electric shock while touching phone wires and playing phone mechanic only sometimes and not all the time. If you are interested [here is the video explaining the mechanism](https://www.youtube.com/watch?v=cLGd6OB8D5k).
