@@ -5,7 +5,7 @@ import remarkYoutubeVideo from './utils/remarkYoutubeVideo';
 
 const ArticleMarkdown: React.FC<ReactMarkdownOptions> = ({ children }) => {
   return (
-    <ReactMarkdown remarkPlugins={[remarkYoutubeVideo]} rehypePlugins={[rehypeRaw]}>
+    <ReactMarkdown remarkPlugins={[remarkYoutubeVideo]} rehypePlugins={[rehypeRaw]} linkTarget="_blank">
       {children}
     </ReactMarkdown>
   );
