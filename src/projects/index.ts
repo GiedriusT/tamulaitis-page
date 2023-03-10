@@ -8,10 +8,11 @@ import { default as moonLove } from './moon-love';
 import { default as wavetwistersVr } from './wavetwisters-vr';
 import { default as captainBadass } from './captain-badass';
 import { default as bembisBembioMotina } from './bembis-bembio-motina';
+import { default as kamchatkaVinyl } from './kamchatka-vinyl';
 
 const projects: Project[] = [
   socialSequencer,
-  shil,
+  kamchatkaVinyl,
   dialrhea,
   skraidantisRadijas,
   sewers,
@@ -19,6 +20,7 @@ const projects: Project[] = [
   wavetwistersVr,
   captainBadass,
   bembisBembioMotina,
+  shil,
 ];
 
 export default projects;
