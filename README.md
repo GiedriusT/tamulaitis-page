@@ -5,7 +5,7 @@ I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinate
 
 ## About me
 
-As a musician, I have been honing my craft and making a name for myself in the industry. My unique blend of genres, including rock, pop, and electronic, creates a sound that is both fresh and familiar. I have a natural talent for writing catchy hooks and memorable melodies which has helped me to gain a dedicated fan base. I pride myself on my creative approach to music and my undeniable stage presence. I am determined to continue making waves in the industry and am excited for what the future holds.
+My fascination with technology and arts started when my father bought me my first computer back in 1995. Since then I am on a constant journey of learning, building and creating. I love both technology and arts and am most fascinated to work on projects where the two go hand in hand. Currently mostly focused on a professional career as a technology leader and raising an amazing daughter, I still try to find the time to work on something creative and fun. I love to meet like minded individuals, so if you found some of my projects interesting, have something to suggest or want to collaborate, don't hesitate to drop me a line!
 
 Contact me at: [giedrius@tamulaitis.lt](mailto:giedrius@tamulaitis.lt)
 
