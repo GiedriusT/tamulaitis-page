@@ -33,4 +33,16 @@ export const GlobalStyle = createGlobalStyle`
       aspect-ratio: 16 / 9;
     }
   }
+
+  // We use class name for Spotify embeds, because the style is added by Remark
+  // plugin and we can't use styled-components.
+  .spotify-embed {
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    & iframe {
+      width: 100%;
+    }
+  }
 `;
