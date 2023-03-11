@@ -13,3 +13,11 @@ YouTube links that are wrapped by empty lines will be automatically converted to
 ```
 
 This way YouTube links look nice inside GitHub, but also get converted to single embed on the website.
+
+### Support for custom aspect ratios
+
+By default all videos will be embedded as 16:9 aspect ratio, it is however possible to specify a custom aspect ratio by adding a `#aspect_W_H` hash to the end of the url. For example to show 4:3 aspect ratio video you would use:
+
+```
+[Watch original Kamchatka EP promotional video](https://www.youtube.com/watch?v=Xfbk_47v_1w#aspect_4_3)
+```

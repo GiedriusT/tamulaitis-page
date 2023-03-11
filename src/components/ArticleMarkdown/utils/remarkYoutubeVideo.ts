@@ -23,8 +23,14 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
   if (isYoutubeTextLink(node)) {
     const url = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
+    let aspectRatio = '16 / 9';
+    if (url.indexOf('#aspect_') !== -1) {
+      const digits = url.substring(url.indexOf('#aspect_') + 8).split('_').map(digit => parseInt(digit, 10));
+      if (digits[0] && digits[1])
+        aspectRatio = `${digits[0]} / ${digits[1]}`;
+    }
     node.type = 'html';
-    node.value = `<div class="youtube-embed"><iframe src="${url}" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+    node.value = `<div class="youtube-embed"><iframe style="aspect-ratio: ${aspectRatio}" src="${url}" title="${title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
     delete node.children;
   } else if (isYoutubeImageLink(node)) {
     node.type = 'text';

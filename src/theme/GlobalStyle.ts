@@ -1,5 +1,15 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
+
+const mediaEmbed = css`
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  & iframe {
+    width: 100%;
+  }
+`;
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -24,25 +34,16 @@ export const GlobalStyle = createGlobalStyle`
   // We use class name for YouTube embeds, because the style is added by Remark
   // plugin and we can't use styled-components.
   .youtube-embed {
-    width: 100%;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    ${mediaEmbed}
     & iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
+      /* aspect-ratio: 16 / 9; */
+      aspect-ratio: 4 / 3;
     }
   }
 
   // We use class name for Spotify embeds, because the style is added by Remark
   // plugin and we can't use styled-components.
   .spotify-embed {
-    width: 100%;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    & iframe {
-      width: 100%;
-    }
+    ${mediaEmbed}
   }
 `;
