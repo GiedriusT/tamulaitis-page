@@ -1,10 +1,11 @@
 # Kamchatka vinyl
 
-This vinyl record is a re-release of my first EP titled Kamchatka. It was originally released in 2010 as a limited edition of 50 CDs as well as digital format. To mark its ten year anniversry I decided to re-release it on vinyl. All tracks were re-mastered by Emery in his Rotterdam studio and vinyl pressed in the Netherlands by [Triple Vision Distribution](https://triplevisiondigital.com/).
+This vinyl record is a re-release of my first EP titled "Kamchatka". It was originally released in 2010 as a limited edition of 50 CDs as well as digital format. To mark its ten year anniversry I decided to re-release it on vinyl. All tracks were re-mastered by Emery in his Rotterdam studio and vinyls pressed in the Netherlands by [Triple Vision Distribution](https://triplevisiondigital.com/).
 
 Nuotraukos
 
 The artwork for this release was created by an amazing artist [Asta Ostrovskaja](https://astaost.com/). It actually depicts the Saulėtekis neighborhood where I grew up in Vilnius, Lithuania.
+
 
 ## What's next?
 
@@ -13,7 +14,8 @@ I  want this vinyl to be available in as many physical recordshops as possible. 
 
 ## Where to buy?
 
-Vilnius, Rotterdam, online
+The vinyl is available in recordshops across Lithuania and the Netherlands, you can also order it online from [Bembis Bembio Motina Records](https://bembisbembiomotina.lt) website.
+
 
 ## Original version
 
@@ -21,11 +23,12 @@ Original version of the album was released in 2010 as a limited edition of 50 CD
 
 [Listen to Kamchatka EP on Spotify](https://open.spotify.com/album/3MFM6vUUTnfpY3vG2Wu7vI)
 
+
 ## Bonus material
 
-This release also includes one bonus track that was not included in the original release. It is called "Celebration" and was made by me recording and scratching the samples from the old vinyl records and mixing them together. It was originally used for the promotional video of the original release.
+This release also includes one bonus track that was not included in the original release. It is called "Celebration" and was made by me recording and scratching the samples from the old vinyl records and mixing them together. It was originally used for the promotional video of the initial release.
 
-[![Celebration](https://img.youtube.com/vi/Xfbk_47v_1w/0.jpg)](https://www.youtube.com/watch?v=Xfbk_47v_1w)
+[![Watch original Kamchatka EP promotional video](https://img.youtube.com/vi/Xfbk_47v_1w/0.jpg)](https://www.youtube.com/watch?v=Xfbk_47v_1w)
 
 [Watch original Kamchatka EP promotional video](https://www.youtube.com/watch?v=Xfbk_47v_1w#aspect_4_3)
 
