@@ -20,8 +20,10 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Sora', sans-serif;
     background-color: #dddddd;
+    letter-spacing: 0.8px;
+    line-height: 2;
   }
 
   a {
@@ -53,5 +55,9 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  p {
+    font-size: 17px;
   }
 `;
