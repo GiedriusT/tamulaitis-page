@@ -35,7 +35,7 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 
 1. Clone this repository
 2. Install dependencies by executing `yarn`
-3. Run `yarn run dev` to start the development server
+3. Run `yarn start` to start the development server
 4. Open address from console output in your browser
 
 
