@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-family: 'Sora', sans-serif;
-    background-color: #dddddd;
+    background-color: #e8f1f5;
     letter-spacing: 0.8px;
     line-height: 2;
   }
