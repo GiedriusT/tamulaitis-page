@@ -12,4 +12,6 @@ export const HeroContainer = styled.div`
 export const HeroTitle = styled.h1`
   width: 60%;
   text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.6;
 `;

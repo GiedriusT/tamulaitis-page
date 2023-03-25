@@ -29,15 +29,18 @@ export const ProfileTitle = styled.h3`
 `;
 
 export const ProfileDescription = styled.p`
-  max-width: 500px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.6;
 `;
 
 export const ProfileLinks = styled.div`
   display: flex;
   justify-content: center;
+  font-size: 0.9rem;
 `;
 
 export const ProfileLink = styled.a`
