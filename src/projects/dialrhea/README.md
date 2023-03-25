@@ -38,11 +38,12 @@ There were lots of other absurd project built during the event, if you are inter
 
 ## Appearances
 
-In addition to the hackathon, the device was also presented at the following events:
+In addition to the hackathon, the device was also a guest of honor at the following events:
 
-- Vilnius TechPark Birthday
-- Maker Faire at The Energy and Technology Museum
-- No Trolls Allowed hacker camp
+- Vilnius TechPark Birthday 2018
+- Maker Faire 2017 at The Energy and Technology Museum
+- No Trolls Allowed 2017 hacker camp
+- Braille Satellite 2018 music festival
 - Empty Brain Resort cultural space
 
 
