@@ -29,10 +29,10 @@ export const ProfileTitle = styled.h3`
 `;
 
 export const ProfileDescription = styled.p`
-  max-width: 620px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: justify;
   font-size: 0.8rem;
   line-height: 1.6;
 `;
