@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Sora', sans-serif;
     background-color: #e8f1f5;
     letter-spacing: 0.8px;
-    line-height: 2;
+    line-height: 1.9;
   }
 
   a {
@@ -58,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 17px;
+    font-size: 1.1rem;
+    margin-block-end: 1.7em;
   }
 `;
