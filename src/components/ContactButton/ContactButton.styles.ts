@@ -7,11 +7,11 @@ export const ContactButtonStyled = styled.button`
   padding: 11px 33px;
   color: white;
   cursor: pointer;
-  background-color: rgba(33, 150, 243, 1);
+  background-color: #1989ac;
   transition: background-color 0.17s ease-out;
 
   &:hover {
-    background-color: rgba(33, 150, 243, 0.7);
+    background-color: #283e56;
     transition: background-color 0.17s ease-out;
   }
 `;
