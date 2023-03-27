@@ -1,13 +1,23 @@
 # Social Sequencer
 
-Introducing the ultimate music-making experience - an interactive music device that transforms the way you create and compose music. Imagine having the power to bring your musical ideas to life by simply arranging colorful cubes on a sleek and intuitive board. Each cube represents a unique note or rhythm, allowing you to build and layer intricate melodies and beats with ease.
+Social Sequencer is an interactive music device that allows you to create and compose music by simply arranging cubes on a sleek and intuitive board. Each cube represents a unique note or percussion sound, allowing you to build and layer intricate melodies and beats with ease. Here is a video of the device in action:
+
+[![Social Sequencer](https://img.youtube.com/vi/Z0HU_UhfQMs/0.jpg)](https://www.youtube.com/watch?v=Z0HU_UhfQMs)
+
+[Watch Social Sequencer in action](https://www.youtube.com/watch?v=Z0HU_UhfQMs)
+
+The full installation consists of three such boards representing different instruments, the idea here is to allow people to play together and create music collaboratively creating a social experience.
 
 ## The idea
 
-The idea to create an interactive music device was born from the desire to combine the fun and creativity of playing with toys with the excitement and satisfaction of making music. The creators of the device wanted to create a product that would make it easy and accessible for anyone to create and compose music, regardless of their skill level or experience.
+The idea was born during Vilnius Light Festival 2017. We were roaming around the city and looking at all kinds of light installations. Many of them looked really impressive and beautiful, but they were mostly static and passive. That made me think how nice it would be to create something that was interactive and allow participants to be fully immersed in the experience. That's when the idea of creating the board with cubes representing musical notes struck me.
 
-The concept of using cubes and a board to create music was inspired by the traditional concept of a sequencer, which is a tool used to create electronic music by arranging and manipulating sound samples. The creators wanted to take this concept and make it more tactile and interactive by allowing users to physically place and arrange the cubes on the board.
+It was one of these rare cases where the original concept didn't really change much during the production process and the initial concept that I envisioned standing on a small hill in Sereikiškės park turned out to be the final product.
 
-They also wanted to make the device as intuitive and user-friendly as possible, so that anyone can pick it up and start creating music right away. After many months of prototyping, testing and fine-tuning the design, the interactive music device was finally brought to life, offering a new and exciting way for people to make music.
+### Concept and sanity check
 
-This gibberish was written by ChatGPT.
+### The first prototype
+
+### Version 2.0
+
+## The tech
