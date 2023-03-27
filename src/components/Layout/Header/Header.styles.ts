@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  padding-top: 20px;
+  padding-top: 1.66em;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@ export const BackLink = styled(Link)`
 
 const commonH3Styles = css`
   font-size: 1.17rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-block-start: 0;
   margin-block-end: 0;
 `;

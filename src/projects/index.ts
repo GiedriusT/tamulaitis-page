@@ -20,7 +20,7 @@ const projects: Project[] = [
   wavetwistersVr,
   captainBadass,
   bembisBembioMotina,
-  shil,
+  // shil,
 ];
 
 export default projects;
