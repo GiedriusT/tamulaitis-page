@@ -1,0 +1,1 @@
+export const PAGE_PADDING_HORIZONTAL = '20px';

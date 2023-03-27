@@ -15,4 +15,7 @@ export const ProjectsItemsListContainer = styled.div`
     content: "";
     flex: auto;
   }
+  @media (max-width: 499px) {
+    row-gap: 0;
+  }
 `;

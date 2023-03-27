@@ -1,5 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import { PAGE_PADDING_HORIZONTAL } from './constants';
 
 const mediaEmbed = css`
   width: 100%;
@@ -10,9 +11,9 @@ const mediaEmbed = css`
     width: 100%;
   }
   @media (max-width: 499px) {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
+    width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
+    margin-left: -${PAGE_PADDING_HORIZONTAL};
+    margin-right: -${PAGE_PADDING_HORIZONTAL};
   }
 `;
 

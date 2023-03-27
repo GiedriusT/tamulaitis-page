@@ -1,10 +1,16 @@
 import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
 import { TransitionStatus } from 'react-transition-group';
+import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
 
 export const BACK_TO_IMAGE_FADE_DURATION = 700;
 
 export const ProjectListItemContainer = styled.div`
   width: 100%;
+  @media (max-width: 499px) {
+    width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
+    margin-left: -${PAGE_PADDING_HORIZONTAL};
+    margin-right: -${PAGE_PADDING_HORIZONTAL};
+  }
   @media (min-width: 785px) {
     width: 49%;
   }
@@ -92,11 +98,13 @@ const projectListItemText = css<{ $loading?: boolean }>`
 
 export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
   ${projectListItemText}
+  /* display: none; */
+  line-height: 1;
   bottom: 7%;
-  padding: 7px 20px;
+  padding: 0.55em 20px;
   transition: bottom 0.6s ease-out;
   ${ProjectListItemIternalContainer}:hover & {
-    bottom: 20%;
+    bottom: 25%;
     transition: bottom 0.17s ease-out;
   }
 `;
@@ -105,7 +113,10 @@ export const ProjectListItemSubtitle = styled.p<{ $loading?: boolean }>`
   ${projectListItemText}
   bottom: 11%;
   padding: 5px 20px 5px 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0;
   transform: translate(-100%, 0);
+  line-height: 1.5;
   transition: transform 0.6s ease-out;
   ${ProjectListItemIternalContainer}:hover & {
     transform: translate(5%, 0);
