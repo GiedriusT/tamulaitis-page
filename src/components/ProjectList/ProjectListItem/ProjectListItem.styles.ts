@@ -63,8 +63,8 @@ const transitionStatusStyles: { [key in TransitionStatus]: FlattenSimpleInterpol
   `,
 };
 
-export const ProjectListItemImage = styled(ProjectListItemImageBase)<{ $status: TransitionStatus }>`
-  ${props =>  transitionStatusStyles[props.$status]}
+export const ProjectListItemImage = styled(ProjectListItemImageBase) <{ $status: TransitionStatus }>`
+  ${props => transitionStatusStyles[props.$status]}
 `;
 
 export const ProjectListItemVideo = styled.video`
@@ -100,26 +100,32 @@ export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
   ${projectListItemText}
   /* display: none; */
   line-height: 1;
-  bottom: 7%;
   padding: 0.55em 20px;
-  transition: bottom 0.6s ease-out;
-  ${ProjectListItemIternalContainer}:hover & {
-    bottom: 25%;
-    transition: bottom 0.17s ease-out;
+  bottom: 2em;
+  @media (hover: hover) {
+    bottom: 0.5em;
+    transition: bottom 0.6s ease-out;
+    ${ProjectListItemIternalContainer}:hover & {
+      bottom: 2em;
+      transition: bottom 0.17s ease-out;
+    }
   }
 `;
 
 export const ProjectListItemSubtitle = styled.p<{ $loading?: boolean }>`
   ${projectListItemText}
-  bottom: 11%;
+  bottom: 0.8em;
   padding: 5px 20px 5px 20px;
   font-size: 0.9rem;
   letter-spacing: 0;
-  transform: translate(-100%, 0);
   line-height: 1.5;
-  transition: transform 0.6s ease-out;
-  ${ProjectListItemIternalContainer}:hover & {
-    transform: translate(5%, 0);
-    transition: transform 0.17s ease-out;
+  transform: translate(5%, 0);
+  @media (hover: hover) {
+    transform: translate(-100%, 0);
+    transition: transform 0.6s ease-out;
+    ${ProjectListItemIternalContainer}:hover & {
+      transform: translate(5%, 0);
+      transition: transform 0.17s ease-out;
+    }
   }
 `;
