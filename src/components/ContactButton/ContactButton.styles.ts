@@ -10,6 +10,7 @@ export const ContactButtonStyled = styled.button`
   cursor: pointer;
   background-color: #1989ac;
   transition: background-color 0.17s ease-out;
+  white-space: nowrap;
 
   &:hover {
     background-color: #283e56;

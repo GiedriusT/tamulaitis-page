@@ -9,6 +9,11 @@ const mediaEmbed = css`
   & iframe {
     width: 100%;
   }
+  @media (max-width: 499px) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,9 +26,9 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-family: 'Sora', sans-serif;
-    line-height: 1.9;
     background-color: #e8f1f5;
-    letter-spacing: 0.8px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
   }
 
   a {
@@ -64,7 +69,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    line-height: 1.5;
+    line-height: 1.3;
     padding-bottom: calc(0.83em);
   }
 
