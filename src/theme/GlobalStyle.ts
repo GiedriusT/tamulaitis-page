@@ -21,9 +21,9 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-family: 'Sora', sans-serif;
+    line-height: 1.9;
     background-color: #e8f1f5;
     letter-spacing: 0.8px;
-    line-height: 1.9;
   }
 
   a {
@@ -59,6 +59,16 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
     font-size: 1.1rem;
-    margin-block-end: 1.7em;
+    margin-block-end: 1.66em;
+    font-weight: 400;
+  }
+
+  h1 {
+    line-height: 1.5;
+    padding-bottom: calc(0.83em);
+  }
+
+  h2, h3, h4 {
+    margin-block-start: 1.66em;
   }
 `;

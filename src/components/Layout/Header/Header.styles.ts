@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const HeaderContainer = styled.div`
   width: 100%;
@@ -22,6 +22,13 @@ export const BackLink = styled(Link)`
   text-decoration: none;
 `;
 
+const commonH3Styles = css`
+  font-size: 1.17rem;
+  line-height: 1;
+  margin-block-start: 0;
+  margin-block-end: 0;
+`;
+
 export const BackArrow = styled.div`
   position: absolute;
   top: 0;
@@ -29,6 +36,10 @@ export const BackArrow = styled.div`
   opacity: 0;
   transform: translate(5px);
   transition: opacity 0.3s ease-out, transform 0.5s ease-out;
+
+  & h3 {
+    ${commonH3Styles}
+  }
 
   ${TitleSectionWithBackLinkContainer}:hover & {
     opacity: 1;
@@ -39,6 +50,7 @@ export const BackArrow = styled.div`
 
 export const HeaderTitle = styled.h3`
   text-decoration: none;
+  ${commonH3Styles}
   transition: transform 0.5s ease-out;
 
   ${TitleSectionWithBackLinkContainer}:hover & {

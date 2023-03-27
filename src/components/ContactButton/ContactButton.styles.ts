@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ContactButtonStyled = styled.button`
-  font-size: 20px;
+  font-size: 1.1rem;
+  /* font-weight: 300; */
   border-radius: 100px;
   border: 0;
   padding: 11px 33px;

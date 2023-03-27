@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: calc(2 * 1.66em);
+  padding-bottom: calc(4 * 1.66em);
 `;
 
 export const ProfilePictureContainer = styled.div`
@@ -29,25 +29,26 @@ export const ProfileTitle = styled.h3`
 `;
 
 export const ProfileDescription = styled.p`
-  max-width: 500px;
+  /* max-width: 500px; */
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
-  font-size: 0.8rem;
-  line-height: 1.6;
+  /* text-align: justify; */
+  font-size: 1.1rem;
+  /* line-height: 1.6; */
+  font-weight: 100;
 `;
 
 export const ProfileLinks = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 `;
 
 export const ProfileLink = styled.a`
-  margin: 0 5px;
+  margin: 0 0.83rem;
 `;
 
 export const ContactButtonContainer = styled.div`
-  padding-top: 20px;
+  padding-top: 1.66em;
   text-align: center;
 `;
