@@ -8,10 +8,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <S.LayoutContainer>
       <GlobalStyle />
-      <Header />
-      <S.ContentContainer>
-        {children}
-      </S.ContentContainer>
+      <S.PaddedContainer>
+        <Header />
+        <S.ContentContainer>
+          {children}
+        </S.ContentContainer>
+      </S.PaddedContainer>
       <Footer />
     </S.LayoutContainer>
   );

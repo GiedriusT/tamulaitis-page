@@ -1,8 +1,12 @@
 import styled from 'styled-components';
+import { COLORS } from '../../../theme/constants';
+import { PaddedContainer } from '../Layout.styles';
 
 export const FooterContainer = styled.footer`
   padding-top: calc(2 * 1.66em);
   padding-bottom: calc(4 * 1.66em);
+  background-color: ${COLORS.footerBackground};
+  color: ${COLORS.footerText};
 `;
 
 export const ProfilePictureContainer = styled.div`
@@ -20,7 +24,7 @@ export const ProfilePictureContainer = styled.div`
   }
 `;
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled(PaddedContainer)`
   padding-top: 30px;
 `;
 
@@ -46,6 +50,7 @@ export const ProfileLinks = styled.div`
 
 export const ProfileLink = styled.a`
   margin: 0 0.83rem;
+  color: ${COLORS.footerText};
 `;
 
 export const ContactButtonContainer = styled.div`
