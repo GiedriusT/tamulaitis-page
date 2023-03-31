@@ -71,7 +71,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
       {project && (
         <>
           {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl || placeholderImage} />}
-          {videoUrl && doRenderVideo && !project.isComingSoon && (
+          {videoUrl && doRenderVideo && (
             <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
               <source src={videoUrl} type="video/mp4" />
               Sorry, your browser doesn't support videos.
