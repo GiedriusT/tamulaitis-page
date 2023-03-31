@@ -1,0 +1,32 @@
+on: push
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Build static content
+      run: CI= npm run build
+
+    - name: Change directory to dist
+      run: cd dist
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ vars.ftp_server }}
+        username: ${{ vars.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
+        server-dir: ./public_html/
