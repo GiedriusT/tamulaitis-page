@@ -18,7 +18,6 @@ const ProjectPage: React.FC = () => {
   // TODO: maybe move this to custom hook
   const project = projects.find((obj) => obj.slug === slug);
   useEffect(() => {
-    console.log({ project, slug });
     if (!project) {
       setArticle(nonExistentProject(slug).article);
       return;

@@ -15,7 +15,7 @@ root.render(
   </React.StrictMode>,
 );
 
-console.log('There are secrets in this page...');
+console.log('There will be secrets in this page soon...');
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
