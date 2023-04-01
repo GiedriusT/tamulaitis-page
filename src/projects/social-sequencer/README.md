@@ -1,4 +1,4 @@
-# Social Sequencer
+# Social Sequencer - interactive music device
 
 Social Sequencer is an interactive music device that allows you to create and compose music by simply arranging cubes on a sleek and intuitive board. Each cube represents a unique note or percussion sound, allowing you to build and layer intricate melodies and beats with ease. Here is a video of the device in action:
 
