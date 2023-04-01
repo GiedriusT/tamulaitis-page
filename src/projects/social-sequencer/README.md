@@ -11,10 +11,28 @@ The full installation consists of three such boards representing different instr
 
 ## What's next?
 
+I want this device to travel around all sorts of art and technology events and make people happy. I'm also looking for a more long term placements in some galleries or cultural spaces. If you are interested or know a place where this would fit nicely, please let me know. I am also interested in experimenting with adding video component to the device, so that not only sound, but also vide would be controlled via it.
+
 
 ## Appearances
 
+Our installation has already traveled through number of events. It was a proud participant of Vilnius TechPark second birthday festivities welcoming people from business and IT sectors, we also showed it in numerous festivals, science faires and private events.
 
+![Social Sequencer at Vilnius TechPark Birthday](https://tamulaitis.lt/images/social-sequencer/social-sequencer-at-vilnius-tech-park-birthday.jpg)
+
+I really enjoyed demonstrating the device at "No Trolls Sllowed 2018" hacker camp. It's an amazing event held near a beautiful lake close to Vilnius, Lithuania where people enthusiastic about building stuff gathers for two days to share their projects, participate in workshops and have a late night heater discussions about which programming language is better. It was really interesting to show it to a very tech savy crowd, discuss various technical details and dive deep into implementation nuances. 
+
+[![Watch Social Sequencer at No Trolls Allowed 2018](https://img.youtube.com/vi/PNnxecppm_s/0.jpg)](https://www.youtube.com/watch?v=PNnxecppm_s)
+
+[Watch Social Sequencer at No Trolls Allowed 2018](https://www.youtube.com/watch?v=PNnxecppm_s)
+
+One of the most memorable places so far thou was "The hiccup cure of Braille Satellite 2018" music festival where we set everything up around the huge old oak tree at the edge of the forest. People could play with it standing around the tree and the mixed sound was broadcasted via radio waves to the receivers scattered throughout the area.
+
+[![Watch Social Sequencer at The hiccup cure of Braille Satellite 2018](https://img.youtube.com/vi/ca_Rx9CVtXs/0.jpg)](https://www.youtube.com/watch?v=ca_Rx9CVtXs)
+
+[Watch Social Sequencer at The hiccup cure of Braille Satellite 2018](https://www.youtube.com/watch?v=ca_Rx9CVtXs)
+
+The initial plan was to build the device in time for "The summit of Braille Satellite 2017" music festival. We hevily underestimated the required effort and we manage to kind of finish the first board, but when we went to the spot to set the installation up, everything started to not work, and we ended up spending half a night looking at the computer screen sitting on the wet ground under the tree being bitten by swarms of mosquitoes. It definitely doesn't help to fix software bugs when you are constantly being bitten by nature bugs. We ended up leaving it with just the lights on and some cryptic writings to make it look more like some kind of weird conceptual art installation.
 
 
 ## The idea
@@ -40,6 +58,8 @@ One more concept that came up during this process was using cubes made from diff
 
 ## The technology
 
+It was an extremely interesting project as we needed to do lots of different stuff starting from choosing the right approaches and chips, soldering electronics, programming Arduino microcontroller, using CDC machines to cut out ptysical boards, design and developour own PCB boards, making it work via MIDI with Ableton and eventually migrating all audio set-up to headless mode running on Raspberry Pi vis PureData. This section is all about nitty gritty details of the process.
+
 ### Sanity check
 
 From the technical perspective, the first problem we had to solve is to determine if there is a simple and robust enough solution to "read" the arrangement of cubes that are on the board so we could turn them into notes. Few different approaches were considered including each qube having distinct QR code and camera being placed inside the device, using RFID tags inside each cube and some weird stuff with lasers or ultra sound proximity detectors or more primitive materials like tin foil, but all of them were either too complicated or too prone for errors.
@@ -56,17 +76,15 @@ We started working on the first prototype after we struck a deal with LinkMenų 
 
 #### The electronics
 
-After a round of discussions with their engineers we all agreed that the approach of using Hall effect sensors still makes most sense and that we gonna go with that. So the next thing we had to figure out is how to feed the signals from the matrix of 120 Hall effect sensors into single Arduino controller. We decided to go with the cascade of multiplexer chips. Multiplexers are chips that have multiple inputs and allow you to switch between them and read any of them through single wire. This way if we have one multiplexer for each row of sensors we can read data from all 8 of them only using two wires (one for reading data and the other for switching between the inputs). With five rows of these and the fact that they can all share control line (as we are reading the whole column at the time) it was enough to put one more multiplexer in front of the initial ones to be able to read the data from whole board of 40 Hall effect sensors via two wires.
+After a round of discussions with their engineers we all agreed that the approach of using Hall effect sensors still makes most sense and that we gonna go with that. So the next thing we had to figure out is how to feed the signals from the matrix of 120 Hall effect sensors into single Arduino controller. We decided to go with the cascade of multiplexer chips. Multiplexers are chips that have multiple inputs and allow you to switch between them and read any of them through single wire. This way if we have one multiplexer for each row of sensors we can read data from all 8 of them only using two wires (one for reading data and the other for switching between the inputs). With five rows of these and the fact that they can all share control line (as we are reading the whole column at the time) it was enough to put one more multiplexer in front of the initial ones to be able to read the data from whole board of 40 Hall effect sensors via two wires. This is how the final PCB board with multiplexer set up ended up looking:
 
-<!-- Diagram of multiplexer set up -->
+![Social Sequencer PCB board with chips](https://tamulaitis.lt/images/social-sequencer/social-sequencer-pcb-board-with-chips.jpg)
 
 We also knew we want to have programmable LED strip iside each board to be able to illuminate and mark the current tick. This was I thnk the first time I tried hooking up LED strip to Arduino. I got instructions from my electronics mentor Ričardas on how to power the LEDs up from one of the big boxes that provide AC current that I have never seen before. He said to set the right voltage and turn on the device. So I turned on the device and then tried setting the right voltage. Of course that resulted in all LEDs flashing bright for a brief moment followed by darkness. There were quite a few incidents like these during the process, we were regulars at the local electronics store. After some playing around we found the right approach on how to place these LEDs and what materials to use in between them to get an effect of the whole column lighting up.
 
 <!-- Photos or videos pf LED strip -->
+![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.jpg)
 
-These were the two core components of the boards. Apart from that we only had to think what kind of cable and socket to use from each board to "brain" of the system where the Arduino and sound producing hardware will reside. We decided to go with 
+These were the two core components of the boards. Apart from that we only had to think what kind of cable and socket to use from each board to "brain" of the system where the Arduino and sound producing hardware will reside.
 
-
-
-### Version 2.0
-
+More details about production process coming soon.
