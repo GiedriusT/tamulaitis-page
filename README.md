@@ -1,6 +1,6 @@
 # Giedrius Tamulaitis
 
-I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinated by technology and arts, and the sweet spot where the two collide. Here I share the stories about my projects.
+I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinated by technology and arts, exploring the sweet spot where the two collide. Here I share the stories about my projects.
 
 
 ## About me
