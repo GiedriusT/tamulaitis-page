@@ -1,21 +1,21 @@
 # Dialrhea - revolutionary shitty machine
 
-This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organised by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Dialrhea in action at Vilnius TechPark:
+This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Dialrhea in action at Vilnius TechPark:
 
-[![Dialrhea](https://img.youtube.com/vi/R2ZWpkTSonE/0.jpg)](https://www.youtube.com/watch?v=R2ZWpkTSonE)
+[![Watch Dialrhea in action](https://img.youtube.com/vi/R2ZWpkTSonE/0.jpg)](https://www.youtube.com/watch?v=R2ZWpkTSonE)
 
 [Watch Dialrhea in action](https://www.youtube.com/watch?v=R2ZWpkTSonE)
 
 During the same weekend we also made a "slick" promotional video illustrating how life without this device is just a nightmare.
 
-[![Dialrhea](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+[![Watch the promotional video](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
 [Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
 
 ## What's next?
 
-I would like to host a workshop where we would build at least three more devices, and then play a Doom deathmatch using these devices. Ideal setting would be some hackercamp or similar event.
+I would like to host a workshop where we would build at least three more devices, and then play a Doom death match using these devices. Ideal setting would be some hacker camp or similar event.
 
 No concrete plans for that yet, if you want to suggest a good place for such event, please contact me.
 
