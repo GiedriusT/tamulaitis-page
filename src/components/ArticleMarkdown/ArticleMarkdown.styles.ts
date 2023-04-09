@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaEmbed } from '../../theme/GlobalStyle';
+import { mediaEmbed, mediaEmbedFullWidthOnMobile } from '../../theme/GlobalStyle';
 
 export const ArticleContainer = styled.div`
   min-height: 100vh;
@@ -7,5 +7,6 @@ export const ArticleContainer = styled.div`
   & img {
     display: block;
     ${mediaEmbed}
+    ${mediaEmbedFullWidthOnMobile}
   }
 `;

@@ -10,6 +10,9 @@ export const mediaEmbed = css`
   & iframe {
     width: 100%;
   }
+`;
+
+export const mediaEmbedFullWidthOnMobile = css`
   @media (max-width: 499px) {
     width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
     margin-left: -${PAGE_PADDING_HORIZONTAL};
@@ -43,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
   // plugin and we can't use styled-components.
   .youtube-embed {
     ${mediaEmbed}
+    ${mediaEmbedFullWidthOnMobile}
     & iframe {
       /* aspect-ratio: 16 / 9; */
       aspect-ratio: 4 / 3;
