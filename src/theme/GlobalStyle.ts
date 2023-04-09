@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { PAGE_PADDING_HORIZONTAL } from './constants';
 
-const mediaEmbed = css`
+export const mediaEmbed = css`
   width: 100%;
   max-width: 720px;
   margin-left: auto;
@@ -53,14 +53,6 @@ export const GlobalStyle = createGlobalStyle`
   // plugin and we can't use styled-components.
   .spotify-embed {
     ${mediaEmbed}
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   p {
