@@ -16,11 +16,11 @@ I want this device to travel around all sorts of art and technology events and m
 
 ## Appearances
 
-Our installation has already traveled through number of events. It was a proud participant of Vilnius TechPark second birthday festivities welcoming people from business and IT sectors, we also showed it in numerous festivals, science faires and private events.
+Our installation has already traveled through number of events. It was a proud participant of Vilnius TechPark second birthday festivities welcoming people from business and IT sectors, we also showed it in numerous festivals, science fairs and private events.
 
 ![Social Sequencer at Vilnius TechPark Birthday](https://tamulaitis.lt/images/social-sequencer/social-sequencer-at-vilnius-tech-park-birthday.jpg)
 
-I really enjoyed demonstrating the device at "No Trolls Sllowed 2018" hacker camp. It's an amazing event held near a beautiful lake close to Vilnius, Lithuania where people enthusiastic about building stuff gathers for two days to share their projects, participate in workshops and have a late night heater discussions about which programming language is better. It was really interesting to show it to a very tech savy crowd, discuss various technical details and dive deep into implementation nuances. 
+I really enjoyed demonstrating the device at "No Trolls Allowed 2018" hacker camp. It's an amazing event held near a beautiful lake close to Vilnius, Lithuania where people enthusiastic about building stuff gathers for two days to share their projects, participate in workshops and have a late night heated beer driven discussions about which minor version of some obscure framework is better. It was really interesting to show it to a very tech savvy crowd, discuss various technical details and dive deep into implementation nuances.
 
 [![Watch Social Sequencer at No Trolls Allowed 2018](https://img.youtube.com/vi/PNnxecppm_s/0.jpg)](https://www.youtube.com/watch?v=PNnxecppm_s)
 
@@ -32,7 +32,7 @@ One of the most memorable places so far thou was "The hiccup cure of Braille Sat
 
 [Watch Social Sequencer at The hiccup cure of Braille Satellite 2018](https://www.youtube.com/watch?v=ca_Rx9CVtXs)
 
-The initial plan was to build the device in time for "The summit of Braille Satellite 2017" music festival. We hevily underestimated the required effort and we manage to kind of finish the first board, but when we went to the spot to set the installation up, everything started to not work, and we ended up spending half a night looking at the computer screen sitting on the wet ground under the tree being bitten by swarms of mosquitoes. It definitely doesn't help to fix software bugs when you are constantly being bitten by nature bugs. We ended up leaving it with just the lights on and some cryptic writings to make it look more like some kind of weird conceptual art installation.
+The initial plan was to build the device in time for "The summit of Braille Satellite 2017" music festival. We heavily underestimated the required effort and we manage to kind of finish the first board, but when we went to the spot to set the installation up, everything started not to work, and we ended up spending half a night looking at the computer screen sitting on the wet ground under the tree being bitten by swarms of mosquitoes. It definitely doesn't help to fix software bugs when you are constantly being bitten by biological ones. We ended up leaving it with just the lights on and some cryptic writings around it to make it look more like some kind of weird conceptual art installation.
 
 
 ## The idea
@@ -46,7 +46,7 @@ The core mechanic is based on sequencer or drum machine, the devices that allow 
 
 ### Developing the concept
 
-It was clear that building the prototype just by ourselves would be too expensive and time consuming, so I started looking for various funds and organisations that might support us prototyping the idea. I had to invent quite a lot of stories describing the device as well as things like it's "cultural value" etc. that were needed for all sorts of applications. It was quite a tedious and boring process but the good things that came from there were that I had a much clearer idea how the thing might works as a whole, not just from technical perspective, and also that I made this video showing how the full final installation will look and work like.
+It was clear that building the prototype just by ourselves would be too expensive and time consuming, so I started looking for various funds and organizations that might support us prototyping the idea. I had to invent quite a lot of stories describing the device as well as things like it's "cultural importance", "unique value proposition", etc. that were needed for all sorts of applications. It was quite a tedious and boring process but the good things that came from there were that I had a much clearer idea about how the thing might works as a whole, not just from technical perspective, and also that I made this video showing how the full final installation will look and work like.
 
 [![Watch video about the concept of Social Sequencer](https://img.youtube.com/vi/IUYDgTF7VVw/0.jpg)](https://www.youtube.com/watch?v=IUYDgTF7VVw)
 
@@ -54,24 +54,24 @@ It was clear that building the prototype just by ourselves would be too expensiv
 
 I had to learn how to do some 3D modeling with Blender to make this video and it turned out to be much more exhausting and swearword intensive experience than I expected, but that's another story.
 
-One more concept that came up during this process was using cubes made from different materials so the way the cube feels in your hand would correlate with what sounds that cube produces. So that for example cubes made from metal would prooduce "cold" and metallic sounds and the ones made from soft materials produce "soft" and "fluffy" ones.
+One more concept that came up during this process was using cubes made from different materials so the way the cube feels in your hand would correlate with what sounds that cube produces. So that for example cubes made from metal would produce "cold" and metallic sounds and the ones made from soft materials produce "soft" and "fluffy" ones.
 
 ## The technology
 
-It was an extremely interesting project as we needed to do lots of different stuff starting from choosing the right approaches and chips, soldering electronics, programming Arduino microcontroller, using CDC machines to cut out ptysical boards, design and developour own PCB boards, making it work via MIDI with Ableton and eventually migrating all audio set-up to headless mode running on Raspberry Pi vis PureData. This section is all about nitty gritty details of the process.
+It was an extremely interesting project as we needed to do lots of different stuff starting from choosing the right approaches and chips, soldering electronics, programming Arduino micro-controller, using CDC machines to cut out physical boards, design and develop our own PCB boards, making it work via MIDI with Ableton and eventually migrating all audio set-up to headless mode running on Raspberry Pi vis PureData. This section is all about nitty gritty details of the process.
 
 ### Sanity check
 
-From the technical perspective, the first problem we had to solve is to determine if there is a simple and robust enough solution to "read" the arrangement of cubes that are on the board so we could turn them into notes. Few different approaches were considered including each qube having distinct QR code and camera being placed inside the device, using RFID tags inside each cube and some weird stuff with lasers or ultra sound proximity detectors or more primitive materials like tin foil, but all of them were either too complicated or too prone for errors.
+From the technical perspective, the first problem we had to solve is to determine if there is a simple and robust enough solution to "read" the arrangement of cubes that are on the board so we could turn them into notes. Few different approaches were considered including each cube having distinct QR code and camera being placed inside the device, using RFID tags inside each cube and some weird stuff with lasers or ultra sound proximity detectors or more primitive materials like tin foil, but all of them were either too complicated or too prone for errors.
 
-We ended up choosing the approach of using the matrix of Hall effect sensors inside the board and magnets inside each cube. This approach seemed to make most sense as Hall effect sensors were cheap, small and easy to work with and the only thing that needs to be inside the cube is a simple. We also saw potential to have cubes representing different variations of same note by using magnets of different strengths. But most importantly it seemed like a solution that we could prototype easily in a reasonable timeframe.
+We ended up choosing the approach of using the matrix of Hall effect sensors inside the board and magnets inside each cube. This approach seemed to make most sense as Hall effect sensors were cheap, small and easy to work with and the only thing that needs to be inside the cube is a simple. We also saw potential to have cubes representing different variations of same note by using magnets of different strengths. But most importantly it seemed like a solution that we could prototype easily in a reasonable time frame.
 
-After buying few Hall effect sensonsors and magnets, we constructed a first prototype using Arduino microcontroller and cardboard box from tomato juice. To our surprise evething went pretty smoothly and we was able to detect when the object with magnet is placed in the spot and when it is removed. There were some issues with the strength of the magnets being a bit too similar to cover many different variations, but it was clear that just using the polarity of magnets would allow to detect two different variations reliably. So we decided that the approach is good enough.
+After buying few Hall effect sensors and magnets, we constructed a first prototype using Arduino micro-controller and cardboard box from tomato juice. To our surprise everything went pretty smoothly and we was able to detect when the object with magnet is placed in the spot and when it is removed. There were some issues with the strength of the magnets being a bit too similar to cover many different variations, but it was clear that just using the polarity of magnets would allow to detect two different variations reliably. So we decided that the approach is good enough.
 
 
 ### The first prototype
 
-We started working on the first prototype after we struck a deal with LinkMenų Fabrikas, a kind of maker / creator space run by Vilnius Tech university. We approached them and they were interested and offered to allow us to use their premises, equipment and consultations of their engineers from various fields. We were very happy with this collaboration as LinkMenų Fabrikas turned out to be this very cool place with lots of very enthusiastic people and every sort of machine you might want starting from big soldering stations and all sorts of electronic components to huge laser engraver cutter machines and 3D printers. Many other cool projects were being built there at the time like [Dance For The Dawn installation for Burning Man 2017](https://www.youtube.com/watch?v=if3FAu5F1WI).
+We started working on the first prototype after we struck a deal with LinkMenų Fabrikas, a creativity and innovation space run by Vilnius Tech university. We approached them and they were interested and offered to allow us to use their premises, equipment and consultations of their engineers from various fields. We were very happy with this collaboration as LinkMenų Fabrikas turned out to be this very cool place with lots of very enthusiastic people and every sort of machine you might want starting from big soldering stations and all sorts of electronic components to huge laser engraver cutter machines and 3D printers. Many other cool projects were being built there at the time including [Dance For The Dawn installation for Burning Man 2017](https://www.youtube.com/watch?v=if3FAu5F1WI).
 
 
 #### The electronics
@@ -80,7 +80,7 @@ After a round of discussions with their engineers we all agreed that the approac
 
 ![Social Sequencer PCB board with chips](https://tamulaitis.lt/images/social-sequencer/social-sequencer-pcb-board-with-chips.jpg)
 
-We also knew we want to have programmable LED strip iside each board to be able to illuminate and mark the current tick. This was I thnk the first time I tried hooking up LED strip to Arduino. I got instructions from my electronics mentor Ričardas on how to power the LEDs up from one of the big boxes that provide AC current that I have never seen before. He said to set the right voltage and turn on the device. So I turned on the device and then tried setting the right voltage. Of course that resulted in all LEDs flashing bright for a brief moment followed by darkness. There were quite a few incidents like these during the process, we were regulars at the local electronics store. After some playing around we found the right approach on how to place these LEDs and what materials to use in between them to get an effect of the whole column lighting up.
+We also knew we want to have programmable LED strip inside each board to be able to illuminate and mark the current tick. This was I think the first time I tried hooking up LED strip to Arduino. I got instructions from my electronics mentor Ričardas on how to power the LEDs up from one of the big boxes that provide AC current that I have never seen before. He said to set the right voltage and turn on the device. So I turned on the device and then tried setting the right voltage. Of course that resulted in all LEDs flashing bright for a brief moment followed by darkness. There were quite a few incidents like these during the process, we were regulars at the local electronics store. After some playing around we found the right approach on how to place these LEDs and what materials to use in between them to get an effect of the whole column lighting up.
 
 <!-- Photos or videos pf LED strip -->
 ![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.jpg)
