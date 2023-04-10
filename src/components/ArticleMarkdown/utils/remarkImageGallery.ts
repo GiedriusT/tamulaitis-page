@@ -11,7 +11,6 @@ const extractValidImages = (node: AstNode) => {
 
 const isImageGallery = (node: AstNode) => {
   const extractedItems = extractValidItems(node);
-  console.log(extractedItems);
   if (!extractedItems || extractedItems.length < 2)
     return false;
 

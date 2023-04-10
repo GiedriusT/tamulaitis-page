@@ -3,6 +3,7 @@ import { normalize } from 'styled-normalize';
 import { remarkYoutubeVideoStyles } from '../components/ArticleMarkdown/utils/remarkYoutubeVideo.styles';
 import { remarkSpotifyEmbedStyles } from '../components/ArticleMarkdown/utils/remarkSpotifyEmbed.styles';
 import { remarkImageGalleryStyles } from '../components/ArticleMarkdown/utils/remarkImageGallery.styles';
+import { remarkArticleTitleStyles } from '../components/ArticleMarkdown/utils/remarkArticleTitle.styles';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -46,4 +47,5 @@ export const GlobalStyle = createGlobalStyle`
   ${remarkYoutubeVideoStyles}
   ${remarkSpotifyEmbedStyles}
   ${remarkImageGalleryStyles}
+  ${remarkArticleTitleStyles}
 `;
