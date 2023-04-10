@@ -49,13 +49,27 @@ In addition to the hackathon, the device was also a guest of honor at the follow
 
 ## Technical details
 
-The device is built on Arduino, and uses Bluetooth LE to communicate to the computer wirelessly. Full source code and more details are available in [Dialrhea GitHub repository](https://github.com/GiedriusT/dialrhea).
+The device is built on Arduino, and uses Bluetooth LE to communicate to the computer wirelessly. It presents itself as bluetooth keyboard and can be paired with any device supporting Bluetooth LE. Full source code and more details are available in [Dialrhea GitHub repository](https://github.com/GiedriusT/dialrhea).
 
-There are multiple modes of operation:
+Device also supports multiple modes of operation:
 - **Doom** - in this mode the device acts as a game controller, and is configured to control classic Doom game (using Doomsday Engine)
 - **Emoji** - this mode is best used with mobile phones and allows you to type emoji's and send them to your friends
 - **Boring** - in this mode Dialrhea just outputs the dialed numbers (not recommended)
 
-### How rotary dials work
+
+### Reading data from rotary dial
 
 The most interesting learning during the process was how the rotary dial actually works from electrical point of view. I am from the generation who still remember using rotary phones so it was really interesting to understand both how simple the mechanism actually is and why I was getting electric shock while touching phone wires and playing phone mechanic only sometimes and not all the time. If you are interested [here is the video explaining the mechanism](https://www.youtube.com/watch?v=cLGd6OB8D5k).
+
+![Working on rotary dial](https://tamulaitis.lt/images/dialrhea/dialrhea-rotary-dial.jpg)
+
+After understanding how the mechanism works implementing it with Arduino was pretty much straight forward and I don't remember having any major trouble with it.
+
+
+### Fighting bluetooth
+
+Probably the biggest challenge was to make bluetooth communication work properly. We chose to use [Adafruit Bluefruit LE UART Friend](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend) module for the job just because I had it lying around and also I already tried to work with it while working on another project. It is a very capable module, but most problems we had were around stability and reliability. Sometimes things worked well, sometimes we were getting some errors running exactly the same code. We read lots of documentation about how to follow proper handshake protocols, do pairing properly etc., but then ended up just adding retry loops and timeouts everywhere so the chip has time to "come to it's senses" after each risky operation.
+
+![Fighting bluetooth](https://tamulaitis.lt/images/dialrhea/dialrhea-fighting-bluetooth.jpg)
+
+There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
