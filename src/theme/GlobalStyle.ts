@@ -1,26 +1,8 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import { PAGE_PADDING_HORIZONTAL } from './constants';
+import { remarkYoutubeVideoStyles } from '../components/ArticleMarkdown/utils/remarkYoutubeVideo.styles';
+import { remarkSpotifyEmbedStyles } from '../components/ArticleMarkdown/utils/remarkSpotifyEmbed.styles';
 import { remarkImageGalleryStyles } from '../components/ArticleMarkdown/utils/remarkImageGallery.styles';
-
-export const mediaEmbed = css`
-  width: 100%;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  & iframe {
-    width: 100%;
-  }
-`;
-
-export const mediaEmbedFullWidthOnMobile = css`
-  @media (max-width: 499px) {
-  /* @media (max-width: 560px) { */
-    width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
-    margin-left: -${PAGE_PADDING_HORIZONTAL};
-    margin-right: -${PAGE_PADDING_HORIZONTAL};
-  }
-`;
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -44,23 +26,6 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  // We use class name for YouTube embeds, because the style is added by Remark
-  // plugin and we can't use styled-components.
-  .youtube-embed {
-    ${mediaEmbed}
-    ${mediaEmbedFullWidthOnMobile}
-    & iframe {
-      /* aspect-ratio: 16 / 9; */
-      aspect-ratio: 4 / 3;
-    }
-  }
-
-  // We use class name for Spotify embeds, because the style is added by Remark
-  // plugin and we can't use styled-components.
-  .spotify-embed {
-    ${mediaEmbed}
-  }
-
   p {
     font-size: 1.1rem;
     margin-block-end: 1.66em;
@@ -76,5 +41,9 @@ export const GlobalStyle = createGlobalStyle`
     margin-block-start: 1.66em;
   }
 
+  // Here we add all styles that are used by Remark plugins. I didn't find
+  // a nicer way of making it work using styled components.
+  ${remarkYoutubeVideoStyles}
+  ${remarkSpotifyEmbedStyles}
   ${remarkImageGalleryStyles}
 `;
