@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { PAGE_PADDING_HORIZONTAL } from './constants';
+import { remarkImageGalleryStyles } from '../components/ArticleMarkdown/utils/remarkImageGallery.styles';
 
 export const mediaEmbed = css`
   width: 100%;
@@ -14,6 +15,7 @@ export const mediaEmbed = css`
 
 export const mediaEmbedFullWidthOnMobile = css`
   @media (max-width: 499px) {
+  /* @media (max-width: 560px) { */
     width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
     margin-left: -${PAGE_PADDING_HORIZONTAL};
     margin-right: -${PAGE_PADDING_HORIZONTAL};
@@ -73,4 +75,6 @@ export const GlobalStyle = createGlobalStyle`
   h2, h3, h4 {
     margin-block-start: 1.66em;
   }
+
+  ${remarkImageGalleryStyles}
 `;

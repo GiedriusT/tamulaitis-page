@@ -3,6 +3,7 @@ import { ReactMarkdown, ReactMarkdownOptions } from 'react-markdown/lib/react-ma
 import rehypeRaw from 'rehype-raw';
 import remarkYoutubeVideo from './utils/remarkYoutubeVideo';
 import remarkSpotifyEmbed from './utils/remarkSpotifyEmbed';
+import remarkImageGallery from './utils/remarkImageGallery';
 import * as S from './ArticleMarkdown.styles';
 
 const ArticleMarkdown: React.FC<ReactMarkdownOptions> = ({ children }) => {
@@ -12,6 +13,7 @@ const ArticleMarkdown: React.FC<ReactMarkdownOptions> = ({ children }) => {
         remarkPlugins={[
           remarkYoutubeVideo,
           remarkSpotifyEmbed,
+          remarkImageGallery,
         ]}
         rehypePlugins={[
           rehypeRaw,
