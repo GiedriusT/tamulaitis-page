@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <S.ProfileLink href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</S.ProfileLink>
         </S.ProfileLinks>
         <S.ContactButtonContainer>
-          <ContactButton />
+          <ContactButton $footerVariation={true} />
         </S.ContactButtonContainer>
       </S.InfoContainer>
     </S.FooterContainer>

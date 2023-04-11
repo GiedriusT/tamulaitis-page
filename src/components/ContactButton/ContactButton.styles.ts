@@ -1,6 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { COLORS } from '../../theme/constants';
 
-export const ContactButtonStyled = styled.button`
+export interface ContactButtonStyledProps {
+  $footerVariation?: boolean
+}
+
+export const ContactButtonStyled = styled.button<ContactButtonStyledProps>`
   font-size: 1.1rem;
   /* font-weight: 300; */
   border-radius: 100px;
@@ -13,7 +18,12 @@ export const ContactButtonStyled = styled.button`
   white-space: nowrap;
 
   &:hover {
-    background-color: #283e56;
+    ${(props) => props.$footerVariation ? css`
+      background-color: ${COLORS.primaryBackround};
+      color: ${COLORS.footerBackground};
+    ` : css`
+      background-color: #283e56;
+    `}
     transition: background-color 0.17s ease-out;
   }
 `;
