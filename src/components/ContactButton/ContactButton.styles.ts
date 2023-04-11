@@ -26,4 +26,33 @@ export const ContactButtonStyled = styled.button<ContactButtonStyledProps>`
     `}
     transition: background-color 0.17s ease-out;
   }
+
+  ${(props) => !props.$footerVariation && css`
+    @media (max-width: 499px) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  `};
+`;
+
+export const MailIconStyled = styled.img<{ $footerVariation?: boolean }>`
+  width: 22px;
+  line-height: 1;
+  display: inline-block;
+  transform: translate(0, 1px);
+
+  display: none;
+  ${(props) => !props.$footerVariation && css`
+    @media (max-width: 499px) {
+      display: inline-block;
+    }
+  `};
+`;
+
+export const TextStyled = styled.span<{ $footerVariation?: boolean }>`
+  ${(props) => !props.$footerVariation && css`
+    @media (max-width: 499px) {
+      display: none;
+    }
+  `};
 `;
