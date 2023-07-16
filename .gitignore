@@ -1,3 +1,6 @@
+# Bundle stats that are auto generated on build
+bundle-stats.html
+
 # Logs
 logs
 *.log
