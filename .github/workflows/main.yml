@@ -17,7 +17,7 @@ jobs:
       run: yarn
 
     - name: Build static content
-      run: CI= npm run build
+      run: CI= yarn run build
 
     - name: Change directory to dist
       run: cd dist
