@@ -1,9 +1,10 @@
-import CryptoJS from 'crypto-js';
+import { parse as parseHexString } from 'crypto-js/enc-hex';
+import { decrypt as decryptAes } from 'crypto-js/aes';
 import secrets from './secrets';
 
 export function decryptText(encryptedText: string, key: string, ivString: string): string {
-  const iv = CryptoJS.enc.Hex.parse(ivString);
-  const decrypted = CryptoJS.AES.decrypt(encryptedText, key, { iv }).toString(CryptoJS.enc.Utf8);
+  const iv = parseHexString(ivString);
+  const decrypted = decryptAes(encryptedText, key, { iv }).toString(CryptoJS.enc.Utf8);
   return decrypted;
 }
 
