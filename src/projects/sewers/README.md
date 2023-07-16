@@ -35,6 +35,7 @@ Shortly after independence first game consoles started popping up across the sem
 The Zhiliton had a very distinct yellow cartidges that were used to load games. The games were ported versions of popular games so you could get good ones with games like Super Mario Bros, Contra, Battle City, etc. But they were more rare and quite expensive. The most popular ones were the ones that had 100+ games on them. Titles like "100 in 1" or "9999999 in 1" were very common.
 
 ![Cartidge with 9999 games](https://tamulaitis.lt/images/sewers/cartidge-9999-in-1.png)
+![Cartidge with 274 games](https://tamulaitis.lt/images/sewers/cartidge-274-in-1.png)
 
 The artwork featured the screenshots from a few better games that these cartidges had, but most of the stuff inside were some glitchy, unplayable mess, many times the same game just starting from different level or with other small modifications.
 
