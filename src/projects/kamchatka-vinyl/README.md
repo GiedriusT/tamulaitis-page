@@ -33,3 +33,5 @@ This release also includes one bonus track that was not included in the original
 [Watch original Kamchatka EP promotional video](https://www.youtube.com/watch?v=Xfbk_47v_1w#aspect_4_3)
 
 The video used for this clip is from the Internet Archive and is in the public domain. As I was correctly schooled in the comments the people depicted in the video are not actually from Kamchatka region, they  are more likely to be native Alaskan (Inupiat) or natives of Chukotka (Chukchi, Siberian Yupik), based on the clothing and dancing styles.
+
+<!-- TODO: Add section about pressing vinyl -->
