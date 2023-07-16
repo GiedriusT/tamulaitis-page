@@ -22,8 +22,8 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[Social Sequencer](/src/projects/social-sequencer/README.md)** - interactive music device
 ### **[Kamchatka Vinyl](/src/projects/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
 ### **[Dialrhea](/src/projects/dialrhea/README.md)** - revolutionary shitty machine
+### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartidge
 ### **Skraidantis Radijas** - no nonsense radio with nonsense (coming soon)
-### **Sewers EP** - album released as a game console cartidge (coming soon)
 ### **Moon Love** - unexpectedly contravercial music video (coming soon)
 ### **WaveTwisters VR** - ambitious game prototype (coming soon)
 ### **Captain Badass** - game that killed the company (coming soon)
