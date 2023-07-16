@@ -1,4 +1,4 @@
-import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { TransitionStatus } from 'react-transition-group';
 import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
 
@@ -44,7 +44,10 @@ const ProjectListItemImageBase = styled.img`
 
 export const ProjectListItemBackgroundImage = styled(ProjectListItemImageBase)``;
 
-const transitionStatusStyles: { [key in TransitionStatus]: FlattenSimpleInterpolation } = {
+// We are usinng 'any' here, because we used to use FlattenSimpleInterpolation that we
+// imported from styled-components, but it was removed in version 5.?.?. Couldn't find
+// how to type this thingproperly after the update.
+const transitionStatusStyles: { [key in TransitionStatus]: any } = {
   entering: css`
     opacity: 0;
   `,
