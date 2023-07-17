@@ -1,6 +1,6 @@
 import { parse as parseHexString } from 'crypto-js/enc-hex';
 import { decrypt as decryptAes } from 'crypto-js/aes';
-import secrets from './secrets';
+import secrets from '../secrets';
 
 export function decryptText(encryptedText: string, key: string, ivString: string): string {
   const iv = parseHexString(ivString);
