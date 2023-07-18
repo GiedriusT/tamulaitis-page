@@ -14,7 +14,7 @@ Find me on [LinkedIn]({{LINKEDIN_URL}})
 
 ## How to use the repo?
 
-Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read markdown files directly in this repo, they are linked in [Projects](#projects) section below. It is also possible to clone this repository and [run the page locally](#running-locally) for whatever reason.
+Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read markdown files directly in this repo, they are linked in [Projects](#projects) section below. It is also possible to clone this repository and [run the page locally](#running-locally) if you want to do that for whatever reason.
 
 
 ## Projects
