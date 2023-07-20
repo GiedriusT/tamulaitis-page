@@ -21,7 +21,7 @@ Fortunetely, the soviet union collapsed in 1991 and Lithuania regained its indep
 
 I remember very vividly how one day while flipping through the channels I saw a cartoon that was unlike anything I've ever seen before. There were these green turtles, who were fighting with cool guns, riding skateboards, using high tech gadgets and eating pizza. They looked cool as hell and I was absolutely blown away. Unfortunately there was no regular schedule for the broadcasts, so I had to check the TV many times hoping that I will stumble upon this amazing cartoon again.
 
-One more thing from the cartoon that stuck with me was the theme song. It was so catchy and energetic, filled with the sounds of guitar riffs and melody that you just can't get out of your head. I remember I had a casette recorder hooked up to TV waiting eagerly when I will stumble upon the cartoon again so I can record the theme song and listen to it on repeat for hours. Apparently that engrained into my brain so deep that good 15 years later I decided to write a whole EP dedicated to this [catchy 60 second long theme song](https://www.youtube.com/watch?v=nNa2Fr6CA0E).
+One more thing from the cartoon that stuck with me was the theme song. It was so catchy and energetic, filled with the sounds of cheesy guitar riffs and melody that you just can't get out of your head. I remember I had a casette recorder hooked up to TV waiting eagerly when I will stumble upon the cartoon again so I can record the theme song and listen to it on repeat for hours. Apparently that engrained into my brain so deep that good 15 years later I decided to write a whole EP dedicated to this [catchy 60 second long theme song](https://www.youtube.com/watch?v=nNa2Fr6CA0E).
 
 
 ## Zhiliton Entertainment System
