@@ -1,17 +1,17 @@
 import { ProjectMedia } from '../types';
+import projectsMedia from './media';
 
-export const getProjectMedia = async (slug?: string): Promise<ProjectMedia | null> => {
-  if (!slug)
-    return null;
+const dashToCamel = (str: string): string  => {
+  return str.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+};
 
-  const thumbUrl = await import(`./${slug}/${slug}.jpg`);
-  const videoUrl = await import(`./${slug}/${slug}.mp4`);
-  const articleUrl = await import(`./${slug}/README.md`);
-  const result = await fetch(articleUrl.default);
+export const fetchArticle = async (articleUrl: string): Promise<string> => {
+  const result = await fetch(articleUrl);
   const article = await result.text();
-  return {
-    thumbUrl: thumbUrl.default,
-    videoUrl: videoUrl.default,
-    article,
-  };
+  return article;
+};
+
+export const getProjectMedia = (projectSlug: string): ProjectMedia => {
+  const keyName = dashToCamel(projectSlug);
+  return projectsMedia[keyName];
 };

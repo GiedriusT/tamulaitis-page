@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef, useState } from 'react';
+import React, { createRef, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Transition } from 'react-transition-group';
 import { v4 as uuidv4 } from 'uuid';
@@ -8,12 +8,10 @@ import placeholderImage from './project-placeholder.jpg';
 import { getProjectMedia } from '../../../projects/utils';
 
 interface ProjectListItemProps {
-  project?: Project
+  project: Project
 }
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
-  const [thumbUrl, setThumbUrl] = useState<string | null>(null);
-  const [videoUrl, setVideoUrl] = useState<string | null>(null);
   const [hoverState, setHoverState] = useState(false);
   const [doRenderVideo, setDoRenderVideo] = useState(false);
   const [videoKey, setVideoKey] = useState(uuidv4());
@@ -22,13 +20,12 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   // This is needed for react-transition-group, without it warning is thrown
   // in React.StrictMode
   const transitionRef = useRef<HTMLImageElement | null>(null);
+  const countRef = useRef(videoRef);
+  countRef.current = videoRef;
 
-  useEffect(() => {
-    getProjectMedia(project?.slug).then((projectMedia) => {
-      setThumbUrl(projectMedia?.thumbUrl || null);
-      setVideoUrl(projectMedia?.videoUrl || null);
-    });
-  }, [project?.slug]);
+  const projectMedia = getProjectMedia(project.slug);
+  const thumbUrl = projectMedia.thumbUrl;
+  const videoUrl = projectMedia.videoUrl;
 
   const switchToVideo = () => {
     setHoverState(true);

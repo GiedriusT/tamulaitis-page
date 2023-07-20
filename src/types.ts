@@ -8,5 +8,5 @@ export interface Project {
 export interface ProjectMedia {
   thumbUrl: string;
   videoUrl: string;
-  article: string;
+  articleUrl: string;
 }

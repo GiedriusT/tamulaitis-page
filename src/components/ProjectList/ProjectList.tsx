@@ -4,16 +4,8 @@ import { Project } from '../../types';
 import * as S from './ProjectList.styles';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 
-const renderEmptyItems = (count: number) => {
-  const emptyItems = [];
-  for (let i = 0; i < count; i++) {
-    emptyItems.push(<ProjectListItem key={i} />);
-  }
-  return emptyItems;
-};
-
 interface ProjectListProps {
-  projects?: Project[]
+  projects: Project[]
 }
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
@@ -22,7 +14,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     <S.ProjectsContainer>
       <h2>Projects</h2>
       <S.ProjectsItemsListContainer>
-        {projects ? projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />) : renderEmptyItems(6)}
+        {projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />)}
       </S.ProjectsItemsListContainer>
     </S.ProjectsContainer>
   );
