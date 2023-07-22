@@ -10,15 +10,5 @@ export default defineConfig({
       filename: 'bundle-stats.html',
     }) as PluginOption,
   ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          crypto: ['crypto-js'],
-          markdown: ['react-markdown', 'rehype-raw', 'unist-util-visit'],
-        },
-      },
-    },
-  },
   assetsInclude: ['**/*.md'],
 });
