@@ -4,7 +4,6 @@ import { Transition } from 'react-transition-group';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
 import * as S from './ProjectListItem.styles';
-import placeholderImage from './project-placeholder.jpg';
 import { getProjectMedia } from '../../../projects/utils';
 
 interface ProjectListItemProps {
@@ -67,7 +66,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
     <S.ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {project && (
         <>
-          {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl || placeholderImage} />}
+          {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl} />}
           {videoUrl && doRenderVideo && (
             <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
               <source src={videoUrl} type="video/mp4" />
@@ -75,7 +74,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
             </S.ProjectListItemVideo>
           )}
           {thumbUrl && <Transition in={hoverState} timeout={{ enter: 0, exit: S.BACK_TO_IMAGE_FADE_DURATION }} nodeRef={transitionRef}>
-            {status => <S.ProjectListItemImage ref={transitionRef} src={thumbUrl || placeholderImage} $status={status} />}
+            {status => <S.ProjectListItemImage ref={transitionRef} src={thumbUrl} $status={status} />}
           </Transition>}
           {project.isComingSoon && (
             <S.ProjectListItemComingSoon>
