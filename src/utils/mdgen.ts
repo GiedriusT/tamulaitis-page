@@ -4,11 +4,11 @@ import projects from '../projects';
 
 const MARKDOWN_FILES = [
   {
-    templateFilename: './src/templates/README.template.md',
+    templateFilename: './README.template.md',
     outputFilename: './README.md',
   },
   {
-    templateFilename: './src/templates/projects-README.template.md',
+    templateFilename: './src/projects/README.template.md',
     outputFilename: './src/projects/README.md',
   },
 ];
