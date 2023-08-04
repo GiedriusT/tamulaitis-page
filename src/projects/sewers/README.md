@@ -32,7 +32,7 @@ Shortly after independence first game consoles started popping up across the sem
 
 ![Zhiliton console](https://tamulaitis.lt/images/sewers/zhiliton.png)
 
-The Zhiliton had a very distinct yellow cartridges that were used to load games. The games were ported versions of popular games so you could get good ones with games like Super Mario Bros, Contra, Battle City, etc. But they were more rare and quite expensive. The most popular ones were the ones that had 100+ games on them. Titles like "100 in 1" or "9999999 in 1" were very common.
+The Zhiliton had a very distinct yellow cartridges that were used to load games. The games were pirated versions of popular games so you could get good ones with games like Super Mario Bros, Contra, Battle City, etc. But they were more rare and quite expensive. The most popular ones were the ones that had 100+ games on them. Titles like "100 in 1" or "9999999 in 1" were very common.
 
 ![Cartridge with 9999 games](https://tamulaitis.lt/images/sewers/cartidge-9999-in-1.png)
 ![Cartridge with 274 games](https://tamulaitis.lt/images/sewers/cartidge-274-in-1.png)
@@ -44,7 +44,7 @@ The artwork featured the screenshots from a few better games that these cartridg
 
 Since the whole EP was revolving around 8bit / 16bit sounds and themes I thought it would be nice to release it as a console cartridge, and Zhiliton cartridge made all the sense.
 
-Of course it was already 15 years after the period when these markets and Zhiliton consoles were popular. However, I was able to find few people who are still selling them in one of the oldest and iconic markets in Vilnius called Gariūnai. Gariūnai used to be the biggest market in Lithuania and was the place where you could buy anything from food to clothes to electronics to cars. It was also the place where you could buy Zhiliton consoles and games. It was a bit of a trip down the memory lane to go there and see the place that I haven't been to since I was a kid.
+Of course it was already 15 years after the period when these markets and Zhiliton consoles were popular. However, I was able to find few people who are still selling them in one of the oldest and iconic markets in Vilnius called Gariūnai. Gariūnai used to be the biggest market in Lithuania and was the place where you could buy anything from food to clothes to electronics to cars. There was a period when it was the only place in Lithuania where you could buy certain types of goods, for example extra large baggy pants that were absolute gold back then. Along fake designer clothes and stolen car stereos you could find Zhiliton consoles and tons of game cartridges for them. It was a bit of a trip down the memory lane to go there and see the place that I haven't been to since I was a kid.
 
 ![Gariūnai market](https://tamulaitis.lt/images/sewers/gariunai.jpg)
 
