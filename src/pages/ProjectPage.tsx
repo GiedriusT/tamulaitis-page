@@ -8,7 +8,7 @@ import { fetchArticle, getProjectMedia } from '../projects/utils';
 
 const nonExistentProject = (slug: string | undefined) => ({
   title: 'Nothing found at this address',
-  article: `# Nothing found at this address\n\nMaybe it got renamed. Please visit the [homepage](/) and try to find info related to '${slug}'.`,
+  article: `# Nothing found at this address\n\nNo page at this address, maybe it got renamed. Please visit the [homepage](/) and explore or [search for info about '${slug}'](https://www.google.com/search?q=site%3Atamulaitis.lt+${slug}).`,
 });
 
 const ProjectPage: React.FC = () => {
@@ -24,7 +24,8 @@ const ProjectPage: React.FC = () => {
     }
 
     const projectMedia = getProjectMedia(project.slug);
-    fetchArticle(projectMedia.articleUrl).then(result => setArticle(result));
+    fetchArticle(projectMedia.articleUrl).then(result =>
+      setArticle(result));
   }, [project, slug]);
 
   const title = project ? `${project.title} - ${project.subtitle} - ${MY_NAME}` : nonExistentProject(slug).title;
