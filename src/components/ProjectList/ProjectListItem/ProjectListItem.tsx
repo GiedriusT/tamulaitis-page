@@ -30,6 +30,15 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
     setHoverState(true);
     setDoRenderVideo(true);
     setVideoKey(uuidv4());
+    setTimeout(() => {
+      if (!countRef.current.current)
+        return;
+
+      countRef.current.current.defaultMuted = true;
+      countRef.current.current.muted = true;
+      countRef.current.current.playsInline = true;
+      countRef.current.current.play();
+    }, 50);
   };
 
   const switchBackToImage = () => {
@@ -68,7 +77,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
         <>
           {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl} />}
           {videoUrl && doRenderVideo && (
-            <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={true} muted={true} loop={true}>
+            <S.ProjectListItemVideo ref={videoRef} key={videoKey} controls={false} autoPlay={false} muted={true} loop={true}>
               <source src={videoUrl} type="video/mp4" />
               Sorry, your browser doesn't support videos.
             </S.ProjectListItemVideo>
