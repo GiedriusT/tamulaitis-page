@@ -6,3 +6,5 @@ export const COLORS = {
   footerBackground: '#283e56',
   footerText: '#e8f1f5',
 };
+
+export const HOVERABLE_DEVICE = '(hover: hover) and (pointer: fine)';

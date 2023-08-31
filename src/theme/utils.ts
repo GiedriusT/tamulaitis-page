@@ -1,3 +1,3 @@
-export const isHoverableDevice = window.matchMedia(
-  '(hover: hover) and (pointer: fine)',
-).matches;
+import { HOVERABLE_DEVICE } from './constants';
+
+export const isHoverableDevice = window.matchMedia(HOVERABLE_DEVICE).matches;

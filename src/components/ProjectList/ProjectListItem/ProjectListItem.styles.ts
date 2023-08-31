@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { TransitionStatus } from 'react-transition-group';
-import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
+import { HOVERABLE_DEVICE, PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
 
 export const BACK_TO_IMAGE_FADE_DURATION = 700;
 
@@ -83,7 +83,7 @@ export const ProjectListItemComingSoon = styled.div`
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  @media (hover: hover) and (pointer: fine) {
+  @media ${HOVERABLE_DEVICE} {
     color: rgba(255, 255, 255, 0);
     transition: color 0.7s ease-out;
     ${ProjectListItemIternalContainer}:hover & {
@@ -108,7 +108,7 @@ export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
   line-height: 1;
   padding: 0.55em 20px;
   bottom: 2em;
-  @media (hover: hover) and (pointer: fine) {
+  @media ${HOVERABLE_DEVICE} {
     bottom: 0.5em;
     transition: bottom 0.6s ease-out;
     ${ProjectListItemIternalContainer}:hover & {
@@ -126,7 +126,7 @@ export const ProjectListItemSubtitle = styled.p<{ $loading?: boolean }>`
   letter-spacing: 0;
   line-height: 1.5;
   transform: translate(5%, 0);
-  @media (hover: hover) {
+  @media ${HOVERABLE_DEVICE} {
     transform: translate(-100%, 0);
     transition: transform 0.6s ease-out;
     ${ProjectListItemIternalContainer}:hover & {
