@@ -79,14 +79,17 @@ export const ProjectListItemComingSoon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  transition: color 0.7s ease-out;
-  ${ProjectListItemIternalContainer}:hover & {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.17s ease-out;
+  @media (hover: hover) and (pointer: fine) {
+    color: rgba(255, 255, 255, 0);
+    transition: color 0.7s ease-out;
+    ${ProjectListItemIternalContainer}:hover & {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.17s ease-out;
+    }
   }
 `;
 
@@ -105,7 +108,7 @@ export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`
   line-height: 1;
   padding: 0.55em 20px;
   bottom: 2em;
-  @media (hover: hover) {
+  @media (hover: hover) and (pointer: fine) {
     bottom: 0.5em;
     transition: bottom 0.6s ease-out;
     ${ProjectListItemIternalContainer}:hover & {

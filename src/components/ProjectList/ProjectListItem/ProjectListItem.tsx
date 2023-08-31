@@ -1,8 +1,9 @@
-import React, { createRef, useRef, useState } from 'react';
+import React, { createRef, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Transition } from 'react-transition-group';
 import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
+import { isHoverableDevice } from '../../../theme/utils';
 import * as S from './ProjectListItem.styles';
 import { getProjectMedia } from '../../../projects/utils';
 
@@ -12,8 +13,10 @@ interface ProjectListItemProps {
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const [hoverState, setHoverState] = useState(false);
+  const wasInTheMiddle = useRef(false);
   const [doRenderVideo, setDoRenderVideo] = useState(false);
   const [videoKey, setVideoKey] = useState(uuidv4());
+  const elementRef = useRef<HTMLDivElement>(null);
   const videoRef = createRef<HTMLVideoElement>();
   const fadeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   // This is needed for react-transition-group, without it warning is thrown
@@ -27,6 +30,9 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const videoUrl = projectMedia.videoUrl;
 
   const switchToVideo = () => {
+    if (hoverState)
+      return;
+
     setHoverState(true);
     setDoRenderVideo(true);
     setVideoKey(uuidv4());
@@ -71,8 +77,38 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
     switchBackToImage();
   };
 
+  const handleMobilePositionChange = () => {
+    if (!elementRef.current)
+      return;
+
+    const middle = window.innerHeight * 0.35;
+    const rect = elementRef.current.getBoundingClientRect();
+    const isInTheMiddle = rect.y < middle && rect.y + rect.height > middle;
+
+    if (isInTheMiddle && !wasInTheMiddle.current)
+      handleMouseEnter();
+    else if (!isInTheMiddle && wasInTheMiddle.current)
+      handleMouseLeave();
+
+    if (isInTheMiddle !== wasInTheMiddle.current)
+      wasInTheMiddle.current = isInTheMiddle;
+  };
+
+  useEffect(() => {
+    if (isHoverableDevice)
+      return;
+
+    window.addEventListener('resize', handleMobilePositionChange);
+    window.addEventListener('scroll', handleMobilePositionChange);
+
+    return () => {
+      window.removeEventListener('resize', handleMobilePositionChange);
+      window.removeEventListener('scroll', handleMobilePositionChange);
+    };
+  }, []);
+
   const renderInternalContainer = () => (
-    <S.ProjectListItemIternalContainer onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <S.ProjectListItemIternalContainer ref={elementRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {project && (
         <>
           {thumbUrl && <S.ProjectListItemBackgroundImage src={thumbUrl} />}
