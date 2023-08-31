@@ -105,7 +105,7 @@ const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
       window.removeEventListener('resize', handleMobilePositionChange);
       window.removeEventListener('scroll', handleMobilePositionChange);
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderInternalContainer = () => (
     <S.ProjectListItemIternalContainer ref={elementRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
