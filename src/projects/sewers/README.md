@@ -70,6 +70,6 @@ Anyway it was interesting researching a bit about how the people used to write t
 
 For this release I wanted everything to look very professional. I already had distributor that managed my music on all digital platforms, but I also wanted to have proper press release for the EP. I was always quite shy about my music and bragging about stuff in general, so I asked my friend and studio colleague who was never shy about any of these Mark Splinter to write one for me. He did a really good job and I ended up with this:
 
-![Garo - Sewers EP press release](https://tamulaitis.lt/images/sewers/garo-sewers-ep-press-release.jpg)
+![Garo - Sewers EP press release](https://tamulaitis.lt/images/sewers/garo-sewers-ep-press-release.webp)
 
 Even thou Sewers EP didn't become very popular, it was lots of fun writing these tunes and twisting the theme in so many different directions, it was also great fun giving out cartridges to friends and artists from all over the world during legendary Satta Outside festival in Lithuania. It is also very nice when some friend or random person just pings you telling that he really likes one of the tracks from the EP. That happened quite a few times with this EP and it always makes me happy.
