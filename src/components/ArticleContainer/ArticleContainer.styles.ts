@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export type ArticleContainerStyledProps = {
+export type ArticleContainerProps = {
   $minHeight: number
 };
 
-export const ArticleContainerStyled = styled.div<ArticleContainerStyledProps>`
+export const ArticleContainer = styled.div<ArticleContainerProps>`
   min-height: ${props => props.$minHeight}vh;
 `;

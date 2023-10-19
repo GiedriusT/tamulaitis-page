@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 import { COLORS } from '../../theme/constants';
 
-export interface ContactButtonStyledProps {
+export interface ContactButtonProps {
   $footerVariation?: boolean
 }
 
-export const ContactButtonStyled = styled.button<ContactButtonStyledProps>`
+export const ContactButton = styled.button<ContactButtonProps>`
   font-size: 1.1rem;
   /* font-weight: 300; */
   border-radius: 100px;
@@ -35,7 +35,7 @@ export const ContactButtonStyled = styled.button<ContactButtonStyledProps>`
   `};
 `;
 
-export const MailIconStyled = styled.img<{ $footerVariation?: boolean }>`
+export const MailIcon = styled.img<{ $footerVariation?: boolean }>`
   width: 22px;
   line-height: 1;
   display: inline-block;
@@ -49,7 +49,7 @@ export const MailIconStyled = styled.img<{ $footerVariation?: boolean }>`
   `};
 `;
 
-export const TextStyled = styled.span<{ $footerVariation?: boolean }>`
+export const Text = styled.span<{ $footerVariation?: boolean }>`
   ${(props) => !props.$footerVariation && css`
     @media (max-width: 499px) {
       display: none;
