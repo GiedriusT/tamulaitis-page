@@ -6,3 +6,10 @@ export const CONTACT_EMAIL = 'giedrius@tamulaitis.lt';
 export const SITE_URL = 'https://tamulaitis.lt';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/giedriustamulaitis';
 export const GITHUB_URL = 'https://github.com/GiedriusT';
+
+export const NOT_FOUND_PAGE_TITLE = 'Nothing found at this address!';
+export const NOT_FOUND_PAGE_ARTICLE = `# ${NOT_FOUND_PAGE_TITLE}\n\nPlease visit the [homepage](/) to find other interesting information.`;
+export const NOT_FOUND_SECRET_TITLE = NOT_FOUND_PAGE_TITLE;
+export const NOT_FOUND_SECRET_ARTICLE = NOT_FOUND_PAGE_ARTICLE;
+export const NOT_FOUND_PROJECT_TITLE = NOT_FOUND_PAGE_TITLE;
+export const NOT_FOUND_PROJECT_ARTICLE = (slug: string | undefined) => `# ${NOT_FOUND_PROJECT_TITLE}\n\nNo project was found at this address, maybe it got renamed. Please visit the [homepage](/) and explore or [search for info about '${slug}'](https://www.google.com/search?q=site%3Atamulaitis.lt+${slug}).`;
