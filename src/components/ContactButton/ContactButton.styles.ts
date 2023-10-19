@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 import { COLORS } from '../../theme/constants';
 
-export interface ContactButtonProps {
+export type ContactButtonProps = {
   $footerVariation?: boolean
-}
+};
 
 export const ContactButton = styled.button<ContactButtonProps>`
   font-size: 1.1rem;

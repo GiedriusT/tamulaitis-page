@@ -5,9 +5,9 @@ import * as S from './ProjectList.styles';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 import { PROJECT_LIST_TITLE } from '../../constants';
 
-interface ProjectListProps {
+type ProjectListProps = {
   projects: Project[]
-}
+};
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 

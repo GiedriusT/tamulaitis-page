@@ -9,11 +9,11 @@
 // />
 import React, { useState } from 'react';
 
-interface HighlightWordProps {
+type HighlightWordProps = {
   html: string;
   word: string;
   onClick?: (event: React.MouseEvent) => void;
-}
+};
 
 const HighlightWord: React.FC<HighlightWordProps> = ({ html, word, onClick }) => {
   let index = word.length - 1;

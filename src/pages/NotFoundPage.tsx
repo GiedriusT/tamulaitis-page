@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { ArticleContainer, ArticleMarkdown } from '../components';
 import { NOT_FOUND_PAGE_TITLE, NOT_FOUND_PAGE_ARTICLE } from '../constants';
 
-interface NotFoundPageProps {
+type NotFoundPageProps = {
   title?: string;
   article?: string;
-}
+};
 
 const NotFoundPage: React.FC<NotFoundPageProps> = ({ title, article }) => {
   return (

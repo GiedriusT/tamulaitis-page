@@ -3,7 +3,7 @@ import * as S from './ContactButton.styles';
 import mailIcon from './mail-icon.svg';
 import { CONTACT_EMAIL, CONTACT_BUTTON_TEXT } from '../../constants';
 
-interface ContactButtonProps extends S.ContactButtonProps {}
+type ContactButtonProps = S.ContactButtonProps & {};
 
 const ContactButton: React.FC<ContactButtonProps> = (props) => (
   <S.ContactButton {...props} onClick={() => window.location.href = `mailto:${CONTACT_EMAIL}`}>

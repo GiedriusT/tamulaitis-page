@@ -1,12 +1,12 @@
-export interface Project {
+export type Project = {
   slug: string;
   title: string;
   subtitle: string;
   isComingSoon?: boolean;
-}
+};
 
-export interface ProjectMedia {
+export type ProjectMedia = {
   thumbUrl: string;
   videoUrl: string;
   articleUrl: string;
-}
+};

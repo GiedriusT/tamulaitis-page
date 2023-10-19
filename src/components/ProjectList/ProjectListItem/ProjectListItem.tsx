@@ -7,9 +7,9 @@ import { isHoverableDevice } from '../../../theme/utils';
 import * as S from './ProjectListItem.styles';
 import { getProjectMedia } from '../../../projects/utils';
 
-interface ProjectListItemProps {
+type ProjectListItemProps = {
   project: Project
-}
+};
 
 const ProjectListItem: React.FC<ProjectListItemProps> = ({ project }) => {
   const [hoverState, setHoverState] = useState(false);
