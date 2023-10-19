@@ -16,7 +16,7 @@ export const PaddedContainer = styled.div`
   flex-direction: column;
 `;
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.article`
   padding-top: 20px;
   margin-bottom: calc(2 * 1.66em);
   flex: 1;

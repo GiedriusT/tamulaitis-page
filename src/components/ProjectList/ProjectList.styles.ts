@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
   padding-bottom: 30px;
 `;
 

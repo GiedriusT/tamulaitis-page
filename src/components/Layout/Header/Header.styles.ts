@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   width: 100%;
   padding-top: 1.66em;
   padding-bottom: 20px;
@@ -60,5 +60,4 @@ export const HeaderTitle = styled.h3`
 `;
 
 export const ContactButtonContainer = styled.div`
-
 `;
