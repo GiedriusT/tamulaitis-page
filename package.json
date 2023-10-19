@@ -10,10 +10,13 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "test": "yarn playwright test",
+    "test:ui": "yarn playwright test --ui",
     "generate:md": "npx ts-node --esm --experimental-specifier-resolution=node src/utils/mdgen.ts"
   },
   "dependencies": {
     "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
     "is-touch-device": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -30,11 +33,13 @@
     "web-vitals": "^3.4.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.39.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/crypto-js": "^4.1.1",
     "@types/jest": "^29.5.3",
+    "@types/node": "^20.8.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-transition-group": "^4.4.6",
