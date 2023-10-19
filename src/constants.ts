@@ -13,3 +13,7 @@ export const NOT_FOUND_SECRET_TITLE = NOT_FOUND_PAGE_TITLE;
 export const NOT_FOUND_SECRET_ARTICLE = NOT_FOUND_PAGE_ARTICLE;
 export const NOT_FOUND_PROJECT_TITLE = NOT_FOUND_PAGE_TITLE;
 export const NOT_FOUND_PROJECT_ARTICLE = (slug: string | undefined) => `# ${NOT_FOUND_PROJECT_TITLE}\n\nNo project was found at this address, maybe it got renamed. Please visit the [homepage](/) and explore or [search for info about '${slug}'](https://www.google.com/search?q=site%3Atamulaitis.lt+${slug}).`;
+
+export const SECRET_PAGE_TITLE = 'This is a secret page!';
+export const CONTACT_BUTTON_TEXT = 'Contact me';
+export const PROJECT_LIST_TITLE = 'Projects';
