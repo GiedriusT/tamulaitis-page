@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { ArticleContainer, ArticleMarkdown } from '../components';
-import { MY_NAME, NOT_FOUND_PROJECT_ARTICLE, NOT_FOUND_PROJECT_TITLE } from '../constants';
+import { NOT_FOUND_PROJECT_ARTICLE, NOT_FOUND_PROJECT_TITLE } from '../constants';
 import projects from '../projects';
 import { fetchArticle, getProjectMedia } from '../projects/utils';
 import NotFoundPage from './NotFoundPage';
+import { getProjectPageTitle } from '../utils/metadata';
 
 const ProjectPage: React.FC = () => {
   const [article, setArticle] = useState<string>('');
@@ -23,12 +24,10 @@ const ProjectPage: React.FC = () => {
   if (!project)
     return <NotFoundPage title={NOT_FOUND_PROJECT_TITLE} article={NOT_FOUND_PROJECT_ARTICLE(slug)} />;
 
-  const title = `${project.title} - ${project.subtitle} - ${MY_NAME}`;
-
   return (
     <>
       <Helmet>
-        <title>{title}</title>
+        <title>{getProjectPageTitle(project)}</title>
       </Helmet>
       <ArticleContainer>
         <ArticleMarkdown>{article}</ArticleMarkdown>
