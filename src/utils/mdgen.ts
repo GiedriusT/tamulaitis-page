@@ -1,4 +1,8 @@
-import fs from 'fs';
+// This script is run via `yarn run generate:md` command. If it gives errors please make sure that
+// version of Node is 18. For some reason Node 20 is throwing errors and they were taking too long
+// to solve. Preferred way is to use Node 18 via NVM (https://github.com/nvm-sh/nvm). Install it
+// and then run `nvm use` in the root of the project. This will use the correct version of node.
+import * as fs from 'fs';
 import { SITE_URL, CONTACT_EMAIL, MY_NAME, TAGLINE, WHO_I_AM, WHAT_I_DO, LINKEDIN_URL, GITHUB_URL } from '../constants';
 import projects from '../projects';
 
