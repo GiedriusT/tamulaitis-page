@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "plugin:playwright/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": "./"
+      }
+    ]
+  }
+}
