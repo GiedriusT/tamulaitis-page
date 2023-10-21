@@ -75,3 +75,5 @@ For this release I wanted everything to look very professional. I already had di
 ![Garo - Sewers EP press release](https://tamulaitis.lt/images/sewers/garo-sewers-ep-press-release.webp)
 
 Sewers EP didn't conquer the world, but it was tons of fun writing these tunes and twisting the theme in so many different directions. It was also great fun giving out cartridges to friends and artists from all over the world during legendary Satta Outside festival in Lithuania. It is also very nice when some friend or random person just pings you telling that he really likes one of the tracks from the EP. That happened quite a few times with this EP and it always makes me happy.
+
+<!-- This is v1.0 of this article. -->

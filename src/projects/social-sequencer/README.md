@@ -87,4 +87,4 @@ We also knew we want to have programmable LED strip inside each board to be able
 
 These were the two core components of the boards. Apart from that we only had to think what kind of cable and socket to use from each board to "brain" of the system where the Arduino and sound producing hardware will reside.
 
-More details about production process coming soon.
+This is v0.8 of this article. Coming soon: more details about production of the device, working with PureData, writing bash scripts for Raspberry Pi, carving out the various layers of the device using big CNC cutter machines and smaller laser cutters.

@@ -73,3 +73,5 @@ Probably the biggest challenge was to make bluetooth communication work properly
 ![Fighting bluetooth](https://tamulaitis.lt/images/dialrhea/dialrhea-fighting-bluetooth.jpg)
 
 There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
+
+This is v0.9 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.
