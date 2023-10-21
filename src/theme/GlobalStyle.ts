@@ -4,6 +4,7 @@ import { remarkYoutubeVideoStyles } from '../components/ArticleMarkdown/utils/re
 import { remarkSpotifyEmbedStyles } from '../components/ArticleMarkdown/utils/remarkSpotifyEmbed.styles';
 import { remarkImageGalleryStyles } from '../components/ArticleMarkdown/utils/remarkImageGallery.styles';
 import { remarkArticleTitleStyles } from '../components/ArticleMarkdown/utils/remarkArticleTitle.styles';
+import { remarkArticleVersionStyles } from '../components/ArticleMarkdown/utils/remarkArticleVersion.styles';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -50,4 +51,5 @@ export const GlobalStyle = createGlobalStyle`
   ${remarkSpotifyEmbedStyles}
   ${remarkImageGalleryStyles}
   ${remarkArticleTitleStyles}
+  ${remarkArticleVersionStyles}
 `;

@@ -5,6 +5,7 @@ import remarkYoutubeVideo from './utils/remarkYoutubeVideo';
 import remarkSpotifyEmbed from './utils/remarkSpotifyEmbed';
 import remarkImageGallery from './utils/remarkImageGallery';
 import remarkArticleTitle from './utils/remarkArticleTitle';
+import remarkArticleVersion from './utils/remarkArticleVersion';
 import * as S from './ArticleMarkdown.styles';
 
 const ArticleMarkdown: React.FC<Options> = ({ children }) => {
@@ -16,6 +17,7 @@ const ArticleMarkdown: React.FC<Options> = ({ children }) => {
           remarkSpotifyEmbed,
           remarkImageGallery,
           remarkArticleTitle,
+          remarkArticleVersion,
         ]}
         rehypePlugins={[
           rehypeRaw,
