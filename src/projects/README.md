@@ -4,8 +4,8 @@
 ### **[Kamchatka Vinyl](/src/projects/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
 ### **[Dialrhea](/src/projects/dialrhea/README.md)** - revolutionary shitty machine
 ### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartridge
+### **[Moon Love](/src/projects/moon-love/README.md)** - unexpectedly contravercial music video
 ### **Skraidantis Radijas** - no nonsense radio with nonsense (coming soon)
-### **Moon Love** - unexpectedly contravercial music video (coming soon)
 ### **WaveTwisters VR** - ambitious game prototype (coming soon)
 ### **Captain Badass** - game that killed the company (coming soon)
 ### **Bembis Bembio Motina** - über eclectic record label (coming soon)
