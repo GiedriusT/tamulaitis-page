@@ -11,7 +11,7 @@ Moon love is a track and music video that we made with studio colleague Emery an
 
 There were also quite a few nice remixes made for this track by Lynx, Leon Somov, Genys, ENiGMA Dubz and Kial. It is always very interesting to hear your music being reinterpreted and spun off in so many different tangents.
 
-One of the remixes for the track made by famous Lithuanian producer Leonas Somov was also released on the compilation called "Chilling on the Couch 04" by the Netherlands based [Scientific Records](https://www.scientific.nl/). It's a nice series of relaxed and mellow music that is specifically tailored for just chilling on the couch. Our track found it's place there alongside other underground artists like Nuage, Mav, Andre Sobota and others.
+One of the remixes for the track made by famous Lithuanian producer **Leon Somov** was also released on the compilation called "Chilling on the Couch 04" by the Netherlands based [Scientific Records](https://www.scientific.nl/). It's a nice series of relaxed and mellow music that is specifically tailored for just chilling on the couch. Our track found it's place there alongside other underground artists like Nuage, Mav, Andre Sobota and others.
 
 [![Listen to remix by Leon Somov](https://img.youtube.com/vi/YRznHxhCU3U/0.jpg)](https://www.youtube.com/watch?v=YRznHxhCU3U)
 
@@ -25,11 +25,12 @@ Other remixes can also be found on YouTube and Soundcloud, it's highly recommend
 
 ## Vinyl
 
-One very different remix came from Lynx, a legendary UK drum'n'bass producer best known for his Lynx & Kemo collaboration and countless bangers released on legendary labels like Hospitality Records and Samurai Records. This fast and chaotic piece even found it's place on wax. It was released in 2015 by Ambra Recordings as a beautiful marbled vinyl alongside Random Movement remix of the Love Forever track by Simplification. This was the first time my name appeared on a vinyl record.
+One very different remix came from **Lynx**, a legendary UK drum'n'bass producer best known for his Lynx & Kemo collaboration and countless bangers released on legendary labels like Hospitality Records and Samurai Records. This fast and chaotic piece even found it's place on wax. It was released in 2015 by Ambra Recordings as a beautiful marbled vinyl alongside Random Movement remix of the Love Forever track by Simplification. This was the first time my name appeared on a vinyl record.
 
-![Lynx Remix on vinyl](https://tamulaitis.lt/images/moon-love/garo-emery-umiko-moon-love-lynx-remix.webp)
+<!-- ![Lynx Remix on vinyl closeup](https://tamulaitis.lt/images/moon-love/garo-emery-umiko-moon-love-lynx-remix-vinyl-title.webp) -->
+![Lynx Remix on vinyl](https://tamulaitis.lt/images/moon-love/garo-emery-umiko-moon-love-lynx-remix-vinyl.webp)
 
-Even thou all the records are already sold out, you can **[listen to Lynx remix of Moon Love on Bandcamp](https://ambrarecordings.bandcamp.com/track/moon-love-lynx-remix)** or **[Spotify](https://open.spotify.com/track/5Aq6hLbVMLNwWQuGRTaPN1)**. And if you are into liquid and melodic drum’n’bass you should check out more music from Ambra Recordings, record label run by drum'n'bass producer and audio mastering guru Emery. They have a really nice [Ambra Recordings playlist on Spotify](https://open.spotify.com/playlist/2weF7i00w85ENDVsn0Iroq?si=761dd18294a24a01&nd=1).
+I don't think it is possible to buy the vinyl anymore, but you can always **[listen to Lynx remix of Moon Love on Bandcamp](https://ambrarecordings.bandcamp.com/track/moon-love-lynx-remix)** or **[Spotify](https://open.spotify.com/track/5Aq6hLbVMLNwWQuGRTaPN1)**. And if you are into liquid and melodic drum’n’bass you should check out more music from Ambra Recordings, record label run by drum'n'bass producer and audio mastering guru Emery. They have a really nice [Ambra Recordings playlist on Spotify](https://open.spotify.com/playlist/2weF7i00w85ENDVsn0Iroq?si=761dd18294a24a01&nd=1).
 
 
 ## Filming the video
@@ -56,4 +57,4 @@ The last location was a small forest with the beautiful lake near Vilnius. Surro
 We were really happy with the final result and decided to submit the video for various competitions. One of the competitions was the music video track of the "Kino Pavasaris", the biggest international film festival in Lithuania. To our surprise it was rejected in the first round and the reasoning was that our video: "promotes and glorifies slavery". That was equally annoying and hilarious, as it was hard to wrap our heads around how anybody could interpret our mellow and innocent video this way. After some digging we found that it was just one person from the jury that got deeply offended by the video and made a big issue out of it. That is a good example how differently people interpret things and that if you are a creator then whatever you do there will always be someone who will be offended by your work. In the end art is all about triggering the emotional response in people, so we definitely nailed it in that regard.
 
 
-This is v0.8 of this article. Coming soon: photos from video shoot locations: Park of Europe, Loftas and Gėlos lake.
+This is v0.9 of this article. Coming soon: photos from video shoot locations: Park of Europe, Loftas and Gėlos lake.
