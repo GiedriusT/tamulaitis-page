@@ -25,7 +25,7 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[WaveTwisters VR](/src/projects/wavetwisters-vr/README.md)** - ambitious game prototype
 ### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartridge
 ### **[Moon Love](/src/projects/moon-love/README.md)** - unexpectedly contravercial music video
-### **Skraidantis Radijas** - no nonsense radio with nonsense (coming soon)
+### **[Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
 ### **Captain Badass** - game that killed the company (coming soon)
 ### **Bembis Bembio Motina** - über eclectic record label (coming soon)
 
