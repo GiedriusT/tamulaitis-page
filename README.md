@@ -26,7 +26,7 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartridge
 ### **[Moon Love](/src/projects/moon-love/README.md)** - unexpectedly contravercial music video
 ### **[Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
-### **Captain Badass** - game that killed the company (coming soon)
+### **[Captain Badass](/src/projects/captain-badass/README.md)** - game that killed the company
 ### **Bembis Bembio Motina** - über eclectic record label (coming soon)
 
 
