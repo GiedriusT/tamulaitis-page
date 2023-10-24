@@ -3,6 +3,7 @@ import { normalize } from 'styled-normalize';
 import { remarkYoutubeVideoStyles } from '../components/ArticleMarkdown/utils/remarkYoutubeVideo.styles';
 import { remarkSpotifyEmbedStyles } from '../components/ArticleMarkdown/utils/remarkSpotifyEmbed.styles';
 import { remarkImageGalleryStyles } from '../components/ArticleMarkdown/utils/remarkImageGallery.styles';
+import { remarkImageStyles } from '../components/ArticleMarkdown/utils/remarkImage.styles';
 import { remarkArticleTitleStyles } from '../components/ArticleMarkdown/utils/remarkArticleTitle.styles';
 import { remarkArticleVersionStyles } from '../components/ArticleMarkdown/utils/remarkArticleVersion.styles';
 
@@ -49,6 +50,7 @@ export const GlobalStyle = createGlobalStyle`
   // would be better to move them into cpomponents/ArticleMarkdown.
   ${remarkYoutubeVideoStyles}
   ${remarkSpotifyEmbedStyles}
+  ${remarkImageStyles}
   ${remarkImageGalleryStyles}
   ${remarkArticleTitleStyles}
   ${remarkArticleVersionStyles}
