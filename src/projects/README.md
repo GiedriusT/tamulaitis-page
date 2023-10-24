@@ -8,7 +8,8 @@
 ### **[Moon Love](/src/projects/moon-love/README.md)** - unexpectedly contravercial music video
 ### **[Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
 ### **[Captain Badass](/src/projects/captain-badass/README.md)** - game that killed the company
-### **Bembis Bembio Motina** - über eclectic record label (coming soon)
+### **[Bembis Bembio Motina](/src/projects/bembis-bembio-motina/README.md)** - über eclectic record label
+
 
 
 ## Structure and naming
