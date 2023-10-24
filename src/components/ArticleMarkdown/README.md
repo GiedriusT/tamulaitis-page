@@ -56,3 +56,8 @@ A series of images wrapped in empty lines would be treated as gallery and conver
 Logic in: [remarkArticleTitle.ts](./utils/remarkArticleTitle.ts)
 
 Any first level heading in the article will be treated as full article title which is in form of `{title} - {subtitle}` and therefore will be split into separate elements so they can be styled individually.
+
+## Article version
+Logic in: [remarkArticleVersion.ts](./utils/remarkArticleVersion.ts)
+
+If first sentence of the last paragraph of the article contains version number (in form of `vX.Y` or `vX.Y.Z`) and the word `article` after it, it will be treated as the version of the article and special formatting will be applied. We use article versions for all unfinished articles, it goes in a form of: `This is v0.7 of this article. Coming soon: few highlights about what will be added.`
