@@ -9,12 +9,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "packageDir": "./"
-      }
-    ],
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "./"}],
     "react/prop-types": "off", // Since we do not use prop-types
     "react/require-default-props": "off", // Since we do not use prop-types
     "max-len": ["error", { "code": 140, "ignoreStrings": true }], // Since humanity has invented wider monitors
