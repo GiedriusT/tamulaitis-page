@@ -21,7 +21,7 @@ const isArticleVersionParagraph = (node: AstNode, indexInParent: number, parent:
   const childrenCount = parent.children?.length || 0;
   if (indexInParent !== childrenCount - 1) return false;
 
-  const regex = /v\d+\.\d+(?:\s+\w+)*\s+article/i;
+  const regex = /v\d+\.\d+(\.\d+)?(?:\s+\w+)*\s+article/i;
   const textLooksValid = regex.test(textNode.value);
   if (!textLooksValid) return false;
 
