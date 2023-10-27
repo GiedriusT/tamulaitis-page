@@ -4,7 +4,7 @@ This vinyl record is a re-release of my first EP titled "Kamchatka". It was orig
 
 ![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp)
 
-The artwork for this release was created by an amazing artist [Asta Ostrovskaja](https://astaost.com/). It was all hand painted on paper and then finished up and polished digitally. It depicts the Saulėtekis neighborhood where I grew up in Vilnius, Lithuania.
+The artwork for this release was created by an amazing artist [Asta Ostrovskaja](https://www.instagram.com/asta_ostrovskaja/?hl=en). It was all hand painted on paper and then finished up and polished digitally. It depicts the Saulėtekis neighborhood where I grew up in Vilnius, Lithuania.
 
 ![Kamchatka Vinyl cover](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl-cover.webp)
 
