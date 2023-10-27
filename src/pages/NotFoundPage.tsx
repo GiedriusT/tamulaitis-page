@@ -8,7 +8,7 @@ type NotFoundPageProps = {
   article?: string;
 };
 
-const NotFoundPage: React.FC<NotFoundPageProps> = ({ title, article }) => {
+function NotFoundPage({ title, article }: NotFoundPageProps) {
   return (
     <>
       <Helmet>
@@ -19,6 +19,6 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({ title, article }) => {
       </ArticleContainer>
     </>
   );
-};
+}
 
 export default NotFoundPage;

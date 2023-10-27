@@ -7,7 +7,7 @@ import { remarkImageStyles } from '../components/ArticleMarkdown/utils/remarkIma
 import { remarkArticleTitleStyles } from '../components/ArticleMarkdown/utils/remarkArticleTitle.styles';
 import { remarkArticleVersionStyles } from '../components/ArticleMarkdown/utils/remarkArticleVersion.styles';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   html, body {
@@ -55,3 +55,5 @@ export const GlobalStyle = createGlobalStyle`
   ${remarkArticleTitleStyles}
   ${remarkArticleVersionStyles}
 `;
+
+export default GlobalStyle;

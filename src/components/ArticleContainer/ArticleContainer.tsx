@@ -7,12 +7,12 @@ type ArticleContainerProps = Partial<S.ArticleContainerProps> & {
   children: React.ReactNode;
 };
 
-const ArticleContainer: React.FC<ArticleContainerProps> = ({ children, $minHeight }) => {
+function ArticleContainer({ children, $minHeight }: ArticleContainerProps) {
   return (
     <S.ArticleContainer $minHeight={$minHeight ?? DEFAULT_MIN_HEIGHT}>
       {children}
     </S.ArticleContainer>
   );
-};
+}
 
 export default ArticleContainer;

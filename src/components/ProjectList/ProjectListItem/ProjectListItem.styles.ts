@@ -67,7 +67,7 @@ const transitionStatusStyles: { [key in TransitionStatus]: any } = {
 };
 
 export const ProjectListItemImage = styled(ProjectListItemImageBase) <{ $status: TransitionStatus }>`
-  ${props => transitionStatusStyles[props.$status]}
+  ${(props) => transitionStatusStyles[props.$status]}
 `;
 
 export const ProjectListItemVideo = styled.video`
@@ -99,7 +99,7 @@ const projectListItemText = css<{ $loading?: boolean }>`
   width: auto;
   margin: 0;
   color: white;
-  background-color: ${props => !props.$loading ? 'black' : 'rgba(0, 0, 0, 0.1)'};
+  background-color: ${(props) => (!props.$loading ? 'black' : 'rgba(0, 0, 0, 0.1)')};
 `;
 
 export const ProjectListItemTitle = styled.h3<{ $loading?: boolean }>`

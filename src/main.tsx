@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ReactGA from 'react-ga4';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ReactGA from 'react-ga4';
 
 ReactGA.initialize('G-WBHFV19M7R');
 
@@ -11,10 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-      <App />
+    <App />
   </React.StrictMode>,
 );
 
+// eslint-disable-next-line no-console
 console.log('There will be secrets in this page soon...');
 
 // If you want to start measuring performance in your app, pass a function

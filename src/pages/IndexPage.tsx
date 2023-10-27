@@ -4,7 +4,7 @@ import { ProjectList, Hero } from '../components';
 import projects from '../projects';
 import { getIndexPageTitle } from '../utils/metadata';
 
-const IndexPage: React.FC = () => {
+function IndexPage() {
   return (
     <>
       <Helmet>
@@ -14,6 +14,6 @@ const IndexPage: React.FC = () => {
       <ProjectList projects={projects} />
     </>
   );
-};
+}
 
 export default IndexPage;

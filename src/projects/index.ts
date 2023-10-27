@@ -1,13 +1,13 @@
 import { Project } from '../types';
-import { default as socialSequencer } from './social-sequencer';
-import { default as kamchatkaVinyl } from './kamchatka-vinyl';
-import { default as dialrhea } from './dialrhea';
-import { default as wavetwistersVr } from './wavetwisters-vr';
-import { default as sewers } from './sewers';
-import { default as moonLove } from './moon-love';
-import { default as skraidantisRadijas } from './skraidantis-radijas';
-import { default as captainBadass } from './captain-badass';
-import { default as bembisBembioMotina } from './bembis-bembio-motina';
+import socialSequencer from './social-sequencer';
+import kamchatkaVinyl from './kamchatka-vinyl';
+import dialrhea from './dialrhea';
+import wavetwistersVr from './wavetwisters-vr';
+import sewers from './sewers';
+import moonLove from './moon-love';
+import skraidantisRadijas from './skraidantis-radijas';
+import captainBadass from './captain-badass';
+import bembisBembioMotina from './bembis-bembio-motina';
 
 const projects: Project[] = [
   socialSequencer,

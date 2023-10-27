@@ -1,3 +1,4 @@
+/* eslint-disable */
 // This is not used for now, will be used in future for some secret. The code is written
 // by ChatGPT from start to finish.
 
@@ -18,7 +19,7 @@ type HighlightWordProps = {
 const HighlightWord: React.FC<HighlightWordProps> = ({ html, word, onClick }) => {
   let index = word.length - 1;
   let insideTag = false;
-  let components: (JSX.Element | string)[] = [];
+  const components: (JSX.Element | string)[] = [];
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {

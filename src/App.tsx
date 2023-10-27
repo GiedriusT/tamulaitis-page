@@ -1,11 +1,11 @@
 import React from 'react';
-import Layout from './components/Layout/Layout';
 import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
 import { HelmetProvider } from 'react-helmet-async';
+import Layout from './components/Layout/Layout';
+import AppRoutes from './AppRoutes';
 import { ScrollToTop } from './components';
 
-const App: React.FC = () => {
+function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
@@ -16,6 +16,6 @@ const App: React.FC = () => {
       </BrowserRouter>
     </HelmetProvider>
   );
-};
+}
 
 export default App;

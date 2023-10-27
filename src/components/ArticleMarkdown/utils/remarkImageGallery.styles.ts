@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
 
+// eslint-disable-next-line import/prefer-default-export
 export const remarkImageGalleryStyles = css`
   .image-gallery {
     width: 100%;

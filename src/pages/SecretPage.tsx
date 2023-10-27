@@ -7,12 +7,13 @@ import { secretBySlug } from '../utils/secdec';
 import NotFoundPage from './NotFoundPage';
 import { getSecretPageTitle } from '../utils/metadata';
 
-const ProjectPage: React.FC = () => {
+function ProjectPage() {
   const { slug } = useParams<{ slug: string }>();
   const article = secretBySlug(slug || '');
 
-  if (!article)
+  if (!article) {
     return <NotFoundPage title={NOT_FOUND_SECRET_TITLE} article={NOT_FOUND_SECRET_ARTICLE} />;
+  }
 
   return (
     <>
@@ -24,6 +25,6 @@ const ProjectPage: React.FC = () => {
       </ArticleContainer>
     </>
   );
-};
+}
 
 export default ProjectPage;

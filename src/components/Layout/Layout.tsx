@@ -1,10 +1,10 @@
 import React from 'react';
-import { GlobalStyle } from '../../theme/GlobalStyle';
+import GlobalStyle from '../../theme/GlobalStyle';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import * as S from './Layout.styles';
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+function Layout({ children }: { children: React.ReactNode }) {
   return (
     <S.LayoutContainer>
       <GlobalStyle />
@@ -17,6 +17,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Footer />
     </S.LayoutContainer>
   );
-};
+}
 
 export default Layout;

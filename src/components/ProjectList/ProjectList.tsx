@@ -9,8 +9,7 @@ type ProjectListProps = {
   projects: Project[]
 };
 
-const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
-
+function ProjectList({ projects }: ProjectListProps) {
   return (
     <S.ProjectsContainer>
       <h2>{PROJECT_LIST_TITLE}</h2>
@@ -19,6 +18,6 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
       </S.ProjectsItemsListContainer>
     </S.ProjectsContainer>
   );
-};
+}
 
 export default ProjectList;

@@ -8,7 +8,7 @@ import { fetchArticle, getProjectMedia } from '../projects/utils';
 import NotFoundPage from './NotFoundPage';
 import { getProjectPageTitle } from '../utils/metadata';
 
-const ProjectPage: React.FC = () => {
+function ProjectPage() {
   const [article, setArticle] = useState<string>('');
   const { slug } = useParams<{ slug: string }>();
 
@@ -17,12 +17,17 @@ const ProjectPage: React.FC = () => {
     if (!project) return;
 
     const projectMedia = getProjectMedia(project.slug);
-    fetchArticle(projectMedia.articleUrl).then(result =>
-      setArticle(result));
+    fetchArticle(projectMedia.articleUrl).then((result) => setArticle(result));
   }, [project, slug]);
 
-  if (!project)
-    return <NotFoundPage title={NOT_FOUND_PROJECT_TITLE} article={NOT_FOUND_PROJECT_ARTICLE(slug)} />;
+  if (!project) {
+    return (
+      <NotFoundPage
+        title={NOT_FOUND_PROJECT_TITLE}
+        article={NOT_FOUND_PROJECT_ARTICLE(slug)}
+      />
+    );
+  }
 
   return (
     <>
@@ -34,6 +39,6 @@ const ProjectPage: React.FC = () => {
       </ArticleContainer>
     </>
   );
-};
+}
 
 export default ProjectPage;

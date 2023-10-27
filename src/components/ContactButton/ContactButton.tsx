@@ -5,11 +5,17 @@ import { CONTACT_EMAIL, CONTACT_BUTTON_TEXT } from '../../constants';
 
 type ContactButtonProps = S.ContactButtonProps & {};
 
-const ContactButton: React.FC<ContactButtonProps> = (props) => (
-  <S.ContactButton {...props} onClick={() => window.location.href = `mailto:${CONTACT_EMAIL}`}>
-    <S.MailIcon src={mailIcon} alt={CONTACT_BUTTON_TEXT} $footerVariation={props.$footerVariation} />
-    <S.Text $footerVariation={props.$footerVariation}>{CONTACT_BUTTON_TEXT}</S.Text>
-  </S.ContactButton>
-);
+function ContactButton({ $footerVariation }: ContactButtonProps) {
+  const onClick = () => {
+    window.location.href = `mailto:${CONTACT_EMAIL}`;
+  };
+
+  return (
+    <S.ContactButton $footerVariation={$footerVariation} onClick={onClick}>
+      <S.MailIcon src={mailIcon} alt={CONTACT_BUTTON_TEXT} $footerVariation={$footerVariation} />
+      <S.Text $footerVariation={$footerVariation}>{CONTACT_BUTTON_TEXT}</S.Text>
+    </S.ContactButton>
+  );
+}
 
 export default ContactButton;

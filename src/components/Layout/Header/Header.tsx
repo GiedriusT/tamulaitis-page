@@ -4,7 +4,7 @@ import { MY_NAME } from '../../../constants';
 import ContactButton from '../../ContactButton/ContactButton';
 import * as S from './Header.styles';
 
-const Header: React.FC = () => {
+function Header() {
   const { pathname } = useLocation();
 
   const isHomepage = pathname === '/';
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         </S.TitleSectionContainer>
       ) : (
         <S.TitleSectionWithBackLinkContainer>
-          <S.BackLink to='/'>
+          <S.BackLink to="/">
             <S.BackArrow><h3>&lt;</h3></S.BackArrow>
             <S.HeaderTitle>{title}</S.HeaderTitle>
           </S.BackLink>
@@ -29,6 +29,6 @@ const Header: React.FC = () => {
       </S.ContactButtonContainer>
     </S.HeaderContainer>
   );
-};
+}
 
 export default Header;

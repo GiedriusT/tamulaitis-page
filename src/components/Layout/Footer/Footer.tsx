@@ -2,9 +2,11 @@ import React from 'react';
 import * as S from './Footer.styles';
 import ContactButton from '../../ContactButton/ContactButton';
 import profilePicture from './giedrius-tamulaitis-profile-picture.jpg';
-import { WHAT_I_DO, MY_NAME, LINKEDIN_URL, GITHUB_URL } from '../../../constants';
+import {
+  WHAT_I_DO, MY_NAME, LINKEDIN_URL, GITHUB_URL,
+} from '../../../constants';
 
-const Footer: React.FC = () => {
+function Footer() {
   return (
     <S.FooterContainer>
       <S.InfoContainer>
@@ -18,11 +20,11 @@ const Footer: React.FC = () => {
           <S.ProfileLink href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</S.ProfileLink>
         </S.ProfileLinks>
         <S.ContactButtonContainer>
-          <ContactButton $footerVariation={true} />
+          <ContactButton $footerVariation />
         </S.ContactButtonContainer>
       </S.InfoContainer>
     </S.FooterContainer>
   );
-};
+}
 
 export default Footer;

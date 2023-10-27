@@ -18,12 +18,12 @@ export const ContactButton = styled.button<ContactButtonProps>`
   white-space: nowrap;
 
   &:hover {
-    ${(props) => props.$footerVariation ? css`
+    ${(props) => (props.$footerVariation ? css`
       background-color: ${COLORS.primaryBackround};
       color: ${COLORS.footerBackground};
     ` : css`
       background-color: #283e56;
-    `}
+    `)}
     transition: background-color 0.17s ease-out;
   }
 

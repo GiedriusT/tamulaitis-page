@@ -5,5 +5,5 @@ export type ArticleContainerProps = {
 };
 
 export const ArticleContainer = styled.div<ArticleContainerProps>`
-  min-height: ${props => props.$minHeight}vh;
+  min-height: ${(props) => props.$minHeight}vh;
 `;

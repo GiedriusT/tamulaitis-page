@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import { COLORS } from '../../../theme/constants';
 
-
+// eslint-disable-next-line import/prefer-default-export
 export const remarkArticleTitleStyles = css`
   h1 {
     .separator, .subtitle {

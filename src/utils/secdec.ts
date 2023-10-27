@@ -10,13 +10,12 @@ export function decryptText(encryptedText: string, key: string, ivString: string
 
 export function secretBySlug(slug: string): string | null {
   const [key, ivString] = slug.split('-');
-  for (let i = 0; i < secrets.length; i++) {
+  for (let i = 0; i < secrets.length; i += 1) {
     try {
       const decrypted = decryptText(secrets[i], key, ivString);
-      if (decrypted)
-        return decrypted;
+      if (decrypted) return decrypted;
     } catch (e) {
-      continue;
+      // eslint-disable-next-line no-empty
     }
   }
   return null;
