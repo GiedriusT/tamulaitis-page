@@ -7,6 +7,7 @@ import remarkImage from './utils/remarkImage';
 import remarkImageGallery from './utils/remarkImageGallery';
 import remarkArticleTitle from './utils/remarkArticleTitle';
 import remarkArticleVersion from './utils/remarkArticleVersion';
+import remarkLink from './utils/remarkLink';
 import * as S from './ArticleMarkdown.styles';
 
 function ArticleMarkdown({ children }: Options) {
@@ -20,6 +21,7 @@ function ArticleMarkdown({ children }: Options) {
           remarkImageGallery,
           remarkArticleTitle,
           remarkArticleVersion,
+          remarkLink,
         ]}
         rehypePlugins={[
           rehypeRaw,
