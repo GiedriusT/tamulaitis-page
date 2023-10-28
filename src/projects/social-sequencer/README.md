@@ -18,7 +18,7 @@ I want this device to travel around all sorts of art and technology events and m
 
 Our installation has already traveled through number of events. It was a proud participant of Vilnius TechPark second birthday festivities welcoming people from business and IT sectors, we also showed it in numerous festivals, science fairs and private events.
 
-![Social Sequencer at Vilnius TechPark Birthday](https://tamulaitis.lt/images/social-sequencer/social-sequencer-at-vilnius-tech-park-birthday.jpg)
+![Social Sequencer at Vilnius TechPark Birthday](https://tamulaitis.lt/images/social-sequencer/social-sequencer-at-vilnius-tech-park-birthday.webp)
 
 I really enjoyed demonstrating the device at "No Trolls Allowed 2018" hacker camp. It's an amazing event held near a beautiful lake close to Vilnius, Lithuania where people enthusiastic about building stuff gathers for two days to share their projects, participate in workshops and have a late night heated beer driven discussions about which minor version of some obscure framework is better. It was really interesting to show it to a very tech savvy crowd, discuss various technical details and dive deep into implementation nuances.
 
@@ -78,12 +78,12 @@ We started working on the first prototype after we struck a deal with LinkMenų 
 
 After a round of discussions with their engineers we all agreed that the approach of using Hall effect sensors still makes most sense and that we gonna go with that. So the next thing we had to figure out is how to feed the signals from three matrixes of 40 Hall effect sensors each into single Arduino controller. We decided to go with the cascade of multiplexer chips. Multiplexers are chips that have multiple inputs and allow you to read any of them through single wire. This way if we have one multiplexer for each row of sensors we can read data from all 8 of them only using two wires (one for reading data and the other for switching between the inputs). With five rows of these and the fact that they can all share control line (as we are reading the whole column at the time) it was enough to put one more multiplexer in front of the initial ones to be able to read the data from whole board of 40 Hall effect sensors via two wires. This is how the final PCB board with multiplexer set up ended up looking:
 
-![Social Sequencer PCB board with chips](https://tamulaitis.lt/images/social-sequencer/social-sequencer-pcb-board-with-chips.jpg)
+![Social Sequencer PCB board with chips](https://tamulaitis.lt/images/social-sequencer/social-sequencer-pcb-board-with-chips.webp)
 
 We also knew we want to have programmable LED strip inside each board to be able to illuminate and mark the current tick. This was I think the first time I tried hooking up LED strip to Arduino. I got instructions from my electronics mentor Ričardas on how to power the LEDs up from one of the big boxes that provide AC current that I have never seen before. He said to set the right voltage and turn on the device. So I turned on the device and then tried setting the right voltage. Of course that resulted in all LEDs flashing bright for a brief moment followed by darkness. There were quite a few incidents like these during the process, we were regulars at the local electronics store. After some playing around we found the right approach on how to place these LEDs and what materials to use in between them to get an effect of the whole column lighting up.
 
 <!-- Photos or videos pf LED strip -->
-![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.jpg)
+![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.webp)
 
 These were the two core components of the boards. Apart from that we only had to think what kind of cable and socket to use from each board to "brain" of the system where the Arduino and sound producing hardware will reside.
 
