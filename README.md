@@ -30,6 +30,8 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[Bembis Bembio Motina](/src/projects/bembis-bembio-motina/README.md)** - über eclectic record label
 
 
+Coming soon: my collaborations with MC Messiah, live visuals for Boogaloo and Mondayjazz parties, attempt to solve locomotion in VR, first computer programs written in Pascal on 386 computer, tracks made with FastTracker, recording studios in smelly basements, legendary Fresh Rice Crew and more VR game prototypes.
+
 
 ## Running locally
 

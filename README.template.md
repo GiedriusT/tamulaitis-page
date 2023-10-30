@@ -21,6 +21,8 @@ Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read mar
 
 {{PROJECT_LIST}}
 
+{{PROJECTS_COMING_SOON_TEXT}}
+
 
 ## Running locally
 
