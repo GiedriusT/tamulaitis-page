@@ -8,4 +8,6 @@ The label has eight releases under it's belt. Some are my own music, some are mi
 
 You can find more information about the releases, find Spotify and download links in a beautiful website of Bembis Bembio Motina built by web design agency [Code & Sprinkles](https://codeandsprinkles.com) at **[https://bembisbembiomotina.lt](https://bembisbembiomotina.lt)**.
 
+<!-- Draft sections: First release ?, Dj Quazar & 2Fresh, My music, A musical fairytale, New website --> 
+
 This is v0.1 of this article. Coming soon: more info about the releases, media and interesting facts about deers and digital distribution.

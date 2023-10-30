@@ -26,7 +26,7 @@ Interesting fact is that the film was entirely scripted to match the Dj Q-Bert's
 
 ## First prototype
 
-For first prototype I chose the simplest and most readily available device, the mobile phone shoved into the cardboard case made by Google. That was one of the first times I worked hands on with Unity and C# so learning curve was quite steep. I had to understand how objects and components work in general, how to work with terrain, remember some things about matrixes and wrap my head around Quaternion, a data structure Unity uses to store data about rotations. Apparently it is very efficient for computer to work with Quaternions, but they are one hell of a concept to understand. I still don't fully understand them, just know how to use them in different situations.
+For first prototype I chose the simplest and most readily available device, the mobile phone shoved into the cardboard case made by Google. That was one of the first times I worked hands on with Unity and C# so learning curve was quite steep. I had to understand how objects and components work in general, how to work with terrain, remember some things about matrixes and wrap my head around Quaternion, a data structure Unity uses to store data about rotations. Apparently it is very efficient for computer to work with Quaternions, but at the same time extremely inefficient for human brains to understand them. I still don't fully get it, just know how to use them in different situations.
 
 <!-- Screenshot from Unity? -->
 

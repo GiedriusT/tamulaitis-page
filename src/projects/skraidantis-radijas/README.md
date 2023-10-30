@@ -10,6 +10,7 @@ There were two types of listeners of the show: "I can't stand the talks, how is 
 
 There is also a nice story of now famous Lithuanian radio host who just stumbled upon our show while driving a car and had to stop the car on the side of the road to laugh for a bit, because he found the show so hilarious that he deemed it unsafe to drive. He then found StartFM, came to talk to them and started his radio host career.
 
+<!-- ## First iteration, ## Golden years, ## Last breath, ## Punk rock concept (Gonzo), ## Music, ## Digging for rare music, ## Interviews, ## Rebirth -->
 <!-- LATGA, strength of signal, penio radijas -->
 
 <!--

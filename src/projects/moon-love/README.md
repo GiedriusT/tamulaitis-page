@@ -59,6 +59,8 @@ The last location was a small forest with the beautiful lake near Vilnius. Surro
 
 <!-- Photos from the lake -->
 
+Video guys also really wanted to have a nice shot of moon in the video, so we waited for the day when there is a full moon and went to an old mound in a medieval capital of Lithuania called Kernavė. We chose the location because there are no big cities around so there is minimal light pollution. We were sitting on these hills for quite some time, looking at clouds passing by covering and uncovering the moon. Even thou the experience was memorable we didn't manage to get a good shot and ended up using the video of the moon from stock video site.
+
 
 ## The controversy
 
