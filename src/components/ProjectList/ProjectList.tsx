@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../types';
 import * as S from './ProjectList.styles';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
-import { PROJECT_LIST_TITLE } from '../../constants';
+import { PROJECTS_COMING_SOON_TEXT, PROJECT_LIST_TITLE } from '../../constants';
 
 type ProjectListProps = {
   projects: Project[]
@@ -16,6 +16,9 @@ function ProjectList({ projects }: ProjectListProps) {
       <S.ProjectsItemsListContainer>
         {projects.map((project) => <ProjectListItem key={project ? project.slug : uuidv4()} project={project} />)}
       </S.ProjectsItemsListContainer>
+      <S.ProjectsComingSoonContainer>
+        {PROJECTS_COMING_SOON_TEXT}
+      </S.ProjectsComingSoonContainer>
     </S.ProjectsContainer>
   );
 }

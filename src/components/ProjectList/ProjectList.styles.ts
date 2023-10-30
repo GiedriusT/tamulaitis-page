@@ -19,3 +19,8 @@ export const ProjectsItemsListContainer = styled.div`
     row-gap: 0;
   }
 `;
+
+export const ProjectsComingSoonContainer = styled.div`
+  font-size: 1.1rem;
+  font-weight: 100;
+`;
