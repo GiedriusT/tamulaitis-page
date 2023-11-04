@@ -1,6 +1,6 @@
 # Moon Love - unexpectedly controversial music video
 
-Moon love is a track and music video that we made with [studio](/project/saladiukas) colleague Emery and amazingly talented artist Umiko. It was released in 2016 on UK based label [Slime Recordings](https://slimerecordings.com/).
+Moon love is a track and music video that we made with studio colleague Emery and amazingly talented artist Umiko. It was released in 2016 on UK based label [Slime Recordings](https://slimerecordings.com/).
 
 [![Watch Moon Love](https://img.youtube.com/vi/xoYi0EoRxGA/0.jpg)](https://www.youtube.com/watch?v=xoYi0EoRxGA)
 
@@ -13,7 +13,7 @@ There were also quite a few nice remixes made for this track by Lynx, Leon Somov
 
 ### Leon Somov Remix
 
-One of the remixes for the track made by famous Lithuanian producer Leon Somov was also released on the compilation called "Chilling on the Couch 04" by the Netherlands based [Scientific Records](https://www.scientific.nl/). It's a nice series of relaxed and mellow music that is specifically tailored for just chilling on the couch. Our track found it's place there alongside other underground artists like Nuage, Mav, Andre Sobota and others.
+One of the remixes for the track made by famous Lithuanian producer Leon Somov was also released on the compilation called "Chilling on the Couch 04" by the Netherlands based [Scientific Records](https://www.scientific.nl/). It's a nice series of relaxed and mellow music that is specifically tailored for just chilling on the couch. Our track found it's place there alongside underground artists like Nuage, Mav, Andre Sobota and many others.
 
 [![Listen to remix by Leon Somov](https://img.youtube.com/vi/YRznHxhCU3U/0.jpg)](https://www.youtube.com/watch?v=YRznHxhCU3U)
 
@@ -30,7 +30,7 @@ I don't think it is possible to buy the vinyl anymore, but you can always **[lis
 
 ### Genys Mix
 
-Another, more twisted and multifaceted remix came from Genys, a member of a legendary One Ear Stereo crew from Lithuania. You can **[listen to Genys Mix on SoundCloud](https://soundcloud.com/genys/emery-garo-moon-love-ft-umikogenys-mix-free-download)**. Genys is a prominent figure in Lithuania's underground music scene, he also running Lowvibe Records, a record label for bass heavy music, you can listen to [most of Lowvibe releases on SoundCloud](https://soundcloud.com/lowvibe).
+Another, more twisted and multifaceted remix came from Genys, a member of a legendary One Ear Stereo crew from Lithuania. You can **[listen to Genys Mix on SoundCloud](https://soundcloud.com/genys/emery-garo-moon-love-ft-umikogenys-mix-free-download)**. Genys is a prominent figure in Lithuania's underground music scene, he is also running Lowvibe Records, a record label for bass heavy music, you can listen to [most of Lowvibe releases on SoundCloud](https://soundcloud.com/lowvibe).
 
 ### ENiGMA Dubz Mix
 
@@ -45,19 +45,25 @@ Kial took the theme to the heavier side of a dubstep spectrum. You can **[listen
 
 One of the most interesting aspects about this project was filming the video. For me it was the first time I was so closely involved in the process of shooting music video. We went to scout for locations, discussed technical aspects of shooting, helped with moving the lights and holding props.
 
-The video was directed by Danielius Bučkus and filmed by Jara Gavrin, two prominent figures in Lithuanian cinema scene. We were lucky that they really liked the track and offered to shoot that video as a hobby project. They had previously made another video for Emery & Umiko for a track they made together with Semi Sense and MC Fats called "Starchaser". You can check it out here: [Emery & Semi Sense feat. MC Fats & Umiko - Starchaser](https://www.youtube.com/watch?v=YV6b8hZ4IYc).
+The video was directed by [Danielius Bučkus](https://danieliusbuckus.myportfolio.com/) and filmed by [Jara Gavrin](https://www.youtube.com/watch?v=QWsw5qd_hNQ), two prominent figures in Lithuanian cinema scene. We were lucky that they really liked the track and offered to shoot that video as a hobby project. They had previously made another video for Emery & Umiko for a track they made together with Semi Sense and MC Fats called "Starchaser". You can check it out here: [Emery & Semi Sense feat. MC Fats & Umiko - Starchaser](https://www.youtube.com/watch?v=YV6b8hZ4IYc).
 
-There were three main location where we did the shootings. First one was legendary music and culture venue called Loftas. It is run by Viktoras Diawara, a famous musician and the force behind tons of musical and cultural projects. Loftas had left it's footprint in Lithuanian culture with performances by tons of local and foreign artists and even their own three day music festival in the middle of the city. It is a huge industrial space with a lot of interesting details and textures. It was a perfect place for shooting the closeup scenes with Umiko and experimenting with ultraviolet light and makeup.
+There were three main location where we did the shootings. First one was Europos Parkas (Park of Europe) an open air museum located in the center of Europe. Or so they claim. Apparently it's really hard to determine the exact center of any oddly shaped object and Europe is exactly that, that's why most european nations have their own center of Europe. Despite the ambiguity of the center of Europe title the park is truly amazing, full of sculptures and impressive art installations from artists all around the world. It was a perfect place to hunt for weird angles and perspectives.
 
-<!-- Photos from Loftas -->
+![Lying Head by Adomas Jacovskis](https://tamulaitis.lt/images/moon-love/moon-love-video-head-location.webp)
+![Video still shot near Lying Head](https://tamulaitis.lt/images/moon-love/moon-love-video-head-in-video.webp)
+![Video still shot near the Double Negative Pyramid](https://tamulaitis.lt/images/moon-love/moon-love-video-stairs-in-video.webp)
+![Double Negative Pyramid by Sol LeWitt](https://tamulaitis.lt/images/moon-love/moon-love-video-stairs-location.webp)
+![Space of Unknown Growth by Magdalena Abakanowicz](https://tamulaitis.lt/images/moon-love/moon-love-video-boulders-location.webp)
+![Video still shot in Space of Unknown Growth](https://tamulaitis.lt/images/moon-love/moon-love-video-boulders-in-video.webp)
 
-Another impressive location was Europos Parkas (Park of Europe) an open air museum located in the center of Europe. Or so they claim. Apparently it's really hard to determine the exact center of any oddly shaped object and Europe is exactly that, that's why most european nations have their own center of Europe. Despite the ambiguity of the center of Europe title the park is truly amazing, full of sculptures and impressive art installations from artists all around the world. It was a perfect place to hunt for weird angles and perspectives.
+Another impressive location was a small forest with the beautiful "Gėlos" lake near Vilnius. Surroundings are beautiful, but even more impressive is the white mud that covers one side of the lake. It's an uncommon sight in Lithuania and worked really well with our black and white aesthetics. We were lucky to have a sunny day and the light was just perfect for the shots. It was a bit cold thou, so it was quite a challenge for Umiko to stay in the water for a long time.
 
-<!-- Photos from Europos Parkas -->
+![Gėlos lake near Vilnius](https://tamulaitis.lt/images/moon-love/moon-love-video-gelos-location.webp)
+![Video still shot near Gėlos lake](https://tamulaitis.lt/images/moon-love/moon-love-video-gelos-in-video.webp)
 
-The last location was a small forest with the beautiful lake near Vilnius. Surroundings are beautiful, but even more impressive is the white mud that covers one side of the lake. It's an uncommon sight in Lithuania and worked really well with our black and white aesthetics. We were lucky to have a sunny day and the light was just perfect for the shots. It was a bit cold thou, so it was quite a challenge for Umiko to stay in the water for a long time.
+Third main location was legendary music and culture venue called [Loftas](https://menufabrikas.lt/). It is run by Viktoras Diawara, a famous musician and the force behind tons of musical and cultural projects. Loftas had left it's footprint in Lithuanian culture with performances by tons of local and foreign artists and even their own three day music festival in the middle of the city. It is a huge industrial space with a lot of interesting details and textures. It was a perfect place for shooting the closeup scenes with Umiko and experimenting with ultraviolet light and makeup.
 
-<!-- Photos from the lake -->
+![Ultraviolet experiments](https://tamulaitis.lt/images/moon-love/moon-love-video-makeup-experiments.gif)
 
 Video guys also really wanted to have a nice shot of moon in the video, so we waited for the day when there is a full moon and went to an old mound in a medieval capital of Lithuania called Kernavė. We chose the location because there are no big cities around so there is minimal light pollution. We were sitting on these hills for quite some time, looking at clouds passing by covering and uncovering the moon. Even thou the experience was memorable we didn't manage to get a good shot and ended up using the video of the moon from stock video site.
 
@@ -67,4 +73,4 @@ Video guys also really wanted to have a nice shot of moon in the video, so we wa
 We were really happy with the final result and decided to submit the video for various competitions. One of the competitions was the music video track of the "Kino Pavasaris", the biggest international film festival in Lithuania. To our surprise it was rejected in the first round and the reasoning was that our video: "promotes and glorifies slavery". That was equally annoying and hilarious, as it was hard to wrap our heads around how anybody could interpret our mellow and innocent video this way. After some digging we found that it was just one person from the jury that got deeply offended by the video and made a big issue out of it. That is a good example how differently people interpret things and that if you are a creator then whatever you do there will always be someone who will be offended by your work. In the end art is all about triggering the emotional response in people, so we definitely nailed it in that regard.
 
 
-This is v0.9.1 of this article. Coming soon: photos from video shoot locations: Park of Europe, Loftas and Gėlos lake.
+<!-- This is v1.0 of this article. -->
