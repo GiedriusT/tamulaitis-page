@@ -14,9 +14,9 @@ Running `yarn pre-commit` in turn executes `lint-staged` that lints files that a
 
 ## Playwright
 
-Playwright is set up to run automated end-to-end tests. They can be run manually by following instructions in [src/tests/README.md](../src/tests/README.md) and are run automatically via GitHub action before the deployment as defined in [.github/workflows/main.yml](.github/workflows/main.yml).
+Playwright is set up to run automated end-to-end tests. They can be run manually by following instructions in [src/tests/README.md](../src/tests/README.md) and are run automatically via GitHub action before the deployment as defined in [.github/workflows/main.yml](../.github/workflows/main.yml).
 
-Configuration for Playwright can be found in [../playwright.config.ts](../playwright.config.ts)
+Configuration for Playwright can be found in [playwright.config.ts](../playwright.config.ts)
 
 ## NVM
 
