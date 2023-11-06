@@ -32,12 +32,12 @@ Similar to the TV we didn't have access to any video game consoles in soviet uni
 
 Shortly after independence first game consoles started popping up across the semi-legal markets that became popular around the country. These were usually rip-offs of western or japanese consoles, but they were something we could afford and they were available. One of the most popular was Zhiliton, a rip-off of Nintendo Famicom designed to resemble Sega Mega Drive. Proudly claiming to be 16-bit while it actually was 8-bit. I didn't own one myself as my father was very much against video games and considered them to be a complete waste of time (although I have to admit that later he was the one who brought me a copy of original Doom on floppy disks from his work, still can't comprehend how did that happen), but I had quite a few friends who did own it and played my first video games on it.
 
-![Zhiliton console](https://tamulaitis.lt/images/sewers/zhiliton.webp)
+![Zhiliton console](https://tamulaitis.lt/images/sewers/zhiliton.webp#padding-on-mobile)
 
 The Zhiliton had a very distinct yellow cartridges that were used to load games. The games were pirated versions of popular games so you could get good ones with games like Super Mario Bros, Contra, Battle City, etc. But they were more rare and quite expensive. The most popular ones were the ones that had 100+ games on them. Titles like "100 in 1" or "9999999 in 1" were very common.
 
-![Cartridge with 9999 games](https://tamulaitis.lt/images/sewers/cartidge-9999-in-1.webp)
-![Cartridge with 274 games](https://tamulaitis.lt/images/sewers/cartidge-274-in-1.webp)
+![Cartridge with 9999 games](https://tamulaitis.lt/images/sewers/cartidge-9999-in-1.webp#padding-on-mobile)
+![Cartridge with 274 games](https://tamulaitis.lt/images/sewers/cartidge-274-in-1.webp#padding-on-mobile)
 
 The artwork featured the screenshots from a few better games that these cartridges had, but most of the stuff inside was some glitchy, unplayable mess, many times the same game just starting from different level or with other small modifications.
 

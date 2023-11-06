@@ -23,4 +23,8 @@ export const ProjectsItemsListContainer = styled.div`
 export const ProjectsComingSoonContainer = styled.div`
   font-size: 1.1rem;
   font-weight: 100;
+  @media (max-width: 499px) {
+    row-gap: 0;
+  }
+  padding-top: 20px;
 `;
