@@ -5,4 +5,12 @@ export const remarkImageStyles = css`
   img.full-width {
     max-width: 100%;
   }
+
+  img.padding-on-mobile {
+    @media (max-width: 499px) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 `;

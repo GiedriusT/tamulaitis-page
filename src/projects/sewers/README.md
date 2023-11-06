@@ -6,7 +6,7 @@ Sewers is my second EP, released in 2011. It revolves around the theme of Teenag
 
 Cartridges I used were the original ones from Zhiliton console system which was popular in Lithuania in the 90s. The artwork was hand painted by Andrius Labašauskas.
 
-![Garo - Sewers EP cartridge](https://tamulaitis.lt/images/sewers/garo-sewers-ep-cartidge.webp)
+![Garo - Sewers EP cartridge](https://tamulaitis.lt/images/sewers/garo-sewers-ep-cartidge.webp#padding-on-mobile)
 
 Despite the fact that cartridges contained only download link, many people assumed that the cartridge actually contains the music and the rumour spread. Luckily, nobody was able to test that theory as at that point nobody had a working Zhiliton console anymore.
 

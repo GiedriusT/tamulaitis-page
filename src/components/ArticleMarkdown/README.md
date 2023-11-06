@@ -53,6 +53,16 @@ Makes image span full width on desktop screens.
 
 ```
 
+### padding-on-mobile
+
+Adds horizontal padding on mobile screens (so element does not touch the ends of the screen).
+
+```markdown
+
+![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip.webp#padding-on-mobile)
+
+```
+
 
 ## Image galleries
 Logic in: [remarkImageGallery.ts](./utils/remarkImageGallery.ts)
