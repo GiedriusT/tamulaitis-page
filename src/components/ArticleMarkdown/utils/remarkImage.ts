@@ -1,12 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { visit } from 'unist-util-visit';
-import { AstImageNode, AstNode } from './common';
-
-const extractParams = (node: AstImageNode): string[] => {
-  if (node.url.indexOf('#') === -1) return [];
-
-  return node.url.substring(node.url.indexOf('#') + 1).split(',');
-};
+import { AstImageNode, AstNode, extractCustomImageClasses } from './common';
 
 const isStandaloneImage = (node: AstNode, parent: AstNode) => parent.type === 'paragraph' && parent.children?.length === 1;
 
@@ -14,12 +8,12 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
   if (!isStandaloneImage(node, parent)) return;
 
   const image = node as AstImageNode;
-  const params = extractParams(image);
+  const classes = extractCustomImageClasses(image);
   const imageParams = [
     `src="${image.url}"`,
     `alt="${image.alt}"`,
   ];
-  if (params.length > 0) imageParams.push(`class="${params.join(' ')}"`);
+  if (classes.length > 0) imageParams.push(`class="${classes.join(' ')}"`);
 
   node.type = 'html';
   node.value = `<img ${imageParams.join(' ')} />`;

@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { visit } from 'unist-util-visit';
-import { AstImageNode, AstNode } from './common';
+import { AstImageNode, AstNode, extractCustomImageClasses } from './common';
 
 const extractValidItems = (node: AstNode) => node.children?.filter((child) => !(child.type === 'break' || (child.type === 'text' && child.value === '\n'))) || [];
 
@@ -23,7 +23,15 @@ const processParagraph = (node: AstNode) => {
   node.type = 'html';
   node.value = '<div class="image-gallery">';
   const images = extractValidImages(node);
-  for (const image of images) node.value += `<div class="image-gallery-item"><img src="${image.url}" alt="${image.alt}" /></div>`;
+  for (const image of images) {
+    const classes = extractCustomImageClasses(image);
+    const imageParams = [
+      `src="${image.url}"`,
+      `alt="${image.alt}"`,
+    ];
+    if (classes.length > 0) imageParams.push(`class="${classes.join(' ')}"`);
+    node.value += `<div class="image-gallery-item"><img ${imageParams.join(' ')}/></div>`;
+  }
   node.value += '</div>';
   delete node.children;
 };

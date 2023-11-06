@@ -78,6 +78,8 @@ A series of images wrapped in empty lines would be treated as gallery and conver
 
 ```
 
+Image galleries also support all flags defined in [Images section](#images).
+
 ## Article title
 Logic in: [remarkArticleTitle.ts](./utils/remarkArticleTitle.ts)
 

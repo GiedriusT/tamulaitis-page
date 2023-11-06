@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
+import { remarkImageStyles } from './remarkImage.styles';
 
 // eslint-disable-next-line import/prefer-default-export
 export const remarkImageGalleryStyles = css`
@@ -17,20 +18,16 @@ export const remarkImageGalleryStyles = css`
       img {
         width: 100%;
         display: block;
+        @media (max-width: 499px) {
+          width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
+        }
       }
+
+      ${remarkImageStyles}
     }
 
     @media (max-width: 560px) {
       grid-template-columns: 1fr;
-    }
-
-    @media (max-width: 499px) {
-      .image-gallery-item {
-
-        img {
-          width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
-        }
-      }
     }
   }
 `;
