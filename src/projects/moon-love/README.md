@@ -51,8 +51,8 @@ There were three main location where we did the shootings. First one was Europos
 
 ![Lying Head by Adomas Jacovskis](https://tamulaitis.lt/images/moon-love/moon-love-video-head-location.webp)
 ![Video still shot near Lying Head](https://tamulaitis.lt/images/moon-love/moon-love-video-head-in-video.webp)
-![Video still shot near the Double Negative Pyramid](https://tamulaitis.lt/images/moon-love/moon-love-video-stairs-in-video.webp)
 ![Double Negative Pyramid by Sol LeWitt](https://tamulaitis.lt/images/moon-love/moon-love-video-stairs-location.webp)
+![Video still shot near the Double Negative Pyramid](https://tamulaitis.lt/images/moon-love/moon-love-video-stairs-in-video.webp)
 ![Space of Unknown Growth by Magdalena Abakanowicz](https://tamulaitis.lt/images/moon-love/moon-love-video-boulders-location.webp)
 ![Video still shot in Space of Unknown Growth](https://tamulaitis.lt/images/moon-love/moon-love-video-boulders-in-video.webp)
 
