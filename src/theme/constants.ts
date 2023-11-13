@@ -8,4 +8,8 @@ export const COLORS = {
   footerText: '#e8f1f5',
 };
 
+export const regularTheme = {
+  colors: { ...COLORS },
+};
+
 export const HOVERABLE_DEVICE = '(hover: hover) and (pointer: fine)';
