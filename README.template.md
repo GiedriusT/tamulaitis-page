@@ -24,17 +24,15 @@ Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read mar
 {{PROJECTS_COMING_SOON_TEXT}}
 
 
-## Running locally
+## Stack
 
-1. Clone this repository
-2. Install dependencies by executing `pnpm install` (if you don't have PNPM installed, follow [their documentation](https://pnpm.io/installation) to install it)
-3. Run `pnpm start` to start the development server
-4. Open address from console output in your browser
+This page is built with React, using Vite as development server / bundler and PNPM as package manager. Styled components are used for styling, Playwright for running automated end-to-end tests and Storybook for nice display of components. ESLint and Husky are keeping the code clean and up to the standards.
 
 
 ## Documentation
 - [Markdown syntax](src/components/ArticleMarkdown/README.md)
 - [Creating animated videos for projects](docs/creating-videos.md)
+- [Running locally](docs/running-locally.md)
 - [Running end-to-end tests](src/tests/README.md)
 - [Tooling set-up (ESLint, Husky, Playwright, etc.)](docs/tooling-set-up.md)
 - [Code Style Guide](docs/code-style-guide.md)
