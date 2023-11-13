@@ -21,6 +21,10 @@ const preview: Preview = {
           name: 'primary',
           value: regularTheme.colors.primaryBackround,
         },
+        {
+          name: 'footer',
+          value: regularTheme.colors.footerBackground,
+        },
       ],
     },
   },
