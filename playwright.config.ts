@@ -1,10 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 const PREVIEW_SERVER_PORT = process.env.PREVIEW_SERVER_PORT || 4173;
@@ -74,7 +70,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'yarn run build && yarn run preview',
+    command: 'pnpm run build && pnpm run preview',
     url: PREVIEW_SERVER_URL,
     reuseExistingServer: !process.env.CI,
   },

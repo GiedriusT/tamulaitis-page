@@ -8,19 +8,25 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v3
 
+    - name: Install PNPM
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
     - name: Setup node
       uses: actions/setup-node@v3
       with:
         node-version: 18
+        cache: pnpm
 
     - name: Install dependencies
-      run: yarn
+      run: pnpm install
 
     - name: Install Playwright browsers
-      run: yarn playwright install --with-deps
+      run: pnpm playwright install --with-deps
 
     - name: Run Playwright tests
-      run: yarn playwright test
+      run: pnpm playwright test
     - uses: actions/upload-artifact@v3
       if: always()
       with:
@@ -29,7 +35,7 @@ jobs:
         retention-days: 30
 
     - name: Build static content
-      run: CI= yarn run build
+      run: CI= pnpm run build
 
     - name: Change directory to dist
       run: cd dist

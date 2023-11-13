@@ -8,7 +8,7 @@ cp .env.example .env
 And then run Playwright install script to install needed browsers.
 
 ```
-yarn playwright install
+pnpm playwright install
 ```
 
-Then you can run tests with the command `yarn run test` for headless mode or `yarn run test:ui` for interactive mode with UI.
+Then you can run tests with the command `pnpm run test` for headless mode or `pnpm run test:ui` for interactive mode with UI.

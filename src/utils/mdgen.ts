@@ -1,4 +1,4 @@
-// This script is run via `yarn run generate:md` command. If it gives errors please make sure that
+// This script is run via `pnpm run generate:md` command. If it gives errors please make sure that
 // version of Node is 18. For some reason Node 20 is throwing errors and they were taking too long
 // to solve. Preferred way is to use Node 18 via NVM (https://github.com/nvm-sh/nvm). Install it
 // and then run `nvm use` in the root of the project. This will use the correct version of node.
