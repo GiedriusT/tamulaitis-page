@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
 import { remarkImageStyles } from './remarkImage.styles';
 
 // eslint-disable-next-line import/prefer-default-export
@@ -19,7 +18,7 @@ export const remarkImageGalleryStyles = css`
         width: 100%;
         display: block;
         @media (max-width: 499px) {
-          width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
+          width: calc(100% + 2 * ${(props) => props.theme.pagePaddingHorizontal});
         }
       }
 

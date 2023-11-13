@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { COLORS } from '../../theme/constants';
 
 export type ContactButtonProps = {
   $footerVariation?: boolean
@@ -19,8 +18,8 @@ export const ContactButton = styled.button<ContactButtonProps>`
 
   &:hover {
     ${(props) => (props.$footerVariation ? css`
-      background-color: ${COLORS.primaryBackround};
-      color: ${COLORS.footerBackground};
+      background-color: ${props.theme.colors.primaryBackround};
+      color: ${props.theme.colors.footerBackground};
     ` : css`
       background-color: #283e56;
     `)}

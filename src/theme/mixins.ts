@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { PAGE_PADDING_HORIZONTAL } from './constants';
 
 export const mediaEmbed = css`
   width: 100%;
@@ -14,8 +13,8 @@ export const mediaEmbed = css`
 export const mediaEmbedFullWidthOnMobile = css`
   @media (max-width: 499px) {
   /* @media (max-width: 560px) { */
-    width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
-    margin-left: -${PAGE_PADDING_HORIZONTAL};
-    margin-right: -${PAGE_PADDING_HORIZONTAL};
+    width: calc(100% + 2 * ${(props) => props.theme.pagePaddingHorizontal});
+    margin-left: -${(props) => props.theme.pagePaddingHorizontal};
+    margin-right: -${(props) => props.theme.pagePaddingHorizontal};
   }
 `;

@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-family: 'Sora', sans-serif;
-    background-color: #e8f1f5;
+    background-color: ${(props) => props.theme.colors.primaryBackround};
     line-height: 1.9;
     letter-spacing: 0.5px;
   }

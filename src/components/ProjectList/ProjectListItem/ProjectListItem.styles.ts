@@ -1,15 +1,15 @@
 import styled, { css } from 'styled-components';
 import { TransitionStatus } from 'react-transition-group';
-import { HOVERABLE_DEVICE, PAGE_PADDING_HORIZONTAL } from '../../../theme/constants';
+import { HOVERABLE_DEVICE } from '../../../theme';
 
 export const BACK_TO_IMAGE_FADE_DURATION = 700;
 
 export const ProjectListItemContainer = styled.div`
   width: 100%;
   @media (max-width: 499px) {
-    width: calc(100% + 2 * ${PAGE_PADDING_HORIZONTAL});
-    margin-left: -${PAGE_PADDING_HORIZONTAL};
-    margin-right: -${PAGE_PADDING_HORIZONTAL};
+    width: calc(100% + 2 * ${(props) => props.theme.pagePaddingHorizontal});
+    margin-left: -${(props) => props.theme.pagePaddingHorizontal};
+    margin-right: -${(props) => props.theme.pagePaddingHorizontal};
   }
   @media (min-width: 785px) {
     width: 49%;

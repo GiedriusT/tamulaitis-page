@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { COLORS } from '../../../theme/constants';
 import { PaddedContainer } from '../Layout.styles';
 
 export const FooterContainer = styled.footer`
   padding-top: calc(2 * 1.66em);
   padding-bottom: calc(4 * 1.66em);
-  background-color: ${COLORS.footerBackground};
-  color: ${COLORS.footerText};
+  background-color: ${(props) => props.theme.colors.footerBackground};
+  color: ${(props) => props.theme.colors.footerText};
 `;
 
 export const ProfilePictureContainer = styled.div`
@@ -50,7 +49,7 @@ export const ProfileLinks = styled.div`
 
 export const ProfileLink = styled.a`
   margin: 0 0.83rem;
-  color: ${COLORS.footerText};
+  color: ${(props) => props.theme.colors.footerText};
 `;
 
 export const ContactButtonContainer = styled.div`

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { PAGE_PADDING_HORIZONTAL } from '../../theme/constants';
 
 export const LayoutContainer = styled.div`
   width: 100%;
@@ -10,8 +9,8 @@ export const PaddedContainer = styled.div`
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: ${PAGE_PADDING_HORIZONTAL};
-  padding-right: ${PAGE_PADDING_HORIZONTAL};
+  padding-left: ${(props) => props.theme.pagePaddingHorizontal};
+  padding-right: ${(props) => props.theme.pagePaddingHorizontal};
   display: flex;
   flex-direction: column;
 `;

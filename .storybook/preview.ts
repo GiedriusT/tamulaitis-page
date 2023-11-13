@@ -3,7 +3,7 @@ import type { Preview } from "@storybook/react";
 import { ThemeProvider } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import GlobalStyles from '../src/theme/GlobalStyle';
-import { regularTheme } from '../src/theme/constants';
+import { regularTheme } from '../src/theme';
 
 const preview: Preview = {
   parameters: {

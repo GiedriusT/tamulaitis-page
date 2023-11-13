@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { COLORS } from '../../../theme/constants';
 
 // eslint-disable-next-line import/prefer-default-export
 export const remarkArticleTitleStyles = css`
@@ -14,8 +13,8 @@ export const remarkArticleTitleStyles = css`
       }
       .subtitle {
         display: table;
-        background-color: ${COLORS.footerBackground};
-        color: ${COLORS.footerText};
+        background-color: ${(props) => props.theme.colors.footerBackground};
+        color: ${(props) => props.theme.colors.footerText};
         font-size: 1.1rem;
         padding: 0.415em 0.83em;
         margin-top: 0.415em;
