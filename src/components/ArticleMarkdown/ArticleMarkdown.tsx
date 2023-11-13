@@ -1,5 +1,5 @@
 import React from 'react';
-import Markdown, { Options } from 'react-markdown';
+import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkYoutubeVideo from './utils/remarkYoutubeVideo';
 import remarkSpotifyEmbed from './utils/remarkSpotifyEmbed';
@@ -10,7 +10,11 @@ import remarkArticleVersion from './utils/remarkArticleVersion';
 import remarkLink from './utils/remarkLink';
 import * as S from './ArticleMarkdown.styles';
 
-function ArticleMarkdown({ children }: Options) {
+type ArticleMarkdownProps = {
+  children: string
+};
+
+function ArticleMarkdown({ children }: ArticleMarkdownProps) {
   return (
     <S.ArticleContainer>
       <Markdown
