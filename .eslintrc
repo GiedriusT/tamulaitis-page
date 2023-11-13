@@ -3,7 +3,8 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "plugin:playwright/recommended"
+    "plugin:playwright/recommended",
+    "plugin:storybook/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"

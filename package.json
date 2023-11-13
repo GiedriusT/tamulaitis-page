@@ -16,7 +16,9 @@
     "pre-commit": "lint-staged",
     "prepare": "husky install",
     "update-interactive": "pnpm update --latest --interactive",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",
@@ -38,6 +40,14 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -55,10 +65,12 @@
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-playwright": "^0.18.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "rollup-plugin-visualizer": "^5.9.2",
+    "storybook": "^7.5.3",
     "typescript": "^5.1.6",
     "vite": "^4.4.6"
   }
