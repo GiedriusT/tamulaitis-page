@@ -20,7 +20,7 @@ export const Regular: Story = {
   },
   decorators: [
     (Story) => (
-      <MemoryRouter initialEntries={['/index']}>
+      <MemoryRouter initialEntries={['/project/skraidantis-radijas']}>
         <Story />
       </MemoryRouter>
     ),
