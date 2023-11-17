@@ -12,6 +12,7 @@ There is also a nice story of now famous Lithuanian radio host who just stumbled
 
 <!-- ## First iteration, ## Golden years, ## Last breath, ## Punk rock concept (Gonzo), ## Music, ## Digging for rare music, ## Interviews, ## Rebirth -->
 <!-- LATGA, strength of signal, penio radijas -->
+<!-- https://bembisbembiomotina.lt/skraidantis/ -->
 
 <!--
 Skraidantis Radijas was a radio show that ran on the StartFM radio station from 2006 for almost a decade. The show was known for its eclectic selection of rare and interesting music, spanning a wide range of genres and styles from around the world. The show's hosts were also known for their irreverent and often nonsensical banter, which added a unique and entertaining element to the program.
