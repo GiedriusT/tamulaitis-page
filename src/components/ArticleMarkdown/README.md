@@ -43,7 +43,15 @@ Spotify links that are wrapped in empty lines would automatically be converted t
 ## Images
 Logic in: [remarkImage.ts](./utils/remarkImage.ts)
 
-Images will be converted to corresponding HTML tags the standard way. Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Currently following flags are supported:
+Images will be converted to corresponding HTML tags the standard way.
+
+```markdown
+
+![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip.webp)
+
+```
+
+Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Currently following flags are supported:
 
 ### full-width
 

@@ -26,7 +26,7 @@ Live version is available at [{{SITE_URL}}]({{SITE_URL}}). You can also read mar
 
 ## Stack
 
-This page is built with React, using Vite as development server / bundler and PNPM as package manager. Styled components are used for styling, Playwright for running automated end-to-end tests and Storybook for nice display of components. ESLint and Husky are keeping the code clean and up to the standards.
+This page is built with React, using Vite as development server / bundler and PNPM as package manager. Styled components are used for styling, Playwright for running automated end-to-end tests and Storybook for nice display of components. ESLint and Husky are keeping the code clean and up to the standards. GitHub Actions user for simple CI/CD pipeline.
 
 
 ## Documentation
