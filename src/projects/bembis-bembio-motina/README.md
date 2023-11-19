@@ -2,7 +2,7 @@
 
 Bembis Bembio Motina Records is an uber eclectic record label that I started back in a day. It started as a joke and the literal translation of the name is Bamby Bamby's mother if you must know. I also made the funny logo with two headed Bamby blasting the sounds from his ears.
 
-![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip-colorful.webp#full-width)
+![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip-two-logos.webp#padding-on-mobile)
 
 The label has eight releases under it's belt including my own music, mixes by famous Lithuanian Dj's and even an illustrated musical fairytale about a toad, a cow and the meaning of life. You can find more information about the releases, find Spotify and download links in a beautiful website of Bembis Bembio Motina built by [Code & Sprinkles](https://codeandsprinkles.com) at **[https://bembisbembiomotina.lt](https://bembisbembiomotina.lt)**.
 
@@ -67,8 +67,8 @@ The game ended up to be a complete disaster effectively killing our company, but
 
 Latest release that came out in 2021 was the vinyl re-release of my Kamchatka EP. More than ten year after initial release I decided that it would be nice to symbolically press it into vinyl. It features refreshed and remastered versions of five original tracks and one bonus scratch skit. Vinyl also comes with full color digitally remastered version of original artwork by Asta Ostrovskaja.
 
-![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp)
+![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp#padding-on-mobile)
 
 Vinyl is available in record shops across Lithuania and the Netherlands, also many digital stores like [Juno Records](https://www.juno.co.uk/products/garo-kamchatka-ep/850677-01/) and [Discogs](https://www.discogs.com/sell/release/20753818) or you can **[buy your copy directly from Bembis Bembio Motina website](https://bembisbembiomotina.lt)**. There is also a **[full article about Kamchatka vinyl](/project/kamchatka-vinyl)** if you are interested in more details about the release.
 
-<!-- This is v1.0 of this article. -->
+<!-- This is v1.0.1 of this article. -->
