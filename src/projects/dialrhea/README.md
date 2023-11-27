@@ -36,15 +36,36 @@ Džiugas also made a nice trippy video about the making of the device and the wh
 
 There were lots of other absurd project built during the event, if you are interested, [here is the full one hour long presentation](https://www.youtube.com/watch?v=fujuv8Wm4F8) of all projects of "Internet of Shit 2017" including Dialrhea.
 
+
 ## Appearances
 
-In addition to the hackathon, the device was also a guest of honor at the following events:
+In addition to the hackathon, the device was also a guest of honor in numerous events.
 
-- Vilnius TechPark Birthday 2018
+
+### Vilnius Tech Park birthday 2018
+
+I spent quite some time in a co-working space in a newly opened Sapiegos Tech Park, a start-up / scale-up infested complex of old hospital buildings in a middle of a beautiful park in the center of the city. An amazing place where I met a lot of interesting people, attended many events and heard a tons of interesting business ideas being pitched near the kitchen sink. When Sapiegos Tech Park celebrated their second birthday I offered to fire up Dialrhea as an interactive installation.
+
+![Dialrhea at Sapiegos Tech Park 1](https://tamulaitis.lt/images/dialrhea/dialrhea-at-sapiegos-tech-park-2019-1.webp)
+![Dialrhea at Sapiegos Tech Park 2](https://tamulaitis.lt/images/dialrhea/dialrhea-at-sapiegos-tech-park-2019-2.webp)
+
+There were many interesting people from business and tech world there. In a picture above you can see well known Lithuanian entrepreneur Valdas Lašas testing out Dialrhea and enjoying it. Unfortunately, he didn't end up investing in this revolutionary shitty machine, probably because being old-school he didn't understand how to use this high tech gadget properly and instinctively tried putting the phone to his ear.
+
+
+### Braille Satellite music festival 2018
+
+On the other side of the spectrum was Dialrhea's appearance in the Braille Satellite music festival. Taking place in an amazing Mushroom Manor in a middle of Lithuanian countryside it's a small and cozy festival for the weirder side of electronic music.
+
+![Dialrhea at Braille Satellite 1](https://tamulaitis.lt/images/dialrhea/dialrhea-at-braille-satellite-2019-1.webp)
+![Dialrhea at Braille Satellite 2](https://tamulaitis.lt/images/dialrhea/dialrhea-at-braille-satellite-2019-2.webp)
+
+Instead of entrepreneurs this time Dialrhea was battle tested with a bunch of ravers, hipsters and musicians.
+
+<!--
 - Maker Faire 2017 at The Energy and Technology Museum
 - No Trolls Allowed 2017 hacker camp
-- Braille Satellite 2018 music festival
 - Empty Brain Resort cultural space
+-->
 
 
 ## Technical details
@@ -74,4 +95,4 @@ Probably the biggest challenge was to make bluetooth communication work properly
 
 There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
 
-This is v0.9 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.
+This is v0.9.3 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.
