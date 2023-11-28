@@ -10,7 +10,7 @@ import remarkArticleVersion from './utils/remarkArticleVersion';
 import remarkLink from './utils/remarkLink';
 import remarkInlineCodeProperty from './utils/remarkInlineCodeProperty';
 import * as S from './ArticleMarkdown.styles';
-import CodeBlock from '../CodeBlock/CodeBlock';
+import codeElementProcesor from './utils/codeElementProcessor';
 
 type ArticleMarkdownProps = {
   children: string
@@ -33,23 +33,9 @@ function ArticleMarkdown({ children }: ArticleMarkdownProps) {
         rehypePlugins={[
           rehypeRaw,
         ]}
-        components={
-          {
-            // eslint-disable-next-line react/no-unstable-nested-components
-            code(props) {
-              const { className, children: codeChildren } = props;
-
-              const match = /language-(\w+)/.exec(className || '');
-              const language = match ? match[1] : 'c';
-              console.log(language);
-              return (
-                <CodeBlock>
-                  {codeChildren}
-                </CodeBlock>
-              );
-            },
-          }
-        }
+        components={{
+          code: codeElementProcesor,
+        }}
       >
         {children}
       </Markdown>

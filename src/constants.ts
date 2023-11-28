@@ -19,3 +19,5 @@ export const SECRET_PAGE_TITLE = 'This is a secret page!';
 export const CONTACT_BUTTON_TEXT = 'Contact me';
 export const PROJECT_LIST_TITLE = 'Projects';
 export const PROJECTS_COMING_SOON_TEXT = 'Coming soon: my collaborations with MC Messiah, live visuals for Boogaloo and Mondayjazz parties, attempt to solve locomotion in VR, first computer programs written in Pascal on 386 computer, tracks made with FastTracker, recording studios in smelly basements, legendary Fresh Rice Crew and more VR game prototypes.';
+export const CODEBLOCK_ACTIVATION_TEXT = 'Click to enable scrolling';
+export const CODEBLOCK_ACTIVATION_TEXT_MOBILE = 'Tap to enable scrolling';

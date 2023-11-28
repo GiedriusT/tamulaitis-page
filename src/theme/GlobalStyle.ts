@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     border: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Sora', sans-serif;
+    font-family: ${(props) => props.theme.fontFamily};
     background-color: ${(props) => props.theme.colors.primaryBackround};
     line-height: 1.9;
     letter-spacing: 0.5px;
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: ${(props) => props.theme.regularFontSize};
     margin-block-end: 1.66em;
     font-weight: 400;
   }

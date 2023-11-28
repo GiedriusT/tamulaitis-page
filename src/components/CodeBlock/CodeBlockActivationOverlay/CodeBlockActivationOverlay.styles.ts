@@ -1,27 +1,5 @@
 import styled from 'styled-components';
-import { HOVERABLE_DEVICE } from '../../theme';
-import { mediaEmbedFullWidthOnMobile } from '../../theme/mixins';
-
-export const CodeBlockContainer = styled.div`
-  position: relative;
-  font-size: 12px;
-`;
-
-export const CodeBlockContent = styled.div`
-  height: 70vh;
-  max-height: 600px;
-  overflow-y: scroll;
-  ${mediaEmbedFullWidthOnMobile}
-`;
-
-export const BottomFade = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-image: linear-gradient(to top, ${(props) => props.theme.colors.primaryBackround}, rgba(0, 0, 0, 0));
-`;
+import { HOVERABLE_DEVICE } from '../../../theme';
 
 export const ActivationOverlay = styled.div`
   position: absolute;
@@ -31,6 +9,17 @@ export const ActivationOverlay = styled.div`
   height: 100%;
   cursor: pointer;
   overflow: hidden;
+`;
+
+export const BottomFade = styled.div<{ $relativeHeight: number }>`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: ${(props) => props.$relativeHeight * 20}%;
+  transition: height 0.27s ease-out;
+  background-image: linear-gradient(to top, ${(props) => props.theme.colors.primaryBackround}, rgba(0, 0, 0, 0));
+  pointer-events: none;
 `;
 
 export const ActivationOverlayText = styled.div`
