@@ -2,7 +2,9 @@
 
 This component wraps ReactMarkdown and adds support for advanced formatting options.
 
+
 ## Converting YouTube links to embeds
+
 Logic in: [remarkYoutubeVideo.ts](./utils/remarkYoutubeVideo.ts)
 
 YouTube links that are wrapped by empty lines will be automatically converted to embeds. Also, if it's a YouTube link with an image instrad of text, it would be completely removed as we only need them for displaying in GitHub so there is some thumbnail to the video. You should always use the text version of the link right after the image link, like:
@@ -17,6 +19,7 @@ YouTube links that are wrapped by empty lines will be automatically converted to
 
 This way YouTube links look nice inside GitHub, but also get converted to single embed on the website.
 
+
 ### Support for custom aspect ratios
 
 By default all videos will be embedded as 16:9 aspect ratio, it is however possible to specify a custom aspect ratio by adding a `#aspect_W_H` hash to the end of the url. For example to show 4:3 aspect ratio video you would use:
@@ -29,6 +32,7 @@ By default all videos will be embedded as 16:9 aspect ratio, it is however possi
 
 ```
 
+
 ## Converting Spotify links to embeds
 Logic in: [remarkSpotifyEmbed.ts](./utils/remarkSpotifyEmbed.ts)
 
@@ -39,6 +43,7 @@ Spotify links that are wrapped in empty lines would automatically be converted t
 [Listen to Kamchatka EP on Spotify](https://open.spotify.com/album/3MFM6vUUTnfpY3vG2Wu7vI)
 
 ```
+
 
 ## Images
 Logic in: [remarkImage.ts](./utils/remarkImage.ts)
@@ -53,6 +58,7 @@ Images will be converted to corresponding HTML tags the standard way.
 
 Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Currently following flags are supported:
 
+
 ### full-width
 
 Makes image span full width on desktop screens.
@@ -62,6 +68,7 @@ Makes image span full width on desktop screens.
 ![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip.webp#full-width)
 
 ```
+
 
 ### padding-on-mobile
 
@@ -90,12 +97,38 @@ A series of images wrapped in empty lines would be treated as gallery and conver
 
 Image galleries also support all flags defined in [Images section](#images).
 
+
 ## Article title
 Logic in: [remarkArticleTitle.ts](./utils/remarkArticleTitle.ts)
 
 Any first level heading in the article will be treated as full article title which is in form of `{title} - {subtitle}` and therefore will be split into separate elements so they can be styled individually.
 
+
 ## Article version
 Logic in: [remarkArticleVersion.ts](./utils/remarkArticleVersion.ts)
 
 If first sentence of the last paragraph of the article contains version number (in form of `vX.Y` or `vX.Y.Z`) and the word `article` after it, it will be treated as the version of the article and special formatting will be applied. We use article versions for all unfinished articles, it goes in a form of: `This is v0.7 of this article. Coming soon: few highlights about what will be added.`
+
+
+## Code blocks
+Logic in: [codeElementProcessor.tsx](./utils/codeElementProcessor.tsx) and [CodeBlock component](../CodeBlock/CodeBlock.tsx)
+
+There is support for code syntax highlighting that works the same way as in regular markdown.
+
+````
+```typescript
+
+// Your Typescript code here
+
+```
+````
+
+In addition to that there is support for remote code to be loaded directly from GitHub or other sources. If there is a link in the first line of the codeblock to remote file in one of supported file formats it will be automatically loaded.
+
+````
+```
+Check Dialrhea code on GitHub: https://github.com/GiedriusT/dialrhea/blob/master/Dialrhea.ino
+```
+````
+
+Under the hood links are also transformed into compatible alternatives, therefore you can copy paste direct GitHub links and the raw source code will be loaded. Configurations with supported formats and other details can be found [in CodeBlock component config](../CodeBlock/config.ts).

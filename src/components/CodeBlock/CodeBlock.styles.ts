@@ -9,7 +9,7 @@ export const CodeBlockContainer = styled.div`
 
 export const CodeBlockContent = styled.div`
   height: 70vh;
-  max-height: 600px;
+  background: rgb(240, 240, 240);
   overflow-y: scroll;
   ${mediaEmbedFullWidthOnMobile}
 `;
@@ -37,7 +37,7 @@ export const ActivationOverlayText = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, calc(-50% - 10px));
+  transform: translate(-50%, -50%);
   font-family: ${(props) => props.theme.fontFamily};
   font-size: ${(props) => props.theme.regularFontSize};
   text-align: center;
