@@ -10,6 +10,7 @@ import remarkArticleVersion from './utils/remarkArticleVersion';
 import remarkLink from './utils/remarkLink';
 import remarkInlineCodeProperty from './utils/remarkInlineCodeProperty';
 import * as S from './ArticleMarkdown.styles';
+import CodeBlock from '../CodeBlock/CodeBlock';
 
 type ArticleMarkdownProps = {
   children: string
@@ -35,22 +36,17 @@ function ArticleMarkdown({ children }: ArticleMarkdownProps) {
         components={
           {
             // eslint-disable-next-line react/no-unstable-nested-components
-            // pre(props) {
-            //   const { node, className, children: preChildren } = props;
-            //   const match = /language-(\w+)/.exec(className || '');
-            //   const language = match ? match[1] : null;
-            //   console.log(props);
-            //   console.log(language);
-            //   return <div>{preChildren}</div>;
-            // },
-            // eslint-disable-next-line react/no-unstable-nested-components
             code(props) {
-              const { node, className, children: codeChildren } = props;
+              const { className, children: codeChildren } = props;
+
               const match = /language-(\w+)/.exec(className || '');
-              const language = match ? match[1] : null;
-              console.log(props);
+              const language = match ? match[1] : 'c';
               console.log(language);
-              return <pre>{codeChildren}</pre>;
+              return (
+                <CodeBlock>
+                  {codeChildren}
+                </CodeBlock>
+              );
             },
           }
         }
