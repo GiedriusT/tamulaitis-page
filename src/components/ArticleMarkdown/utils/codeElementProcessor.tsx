@@ -6,7 +6,7 @@ const codeElementProcesor = (props: MarkdownElementProcessorProps): JSX.Element 
   const { className, children: codeChildren } = props;
 
   const match = /language-(\w+)/.exec(className || '');
-  const language = match ? match[1] : 'typescript';
+  const language = match ? match[1] : '';
   return (
     <CodeBlock language={language}>
       {codeChildren}
