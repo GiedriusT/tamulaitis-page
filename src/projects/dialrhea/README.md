@@ -15,9 +15,7 @@ During the same weekend we also made a "slick" promotional video illustrating ho
 
 ## What's next?
 
-I would like to host a workshop where we would build at least three more devices, and then play a Doom death match using these devices. Ideal setting would be some hacker camp or similar event.
-
-No concrete plans for that yet, if you want to suggest a good place for such event, please contact me.
+I would like to host a workshop where we would build at least three more devices, and then play a Doom death match using these devices. Ideal setting would be some hacker camp or similar event. If you have ideas how to make it happen, drop me a line.
 
 
 ## The Story
@@ -83,16 +81,19 @@ Device also supports multiple modes of operation:
 The most interesting learning during the process was how the rotary dial actually works from electrical point of view. I am from the generation who still remember using rotary phones so it was really interesting to understand both how simple the mechanism actually is and why I was getting electric shock while touching phone wires and playing phone mechanic only sometimes and not all the time. If you are interested [here is the video explaining the mechanism](https://www.youtube.com/watch?v=cLGd6OB8D5k).
 
 ![Working on rotary dial](https://tamulaitis.lt/images/dialrhea/dialrhea-rotary-dial.webp)
+![Fighting bluetooth](https://tamulaitis.lt/images/dialrhea/dialrhea-fighting-bluetooth.webp)
 
 After understanding how the mechanism works implementing it with Arduino was pretty much straight forward and I don't remember having any major trouble with it.
 
 
 ### Fighting bluetooth
 
-Probably the biggest challenge was to make bluetooth communication work properly. We chose to use [Adafruit Bluefruit LE UART Friend](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend) module for the job just because I had it lying around and also I already tried to work with it while working on another project. It is a very capable module, but most problems we had were around stability and reliability. Sometimes things worked well, sometimes we were getting some errors running exactly the same code. We read lots of documentation about how to follow proper handshake protocols, do pairing properly etc., but then ended up just adding retry loops and timeouts everywhere so the chip has time to "come to it's senses" after each risky operation.
+Probably the biggest challenge was to make bluetooth communication work properly. We chose to use [Adafruit Bluefruit LE UART Friend](https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend) module for the job just because I had it lying around and also I already tried to work with it while working on another project. It is a very capable module, but most problems we had were around stability and reliability. Sometimes things worked well, sometimes we were getting some errors running exactly the same code. We read lots of documentation about how to follow proper handshake protocols, do pairing correctly etc., but then ended up just adding retry loops and timeouts everywhere so the chip has time to "come to it's senses" after each risky operation. You can see full source code for Dialrhea below.
 
-![Fighting bluetooth](https://tamulaitis.lt/images/dialrhea/dialrhea-fighting-bluetooth.webp)
+```
+Check out code for Dialrhea: https://github.com/GiedriusT/dialrhea/blob/master/Dialrhea.ino
+```
 
 There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
 
-This is v0.9.3 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.
+This is v0.9.5 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.

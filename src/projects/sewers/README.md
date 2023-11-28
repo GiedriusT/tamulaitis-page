@@ -63,7 +63,9 @@ Along the cartridges I also got lots of sticky labels for these cartridges from 
 
 In the midst of excitement about how cool it will be to have that cartridge I of course thought that it would be even more amazing to actually make a working version of the cartridge that would allow you to play the EP on the console. Obviously I had to discard this idea as doing it would take ages and literally nobody would use it even once. Needless to say you would need to do it in assembler and even the program that shows text "Hello world" is like hundred lines of code.
 
-[Click here to see how "Hello world" application code for NES looks like](https://github.com/pedroafabri/NES-Hello-World/blob/master/src/helloworld.asm)
+```
+Check code for "Hello world" NES application: https://github.com/pedroafabri/NES-Hello-World/blob/master/src/helloworld.asm
+```
 
 Anyway it was interesting researching a bit about how the people used to write the software for these old consoles. Also I have found very interesting videos explaining how graphics worked on different console systems. Here is the part about [Commodore and Nintendo consoles](https://www.youtube.com/watch?v=Tfh0ytz8S0k) and this one continues on the topic of how [Apple and Atari](https://www.youtube.com/watch?v=_rsycfDliZU) were handling it and also about early [CGA graphics on PC](https://www.youtube.com/watch?v=niKblgZupOc). Here is also video from the same guy explaining [how music and sound effects worked on early PCs and consoles](https://www.youtube.com/watch?v=q_3d1x2VPxk). All videos are under 10 minutes, definitely worth a watch.
 
