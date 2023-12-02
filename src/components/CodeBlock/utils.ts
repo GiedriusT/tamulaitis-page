@@ -25,7 +25,7 @@ export const convertGitHubUrl = (gitHubUrl: string): string => {
 
 export const processRemoteCodeUrl = (url: string): string => {
   let finalUrl = url;
-  if (url.indexOf('https://github.com') !== -1) {
+  if (url.indexOf('https://github.com') === 0) {
     finalUrl = convertGitHubUrl(url);
   }
   return `${CORS_FETCH_URL}${finalUrl}`;
