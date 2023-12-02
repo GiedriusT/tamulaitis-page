@@ -2,15 +2,15 @@
 
 This device is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Dialrhea in action at Vilnius TechPark:
 
-[![Watch Dialrhea in action](https://img.youtube.com/vi/R2ZWpkTSonE/0.jpg)](https://www.youtube.com/watch?v=R2ZWpkTSonE)
+[![Watch Dialrhea in action](https://img.youtube.com/vi/YNjw6ZKlyNM/0.jpg)](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
 
-[Watch Dialrhea in action](https://www.youtube.com/watch?v=R2ZWpkTSonE)
+[Watch Dialrhea in action](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
 
 During the same weekend we also made a "slick" promotional video illustrating how life without this device is just a nightmare.
 
-[![Watch the promotional video](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+[![Watch Dialrhea promotional video](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
-[Watch the promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
+[Watch Dialrhea promotional video](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 
 
 ## What's next?
@@ -28,9 +28,9 @@ The ingenious idea was generated after a few beers with Donatas Valiulis and Dž
 
 Džiugas also made a nice trippy video about the making of the device and the whole hackathon in general.
 
-[![Dialrhea making of video](https://img.youtube.com/vi/nAaBJcYIFyU/0.jpg)](https://www.youtube.com/watch?v=nAaBJcYIFyU)
+[![Watch Dialrhea making of video](https://img.youtube.com/vi/nAaBJcYIFyU/0.jpg)](https://www.youtube.com/watch?v=nAaBJcYIFyU)
 
-[Watch the making of video](https://www.youtube.com/watch?v=nAaBJcYIFyU)
+[Watch Dialrhea making of video](https://www.youtube.com/watch?v=nAaBJcYIFyU)
 
 There were lots of other absurd project built during the event, if you are interested, [here is the full one hour long presentation](https://www.youtube.com/watch?v=fujuv8Wm4F8) of all projects of "Internet of Shit 2017" including Dialrhea.
 
