@@ -11,13 +11,18 @@ export const getRemoteCodeLink = (children?: string): string => {
   return match ? match[0] : '';
 };
 
+const isGitHubUrl = (url: string): boolean => {
+  const urlParts = new URL(url);
+  return urlParts.hostname === 'github.com' && urlParts.protocol === 'https:';
+};
+
 export const getProgrammingLanguage = (url: string): string => {
   const extension = url.split('.').pop() || '';
   return supportedExtensions[extension] || '';
 };
 
 export const convertGitHubUrl = (gitHubUrl: string): string => {
-  if (gitHubUrl.indexOf('https://github.com') === -1) return gitHubUrl;
+  if (!isGitHubUrl(gitHubUrl)) return gitHubUrl;
 
   const url = gitHubUrl.replace('https://github.com', 'https://raw.githubusercontent.com');
   return url.replace('/blob/', '/');
@@ -25,7 +30,8 @@ export const convertGitHubUrl = (gitHubUrl: string): string => {
 
 export const processRemoteCodeUrl = (url: string): string => {
   let finalUrl = url;
-  if (url.indexOf('https://github.com') === 0) {
+
+  if (isGitHubUrl(url)) {
     finalUrl = convertGitHubUrl(url);
   }
   return `${CORS_FETCH_URL}${finalUrl}`;
