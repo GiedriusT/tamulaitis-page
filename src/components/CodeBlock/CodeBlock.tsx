@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// Light version should require more configuration as per documentation, but
-// for some reason it just works for what I need new.
-// https://github.com/react-syntax-highlighter/react-syntax-highlighter
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { defaultStyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import * as S from './CodeBlock.styles';
 import CodeBlockActivationOverlay from './CodeBlockActivationOverlay/CodeBlockActivationOverlay';
