@@ -16,13 +16,17 @@ export const remarkYoutubeVideoStyles = css`
         aspect-ratio: 4 / 3;
       }
 
-      @media print {
-        width: 100%;
-        overflow: hidden;
+      & .youtube-embed-print-text {
+        display: none;
+      }
 
+      @media print {
         & iframe {
-          width: 100%;
-          aspect-ratio: 4 !important;
+          display: none;
+        }
+
+        & .youtube-embed-print-text {
+          display: inline;
         }
       }
     }

@@ -15,16 +15,17 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
   if (!isYoutubeLink(node) || isInlineLink(parent)) return;
 
   if (isYoutubeTextLink(node)) {
-    const url = node.url.replace('watch?v=', 'embed/');
+    const watchUrl = node.url;
+    const embedUrl = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
     let aspectRatio = '16 / 9';
-    if (url.indexOf('#aspect_') !== -1) {
-      const digits = url.substring(url.indexOf('#aspect_') + 8).split('_').map((digit) => parseInt(digit, 10));
+    if (embedUrl.indexOf('#aspect_') !== -1) {
+      const digits = embedUrl.substring(embedUrl.indexOf('#aspect_') + 8).split('_').map((digit) => parseInt(digit, 10));
       if (digits[0] && digits[1]) aspectRatio = `${digits[0]} / ${digits[1]}`;
     }
     const iFrameParams = [
       `style="aspect-ratio: ${aspectRatio}"`,
-      `src="${url}"`,
+      `src="${embedUrl}"`,
       `title="${title}"`,
       'frameborder="0"',
       'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"',
@@ -32,7 +33,10 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
     ];
 
     node.type = 'html';
-    node.value = `<div class="youtube-embed"><iframe ${iFrameParams.join(' ')}></iframe></div>`;
+    node.value = '<div class="youtube-embed">';
+    node.value += `<iframe ${iFrameParams.join(' ')}></iframe>`;
+    node.value += `<span class="youtube-embed-print-text"><strong>${title}</strong>: ${watchUrl}</span>`;
+    node.value += '</div>';
     delete node.children;
   } else if (isYoutubeImageLink(node)) {
     node.type = 'text';
