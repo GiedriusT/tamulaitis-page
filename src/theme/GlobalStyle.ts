@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.9;
     letter-spacing: 0.5px;
     @media print {
-      font-size: 8px;
+      font-size: 12px;
     }
   }
 
