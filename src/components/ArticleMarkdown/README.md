@@ -1,13 +1,13 @@
 # ArticleMarkdown component
 
-This component wraps ReactMarkdown and adds support for advanced formatting options.
+This component wraps [ReactMarkdown](https://github.com/remarkjs/react-markdown) and adds support for advanced formatting options.
 
 
 ## Converting YouTube links to embeds
 
 Logic in: [remarkYoutubeVideo.ts](./utils/remarkYoutubeVideo.ts)
 
-YouTube links that are wrapped by empty lines will be automatically converted to embeds. Also, if it's a YouTube link with an image instrad of text, it would be completely removed as we only need them for displaying in GitHub so there is some thumbnail to the video. You should always use the text version of the link right after the image link, like:
+YouTube links that are wrapped by empty lines will be automatically converted to embeds. Also, if it's a YouTube link with an image instead of text, it would be completely removed as we only need them for displaying in GitHub so there is some thumbnail to the video. You should always use the text version of the link right after the image link, like:
 
 ```markdown
 
@@ -20,7 +20,7 @@ YouTube links that are wrapped by empty lines will be automatically converted to
 This way YouTube links look nice inside GitHub, but also get converted to single embed on the website.
 
 
-### Support for custom aspect ratios
+### Support for custom aspect ratios (`#aspect_W_H`)
 
 By default all videos will be embedded as 16:9 aspect ratio, it is however possible to specify a custom aspect ratio by adding a `#aspect_W_H` hash to the end of the url. For example to show 4:3 aspect ratio video you would use:
 
@@ -59,7 +59,7 @@ Images will be converted to corresponding HTML tags the standard way.
 Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Currently following flags are supported:
 
 
-### full-width
+### `#full-width`
 
 Makes image span full width on desktop screens.
 
@@ -70,7 +70,7 @@ Makes image span full width on desktop screens.
 ```
 
 
-### padding-on-mobile
+### `#padding-on-mobile`
 
 Adds horizontal padding on mobile screens (so element does not touch the ends of the screen).
 
