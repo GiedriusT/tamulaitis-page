@@ -1,7 +1,8 @@
 import { css } from 'styled-components';
+import { ArticleContainer } from '../ArticleMarkdown.styles';
 
-// eslint-disable-next-line import/prefer-default-export
-export const remarkImageStyles = css`
+// Styles shared between single image and image gallery
+export const remarkSharedImageStyles = css`
   img.full-width {
     max-width: none;
   }
@@ -12,5 +13,11 @@ export const remarkImageStyles = css`
       margin-left: 0;
       margin-right: 0;
     }
+  }
+`;
+
+export const remarkImageStyles = css`
+  ${ArticleContainer} {    
+    ${remarkSharedImageStyles}
   }
 `;

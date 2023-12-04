@@ -46,8 +46,8 @@ const GlobalStyle = createGlobalStyle`
 
   // Here we add all styles that are used by Remark plugins. I didn't find
   // a nicer way of making it work using styled components. I'm not sure if
-  // we can hane multiple createGlobalStyle in the same project. If we can it
-  // would be better to move them into cpomponents/ArticleMarkdown.
+  // we can have multiple createGlobalStyle in the same project. If we can it
+  // would be better to move them into components/ArticleMarkdown.
   ${remarkYoutubeVideoStyles}
   ${remarkSpotifyEmbedStyles}
   ${remarkImageStyles}
