@@ -16,8 +16,10 @@ function Footer() {
         <S.ProfileTitle>{MY_NAME}</S.ProfileTitle>
         <S.ProfileDescription>{WHAT_I_DO}</S.ProfileDescription>
         <S.ProfileLinks>
-          <S.ProfileLink href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</S.ProfileLink>
-          <S.ProfileLink href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</S.ProfileLink>
+          <S.ProfileLinkScreen href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</S.ProfileLinkScreen>
+          <S.ProfileLinkPrint href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">{LINKEDIN_URL}</S.ProfileLinkPrint>
+          <S.ProfileLinkScreen href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</S.ProfileLinkScreen>
+          <S.ProfileLinkPrint href={GITHUB_URL} target="_blank" rel="noopener noreferrer">{GITHUB_URL}</S.ProfileLinkPrint>
         </S.ProfileLinks>
         <S.ContactButtonContainer>
           <ContactButton $footerVariation />

@@ -15,6 +15,16 @@ export const remarkYoutubeVideoStyles = css`
         /* aspect-ratio: 16 / 9; */
         aspect-ratio: 4 / 3;
       }
+
+      @media print {
+        width: 100%;
+        overflow: hidden;
+
+        & iframe {
+          width: 100%;
+          aspect-ratio: 4 !important;
+        }
+      }
     }
   }
 `;

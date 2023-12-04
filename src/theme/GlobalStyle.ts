@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.primaryBackround};
     line-height: 1.9;
     letter-spacing: 0.5px;
+    @media print {
+      font-size: 8px;
+    }
   }
 
   a {

@@ -32,6 +32,11 @@ export const ContactButton = styled.button<ContactButtonProps>`
       padding-right: 22px;
     }
   `};
+
+  @media print {
+    padding-left: 0;
+    padding-right: 0;
+  };
 `;
 
 export const MailIcon = styled.img<{ $footerVariation?: boolean }>`
@@ -54,4 +59,14 @@ export const Text = styled.span<{ $footerVariation?: boolean }>`
       display: none;
     }
   `};
+
+  @media print {
+    display: none;
+  }
+`;
+
+export const TextPrintOnly = styled.span<{ $footerVariation?: boolean }>`
+  @media screen {
+    display: none;
+  }
 `;

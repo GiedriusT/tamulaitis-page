@@ -20,6 +20,10 @@ export const BottomFade = styled.div<{ $relativeHeight: number }>`
   transition: height 0.27s ease-out;
   background-image: linear-gradient(to top, ${(props) => props.theme.colors.primaryBackround}, rgba(0, 0, 0, 0));
   pointer-events: none;
+
+  @media print {
+    display: none;
+  }
 `;
 
 export const ActivationOverlayText = styled.div`

@@ -47,9 +47,21 @@ export const ProfileLinks = styled.div`
   font-size: 1.1rem;
 `;
 
-export const ProfileLink = styled.a`
+const ProfileLink = styled.a`
   margin: 0 0.83rem;
   color: ${(props) => props.theme.colors.footerText};
+`;
+
+export const ProfileLinkScreen = styled(ProfileLink)`
+  @media print {
+    display: none;
+  };
+`;
+
+export const ProfileLinkPrint = styled(ProfileLink)`
+  @media screen {
+    display: none;
+  };
 `;
 
 export const ContactButtonContainer = styled.div`

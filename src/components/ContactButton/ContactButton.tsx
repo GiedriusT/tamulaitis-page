@@ -14,6 +14,7 @@ function ContactButton({ $footerVariation }: ContactButtonProps) {
     <S.ContactButton $footerVariation={$footerVariation} onClick={onClick}>
       <S.MailIcon src={mailIcon} alt={CONTACT_BUTTON_TEXT} $footerVariation={$footerVariation} />
       <S.Text $footerVariation={$footerVariation}>{CONTACT_BUTTON_TEXT}</S.Text>
+      <S.TextPrintOnly>{CONTACT_EMAIL}</S.TextPrintOnly>
     </S.ContactButton>
   );
 }
