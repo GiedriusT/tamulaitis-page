@@ -37,7 +37,7 @@ There were lots of other absurd project built during the event, if you are inter
 
 ## Appearances
 
-In addition to the hackathon, the device was also a guest of honor in numerous events.
+In addition to the hackathon, the device was also a guest of honor in numerous events including Maker Faire 2017 at The Energy and Technology Museum, No Trolls Allowed 2017 hacker camp, Vilnius Tech Park birthday 2018, Braille Satellite music festival and others.
 
 
 ### Vilnius Tech Park birthday 2018
@@ -58,12 +58,6 @@ On the other side of the spectrum was Dialrhea's appearance in the Braille Satel
 ![Dialrhea at Braille Satellite 2](https://tamulaitis.lt/images/dialrhea/dialrhea-at-braille-satellite-2019-2.webp)
 
 Instead of entrepreneurs this time Dialrhea was battle tested with a bunch of ravers, hipsters and musicians.
-
-<!--
-- Maker Faire 2017 at The Energy and Technology Museum
-- No Trolls Allowed 2017 hacker camp
-- Empty Brain Resort cultural space
--->
 
 
 ## Technical details
@@ -96,4 +90,4 @@ Check out code for Dialrhea: https://github.com/GiedriusT/dialrhea/blob/master/D
 
 There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
 
-This is v0.9.5 of this article. Coming soon: more info and photos from various events where Dialrhea was a guest of honor, maybe few more technical details.
+<!-- This is v1.0 of this article. To add: photo with components of Dialrhea. -->
