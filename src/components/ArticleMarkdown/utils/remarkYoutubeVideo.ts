@@ -18,19 +18,20 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
     const watchUrl = node.url;
     const embedUrl = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
-    let aspectRatio = '16 / 9';
-    if (embedUrl.indexOf('#aspect_') !== -1) {
-      const digits = embedUrl.substring(embedUrl.indexOf('#aspect_') + 8).split('_').map((digit) => parseInt(digit, 10));
-      if (digits[0] && digits[1]) aspectRatio = `${digits[0]} / ${digits[1]}`;
-    }
+
     const iFrameParams = [
-      `style="aspect-ratio: ${aspectRatio}"`,
       `src="${embedUrl}"`,
       `title="${title}"`,
       'frameborder="0"',
       'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"',
       'allowfullscreen',
     ];
+    if (embedUrl.indexOf('#aspect_') !== -1) {
+      const digits = embedUrl.substring(embedUrl.indexOf('#aspect_') + 8).split('_').map((digit) => parseInt(digit, 10));
+      if (digits[0] && digits[1]) {
+        iFrameParams.push(`style="aspect-ratio: ${digits[0]} / ${digits[1]}"`);
+      }
+    }
 
     node.type = 'html';
     node.value = '<div class="youtube-embed">';

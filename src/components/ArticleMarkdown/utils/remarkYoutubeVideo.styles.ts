@@ -12,8 +12,7 @@ export const remarkYoutubeVideoStyles = css`
       ${mediaEmbedFullWidthOnMobile}
 
       & iframe {
-        /* aspect-ratio: 16 / 9; */
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 9;
       }
 
       & .youtube-embed-print-text {
