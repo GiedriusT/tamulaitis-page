@@ -62,9 +62,11 @@ Instead of entrepreneurs this time Dialrhea was battle tested with a bunch of ra
 
 ## Technical details
 
-The device is built on Arduino, and uses Bluetooth LE to communicate to the computer wirelessly. It presents itself as bluetooth keyboard and can be paired with any device supporting Bluetooth LE. Full source code and more details are available in [Dialrhea GitHub repository](https://github.com/GiedriusT/dialrhea).
+The device is built on Arduino, and uses Bluetooth LE to communicate to the computer wirelessly. It presents itself as bluetooth keyboard and can be paired with any device supporting Bluetooth LE. Full source code and more details are available in [Dialrhea GitHub repository](https://github.com/GiedriusT/dialrhea). Below you can see all core components of the device.
 
-Device also supports multiple modes of operation:
+![Insides of Dialrhea](https://tamulaitis.lt/images/dialrhea/dialrhea-insides.webp)
+
+Although the ultimate use case for the device ended up being playing Doom, device actually has full support for multiple modes of operation:
 - **Doom** - in this mode the device acts as a game controller, and is configured to control classic Doom game (using Doomsday Engine)
 - **Emoji** - this mode is best used with mobile phones and allows you to type emoji's and send them to your friends
 - **Boring** - in this mode Dialrhea just outputs the dialed numbers (not recommended)
@@ -90,4 +92,4 @@ Check out code for Dialrhea: https://github.com/GiedriusT/dialrhea/blob/master/D
 
 There is actually a very interesting bug in this device that allows player to "leap" forward very quickly. I have seen it happening several times, usually after somebody was frantically bashing the device for a while. I literally have no idea why it happens or how to reproduce it, but I actually find it really cool, so I decided to just leave it in and call it a feature.
 
-<!-- This is v1.0 of this article. To add: photo with components of Dialrhea. -->
+<!-- This is v1.1 of this article. -->
