@@ -28,7 +28,7 @@ Interesting fact is that the film was entirely scripted to match the Dj Q-Bert's
 
 For first prototype I chose the simplest and most readily available device, the mobile phone shoved into the cardboard case made by Google. That was one of the first times I worked hands on with Unity and C# so learning curve was quite steep. I had to understand how objects and components work in general, how to work with terrain, remember some things about matrixes and wrap my head around Quaternion, a data structure Unity uses to store data about rotations. Apparently it is very efficient for computer to work with Quaternions, but at the same time extremely inefficient for human brains to understand them. I still don't fully get it, just know how to use them in different situations.
 
-<!-- Screenshot from Unity? -->
+![Google Cardboard](https://tamulaitis.lt/images/wavetwisters-vr/google-cardboard.webp)
 
 Apart from technical challenges there were interesting creative decisions that I had to make. One issue was that most of the assets were 2D hand drawn animations and my game was set in a 3D world. At first I thought about modelling 3D versions of the characters based on the 2D images, but after watching some tutorials on how to use Blender (3D modeling tool) and finally after hours of swearing finishing the model of the head of the lego figurine I understood that it will be way too much work to go this route. Luckily when I tried to just mix 3D environment with 2D sprites for enemies it worked really well and looked interesting. This is how the concept of enemies being "holograms" was born. It was one of the cases where limitation gave birth to solution that both looks attractive and requires much less work.
 
@@ -45,11 +45,11 @@ After good initial feedback from other developers and random people I showed it 
 
 ![Dj Q-Bert](https://tamulaitis.lt/images/wavetwisters-vr/dj-qbert.webp)
 
-It was very satisfying as Dj Q-Bert is a legend in the world of turntables and scratching. We learned most of our scratching techniques back in a day by watching his tutorial videos, using battle scratch records, and analyzing scratch techniques of his and other members of his crew Invisibl Skratch Piklz by playing recordings from dj championships at half the speed. He alongside with Mix Master Mike from Beastie Boys, D-Styles, Shortkut, Yogafrog and others really moved the art of turntablism forward.
+It was very satisfying as Dj Q-Bert is a legend in the world of turntables and scratching. We learned most of our scratching techniques back in a day by watching his tutorial videos, using battle scratch records, and analyzing scratch techniques of his and other members of his crew Invisibl Skratch Piklz by playing recordings from dj championships at half the speed. He alongside with Mix Master Mike from Beastie Boys, D-Styles, Shortkut, Yogafrog and others really moved the art of turntablism forward. The guy even collaborated with Vestax to design and engineer Vestax QFO turntable that has integrated mixer and has a layout and set of features optimized for scratching.
+
+![Vestax QFO turntable](https://tamulaitis.lt/images/wavetwisters-vr/vestax-qfo-turntable.webp)
 
 While writing this I found out that Dj Q-Bert finally released that sequel to Wave Twisters in 2021. There is a full version of the album on YouTube: [Dj Qbert's ORIGINS (Wave Twisters Zero)](https://www.youtube.com/watch?v=QN_LQAtM-T4).
-
-<!-- Q-Bert's turntable -->
 
 
 ## Pitching to funds
@@ -68,11 +68,12 @@ After quickly assembling a capable PC and receiving my very own HTC Vive headset
 The other challenge was coming up with completely new core mechanic as the initial prototype was built around gaze mechanics since that was the only type on input available on phone based devices. This would obviously be boring on proper headsets that had controllers that are tracked in 3D space, have buttons, etc. I had a few iterations and considered multiple mechanics until finally I settled on the interesting aiming and shotting mechanic built around involving both controllers and keeping them at specific proximity while aiming. It was unique and worked really well with the concept of your weapon being a turntable emitting the sound beam.
 
 <!-- Demo gif of the mechanic -->
+![WaveTwisters VR prototype screenshot 1](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-prototype-screenshot-1.webp)
+![WaveTwisters VR prototype screenshot 2](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-prototype-screenshot-2.webp)
+![WaveTwisters VR prototype screenshot 3](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-prototype-screenshot-3.webp)
+![WaveTwisters VR prototype screenshot 4](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-prototype-screenshot-4.webp)
 
 I also opted out for any type of movement for the demo as movement was something that was causing nausea in significant portion of VR users and also that allowed me to have much more simple level design. I ended up with three levels each set in different environment and featuring different types of enemies. The goal in all of them was to survive for set period of time.
-
-<!-- One screenshot from each level -->
-
 
 <!-- ## Game design document ??? -->
 
@@ -80,6 +81,9 @@ I also opted out for any type of movement for the demo as movement was something
 ## The winter came
 
 With both playable prototype and game design document in place I was ready to go back to Razer for further negotiations. Unfortunately I noticed that my enthusiasm wasn't reflected on their side any longer. We did have several conversations and they liked the core concepts in general but I noticed the general uncertainty that is floating around, it seemed they wanted to drag the whole process. I did try to pitch the new demo to other funds as well, but the feeling of uncertainty seemed to be all over the place. The reason for that was that it was the onset of VR winter.
+
+<!-- ![Animated Octobot](https://tamulaitis.lt/images/wavetwisters-vr/octobot-front.webp)
+![Animated Octobot](https://tamulaitis.lt/images/wavetwisters-vr/octobot-front.webp) -->
 
 Before the release of first generation of VR headsets, namely HTC Vive and Oculus Rift, the speculations about adoption were running wild. People predicted millions of sales for these devices and explosive adoption of this new technology. And after the first few months after the release of these devices when actual sales numbers started coming in it was clear that the predictions are off by orders of magnitude. Everybody started panicking and the funding for VR content stalled.
 
@@ -102,4 +106,4 @@ He might very well be right about this as during the last stretches I came up wi
 
 The funny thing that I realized while writing this article and choosing what media to add is that the initial cardboard version of the game looked much nicer and more impressive that the second prototype. It was brighter, more dynamic and overall looked more impressive.
 
-This is v0.6 of this article. Coming soon: more photos, screenshots and media, some more info about game design document and the process.
+This is v0.8 of this article. Coming soon: more photos, screenshots and media.
