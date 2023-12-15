@@ -19,7 +19,10 @@ I also wanted to jump on this train and decided to do some prototyping and explo
 
 The original movie was released in 2001 and was the first of it's kind (and probably the last). The whole movie was narrated by scratch sounds and phrases from various vinyl records, yet everything was connected into a coherent story full of drama, action and weird characters. It follows a crew of heroes, cleverly disguised as a team of oral hygienists, who are determined to save the lost arts of Hip Hop from total extinction. The only weapon powerful enough to defeat the sinister army of oppressors is an ancient relic known as the Wave Twister.
 
-<!-- 4 screenshots from the movie -->
+![WaveTwisters movie screenshot 1](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-movie-screenshot-1.webp)
+![WaveTwisters movie screenshot 2](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-movie-screenshot-2.webp)
+![WaveTwisters movie screenshot 3](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-movie-screenshot-3.webp)
+![WaveTwisters movie screenshot 4](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-movie-screenshot-4.webp)
 
 Interesting fact is that the film was entirely scripted to match the Dj Q-Bert's recording "Wave Twisters - Episode 7 Million: Sonic Wars Within The Protons" that was released back in 1998, meaning that audio portion of the movie was fully finished before the script was even started. You can find the [full version of Wave Twisters on YouTube](https://www.youtube.com/watch?v=9VkMV_5TBqE).
 
@@ -32,7 +35,7 @@ For first prototype I chose the simplest and most readily available device, the 
 
 Apart from technical challenges there were interesting creative decisions that I had to make. One issue was that most of the assets were 2D hand drawn animations and my game was set in a 3D world. At first I thought about modelling 3D versions of the characters based on the 2D images, but after watching some tutorials on how to use Blender (3D modeling tool) and finally after hours of swearing finishing the model of the head of the lego figurine I understood that it will be way too much work to go this route. Luckily when I tried to just mix 3D environment with 2D sprites for enemies it worked really well and looked interesting. This is how the concept of enemies being "holograms" was born. It was one of the cases where limitation gave birth to solution that both looks attractive and requires much less work.
 
-<!-- Image with frames of Honey animation -->
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk.webp#full-width,padding-on-mobile)
 
 After a few weeks I already had a working prototype that looked pretty decent. Actually it looked really good for the standards of VR experiences and it performed surprisingly well. I didn't have much experience with optimizing performance of Unity projects, did not know about polygon counts, lights, shadows and many other concepts. When I was demoing the experience to other developers who were actively working with VR they were very impressed and were always asking how did I manage to make it perform so well with the quality of graphics and level of detail that I had. I basically just shrugged my shoulders in response.
 
@@ -54,7 +57,9 @@ While writing this I found out that Dj Q-Bert finally released that sequel to Wa
 
 ## Pitching to funds
 
-After things going so smoothly with Dj Q-Bert I instantly jumped on the next part which was getting required funding to develop the game. At that time VR was on the wave and many hardware manufacturers had developer funds where they were handing out money for developers to build for their platforms so that there is some content at the time when they plan to release their hardware. I spoke with quite a few of them as the video of the game play footage seemed to get them interested.
+After things going so smoothly with Dj Q-Bert I instantly jumped on the next part which was getting required funding to develop the game. At that time VR was on the wave and many hardware manufacturers had developer funds where they were handing out money for developers to build for their platforms so that there is some content at the time when they plan to release their hardware. I spoke with quite a few of them as the video of the game play footage seemed to get them interested. I also had plenty of nice looking assets from the movie that I was putting in presentations and pitch decks, that also helped.
+
+![WaveTwisters characters](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-character-artwork.webp)
 
 The most traction I got was from Razer, the manufacturer of all sorts of gaming equipment, who at the time were preparing for the launch of their own VR glasses called "Razer OSVR" and had an indie funding programme. We had several conversations about various aspects of the game after which they felt positive about it and asked me to send over the game design document and version of the game that would be playable on PC. It was great news for me, but the problem was that I didn't even own a proper VR headset, didn't have a PC suitable for development, had no idea how to build for this platform and didn't knew what game design document even is.
 
@@ -65,6 +70,8 @@ The most traction I got was from Razer, the manufacturer of all sorts of gaming 
 
 After quickly assembling a capable PC and receiving my very own HTC Vive headset I dived into learning how to build stuff for this new platform. It was a bumpy road as I had to learn many new concepts and the tooling around interacting with VR hardware wasn't that great back then.
 
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/grandpa-side-walk.webp#full-width,padding-on-mobile)
+
 The other challenge was coming up with completely new core mechanic as the initial prototype was built around gaze mechanics since that was the only type on input available on phone based devices. This would obviously be boring on proper headsets that had controllers that are tracked in 3D space, have buttons, etc. I had a few iterations and considered multiple mechanics until finally I settled on the interesting aiming and shotting mechanic built around involving both controllers and keeping them at specific proximity while aiming. It was unique and worked really well with the concept of your weapon being a turntable emitting the sound beam.
 
 <!-- Demo gif of the mechanic -->
@@ -74,8 +81,6 @@ The other challenge was coming up with completely new core mechanic as the initi
 ![WaveTwisters VR prototype screenshot 4](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-prototype-screenshot-4.webp)
 
 I also opted out for any type of movement for the demo as movement was something that was causing nausea in significant portion of VR users and also that allowed me to have much more simple level design. I ended up with three levels each set in different environment and featuring different types of enemies. The goal in all of them was to survive for set period of time.
-
-<!-- ## Game design document ??? -->
 
 
 ## The winter came
@@ -106,4 +111,4 @@ He might very well be right about this as during the last stretches I came up wi
 
 The funny thing that I realized while writing this article and choosing what media to add is that the initial cardboard version of the game looked much nicer and more impressive that the second prototype. It was brighter, more dynamic and overall looked more impressive.
 
-This is v0.8 of this article. Coming soon: more photos, screenshots and media.
+<!-- This is v1.0 of this article. To maybe add: something about game design document, animated GIF with mechanics explained. -->
