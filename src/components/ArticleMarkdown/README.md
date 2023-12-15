@@ -56,7 +56,7 @@ Images will be converted to corresponding HTML tags the standard way.
 
 ```
 
-Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Currently following flags are supported:
+Additionally there is support for flags that can be added after `#` sign in the URL of the image. They allow having more formatting options. Youcan also combine multiple flags by separating them with `,`. Currently following flags are supported:
 
 
 ### `#full-width`
