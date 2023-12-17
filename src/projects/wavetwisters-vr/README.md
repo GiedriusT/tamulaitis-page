@@ -52,7 +52,7 @@ It was very satisfying as Dj Q-Bert is a legend in the world of turntables and s
 
 ![Vestax QFO turntable](https://tamulaitis.lt/images/wavetwisters-vr/vestax-qfo-turntable.webp)
 
-While writing this I found out that Dj Q-Bert finally released that sequel to Wave Twisters in 2021. There is a full version of the album on YouTube: [Dj Qbert's ORIGINS (Wave Twisters Zero)](https://www.youtube.com/watch?v=QN_LQAtM-T4).
+While writing this I found out that Dj Q-Bert finally released that sequel to Wave Twisters in 2021. There is a full version of the album on YouTube: [Dj Q-Bert's ORIGINS (Wave Twisters Zero)](https://www.youtube.com/watch?v=QN_LQAtM-T4).
 
 
 ## Pitching to funds
@@ -99,9 +99,9 @@ It's a classical scenario of new technology being greatly over-hyped, even when 
 
 With all what was happening in the market it quickly became clear that there is no way I will get the required funding and that the project is doomed. I thought about the Kickstarter campaign and other ways of getting the required financing, also Dj Q-Bert's manager Richard promised to take it to some meetings in silicon valley as they were from the area and well connected, but nothing good came out of it. I had to admit to myself that this is the end of this project. This is the final three level prototype for HTC Vive and Oculus Rift:
 
-[![Watch WaveTwisters VR demo gameplay](https://img.youtube.com/vi/G2MmQD5At3Y/0.jpg)](https://www.youtube.com/watch?v=G2MmQD5At3Y)
+[![Watch WaveTwisters VR demo game play](https://img.youtube.com/vi/G2MmQD5At3Y/0.jpg)](https://www.youtube.com/watch?v=G2MmQD5At3Y)
 
-[Watch WaveTwisters VR demo gameplay](https://www.youtube.com/watch?v=G2MmQD5At3Y)
+[Watch WaveTwisters VR demo game play](https://www.youtube.com/watch?v=G2MmQD5At3Y)
 
 I sent this final play-through video alongside all the condolences and goodbyes to Dj Q-Bert and the crew, and this is the reply that I got from him:
 
