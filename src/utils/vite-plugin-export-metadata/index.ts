@@ -12,7 +12,6 @@ function exportMetadataPlugin(options: UserOptions = {}) {
       const outFilename = `./${resolvedOptions.outDir}/metadata.json`;
       const outMetadata = projects.map((project) => ({
         ...project,
-        description: '',
         metaTitle: getProjectPageTitle(project),
       }));
 

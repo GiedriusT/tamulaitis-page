@@ -1,6 +1,6 @@
 # Captain Badass - game that killed the company
 
-Captain Badass is a mobile game that started as a fun two week detour from the main title we were working on and ended up taking almost a year to release and effectively killed my gaming company OSM Games. Well, at least now there is this nice trailer.
+Captain Badass is a mobile game that started as a fun two week detour from the main title we were working on and ended up taking almost a year to release and effectively killed our gaming company OSM Games. Well, at least now there is this nice trailer.
 
 [![Watch Captain Badass trailer](https://img.youtube.com/vi/-pWfKEBP4Rc/0.jpg)](https://www.youtube.com/watch?v=-pWfKEBP4Rc)
 
