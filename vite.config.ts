@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc';
 import { visualizer } from 'rollup-plugin-visualizer';
 import sitemap from 'vite-plugin-sitemap';
 import dotenv from 'dotenv';
+import exportMetadata from './src/utils/vite-plugin-export-metadata';
 import { SITE_URL } from './src/constants';
 import projects from './src/projects';
 
@@ -20,6 +21,9 @@ export default defineConfig({
     sitemap({
       hostname: SITE_URL,
       dynamicRoutes: projects.map((project) => `/project/${project.slug}`),
+    }),
+    exportMetadata({
+      outDir: 'dist',
     }),
   ],
   assetsInclude: ['**/*.md'],
