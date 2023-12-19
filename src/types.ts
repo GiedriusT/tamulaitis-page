@@ -7,7 +7,5 @@ export type Project = {
 };
 
 export type ProjectMedia = {
-  thumbUrl: string;
-  videoUrl: string;
   articleUrl: string;
 };

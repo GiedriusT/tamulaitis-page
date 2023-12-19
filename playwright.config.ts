@@ -1,10 +1,12 @@
-import { defineConfig, devices } from '@playwright/test';
+/* eslint-disable import/first */
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const PREVIEW_SERVER_PORT = process.env.PREVIEW_SERVER_PORT || 4173;
-const PREVIEW_SERVER_URL = `http://localhost:${PREVIEW_SERVER_PORT}`;
+import { defineConfig, devices } from '@playwright/test';
+
+const VITE_PREVIEW_SERVER_PORT = process.env.VITE_PREVIEW_SERVER_PORT || 4173;
+const VITE_PREVIEW_SERVER_URL = `http://localhost:${VITE_PREVIEW_SERVER_PORT}`;
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -25,7 +27,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: PREVIEW_SERVER_URL,
+    baseURL: VITE_PREVIEW_SERVER_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -72,7 +74,7 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'pnpm run build && pnpm run preview',
-    url: PREVIEW_SERVER_URL,
+    url: VITE_PREVIEW_SERVER_URL,
     reuseExistingServer: !process.env.CI,
   },
 });

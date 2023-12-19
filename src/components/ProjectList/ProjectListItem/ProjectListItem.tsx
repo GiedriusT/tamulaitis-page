@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Project } from '../../../types';
 import { isHoverableDevice } from '../../../theme/utils';
 import * as S from './ProjectListItem.styles';
-import { getProjectMedia } from '../../../projects/utils';
+import { getProjectThumbUrl, getProjectVideoUrl } from '../../../utils/projects';
 
 const NO_BROWER_VIDEO_SUPPORT_TEXT = 'Sorry, your browser doesn\'t support videos.';
 const LOADING_TEXT = 'Loading...';
@@ -30,9 +30,8 @@ function ProjectListItem({ project }: ProjectListItemProps) {
   const countRef = useRef(videoRef);
   countRef.current = videoRef;
 
-  const projectMedia = getProjectMedia(project.slug);
-  const { thumbUrl } = projectMedia;
-  const { videoUrl } = projectMedia;
+  const thumbUrl = getProjectThumbUrl(project.slug);
+  const videoUrl = getProjectVideoUrl(project.slug);
 
   const switchToVideo = () => {
     if (hoverState) return;

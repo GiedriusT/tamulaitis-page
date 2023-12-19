@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { ArticleContainer, ArticleMarkdown } from '../components';
 import { NOT_FOUND_PROJECT_ARTICLE, NOT_FOUND_PROJECT_TITLE } from '../constants';
 import projects from '../projects';
-import { fetchArticle, getProjectMedia } from '../projects/utils';
+import { fetchArticle, getProjectArticleUrl } from '../projects/utils';
 import NotFoundPage from './NotFoundPage';
 import { getProjectPageTitle } from '../utils/metadata';
 
@@ -16,8 +16,8 @@ function ProjectPage() {
   useEffect(() => {
     if (!project) return;
 
-    const projectMedia = getProjectMedia(project.slug);
-    fetchArticle(projectMedia.articleUrl).then((result) => setArticle(result));
+    const projectArticleUrl = getProjectArticleUrl(project.slug);
+    fetchArticle(projectArticleUrl).then((result) => setArticle(result));
   }, [project, slug]);
 
   if (!project) {

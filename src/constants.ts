@@ -1,9 +1,14 @@
+// We need to do this so that constants file would work both in browser (via Vite's import.meta.env)
+// and in Node (via process.env).
+const { VITE_DEV_SERVER_PORT, VITE_IS_LOCALHOST } = import.meta.env || process.env;
+
 export const MY_NAME = 'Giedrius Tamulaitis';
 export const TAGLINE = 'fascinated by technology and arts, exploring the sweet spot where the two collide';
 export const WHO_I_AM = 'I\'m Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinated by technology and arts, exploring the sweet spot where the two collide. Here I share the stories about my projects.';
 export const WHAT_I_DO = 'My fascination with technology and arts started when my father bought me my first computer back in 1995. Since then I am on a constant journey of learning, building and creating. I love both technology and arts and am most fascinated to work on projects where the two go hand in hand. Currently mostly focused on a professional career as a technology leader and raising an amazing daughter, I still try to find the time to work on something creative and fun. I love to meet like minded individuals, so if you found some of my projects interesting, have something to suggest or want to collaborate, don\'t hesitate to drop me a line!';
 export const CONTACT_EMAIL = 'giedrius@tamulaitis.lt';
 export const SITE_URL = 'https://tamulaitis.lt';
+export const EFFECTIVE_SITE_URL = VITE_IS_LOCALHOST ? `http://localhost:${VITE_DEV_SERVER_PORT}` : SITE_URL;
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/giedriustamulaitis';
 export const GITHUB_URL = 'https://github.com/GiedriusT';
 
@@ -22,3 +27,6 @@ export const PROJECTS_COMING_SOON_TEXT = 'Coming soon: my collaborations with MC
 export const CODEBLOCK_ACTIVATION_TEXT = 'Click to enable scrolling';
 export const CODEBLOCK_ACTIVATION_TEXT_MOBILE = 'Tap to enable scrolling';
 export const CODEBLOCK_LOADING_TEXT = 'Loading...';
+
+// Path to the folder where project assets are stored (relative to 'public' folder)
+export const PROJECT_ASSETS_PATH = 'project-assets';

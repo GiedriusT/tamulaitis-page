@@ -1,4 +1,3 @@
-import { ProjectMedia } from '../types';
 import projectsMedia from './media';
 
 const dashToCamel = (str: string): string => str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
@@ -9,7 +8,7 @@ export const fetchArticle = async (articleUrl: string): Promise<string> => {
   return article;
 };
 
-export const getProjectMedia = (projectSlug: string): ProjectMedia => {
+export const getProjectArticleUrl = (projectSlug: string): string => {
   const keyName = dashToCamel(projectSlug);
-  return projectsMedia[keyName];
+  return projectsMedia[keyName]?.articleUrl;
 };
