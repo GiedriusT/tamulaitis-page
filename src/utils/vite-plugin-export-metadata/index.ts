@@ -3,6 +3,7 @@ import { resolveOptions } from './options';
 import { UserOptions } from './types';
 import { getProjectPageTitle } from '../metadata';
 import projects from '../../projects';
+import { getProjectThumbUrl } from '../projects';
 
 function exportMetadataPlugin(options: UserOptions = {}) {
   const resolvedOptions = resolveOptions(options);
@@ -13,6 +14,7 @@ function exportMetadataPlugin(options: UserOptions = {}) {
       const outMetadata = projects.map((project) => ({
         ...project,
         metaTitle: getProjectPageTitle(project),
+        metaImage: getProjectThumbUrl(project.slug),
       }));
 
       writeFileSync(outFilename, JSON.stringify(outMetadata));
