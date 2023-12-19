@@ -1,7 +1,10 @@
 import { defineConfig, Plugin } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import { visualizer } from 'rollup-plugin-visualizer';
+import sitemap from 'vite-plugin-sitemap';
 import dotenv from 'dotenv';
+import { SITE_URL } from './src/constants';
+import projects from './src/projects';
 
 dotenv.config();
 
@@ -14,6 +17,10 @@ export default defineConfig({
     visualizer({
       filename: 'artifacts/bundle-stats.html',
     }) as unknown as Plugin,
+    sitemap({
+      hostname: SITE_URL,
+      dynamicRoutes: projects.map((project) => `/project/${project.slug}`),
+    }),
   ],
   assetsInclude: ['**/*.md'],
   preview: {
