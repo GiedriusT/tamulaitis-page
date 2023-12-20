@@ -9,14 +9,30 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
 
   const image = node as AstImageNode;
   const classes = extractCustomImageClasses(image);
+  const hasAnimatedFramesClass = classes.includes('animated-frames-10');
+  const imageClasses = classes.filter((c) => c !== 'animated-frames-10');
+
   const imageParams = [
     `src="${image.url}"`,
     `alt="${image.alt}"`,
   ];
-  if (classes.length > 0) imageParams.push(`class="${classes.join(' ')}"`);
+  if (imageClasses.length > 0) imageParams.push(`class="${imageClasses.join(' ')}"`);
 
   node.type = 'html';
-  node.value = `<img ${imageParams.join(' ')} />`;
+
+  if (hasAnimatedFramesClass) {
+    const containerParams = [
+      `class="animated-image-container ${imageClasses.join(' ')}"`,
+    ];
+    node.value = `
+    <div ${containerParams.join(' ')}>
+      <img ${imageParams.join(' ')} />
+      <img ${imageParams.join(' ')} />
+    </div>
+    `;
+  } else {
+    node.value = `<img ${imageParams.join(' ')} />`;
+  }
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/

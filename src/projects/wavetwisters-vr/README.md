@@ -35,7 +35,7 @@ For first prototype I chose the simplest and most readily available device, the 
 
 Apart from technical challenges there were interesting creative decisions that I had to make. One issue was that most of the assets were 2D hand drawn animations and my game was set in a 3D world. At first I thought about modelling 3D versions of the characters based on the 2D images, but after watching some tutorials on how to use Blender (3D modeling tool) and finally after hours of swearing finishing the model of the head of the lego figurine I understood that it will be way too much work to go this route. Luckily when I tried to just mix 3D environment with 2D sprites for enemies it worked really well and looked interesting. This is how the concept of enemies being "holograms" was born. It was one of the cases where limitation gave birth to solution that both looks attractive and requires much less work.
 
-![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk.webp#full-width,padding-on-mobile)
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk.webp#full-width,padding-on-mobile,animated-frames-10)
 
 After a few weeks I already had a working prototype that looked pretty decent. Actually it looked really good for the standards of VR experiences and it performed surprisingly well. I didn't have much experience with optimizing performance of Unity projects, did not know about polygon counts, lights, shadows and many other concepts. When I was demoing the experience to other developers who were actively working with VR they were very impressed and were always asking how did I manage to make it perform so well with the quality of graphics and level of detail that I had. I basically just shrugged my shoulders in response.
 
@@ -70,7 +70,7 @@ The most traction I got was from Razer, the manufacturer of all sorts of gaming 
 
 After quickly assembling a capable PC and receiving my very own HTC Vive headset I dived into learning how to build stuff for this new platform. It was a bumpy road as I had to learn many new concepts and the tooling around interacting with VR hardware wasn't that great back then.
 
-![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/grandpa-side-walk.webp#full-width,padding-on-mobile)
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/grandpa-side-walk.webp#full-width,padding-on-mobile,animated-frames-10)
 
 The other challenge was coming up with completely new core mechanic as the initial prototype was built around gaze mechanics since that was the only type on input available on phone based devices. This would obviously be boring on proper headsets that had controllers that are tracked in 3D space, have buttons, etc. I had a few iterations and considered multiple mechanics until finally I settled on the interesting aiming and shotting mechanic built around involving both controllers and keeping them at specific proximity while aiming. It was unique and worked really well with the concept of your weapon being a turntable emitting the sound beam.
 
