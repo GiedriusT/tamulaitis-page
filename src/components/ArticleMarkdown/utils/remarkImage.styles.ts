@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import { ArticleContainer } from '../ArticleMarkdown.styles';
+import { mediaEmbed, mediaEmbedFullWidthOnMobile } from '../../../theme/mixins';
 
 const generateAnimatedStripKeyframes = (numberOfFrames: number, isReversed: boolean = false) => {
   const keyframes = [];
@@ -13,26 +14,42 @@ const generateAnimatedStripKeyframes = (numberOfFrames: number, isReversed: bool
 
 // Styles shared between single image and image gallery
 export const remarkSharedImageStyles = css`
-  img.full-width, .animated-frames-container.full-width {
-    max-width: none;
-  }
+  img, .animated-frames-container {
+    display: block;
+    ${mediaEmbed}
+    ${mediaEmbedFullWidthOnMobile}
 
-  img.padding-on-mobile, .animated-frames-container.padding-on-mobile {
-    @media (max-width: 499px) {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+    &.full-width {
+      max-width: none;
+    }
+
+    &.padding-on-mobile {
+      @media (max-width: 499px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 `;
 
 export const remarkImageStyles = css`
-  ${ArticleContainer} {    
+  ${ArticleContainer} {
     ${remarkSharedImageStyles}
 
     .animated-frames-container {
       position: relative;
       overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       img:first-child {
         left: 0;

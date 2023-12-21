@@ -42,7 +42,6 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
     `src="${image.url}"`,
     `alt="${image.alt}"`,
   ];
-  if (imageClasses.length > 0) imageParams.push(`class="${imageClasses.join(' ')}"`);
 
   node.type = 'html';
 
@@ -59,6 +58,7 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
     </div>
     `;
   } else {
+    if (imageClasses.length > 0) imageParams.push(`class="${imageClasses.join(' ')}"`);
     node.value = `<img ${imageParams.join(' ')} />`;
   }
 };
