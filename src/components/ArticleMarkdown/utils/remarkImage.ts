@@ -4,13 +4,39 @@ import { AstImageNode, AstNode, extractCustomImageClasses } from './common';
 
 const isStandaloneImage = (node: AstNode, parent: AstNode) => parent.type === 'paragraph' && parent.children?.length === 1;
 
+type AnimatedFrameData = {
+  animatedFrameClass: string;
+  numberOfFrames: number;
+  isReversed: boolean;
+};
+
+const extractAnimatedFrameData = (classes: string[]): AnimatedFrameData | null => {
+  for (const cssClass of classes) {
+    if (cssClass.startsWith('animated-frames-')) {
+      const match = cssClass.match(/^animated-frames-(\d+)(-reversed)?$/);
+      if (match) {
+        const numberOfFrames = parseInt(match[1], 10);
+        const isReversed = !!match[2];
+        return {
+          animatedFrameClass: cssClass,
+          numberOfFrames,
+          isReversed,
+        };
+      }
+    }
+  }
+
+  return null;
+};
+
 const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) => {
   if (!isStandaloneImage(node, parent)) return;
 
   const image = node as AstImageNode;
   const classes = extractCustomImageClasses(image);
-  const hasAnimatedFramesClass = classes.includes('animated-frames-10');
-  const imageClasses = classes.filter((c) => c !== 'animated-frames-10');
+  const animatedFrameData = extractAnimatedFrameData(classes);
+  const hasAnimatedFramesClass = animatedFrameData != null;
+  const imageClasses = animatedFrameData ? classes.filter((c) => c !== animatedFrameData.animatedFrameClass) : [...classes];
 
   const imageParams = [
     `src="${image.url}"`,
@@ -21,8 +47,10 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
   node.type = 'html';
 
   if (hasAnimatedFramesClass) {
+    const containerClasses = ['animated-frames-container', `frames-${animatedFrameData.numberOfFrames}`, ...imageClasses];
+    if (animatedFrameData.isReversed) containerClasses.push('reversed');
     const containerParams = [
-      `class="animated-image-container ${imageClasses.join(' ')}"`,
+      `class="${containerClasses.join(' ')}"`,
     ];
     node.value = `
     <div ${containerParams.join(' ')}>
