@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkYoutubeVideo from './utils/remarkYoutubeVideo';
@@ -17,6 +17,21 @@ type ArticleMarkdownProps = {
 };
 
 function ArticleMarkdown({ children }: ArticleMarkdownProps) {
+  useEffect(() => {
+    const scrollHanhler = () => {
+      const images = document.querySelectorAll('img.spin-on-scroll');
+      const scroll = ((window.scrollY / window.innerHeight) * 80).toFixed(2);
+      for (const image of images) {
+        (image as HTMLElement).style.transform = `rotate(${scroll}deg)`;
+      }
+    };
+
+    window.addEventListener('scroll', scrollHanhler, false);
+    return () => {
+      window.removeEventListener('scroll', scrollHanhler, false);
+    };
+  }, []);
+
   return (
     <S.ArticleContainer>
       <Markdown

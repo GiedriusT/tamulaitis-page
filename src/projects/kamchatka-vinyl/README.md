@@ -2,7 +2,7 @@
 
 This vinyl record is a re-release of my first EP titled "Kamchatka". It was originally released in 2010 as a limited edition of 50 CDs as well as digital format. To mark its ten year anniversary I decided to re-release it on vinyl. All tracks were re-mastered by Emery in his Rotterdam studio and vinyls pressed in the Netherlands by [Triple Vision Distribution](https://triplevisiondigital.com/).
 
-![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp)
+![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp#spin-on-scroll)
 
 The artwork for this release was created by an amazing artist [Asta Ostrovskaja](https://www.instagram.com/asta_ostrovskaja/?hl=en). It was all hand painted on paper and then finished up and polished digitally. It depicts the Saulėtekis neighborhood where I grew up in Vilnius, Lithuania.
 

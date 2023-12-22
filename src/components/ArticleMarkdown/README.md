@@ -80,6 +80,27 @@ Adds horizontal padding on mobile screens (so element does not touch the ends of
 
 ```
 
+### `#animated-frames-8`
+
+Treats image as a strip of 8 frames placed next to one another and animates them.
+
+```markdown
+
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk-8.webp#animated-frames-8)
+
+```
+
+
+### `#spin-on-scroll`
+
+Spins image around it's center as the page scrolls.
+
+```markdown
+
+![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp#spin-on-scroll)
+
+```
+
 
 ## Image galleries
 Logic in: [remarkImageGallery.ts](./utils/remarkImageGallery.ts)

@@ -67,7 +67,7 @@ The game ended up to be a complete disaster effectively killing our company, but
 
 Latest release that came out in 2021 was the vinyl re-release of my Kamchatka EP. More than ten year after initial release I decided that it would be nice to symbolically press it into vinyl. It features refreshed and remastered versions of five original tracks and one bonus scratch skit. Vinyl also comes with full color digitally remastered version of original artwork by Asta Ostrovskaja.
 
-![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp#padding-on-mobile)
+![Kamchatka Vinyl](https://tamulaitis.lt/images/kamchatka-vinyl/garo-kamchatka-ep-vinyl.webp#padding-on-mobile,spin-on-scroll)
 
 Vinyl is available in record shops across Lithuania and the Netherlands, also many digital stores like [Juno Records](https://www.juno.co.uk/products/garo-kamchatka-ep/850677-01/) and [Discogs](https://www.discogs.com/sell/release/20753818) or you can **[buy your copy directly from Bembis Bembio Motina website](https://bembisbembiomotina.lt)**. There is also a **[full article about Kamchatka vinyl](/project/kamchatka-vinyl)** if you are interested in more details about the release.
 
