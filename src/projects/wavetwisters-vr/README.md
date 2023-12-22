@@ -12,6 +12,8 @@ This is the initial demo for Google Cardboard with gaze mechanics, there is also
 
 Around 2016 I became very interested in virtual reality. There was a lot of buzz around it back then, but not much actual hardware yet. There was already developer preview version of Oculus Rift available and Google started pushing their Cardboard project as well as other mobile phone based solutions. Everybody was experimenting, claiming that they will solve all world's problems with this new technology and eagerly waiting for first consumer versions of HTC Vive and Oculus Rift to come out.
 
+![Google Cardboard](https://tamulaitis.lt/images/wavetwisters-vr/google-cardboard.webp)
+
 I also wanted to jump on this train and decided to do some prototyping and exploration into this new technology. However, when I try to learn something new I always try to work on an actual project with the result rather that just following tutorials and completing example assignments. This was no exception and I started thinking what sort of project can I make. Somehow I remembered the Wave Twisters DVD that I had bought back in a day and the fact that it had some assets like frame by frame pictures of characters moving, 3D models of environments and so on. It made perfect sense to try using them and building a game around the theme of turntables and scratch sounds, topics that I was in love with for a long time.
 
 
@@ -31,7 +33,8 @@ Interesting fact is that the film was entirely scripted to match the Dj Q-Bert's
 
 For first prototype I chose the simplest and most readily available device, the mobile phone shoved into the cardboard case made by Google. That was one of the first times I worked hands on with Unity and C# so learning curve was quite steep. I had to understand how objects and components work in general, how to work with terrain, remember some things about matrixes and wrap my head around Quaternion, a data structure Unity uses to store data about rotations. Apparently it is very efficient for computer to work with Quaternions, but at the same time extremely inefficient for human brains to understand them. I still don't fully get it, just know how to use them in different situations.
 
-![Google Cardboard](https://tamulaitis.lt/images/wavetwisters-vr/google-cardboard.webp)
+![Google Cardboard](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-first-version-screenshot-4.webp)
+![Google Cardboard](https://tamulaitis.lt/images/wavetwisters-vr/wavetwisters-vr-first-version-screenshot-1.webp)
 
 Apart from technical challenges there were interesting creative decisions that I had to make. One issue was that most of the assets were 2D hand drawn animations and my game was set in a 3D world. At first I thought about modelling 3D versions of the characters based on the 2D images, but after watching some tutorials on how to use Blender (3D modeling tool) and finally after hours of swearing finishing the model of the head of the lego figurine I understood that it will be way too much work to go this route. Luckily when I tried to just mix 3D environment with 2D sprites for enemies it worked really well and looked interesting. This is how the concept of enemies being "holograms" was born. It was one of the cases where limitation gave birth to solution that both looks attractive and requires much less work.
 
@@ -111,4 +114,4 @@ He might very well be right about this as during the last stretches I came up wi
 
 The funny thing that I realized while writing this article and choosing what media to add is that the initial cardboard version of the game looked much nicer and more impressive that the second prototype. It was brighter, more dynamic and overall looked more impressive.
 
-<!-- This is v1.0 of this article. To maybe add: something about game design document, animated GIF with mechanics explained. -->
+<!-- This is v1.1 of this article. To maybe add: something about game design document, animated GIF with mechanics explained. -->
