@@ -22,6 +22,8 @@ Anyway, to mitigate my worries about the lameness of the radio stations in gener
 
 The only thing that was missing was the name for the show. I remember sitting with Mark at Cafe De Paris, a nice cafe in the center of Vilnius, and discussing possible names and the concept for the show. I said that I don't have any ideas about the name and Mark just said: "well, we can call it Skraidantis Radijas" which in english means Flying Radio. I said "yeah, it sounds cool" and that was it, Skraidantis Radijas was born.
 
+![Skraidantis Radijas logo](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-tv-man-strip.webp#full-width)
+
 Equipped with the USB stick with selection of our favorite music and slightly trembling voices we came to the Start FM studio for the first time. I think "The Choice Is Yours" from the hip-hop band Black Sheep was the first track I ever played on the radio. Everybody around was pretty tense as Skraidantis Radijas was the first ever live show to be broadcasted on StartFM radio station. But all went well, we enjoyed doing that and decided to continue with the show.
 
 However it didn't last long, and sometime in 2006 we were told that the StartFM radio station is "changing concept" and that there will be no more live shows. The main issue was that people running the station were not really in line with how they saw this station evolving, some of the key people had huge expectations of being direct competitors to mainstream radio stations in few years time, while others were way more interested in promoting underground music and various sub-cultures. It all started to crumble and went down pretty quickly. The 94.2 Mhz FM frequency was left playing one song on repeat day and night for several months. That song was "Aš nekenčiu radijo stočių" which translates to "I hate radio stations" by local punk band Turboreanimacija.
@@ -46,7 +48,7 @@ We had all sorts of team outings and seminars in old sports and recreation bases
 
 There were many people who hosted the show over the years and I don't even remember who came and went when, but the show was always very vibrant and unpredictable because all of the hosts had quite a personalities. Most prominent hosts were Alanas, Tatva, Andrelis 18, Mark Splinter, Nuits and me, Garo. We were also frequently joined by Dj 2 Fresh, Dj Quazar, Matas Aerobika and Buivis, the legendary figure in Lithuanian party scene.
 
-<!-- photo of the hosts here -->
+![Skraidantis Radijas reunion 2016](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-host-strip.webp)
 
 This was the moment when Skraidantis Radijas truly found it's identity and both the music part and the discussions were strong (althrough still loyal to nonsense). We also had many guests ranging from local artists, musicians that came to perform in Lithuania from abroad to now famous Lithuanian movie directors. The all were there and many times the show and the whole studio turned into mayhem. These definitely were the golder years of both our show and radio station as a whole.
 
@@ -61,6 +63,8 @@ The second installment of StartFM had one limitation on music: we couldn't play 
 ## Lone Ranger period
 
 After running strong for a few years, motivation and energy to run the show started to go down. Me and Allanas were frequently the only hosts present and one day even he told me that he doesn't want to do this anymore. I was also feeling that the show doesn't have the edge anymore, but I was still thinking about how to revitalize it by changing the concept, maybe bringing new people in and working more on social media content. Being stubborn I still decided to give it a shot even if I have to do it solo.
+
+![Skraidantis Radijas logo](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-cover-strip-4-1.webp#full-width,animated-frames-4)
 
 Sometimes I just played some music, other times I invited some guests, mostly musicians and Djs, and talked more about their music and some relevant stuff, although detours into the nonsense land were still frequent. I ran a show like this for a few months, but eventually had to admin to myself that the vibe is not there anymore, it's time close this chapter up and move on. The last show aired on 18-th May, 2011. After that, around 200 shows and half a month worth of content in, Skraidantis Radijas went for summer vacation and never came back. Or did he?
 
@@ -96,4 +100,4 @@ Overall, Skraidantis Radijas was a unique and engaging radio show that offered s
 This gibberish was written by ChatGPT.
 -->
 
-This is v0.6 of this article. Coming soon: more history, interviews with pensioners, friendly conflict with feminist show hosts, more media, excerpts from the first show ever.
+This is v0.65 of this article. Coming soon: more history, interviews with pensioners, friendly conflict with feminist show hosts, more media, excerpts from the first show ever.
