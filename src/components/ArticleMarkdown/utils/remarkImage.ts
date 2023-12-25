@@ -4,23 +4,35 @@ import { AstImageNode, AstNode, extractCustomImageClasses } from './common';
 
 const isStandaloneImage = (node: AstNode, parent: AstNode) => parent.type === 'paragraph' && parent.children?.length === 1;
 
+function isDurationFlag(flag: string): boolean {
+  const regexPattern = /^(\d+(\.\d+)?)s$/;
+  const match = flag.match(regexPattern);
+
+  return !!match;
+}
+
 type AnimatedFrameData = {
   animatedFrameClass: string;
   numberOfFrames: number;
   isReversed: boolean;
+  duration?: string;
 };
 
 const extractAnimatedFrameData = (classes: string[]): AnimatedFrameData | null => {
   for (const cssClass of classes) {
     if (cssClass.startsWith('animated-frames-')) {
-      const match = cssClass.match(/^animated-frames-(\d+)(-reversed)?$/);
+      const match = cssClass.match(/^animated-frames-(\d+)(-(.*))?$/);
       if (match) {
         const numberOfFrames = parseInt(match[1], 10);
-        const isReversed = !!match[2];
+        const flagsString = match[3] || '';
+        const flags = flagsString.split('-').filter((flag) => flag.length > 0);
+        const isReversed = flags.includes('reversed');
+        const duration = flags.find((flag) => isDurationFlag(flag) != null);
         return {
           animatedFrameClass: cssClass,
           numberOfFrames,
           isReversed,
+          duration,
         };
       }
     }
@@ -48,6 +60,9 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
   if (hasAnimatedFramesClass) {
     const containerClasses = ['animated-frames-container', `frames-${animatedFrameData.numberOfFrames}`, ...imageClasses];
     if (animatedFrameData.isReversed) containerClasses.push('reversed');
+    const imageStyles = [];
+    if (animatedFrameData.duration) imageStyles.push(`animation-duration: ${animatedFrameData.duration};`);
+    if (imageStyles.length > 0) imageParams.push(`style="${imageStyles.join(' ')}"`);
     const containerParams = [
       `class="${containerClasses.join(' ')}"`,
     ];

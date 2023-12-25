@@ -33,10 +33,26 @@ export const remarkSharedImageStyles = css`
   }
 `;
 
+export const animatedStripKeyframeStyles = css`
+  @keyframes move8FrameStrip {
+    ${generateAnimatedStripKeyframes(8)}
+  }
+  @keyframes move8FrameStripReversed {
+    ${generateAnimatedStripKeyframes(8, true)}
+  }
+  @keyframes move4FrameStrip {
+    ${generateAnimatedStripKeyframes(4)}
+  }
+  @keyframes move4FrameStripReversed {
+    ${generateAnimatedStripKeyframes(4, true)}
+  }
+`;
+
 export const remarkImageStyles = css`
   ${ArticleContainer} {
     ${remarkSharedImageStyles}
 
+    ${animatedStripKeyframeStyles}
     .animated-frames-container {
       position: relative;
       overflow: hidden;
@@ -65,18 +81,14 @@ export const remarkImageStyles = css`
         left: -100%;
       }
 
-      @keyframes move8FrameStrip {
-        ${generateAnimatedStripKeyframes(8)}
-      }
-      &.frames-8 img {
-        animation: move8FrameStrip 1s infinite step-start;
+      &.frames-8 {
+        img { animation: move8FrameStrip 1s infinite step-start; }
+        &.reversed img { animation: move8FrameStripReversed 1s infinite step-start; }
       }
 
-      @keyframes move8FrameStripReversed {
-        ${generateAnimatedStripKeyframes(8, true)}
-      }
-      &.frames-8.reversed img {
-        animation: move8FrameStripReversed 1s infinite step-start;
+      &.frames-4 {
+        img { animation: move4FrameStrip 2s infinite step-start; }
+        &.reversed img { animation: move4FrameStripReversed 2s infinite step-start; }
       }
     }
   }

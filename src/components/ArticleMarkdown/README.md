@@ -80,13 +80,23 @@ Adds horizontal padding on mobile screens (so element does not touch the ends of
 
 ```
 
-### `#animated-frames-8`
+### `#animated-frames-*`
 
-Treats image as a strip of 8 frames placed next to one another and animates them.
+Treats image as a strip of frames placed next to one another and animates them. Currently supports:
+- `#animated-frames-8` - 8 frame strip
+- `#animated-frames-4` 4 frame strip
+
+It also supports several flags allowing to fine tune the animation:
+- `reversed` - animates frames in reversed order (e.g. `#animated-frames-8-reversed`)
+- `Xs` or `X.YYs` - custom duration for the animation (e.g. `#animated-frames-8-3s`, `#animated-frames-8-5.5s`)
+
+Flags can be combined, putting dash between them, like `#animated-frames-8-reversed-5s`.
 
 ```markdown
 
 ![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk-8.webp#animated-frames-8)
+
+![WaveTwisters VR character frames](https://tamulaitis.lt/images/wavetwisters-vr/honey-side-walk-8.webp#animated-frames-8-reversed-5s)
 
 ```
 
