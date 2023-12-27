@@ -6,7 +6,7 @@ import { NOT_FOUND_PROJECT_ARTICLE, NOT_FOUND_PROJECT_TITLE } from '../constants
 import projects from '../projects';
 import { fetchArticle, getProjectArticleUrl } from '../projects/utils';
 import NotFoundPage from './NotFoundPage';
-import { getProjectPageTitle } from '../utils/metadata';
+import { getProjectPageCanonicalUrl, getProjectPageTitle } from '../utils/metadata';
 
 function ProjectPage() {
   const [article, setArticle] = useState<string>('');
@@ -33,6 +33,7 @@ function ProjectPage() {
     <>
       <Helmet>
         <title>{getProjectPageTitle(project)}</title>
+        <link rel="canonical" href={getProjectPageCanonicalUrl(project)} />
       </Helmet>
       <ArticleContainer>
         <ArticleMarkdown>{article}</ArticleMarkdown>

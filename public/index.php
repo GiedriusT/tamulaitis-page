@@ -38,6 +38,9 @@ if (!empty($pathSegments[0]) && $pathSegments[0] === 'project') {
 
     // Replace the 'content' property of the <meta property="og:image"> tag with the project metaImage
     $htmlContent = preg_replace('/<meta\s+property="og:image"\s+content=".*?"\s*\/?>/is', '<meta property="og:image" content="' . $foundProject['metaImage'] . '" />', $htmlContent);
+
+    // Replace the 'href' attribute of the <link rel="canonical"> tag with the project canonicalUrl
+    $htmlContent = preg_replace('/<link\s+rel="canonical"\s+href=".*?"\s*\/?>/is', '<link rel="canonical" href="' . $foundProject['canonicalUrl'] . '" />', $htmlContent);
   }
 }
 

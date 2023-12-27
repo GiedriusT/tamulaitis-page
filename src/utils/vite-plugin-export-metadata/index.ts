@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 import { resolveOptions } from './options';
 import { UserOptions } from './types';
-import { getProjectPageTitle } from '../metadata';
+import { getProjectPageCanonicalUrl, getProjectPageTitle } from '../metadata';
 import projects from '../../projects';
 import { getProjectThumbUrl } from '../projects';
 
@@ -13,6 +13,7 @@ function exportMetadataPlugin(options: UserOptions = {}) {
       const outFilename = `./${resolvedOptions.outDir}/metadata.json`;
       const outMetadata = projects.map((project) => ({
         ...project,
+        canonicalUrl: getProjectPageCanonicalUrl(project),
         metaTitle: getProjectPageTitle(project),
         metaImage: getProjectThumbUrl(project.slug),
       }));
