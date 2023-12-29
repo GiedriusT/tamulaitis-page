@@ -112,6 +112,17 @@ Spins image around it's center as the page scrolls.
 ```
 
 
+### `#floating`
+
+Moves the element slightly creating floating effect.
+
+```markdown
+
+![Skraidantis Radijas logo](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-logo.webp#floating)
+
+```
+
+
 ## Image galleries
 Logic in: [remarkImageGallery.ts](./utils/remarkImageGallery.ts)
 

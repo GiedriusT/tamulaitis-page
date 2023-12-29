@@ -30,6 +30,16 @@ export const remarkSharedImageStyles = css`
         margin-right: 0;
       }
     }
+
+    @keyframes float {
+      0% { transform: translate(0,  0px); }
+      75% { transform: translate(0, 8px); }
+      100% { transform: translate(0, 0px); }
+    }
+
+    &.floating {
+      animation: float 4s infinite linear;
+    }
   }
 `;
 
