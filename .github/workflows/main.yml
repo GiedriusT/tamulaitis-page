@@ -39,12 +39,13 @@ jobs:
 
     - name: Change directory to dist
       run: cd dist
-    
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ vars.ftp_server }}
-        username: ${{ vars.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        local-dir: ./dist/
-        server-dir: ./public_html/
+        
+    # Disabled to not redeploy accidentally
+    # - name: Sync files
+    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    #   with:
+    #     server: ${{ vars.ftp_server }}
+    #     username: ${{ vars.ftp_username }}
+    #     password: ${{ secrets.ftp_password }}
+    #     local-dir: ./dist/
+    #     server-dir: ./public_html/
