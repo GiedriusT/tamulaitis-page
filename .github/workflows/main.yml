@@ -44,7 +44,7 @@ jobs:
       run: cd dist
     
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ vars.ftp_server }}
         username: ${{ vars.ftp_username }}
