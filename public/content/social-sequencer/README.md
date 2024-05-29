@@ -147,52 +147,12 @@ Most complex parts were actually not audio related at all. I needed a way to eas
 
 In parallel with prototyping the electronics we were working on the cases for the boards that would house all the components. It started from detailed 3D model that we were able to feed into the huge CDC cutter machine. It carved out all the cavities according to our 3D model in one go.
 
+
+<!-- #### Connections -->
+
+
+
+<!-- Photos or videos pf LED strip -->
 ![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.webp)
-
-#### Putting it all together
-
-Cases, brain, soldering thousand wires, etc. Different connections and cables.
-
-
-## Logo
-
-Finally when all was done I wanted to make a nice logo for the device so we can have it on social media and make some stickers with it. I ended up making it in half an hour and was really happy with the result.
-
-<!--  -->
-
-We made some stickers with this logo and left them lying around the device during the events. Interestingly enough a lot of people thought that these are the instructions on how to "correctly" place the cubes on the board and started arranging cubes into the "S" shape just to hear the arhythmical weird mess of sounds followed by empty pauses.
-
-
-## Funding
-
-Given the scope of the project we really wanted to get some funding, but due to non-traditional and artsy nature of the product we needed to be very creative with who to approach.
-
-We tried applying for grants from Lithuanian Ministry of Culture and several other European Union institutions but they were not too impressed. If I remember correctly the response was more or less: we don't see any cultural value in this project, and actually we don't even understand what are you planning to do here at all.
-
-Another attempt was to get funding for Social Sequencer from Burning Man, a legendary festival taking place in Nevada desert in USA. They are famous for all sorts of art installations and our device would be a good fit there. In theory. Boy I am happy that they ended up rejecting our project. The amount of money we were asking for was ridiculously low, timelines we provided were ten fold unrealistic, the amount of logistical problems we never thought about was huge. We did consult a guy who was a frequent Burning Man attendee and helped to set up various projects there and and after hearing our grand idea his advice was: "guys, have you considered to forget about this project and just go to the festival and have a good time". This of course didn't stop us from applying to Burning Man and still trying to pull it of, but looking back, he was definitely right. On the other hand us being absolutely terrible at estimating the amount of resources and time that will go into making the device was the only reason we actually ended up building it.
-
-<!-- Maybe dance for dawn photo -->
-
-Next we tried different organizations that fund art projects. They are very niche and there aren't a lot of them, but there are a few. Most we applied to were not interested, but we got some nice traction from an Awesome Foundation in San Francisco. Frankly it was mostly a single person from the foundation who really understood and absolutely loved our project. His name was Sam Altman. He is a very interesting person himself who back in the day invented and manufactured the device called "TV be Gone", a remote control allowing you to turn off any TV that has a remote control, including the ones in public spaces like bars, etc. Also was involved in [SAM ALtman achievements]
-
-<!-- Maybe Sam Altman's photo and TV Be Gone photo -->
-
-Unfortunately Awesome Foundation had a rule that they are not funding projects outside San Francisco area and Sam wasn't able to convince others to break this rule in the end. But he pointed us to the Pollination Project a fund that funds [what do they fund]. It was a bit weird, because we didn't see our device as helping to diminish poverty or provide equal opportunities for minorities in any shape or form. But we still applied and got some funding from them. In the end they wrote the whole article about us how we are "[something something prison population]". The article made us grin??? a bit, but we accepted the honors.
-
-<!-- Screenshot of the article about prison population -->
-
-
-## Version 2.0
-
-By the time the first version became functional LinkMenų Fabrikas and it's director Adas became very interested in the project. Together we started looking for more ways to get funding and promoting the project. One thing we ended up pulling off was getting a grant from MITA, a [something something organisation]. They are mostly funding innovation [something something projects]. Again we had to be creative how we present the whole project. But that's where they guys from LinkMenų Fabrikas shined. They wrote a 60 page document describing the project in i very formal and beurocratic language. I have to admit when they sent me the final draft and I read the abstract, I couldn't understand that it is actually about our Social Sequencer. But they knew exactly what they are doing because we did get the grant.
-
-<!-- Something from the grant, maybe first page with the title or something -->
-
-That money was used to build second version that was more polished, had various optimizations made by LinkMenų engineers, had much nicer 3D printed cubes and was all white!
-
-<!-- Gallery of images of the second version -->
-
-They are still bringing trimmed down version of Social Sequencer to various exhibitions to present Vilnius Tech University and to show what cool projects you could be working on if you choose to join Vilnius Tech. That's really nice, but I still want to find new spots where it would be possible to demonstrate the whole installation and allow people to create an ever evolving piece of music by randomly collaborating together, if you are interested or know somebody who is, please let me know.
-
 
 This is v0.9 of this article. Coming soon: more details about production of the device, working with PureData, writing bash scripts for Raspberry Pi, carving out the various layers of the device using big CNC cutter machines and smaller laser cutters.
