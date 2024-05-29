@@ -1,0 +1,53 @@
+@import "./remarkImageShared.scss";
+@import "./remarkImageFrameStripKeyframes.scss";
+
+img:not(.animated-frames-container *), .animated-frames-container {
+  @include shared-image-styles;
+}
+
+.animated-frames-container {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  img:first-child {
+    left: 0;
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+  }
+  &.reversed img:nth-child(2) {
+    left: -100%;
+  }
+
+  &.frames-8 {
+    img {
+      animation: move8FrameStrip 1s infinite step-start;
+    }
+    &.reversed img {
+      animation: move8FrameStripReversed 1s infinite step-start;
+    }
+  }
+
+  &.frames-4 {
+    img {
+      animation: move4FrameStrip 2s infinite step-start;
+    }
+    &.reversed img {
+      animation: move4FrameStripReversed 2s infinite step-start;
+    }
+  }
+}

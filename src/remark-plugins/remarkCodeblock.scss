@@ -1,0 +1,87 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+
+.codeblock-container {
+  position: relative;
+  font-size: 0.75rem;
+  @include media-embed-full-width-on-mobile;
+
+  .codeblock-content {
+    height: 70vh;
+    background: rgb(240, 240, 240);
+    overflow-y: scroll;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .codeblock-activation-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .codeblock-activation-overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, calc(-50% - 10px));
+      font-family: $font-family;
+      font-size: $font-size-regular;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: $color-primary-background;
+      transition: top 0.27s ease-out;
+
+      .text {
+        display: none;
+      }
+    }
+
+    .codeblock-bottom-fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      transition: height 0.27s ease-out;
+      background-image: linear-gradient(to top, $color-primary-background, rgba(0, 0, 0, 0));
+      pointer-events: none;
+
+      @include print-only {
+        display: none;
+      }
+    }
+
+    @include hoverable-device-only {
+      .codeblock-activation-overlay-text {
+        top: 120%;
+
+        .text {
+          display: inline;
+        }
+        .text-mobile {
+          display: none;
+        }
+      }
+
+      .codeblock-activation-overlay:hover .codeblock-activation-overlay-text {
+        top: 50%;
+        transition: top 0.27s ease-out;
+      }
+    }
+
+    &.activated {
+      .codeblock-activation-overlay {
+        display: none;
+      }
+
+      .codeblock-bottom-fade {
+        height: 0;
+      }
+    }
+  }
+}

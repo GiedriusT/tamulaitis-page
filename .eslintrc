@@ -3,8 +3,7 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "plugin:playwright/recommended",
-    "plugin:storybook/recommended"
+    "plugin:playwright/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -14,6 +13,7 @@
     "react/prop-types": "off", // Since we do not use prop-types
     "react/require-default-props": "off", // Since we do not use prop-types
     "max-len": ["error", { "code": 140, "ignoreStrings": true }], // Since humanity has invented wider monitors
-    "no-restricted-syntax": "off" // Since it restricts really nice things, and performance is not an issue for this project
+    "no-restricted-syntax": "off", // Since it restricts really nice things, and performance is not an issue for this project
+    "linebreak-style": 0
   }
 }

@@ -4,25 +4,25 @@
 // and then run `nvm use` in the root of the project. This will use the correct version of node.
 import * as fs from 'fs';
 import {
-  SITE_URL, CONTACT_EMAIL, MY_NAME, TAGLINE, WHO_I_AM, WHAT_I_DO, LINKEDIN_URL, GITHUB_URL, PROJECTS_COMING_SOON_TEXT,
+  SITE_URL, CONTACT_EMAIL, MY_NAME, TAGLINE, WHO_I_AM, WHAT_I_DO, LINKEDIN_URL, GITHUB_URL, PROJECT_ASSETS_PATH,
 } from '../constants';
-import projects from '../projects';
+import { getTranslations } from '../i18n/utils';
+import { getProjects } from './projects';
 
 const MARKDOWN_FILES = [
   {
     templateFilename: './README.template.md',
     outputFilename: './README.md',
   },
-  {
-    templateFilename: './src/projects/README.template.md',
-    outputFilename: './src/projects/README.md',
-  },
 ];
+
+const projects = getProjects();
+const t = getTranslations();
 
 const generateProjectList = (): string => {
   let output = projects
     .filter((obj) => !obj.isComingSoon)
-    .map((project) => `### **[${project.title}](/src/projects/${project.slug}/README.md)** - ${project.subtitle}`)
+    .map((project) => `### **[${project.title}](/public/${PROJECT_ASSETS_PATH}/${project.slug}/README.md)** - ${project.subtitle}`)
     .join('\n');
   output += '\n';
   output += projects
@@ -42,7 +42,7 @@ const processTemplate = (template: string): string => template
   .replaceAll('{{LINKEDIN_URL}}', LINKEDIN_URL)
   .replaceAll('{{GITHUB_URL}}', GITHUB_URL)
   .replaceAll('{{PROJECT_LIST}}', generateProjectList())
-  .replaceAll('{{PROJECTS_COMING_SOON_TEXT}}', PROJECTS_COMING_SOON_TEXT);
+  .replaceAll('{{PROJECTS_COMING_SOON_TEXT}}', t('projectList.comingSoonText'));
 
 for (const { templateFilename, outputFilename } of MARKDOWN_FILES) {
   const template = fs.readFileSync(templateFilename, 'utf-8');

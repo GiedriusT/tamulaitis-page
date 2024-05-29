@@ -1,0 +1,58 @@
+---
+import '../theme/global-styles.scss';
+import S from './Layout.module.scss';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import type { PageMetadata } from '../utils/metadata';
+import { MY_NAME } from '../constants';
+
+type Props = PageMetadata;
+
+const { title, description, ogImage, canonicalUrl } = Astro.props;
+
+const isHomepage = Astro.url.pathname === "/";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <link rel="canonical" href={canonicalUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: MY_NAME,
+      url: canonicalUrl,
+    })}/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  </head>
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WBHFV19M7R"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WBHFV19M7R');
+  </script>
+  <body>
+    <div class={S.container}>
+      <div class={S.paddedContainer}>
+        <Header isHomepage={isHomepage} />
+        <article class={S.contentContainer}>
+          <slot />
+        </article>
+      </div>
+      <Footer />
+    </div>
+  </body>
+</html>

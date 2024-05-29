@@ -1,0 +1,18 @@
+---
+import { marked } from 'marked';
+import Layout from '../layouts/Layout.astro';
+import ArticleContainer from '../components/ArticleContainer/ArticleContainer';
+import { getTranslations } from '../i18n/utils';
+import { get404PageMetadata } from '../utils/metadata';
+
+const t = getTranslations();
+
+const articleMarkdown = `# ${t('notFoundPage.title')}\n\n${t('notFoundPage.article')}`;
+const articleHtml = marked.parse(articleMarkdown);
+---
+
+<Layout {...get404PageMetadata()}>
+  <ArticleContainer minHeight={30}>
+    <div set:html={articleHtml} />
+  </ArticleContainer>
+</Layout>

@@ -1,0 +1,16 @@
+@import "../theme/mixins.scss";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.paddedContainer {
+  @include padded-container;
+}
+
+.contentContainer {
+  padding-top: 20px;
+  margin-bottom: calc(2 * 1.66em);
+  flex: 1;
+}

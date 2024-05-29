@@ -1,5 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { MY_NAME, CONTACT_BUTTON_TEXT, PROJECT_LIST_TITLE } from '../constants';
+import { getTranslations } from '../i18n/utils';
+import { MY_NAME } from '../constants';
+
+const t = getTranslations();
 
 test.describe('Index page', () => {
   test.beforeEach(async ({ page }) => {
@@ -11,12 +14,12 @@ test.describe('Index page', () => {
   });
 
   test('header contact button is in viewport', async ({ page }) => {
-    const contactMeButton = page.locator('header').getByRole('button', { name: CONTACT_BUTTON_TEXT });
+    const contactMeButton = page.locator('header').getByRole('link', { name: t('contactButton.text') });
     await expect(contactMeButton).toBeInViewport();
   });
 
   test('projects section and first project is in viewport', async ({ page }) => {
-    const projectsSection = page.locator('section', { has: page.getByText(PROJECT_LIST_TITLE, { exact: true }) });
+    const projectsSection = page.locator('section', { has: page.getByText(t('projectList.title'), { exact: true }) });
 
     await expect(projectsSection).toBeInViewport();
 

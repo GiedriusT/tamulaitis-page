@@ -1,21 +1,25 @@
 import React from 'react';
-import * as S from './ContactButton.styles';
+import S from './ContactButton.module.scss';
 import mailIcon from './mail-icon.svg';
-import { CONTACT_EMAIL, CONTACT_BUTTON_TEXT } from '../../constants';
+import { CONTACT_EMAIL } from '../../constants';
+import { getTranslations } from '../../i18n/utils';
 
-type ContactButtonProps = S.ContactButtonProps & {};
+type ContactButtonProps = {
+  footerVariation?: boolean;
+};
 
-function ContactButton({ $footerVariation }: ContactButtonProps) {
-  const onClick = () => {
-    window.location.href = `mailto:${CONTACT_EMAIL}`;
-  };
+function ContactButton({ footerVariation }: ContactButtonProps) {
+  const t = getTranslations();
+
+  const buttonClasses = [S.contactButton];
+  if (footerVariation) buttonClasses.push(S.footerVariation);
 
   return (
-    <S.ContactButton $footerVariation={$footerVariation} onClick={onClick}>
-      <S.MailIcon src={mailIcon} alt={CONTACT_BUTTON_TEXT} $footerVariation={$footerVariation} />
-      <S.Text $footerVariation={$footerVariation}>{CONTACT_BUTTON_TEXT}</S.Text>
-      <S.TextPrintOnly>{CONTACT_EMAIL}</S.TextPrintOnly>
-    </S.ContactButton>
+    <a href={`mailto:${CONTACT_EMAIL}`} className={buttonClasses.join(' ')} title={t('contactButton.title')}>
+      <img className={S.screenIcon} src={mailIcon.src} alt={t('contactButton.text')} />
+      <span className={S.screenText}>{t('contactButton.text')}</span>
+      <span className={S.printText}>{CONTACT_EMAIL}</span>
+    </a>
   );
 }
 

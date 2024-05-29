@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticleContainer from '../../components/ArticleContainer/ArticleContainer';
+import {
+  type ProjectMarkdownFrontmatter,
+  getMarkdownInstanceBySlug,
+  getProjectBySlug,
+  getProjects,
+} from '../../utils/projects';
+import { getProjectPageMetadata } from '../../utils/metadata';
+
+export function getStaticPaths() {
+  return getProjects(true).map((project) => ({ params: { slug: project.slug } }));
+}
+
+const { slug } = Astro.params;
+
+const articles = await Astro.glob<ProjectMarkdownFrontmatter>(
+  '../../../public/content/*/*.md',
+);
+const project = getProjectBySlug(slug);
+const markdownInstance = getMarkdownInstanceBySlug(articles, slug);
+
+if (!project || !markdownInstance) return Astro.redirect('/404', 404);
+---
+
+<Layout {...getProjectPageMetadata(project)}>
+  <ArticleContainer>
+    <markdownInstance.Content />
+  </ArticleContainer>
+</Layout>

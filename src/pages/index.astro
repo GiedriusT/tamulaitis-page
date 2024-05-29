@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero/Hero';
+import ProjectList from '../components/ProjectList/ProjectList';
+import { getIndexPageMetadata } from '../utils/metadata';
+import { getProjects } from '../utils/projects';
+
+const projects = getProjects();
+---
+
+<Layout {...getIndexPageMetadata()}>
+  <Hero />
+  <ProjectList projects={projects} client:load />
+</Layout>

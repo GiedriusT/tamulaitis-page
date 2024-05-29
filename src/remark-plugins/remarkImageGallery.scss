@@ -1,0 +1,38 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+@import './remarkImageShared.scss';
+
+.image-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.66rem;
+  padding-bottom: 0.83rem;
+
+  &.image-gallery-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .image-gallery-item {
+    width: 100%;
+    height: auto;
+
+    img {
+      @include shared-image-styles;
+      
+      width: 100%;
+      display: block;
+      @include phone-only {
+        width: calc(100% + 2 * $page-padding-horizontal);
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+
+    &.image-gallery-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -5,7 +5,7 @@ I'm Giedrius, a resident of Amsterdam originally hailing from Vilnius. Fascinate
 
 ## About me
 
-My fascination with technology and arts started when my father bought me my first computer back in 1995. Since then I am on a constant journey of learning, building and creating. I love both technology and arts and am most fascinated to work on projects where the two go hand in hand. Currently mostly focused on a professional career as a technology leader and raising an amazing daughter, I still try to find the time to work on something creative and fun. I love to meet like minded individuals, so if you found some of my projects interesting, have something to suggest or want to collaborate, don't hesitate to drop me a line!
+My fascination with technology and arts started when my father bought me my first computer back in 1995. Since then I am on a constant journey of learning, building and experimenting. I love both technology and arts and am most fascinated to work on projects where the two go hand in hand. Currently mostly focused on a professional career as a technology leader and raising an amazing daughter, I still try to find the time to work on something creative and fun. I love to meet like minded individuals, so if you found some of my projects interesting, have something to suggest or want to collaborate, don't hesitate to drop me a line!
 
 Contact me at [giedrius@tamulaitis.lt](mailto:giedrius@tamulaitis.lt)
 
@@ -19,15 +19,15 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 
 ## Projects
 
-### **[Social Sequencer](/src/projects/social-sequencer/README.md)** - interactive music device
-### **[Kamchatka Vinyl](/src/projects/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
-### **[Dialrhea](/src/projects/dialrhea/README.md)** - revolutionary shitty machine
-### **[WaveTwisters VR](/src/projects/wavetwisters-vr/README.md)** - ambitious game prototype
-### **[Sewers EP](/src/projects/sewers/README.md)** - album released as a game console cartridge
-### **[Moon Love](/src/projects/moon-love/README.md)** - unexpectedly contravercial music video
-### **[Skraidantis Radijas](/src/projects/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
-### **[Captain Badass](/src/projects/captain-badass/README.md)** - game that killed the company
-### **[Bembis Bembio Motina](/src/projects/bembis-bembio-motina/README.md)** - über eclectic record label
+### **[Social Sequencer](/public/content/social-sequencer/README.md)** - interactive music device
+### **[Kamchatka vinyl](/public/content/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
+### **[Dialrhea](/public/content/dialrhea/README.md)** - play Doom on rotary phone
+### **[Wave Twisters VR](/public/content/wavetwisters-vr/README.md)** - ambitious game prototype
+### **[Sewers EP](/public/content/sewers/README.md)** - album released as a game console cartridge
+### **[Moon Love](/public/content/moon-love/README.md)** - unexpectedly controversial music video
+### **[Skraidantis Radijas](/public/content/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
+### **[Captain Badass](/public/content/captain-badass/README.md)** - game that killed the company
+### **[Bembis Bembio Motina](/public/content/bembis-bembio-motina/README.md)** - über eclectic record label
 
 
 Coming soon: my collaborations with MC Messiah, live visuals for Boogaloo and Mondayjazz parties, attempt to solve locomotion in VR, first computer programs written in Pascal on 386 computer, tracks made with FastTracker, recording studios in smelly basements, legendary Fresh Rice Crew and more VR game prototypes.
@@ -35,17 +35,19 @@ Coming soon: my collaborations with MC Messiah, live visuals for Boogaloo and Mo
 
 ## Stack
 
-This page is built with React, using Vite as development server / bundler and PNPM as package manager. Styled components are used for styling, Playwright for running automated end-to-end tests and Storybook for nice display of components. ESLint and Husky are keeping the code clean and up to the standards. GitHub Actions user for simple CI/CD pipeline.
+This page is built with `Astro` and `React`, using `Vite` under the hood and `PNPM` as package manager. Styling is done via `SCSS` following scoped `CSS module` pattern. `Playwright` is used for running automated end-to-end tests. `ESLint` and `Husky` (with `lint-staged`) are keeping the code clean and up to the standards. `GitHub Actions` are used for simple CI/CD pipeline.
+
+During the time project went through many transformations and rewrites, you can find [full technical decision log here](./docs/tech-decision-log.md).
 
 
 ## Documentation
-- [Markdown syntax](src/components/ArticleMarkdown/README.md)
+- [Markdown syntax](docs/extended-markdown-syntax.md)
+- [Code style guide](docs/code-style-guide.md)
 - [Creating animated videos for projects](docs/creating-videos.md)
 - [Running locally](docs/running-locally.md)
 - [Running end-to-end tests](src/tests/README.md)
 - [Tooling set-up (ESLint, Husky, Playwright, etc.)](docs/tooling-set-up.md)
-- [Code Style Guide](docs/code-style-guide.md)
-- [SEO and social network sharing optimizations](docs/seo-social-optimisations.md)
+- [Remark set-up (custom markdown transformers)](src/remark-plugins/README.md)
 
 
 > ***NOTE:*** This file is re-generated from [README.template.md](README.template.md) file before every commit. It can manually be re-generated by running `pnpm run generate:md`.

@@ -5,4 +5,4 @@
 3. Run `pnpm start` to start the development server
 4. Open address from console output in your browser
 
-Foe instruction on how to run end to end tests, please refer to [running end-to-end tests documentation](../src/tests/README.md).
+For instruction on how to run end to end tests, please refer to [running end-to-end tests documentation](../src/tests/README.md).

@@ -1,12 +1,12 @@
 import React from 'react';
 import { WHO_I_AM } from '../../constants';
-import * as S from './Hero.styles';
+import S from './Hero.module.scss';
 
 function Hero() {
   return (
-    <S.HeroContainer>
-      <S.HeroTitle>{WHO_I_AM}</S.HeroTitle>
-    </S.HeroContainer>
+    <section className={S.heroContainer}>
+      <h1 className={S.heroTitle}>{WHO_I_AM}</h1>
+    </section>
   );
 }
 

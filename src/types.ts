@@ -4,8 +4,5 @@ export type Project = {
   subtitle: string;
   description: string;
   isComingSoon?: boolean;
-};
-
-export type ProjectMedia = {
-  articleUrl: string;
+  isHidden?: boolean;
 };

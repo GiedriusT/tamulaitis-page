@@ -5,7 +5,7 @@ dotenv.config();
 
 import { defineConfig, devices } from '@playwright/test';
 
-const VITE_PREVIEW_SERVER_PORT = process.env.VITE_PREVIEW_SERVER_PORT || 4173;
+const VITE_PREVIEW_SERVER_PORT = process.env.VITE_PREVIEW_SERVER_PORT || 4321;
 const VITE_PREVIEW_SERVER_URL = `http://localhost:${VITE_PREVIEW_SERVER_PORT}`;
 
 /**

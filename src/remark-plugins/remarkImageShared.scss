@@ -1,0 +1,28 @@
+@mixin shared-image-styles {
+  display: block;
+
+  @include media-embed;
+  @include media-embed-full-width-on-mobile;
+
+  &.full-width {
+    max-width: none;
+  }
+
+  &.padding-on-mobile {
+    @media (max-width: 499px) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @keyframes float {
+    0% { transform: translate(0,  0px); }
+    75% { transform: translate(0, 8px); }
+    100% { transform: translate(0, 0px); }
+  }
+
+  &.floating {
+    animation: float 4s infinite linear;
+  }
+}

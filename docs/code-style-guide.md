@@ -1,52 +1,22 @@
-# Code Style Guide
+# Code style guide
 
-Project uses [airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript) coding style and ESLint is set-up to lint the code in IDE and when comitting. Additionally we have some additional style rules.
+We use ESLint to enforce set of rules for our code. This document outlines the rules that are outside of what ESLint is handling (naming, importing, etc.) 
 
-## Styled Components
 
-We use [styled-components](https://github.com/styled-components/styled-components) package for working with CSS styles.
+## Styles
 
-### Naming files
+We use [SASS](https://sass-lang.com/) for styling the project, and [SCSS module](https://vaihe.com/blog/astro/how-to-use-scss-modules-in-astro/) approach for importing styles. This way we get decent developer experience with autocomplete in IDE.
 
-Styled components should be defined in a separate file from the main React component that they style. Filename should have `.styles.ts` suffix.
+- Class names should be in `camelCase`
+- Variable names should start with `$` and be in `$kebab-case`
+- Mixin names should be in `kebab-case`
+- SCSS code has to be organized in modules, named `NameOfComponent.module.scss`
+- SCSS modules should be imported like this: `import S from './Header.module.scss';` and then be referenced like `S.className`. It provides nice auto-complete functionality (you need VSCode extension that adds support for CSS modules).
 
-```
-MyComponent.tsx
-MyComponent.style.ts
-```
+## Astro vs. React
 
-### Importing styled components
+We use [Astro](https://astro.build/) as static page generator, but mostly rely on [React](https://react.dev/) to implement components as it is more widely used and interchangeable. To keep things tidy we follow these rules:
 
-When importing styled components we use the approach of always importing all of them under the `S` namespace;
-
-```tsx
-import * as S from './MyComponent.styles';
-
-const MyComponent: React.FC = () => {
-  // ...
-  
-  return (
-    <S.MyComponent>
-      Contents
-    </S.MyComponent>
-  );
-};
-```
-
-This way you have nice auto-complete functionality in IDE for your styled components, also there are never any name collisions with functional components.
-
-### Using props
-
-We use [transient props](https://styled-components.com/docs/api#transient-props) to pass data to styled components as it is currently suggested as best practice. That means that all props of styled components should have `$` prefix.
-
-```tsx
-import styled from 'styled-components';
-
-export type ArticleContainerProps = {
-  $minHeight: number
-};
-
-export const ArticleContainer = styled.div<ArticleContainerProps>`
-  min-height: ${props => props.$minHeight}vh;
-`;
-```
+- `/src/pages` is all Astro
+- `/src/layouts` is all Astro
+- `/src/components` is all React

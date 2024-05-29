@@ -1,0 +1,52 @@
+/*
+This is the script that generates the keyframes for the animated image frame strips. You can use it
+if you need to add more variants of the animated frame strips.
+
+const generateAnimatedStripKeyframes = (numberOfFrames: number, isReversed: boolean = false) => {
+  const keyframes = [];
+  const sign = isReversed ? '' : '-';
+  for (let i = 0; i < numberOfFrames; i += 1) {
+    const percentage = ((i / numberOfFrames) * 100).toFixed(2);
+    keyframes.push(`${percentage}% { transform: translateX(${sign}${percentage}%); }`);
+  }
+  return keyframes.join('\n');
+};
+
+console.log(generateAnimatedStripKeyframes(8));
+*/
+
+@keyframes move8FrameStrip {
+    0.00% { transform: translateX(-0.00%); }
+    12.50% { transform: translateX(-12.50%); }
+    25.00% { transform: translateX(-25.00%); }
+    37.50% { transform: translateX(-37.50%); }
+    50.00% { transform: translateX(-50.00%); }
+    62.50% { transform: translateX(-62.50%); }
+    75.00% { transform: translateX(-75.00%); }
+    87.50% { transform: translateX(-87.50%); }
+  }
+  
+  @keyframes move8FrameStripReversed {
+    0.00% { transform: translateX(0.00%); }
+    12.50% { transform: translateX(12.50%); }
+    25.00% { transform: translateX(25.00%); }
+    37.50% { transform: translateX(37.50%); }
+    50.00% { transform: translateX(50.00%); }
+    62.50% { transform: translateX(62.50%); }
+    75.00% { transform: translateX(75.00%); }
+    87.50% { transform: translateX(87.50%); }
+  }
+  
+  @keyframes move4FrameStrip {
+    0.00% { transform: translateX(-0.00%); }
+    25.00% { transform: translateX(-25.00%); }
+    50.00% { transform: translateX(-50.00%); }
+    75.00% { transform: translateX(-75.00%); }
+  }
+  
+  @keyframes move4FrameStripReversed {
+    0.00% { transform: translateX(0.00%); }
+    25.00% { transform: translateX(25.00%); }
+    50.00% { transform: translateX(50.00%); }
+    75.00% { transform: translateX(75.00%); }
+  }

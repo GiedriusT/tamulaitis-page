@@ -1,0 +1,83 @@
+@import "../../theme/variables.scss";
+@import "../../theme/mixins.scss";
+
+$color-button-text: #ffffff;
+$color-button-background: $color-accent;
+$color-button-hover-text: $color-button-text;
+$color-button-hover-background: $color-footer-background;
+$color-footer-button-text: $color-button-text;
+$color-footer-button-background: $color-accent;
+$color-footer-button-hover-text: $color-footer-background;
+$color-footer-button-hover-background: $color-primary-background;
+
+.contactButton {
+  appearance: button;
+  font-size: 1.1rem;
+  line-height: 1.15;
+  border-radius: 100px;
+  border: 0;
+  padding: 11px 33px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: $color-button-text;
+  background-color: $color-button-background;
+  transition: background-color 0.17s ease-out;
+  &:hover {
+    color: $color-button-hover-text;
+    background-color: $color-button-hover-background;
+    transition: background-color 0.17s ease-out;
+  }
+  &.footerVariation:hover {
+    color: $color-footer-button-hover-text;
+    background-color: $color-footer-button-hover-background;
+  }
+
+  .screenText {
+    display: initial;
+  }
+
+  .screenIcon {
+    display: none;
+    width: 22px;
+    line-height: 1;
+    transform: translate(0, 1px);
+  }
+
+  .printText {
+    display: none;
+  }
+
+  @include phone-only {
+    &:not(.footerVariation) {
+      padding-left: 22px;
+      padding-right: 22px;
+
+      .screenText {
+        display: none;
+      }
+      .screenIcon {
+        display: inline-block;
+      }
+      .printText {
+        display: none;
+      }
+    }
+  }
+
+  @include print-only {
+    padding-left: 0;
+    padding-right: 0;
+
+    .screenText {
+      display: none;
+    }
+    .screenIcon {
+      display: none;
+    }
+    .printText {
+      display: initial;
+    }
+  }
+}

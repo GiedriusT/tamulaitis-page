@@ -1,0 +1,28 @@
+.projectsContainer {
+  padding-bottom: 30px;
+
+  .projectsItemsListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 2%;
+    &::after {
+      content: "";
+      flex: auto;
+    }
+    @media (max-width: 499px) {
+      /* row-gap: 0; */
+    }
+  }
+
+  .projectsComingSoonContainer {
+    font-size: 1.1rem;
+    font-weight: 100;
+    @media (max-width: 499px) {
+      row-gap: 0;
+    }
+    padding-top: 20px;
+  }
+}

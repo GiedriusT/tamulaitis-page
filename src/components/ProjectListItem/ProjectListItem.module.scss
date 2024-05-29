@@ -1,0 +1,119 @@
+@import "../../theme/variables.scss";
+@import "../../theme/mixins.scss";
+
+.projectListItemContainer {
+  width: 100%;
+  @media (max-width: 499px) {
+    width: calc(100% + 2 * $page-padding-horizontal);
+    margin-left: -$page-padding-horizontal;
+    margin-right: -$page-padding-horizontal;
+  }
+  @media (min-width: 785px) {
+    width: 49%;
+  }
+  @media (min-width: 1112px) {
+    width: 32%;
+  }
+
+  .projectListItemIternalContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  @mixin project-list-item-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .projectListItemBackgroundImage {
+    @include project-list-item-layer;
+  }
+
+  .projectListItemVideo {
+    @include project-list-item-layer;
+  }
+
+  .projectListItemImage {
+    @include project-list-item-layer;
+  }
+
+  .projectListItemComingSoon {
+    @include project-list-item-layer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include hoverable-device-only {
+      color: rgba(255, 255, 255, 0);
+      transition: color 0.7s ease-out;
+    }
+  }
+
+  .projectListItemIternalContainer:hover .projectListItemComingSoon {
+    @include hoverable-device-only {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.17s ease-out;
+    }
+  }
+
+  @mixin project-list-item-text {
+    position: absolute;
+    left: 0;
+    width: auto;
+    margin: 0;
+    color: white;
+    background-color: black;
+  }
+
+  .projectListItemTitle {
+    @include project-list-item-text;
+    /* display: none; */
+    line-height: 1;
+    padding: 0.55em 20px;
+    bottom: 2em;
+    @include hoverable-device-only {
+      bottom: 0.5em;
+      transition: bottom 0.6s ease-out;
+    }
+  }
+
+  .projectListItemIternalContainer:hover .projectListItemTitle {
+    @include hoverable-device-only {
+      bottom: 2em;
+      transition: bottom 0.17s ease-out;
+    }
+  }
+
+  .projectListItemSubtitle {
+    @include project-list-item-text;
+    bottom: 0.8em;
+    padding: 5px 20px 5px 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    line-height: 1.5;
+    transform: translate(5%, 0);
+    @include hoverable-device-only {
+      transform: translate(-100%, 0);
+      transition: transform 0.6s ease-out;
+    }
+  }
+
+  .projectListItemIternalContainer:hover .projectListItemSubtitle {
+    @include hoverable-device-only {
+      transform: translate(5%, 0);
+      transition: transform 0.17s ease-out;
+    }
+  }
+}

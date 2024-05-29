@@ -1,0 +1,24 @@
+@import "../theme/mixins.scss";
+
+.youtube-embed {
+  @include media-embed;
+  @include media-embed-full-width-on-mobile;
+
+  & iframe {
+    aspect-ratio: 16 / 9;
+  }
+
+  & .youtube-embed-print-text {
+    display: none;
+  }
+
+  @media print {
+    & iframe {
+      display: none;
+    }
+
+    & .youtube-embed-print-text {
+      display: inline;
+    }
+  }
+}
