@@ -145,14 +145,57 @@ Most complex parts were actually not audio related at all. I needed a way to eas
 
 #### Hardware
 
-In parallel with prototyping the electronics we were working on the cases for the boards that would house all the components. It started from detailed 3D model that we were able to feed into the huge CDC cutter machine. It carved out all the cavities according to our 3D model in one go.
+In parallel with prototyping the electronics we were working on the cases for the boards that would house all the components. It started from detailed 3D model that we were able to feed into the huge CDC cutter machine layer by layer.
+
+![Social Sequencer schematics](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hamburger-schematics.webp)
+
+More details and the hardware part is coming soon.
+
+<!-- #### Putting it all together
+
+Cases, brain, soldering thousand wires, etc. Different connections and cables.
+-->
+
+## Logo
+
+Finally when all was done I wanted to make a nice logo for the device so we can have it on social media and make some stickers with it. I ended up making it in half an hour and was really happy with the result.
+
+![Social Sequencer logo](https://tamulaitis.lt/images/social-sequencer/social-sequencer-logo.webp#padding-on-mobile)
+
+We made some stickers with this logo and left them lying around the device during the events. Interestingly enough a lot of people thought that these are the instructions on how to "correctly" place the cubes on the board and started arranging cubes into the "S" shape just to hear the arhythmical weird mess of sounds followed by empty pauses.
 
 
-<!-- #### Connections -->
+## Funding
+
+Given the scope of the project we really wanted to get some funding, but due to non-traditional and artsy nature of the product we needed to be very creative with who to approach.
+
+We tried applying for grants from Lithuanian Ministry of Culture and several other European Union institutions but they were not too impressed. If I remember correctly the response was more or less: we don't see any cultural value in this project, and actually we don't even understand what are you planning to do here at all.
+
+Another attempt was to get funding for Social Sequencer from Burning Man, a legendary festival taking place in Nevada desert in USA. They are famous for all sorts of art installations and our device would be a good fit there. In theory. Boy I am happy that they ended up rejecting our project. The amount of money we were asking for was ridiculously low, timelines we provided were ten fold unrealistic, the amount of logistical problems we never thought about was huge. We did consult a guy who was a frequent Burning Man attendee and helped to set up various projects there and and after hearing our grand idea his advice was: "guys, have you considered to forget about this project and just go to the festival and have a good time". This of course didn't stop us from applying to Burning Man and still trying to pull it of, but looking back, he was definitely right. On the other hand us being absolutely terrible at estimating the amount of resources and time that will go into making the device was the only reason we actually ended up building it. Worth mentioning is that the same year one Lithuanian installation did reach Burning man festival, it was "Dance for the Dawn" by Karolis Misevičius and his team, you can see a photo of it below.
+
+![Dance for the Dawn installation in Burning Man 2017](https://tamulaitis.lt/images/social-sequencer/dance-for-the-dawn-installation.webp)
+
+Next we tried different organizations that fund art projects. They are very niche and there aren't a lot of them, but there are a few. Most we applied to were not interested, but we got some nice traction from an Awesome Foundation in San Francisco. Frankly it was mostly a single person from the foundation who really understood and absolutely loved our project. His name was Mitch Altman. He is a very interesting person himself who back in the day invented and manufactured the device called "TV be Gone", a remote control allowing you to turn off any TV that has a remote control, including the ones in public spaces like bars, etc. Also was an early developer of virtual reality technologies, co-founder of one of the first hackerspaces in US called Noisebridge and a prominent figure in the whole maker movement.
+
+![Mitch Altman](https://tamulaitis.lt/images/social-sequencer/mitch-altman.webp)
+![TV Be Gone](https://tamulaitis.lt/images/social-sequencer/tv-be-gone.webp)
+
+Unfortunately Awesome Foundation had a rule that they are not funding projects outside San Francisco area and Mitch wasn't able to convince others to break this rule in the end. But he pointed us to The Pollination Project a fund that is giving out grants for "driving transformational change in communities, cultures and countries". It was a bit weird, because we didn't see our device as designed to help diminishing poverty or providing equal opportunities for minorities in any shape or form. But they saw something in our project and we got the grant. In the end they wrote the whole article about how Social Sequencer is helping prison population to re-integrate into society. The article made us cringe a bit, but we accepted the honors nevertheless.
+
+<!-- Screenshot of the article about prison population -->
 
 
+## Version 2.0
 
-<!-- Photos or videos pf LED strip -->
-![Social Sequencer in the making](https://tamulaitis.lt/images/social-sequencer/social-sequencer-two-boards-testing.webp)
+By the time the first version became functional LinkMenų Fabrikas and it's director Adas became very interested in the project. Together we started looking for more ways to get funding and expanding on the project. One thing we ended up pulling off was getting a grant from MITA, an agency for supporting science, innovation and technology. They are mostly funding projects where scientists and entrepreneurs collaborate to create innovative products. Again, we had to be creative how we present the whole project. But that's where they guys from LinkMenų Fabrikas shined. They wrote a 60 page document describe the project in in very formal and bureaucratic language. Fortunately this time the effort was on LinkMenų Fabrikas side. I have to admit when they sent me the final draft and I read the abstract, I couldn't understand that it is actually about our Social Sequencer. But they knew exactly what they are doing because we did get the grant.
 
-This is v0.9 of this article. Coming soon: more details about production of the device, working with PureData, writing bash scripts for Raspberry Pi, carving out the various layers of the device using big CNC cutter machines and smaller laser cutters.
+![Social Sequencer MITA application](https://tamulaitis.lt/images/social-sequencer/social-sequencer-innocekiai.webp)
+
+Above you can see the first page from that application and translated to english is says: Scientific research paper "Technical feasibility study of the application of new advanced technologies to develop non-traditional thinking". I was really glad I was not the one who had to come up with this name and I was also very happy that with this grant we were able to build second version that was more polished, had various improvements made by LinkMenų engineers, much nicer 3D printed cubes and was all white!
+
+<!-- Gallery of images of the second version -->
+
+They are still bringing trimmed down version of Social Sequencer to various exhibitions to present Vilnius Tech University and to show what cool projects you could be working on if you choose to join Vilnius Tech. That's really nice, but I still want to find new spots where it would be possible to demonstrate the whole installation and allow people to create an ever evolving piece of music by randomly collaborating together, if you are interested or know somebody who is, please let me know.
+
+
+This is v0.9.5 of this article. Coming soon: more details about carving out the various layers of the device using big CNC cutter machines and smaller laser cutters, pictures of version 2.0 of the device.
