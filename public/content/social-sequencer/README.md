@@ -138,7 +138,7 @@ The first prototype needed a decent laptop to run as playback of the sounds was 
 
 ![Social Sequencer PureData schemas](https://tamulaitis.lt/images/social-sequencer/social-sequencer-puredata-audio-parts.webp#full-width)
 
-Most complex parts were actually not audio related at all. I needed a way to easily switch through multiple sound banks and that proved to nightmare to do with Pure Data, the below portion is doing just that: loading files from different folders based on what number of bank is selected. In any programming languages this would be just a few lines of code.
+Most complex parts were actually not audio related at all. I needed a way to easily switch through multiple sound banks and that proved to be a nightmare to do with Pure Data, the below portion is doing just that: loading files from different folders based on what number of bank is selected. In any programming languages this would be just a few lines of code.
 
 ![Social Sequencer PureData schemas](https://tamulaitis.lt/images/social-sequencer/social-sequencer-puredata-fileloading-parts.webp)
 
@@ -149,12 +149,29 @@ In parallel with prototyping the electronics we were working on the cases for th
 
 ![Social Sequencer schematics](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hamburger-schematics.webp)
 
-More details and the hardware part is coming soon.
+There was tons of work to make it work, we ruined quite some materials, had to adjust and re-adjust CDC cutter settings, play with temperatures of laser cutter, test multiple painting options, but I'll spare you the details and leave you with two animated images implying that the process was easy and smooth.
 
-<!-- #### Putting it all together
+![Social Sequencer CDC cutter](https://tamulaitis.lt/images/social-sequencer/social-sequencer-cutter-machine.webp)
+![Social Sequencer CDC cutter](https://tamulaitis.lt/images/social-sequencer/social-sequencer-painting-board.webp)
 
-Cases, brain, soldering thousand wires, etc. Different connections and cables.
--->
+After this step we had all the individual parts of the device ready to be assembled into one single entity.
+
+
+#### Putting it all together
+
+Our designs proved to be good and assembling everything into one working entity didn't bring any unexpected problems, but was extremely time intensive. We had to solder tons of wires, tune all the sensors, test out connectors and of course use lots of duct tape, because all decent technology is held together by the duct tape.
+
+![Social Sequencer putting together](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hardware-making-1.webp)
+![Social Sequencer putting together](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hardware-making-2.webp)
+![Social Sequencer putting together](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hardware-making-3.webp)
+![Social Sequencer putting together](https://tamulaitis.lt/images/social-sequencer/social-sequencer-hardware-making-4.webp)
+
+Above you can see the photos taken during the process of assembling the boards. Each board is fully detachable and can be connected to the "brain" of the device via Ethernet cable. The cable or the protocol doesn't have anything in common with internet or network, we just chose Ethernet cable, because it packs 8 wires in a compact connector and is easy to work with.
+
+![Social Sequencer half brain](https://tamulaitis.lt/images/social-sequencer/social-sequencer-half-a-brain.webp)
+
+Prototype of the "brain" was made by using power supply from PC that was enough to power Arduino and LEDs in all the boards. The only thing missing from the picture is a sound card with 8 outputs (1 x stereo for mixed output and 3 x stereo for sound s from each board separately). 
+
 
 ## Logo
 
@@ -187,7 +204,7 @@ Unfortunately Awesome Foundation had a rule that they are not funding projects o
 
 ## Version 2.0
 
-By the time the first version became functional LinkMenų Fabrikas and it's director Adas became very interested in the project. Together we started looking for more ways to get funding and expanding on the project. One thing we ended up pulling off was getting a grant from MITA, an agency for supporting science, innovation and technology. They are mostly funding projects where scientists and entrepreneurs collaborate to create innovative products. Again, we had to be creative how we present the whole project. But that's where they guys from LinkMenų Fabrikas shined. They wrote a 60 page document describe the project in in very formal and bureaucratic language. Fortunately this time the effort was on LinkMenų Fabrikas side. I have to admit when they sent me the final draft and I read the abstract, I couldn't understand that it is actually about our Social Sequencer. But they knew exactly what they are doing because we did get the grant.
+By the time the first version became functional LinkMenų Fabrikas and it's director Adas became very interested in the project. Together we started looking for more ways to get funding and expanding on the project. One thing we ended up pulling off was getting a grant from MITA, an agency for supporting science, innovation and technology. They are mostly funding projects where scientists and entrepreneurs collaborate to create innovative products. Again, we had to be creative how we present the whole project. But that's where the guys from LinkMenų Fabrikas shined. They wrote a 60 page document describing the project in in very formal and bureaucratic language. Fortunately this time the effort was on LinkMenų Fabrikas side. I have to admit when they sent me the final draft and I read the abstract, I couldn't understand that it is actually about our Social Sequencer. But they knew exactly what they are doing because we did get the grant.
 
 ![Social Sequencer MITA application](https://tamulaitis.lt/images/social-sequencer/social-sequencer-innocekiai.webp)
 
@@ -198,4 +215,4 @@ Above you can see the first page from that application and translated to english
 They are still bringing trimmed down version of Social Sequencer to various exhibitions to present Vilnius Tech University and to show what cool projects you could be working on if you choose to join Vilnius Tech. That's really nice, but I still want to find new spots where it would be possible to demonstrate the whole installation and allow people to create an ever evolving piece of music by randomly collaborating together, if you are interested or know somebody who is, please let me know.
 
 
-This is v0.9.5 of this article. Coming soon: more details about carving out the various layers of the device using big CNC cutter machines and smaller laser cutters, pictures of version 2.0 of the device.
+This is v0.9.6 of this article. Coming soon: more details about carving out the various layers of the device using big CNC cutter machines and smaller laser cutters, pictures of version 2.0 of the device.
