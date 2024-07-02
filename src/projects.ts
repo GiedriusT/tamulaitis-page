@@ -11,7 +11,7 @@ const projects: Project[] = [
   },
   {
     slug: 'kamchatka-vinyl',
-    title: 'Kamchatka vinyl',
+    title: 'Garo - Kamchatka',
     subtitle: 'vinyl re-issue of my first album',
     description: 'This vinyl record is a re-release of my first EP titled "Kamchatka". It was originally released in 2010 as a limited edition of 50 CDs as well as digital format. To mark its ten year anniversary I decided to re-release it on vinyl.',
   },
@@ -29,7 +29,7 @@ const projects: Project[] = [
   },
   {
     slug: 'sewers',
-    title: 'Sewers EP',
+    title: 'Garo - Sewers',
     subtitle: 'album released as a game console cartridge',
     description: 'Sewers is my second EP, released in 2011. It revolves around the theme of Teenage Mutant Ninja Turtles, the cartoon I was absolutely fascinated by while growing up. It was released in a digital format accompanied by a limited edition of game cartridges.',
   },
