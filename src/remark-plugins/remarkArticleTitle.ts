@@ -8,12 +8,10 @@ const processHeading = (node: AstHeadingNode) => {
 
   const children = node.children || [];
 
-
-
   const segments = children[0].value.split(' - ');
   const hasSubtitle = segments.length > 1;
-  let title = hasSubtitle ? segments.slice(0, -1).join(' - ') : segments[0];
-  let subtitle = hasSubtitle ? segments.slice(-1)[0] || '' : '';
+  const title = hasSubtitle ? segments.slice(0, -1).join(' - ') : segments[0];
+  const subtitle = hasSubtitle ? segments.slice(-1)[0] || '' : '';
 
   node.type = 'html';
   node.value = `
