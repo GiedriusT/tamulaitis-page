@@ -7,6 +7,17 @@ Bembis Bembio Motina Records is an uber eclectic record label that I started bac
 The label has eight releases under it's belt including my own music, mixes by famous Lithuanian Dj's and even an illustrated musical fairytale about a toad, a cow and the meaning of life. You can find more information about the releases, Spotify and download links in a official website of Bembis Bembio Motina at **[https://bembisbembiomotina.lt](https://bembisbembiomotina.lt)**.
 
 
+## Latest news
+
+Bembis Bembio Motina has it's first release of 2024! It's a baltic folk infused electronic track called "Laumės Vaiką" by a band called Beaverstale. As ChatGPT likes to put it: "Laumės Vaiką by Beaverstale is a mesmerizing blend of electronic music infused with delicate folk elements, weaving an ethereal soundscape that feels both modern and timeless. Inspired by the mystical lore of fairies, the track tells the enchanting story of woodland spirits—known as Laumės in Baltic mythology—nurturing a child in a magical forest. Broken beats pulse beneath gentle, organic melodies, evoking the serene yet mysterious atmosphere of nature's hidden realms."
+
+[![Beaverstale - Laumės Vaiką](https://img.youtube.com/vi/ErvYL8GvK0A/0.jpg)](https://www.youtube.com/watch?v=ErvYL8GvK0A)
+
+[Beaverstale - Laumės Vaiką](https://www.youtube.com/watch?v=ErvYL8GvK0A#aspect_1_1)
+
+The band Beaverstale consists of Milda Juknevičienė on vocals, melodies and guitars plus Giedrius Tamulaitis and Rokas Domereckas on electronics, synths, Abletons and turntables. It all started in the basement of Green Carpet Studios 10+ years ago when Milda came in with her guitar and sang 10 most beautiful songs I have ever heard in my life. Simple, naive, and just plain beautiful. We spent many sessions adding weird electronic stuff to these innocent songs, but there was so much good stuff that we jumped from one idea to another and ended up not finishing any one song till the end. Then all sorts of other projects took priority and this beautiful music was left gaining dust in our hard drives. But now we decided to finish them one by one and release, so the world can hear it. Laumės Vaiką is the first, but more will be coming soon!
+
+
 ## History
 
 Back in a day we had a hip-hop crew called Fresh Rice Crew that consisted of around seven members. We were engaged in lots of activities like recording music, writing articles about artists and Djs, organizing events and rehearsing for shows. But we spent most of the time arguing what we should do and how exactly should we do it. Sometimes we would gather to rehearse, but wouldn't even touch the equipment, because all the time was spent discussing and contemplating about the future.
@@ -82,4 +93,4 @@ The most recent unofficial bootleg release of Bembis Bembio Motina is a mash-up 
 
 Even thou the track is quite funny, I really enjoyed working on it and it actually pushed me toward going back to making some more music, activity that I had abandoned for quite a while. I thought Bembis Bembio Motina is over, but now I have the feeling that there will be more things coming, so stay tuned!
 
-<!-- This is v1.1.1 of this article. -->
+<!-- This is v1.1.2 of this article. -->
