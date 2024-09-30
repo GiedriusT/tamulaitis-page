@@ -4,12 +4,12 @@ Bembis Bembio Motina Records is an uber eclectic record label that I started bac
 
 ![Bembis Bembio Motina logo](https://tamulaitis.lt/images/bembis-bembio-motina/bembis-bembio-motina-logo-strip-two-logos.webp#padding-on-mobile)
 
-The label has eight releases under it's belt including my own music, mixes by famous Lithuanian Dj's and even an illustrated musical fairytale about a toad, a cow and the meaning of life. You can find more information about the releases, Spotify and download links in a official website of Bembis Bembio Motina at **[https://bembisbembiomotina.lt](https://bembisbembiomotina.lt)**.
+The label has quite a few releases under it's belt including my own music, mixes by famous Lithuanian Dj's and even an illustrated musical fairytale about a toad, a cow and the meaning of life. You can find more information about the releases, Spotify and download links in a official website of Bembis Bembio Motina at **[https://bembisbembiomotina.lt](https://bembisbembiomotina.lt)**.
 
 
 ## Latest news
 
-Bembis Bembio Motina has it's first release of 2024! It's a baltic folk infused electronic track called "Laumės Vaiką" by a band called Beaverstale. As ChatGPT likes to put it: "Laumės Vaiką by Beaverstale is a mesmerizing blend of electronic music infused with delicate folk elements, weaving an ethereal soundscape that feels both modern and timeless. Inspired by the mystical lore of fairies, the track tells the enchanting story of woodland spirits—known as Laumės in Baltic mythology—nurturing a child in a magical forest. Broken beats pulse beneath gentle, organic melodies, evoking the serene yet mysterious atmosphere of nature's hidden realms."
+Bembis Bembio Motina has it's first release of 2024! It's a baltic folk infused electronic track called "Laumės Vaiką" by a band called Beaverstale. As ChatGPT accurately puts it: "Laumės Vaiką by Beaverstale is a mesmerizing blend of electronic music infused with delicate folk elements, weaving an ethereal soundscape that feels both modern and timeless. Inspired by the mystical lore of fairies, the track tells the enchanting story of woodland spirits—known as Laumės in Baltic mythology—nurturing a child in a magical forest. Broken beats pulse beneath gentle, organic melodies, evoking the serene yet mysterious atmosphere of nature's hidden realms."
 
 [![Beaverstale - Laumės Vaiką](https://img.youtube.com/vi/ErvYL8GvK0A/0.jpg)](https://www.youtube.com/watch?v=ErvYL8GvK0A)
 
@@ -93,4 +93,4 @@ The most recent unofficial bootleg release of Bembis Bembio Motina is a mash-up 
 
 Even thou the track is quite funny, I really enjoyed working on it and it actually pushed me toward going back to making some more music, activity that I had abandoned for quite a while. I thought Bembis Bembio Motina is over, but now I have the feeling that there will be more things coming, so stay tuned!
 
-<!-- This is v1.1.2 of this article. -->
+<!-- This is v1.1.3 of this article. -->
