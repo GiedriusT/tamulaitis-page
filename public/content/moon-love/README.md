@@ -40,6 +40,9 @@ UK bass music producer and Dj, ENiGMA Dubz made a slow rolling remix full of dee
 
 Kial took the theme to the heavier side of a dubstep spectrum. You can **[listen to Kial Mix on YouTube](https://www.youtube.com/watch?v=avSdU7JjC7c)**. This USA based producer and Dj who describes himself as "Soul-Seeker, Sonic Tweeker, Sub-Bass Scientist" has a really [impressive catalogue of his releases on SoundCloud](https://soundcloud.com/kial) that he released under his own Sub Pressure Records and other labels.
 
+![Kial - Sounds Of An Era](https://tamulaitis.lt/images/moon-love/kial-sounds-of-an-era-cover.webp)
+
+He also featured Moon Love remix in his 2017 release titled ["Sounds Of An Era" that you can listen on Bandcamp](https://kial.bandcamp.com/album/sounds-of-an-era). It's a 6 track EP ranging from dubstep and half time drum'n'bass to atmospheric experiments.
 
 ## Filming the video
 
@@ -73,4 +76,4 @@ Video guys also really wanted to have a nice shot of moon in the video, so we wa
 We were really happy with the final result and decided to submit the video for various competitions. One of the competitions was the music video track of the "Kino Pavasaris", the biggest international film festival in Lithuania. To our surprise it was rejected in the first round and the reasoning was that our video: "promotes and glorifies slavery". That was equally annoying and hilarious, as it was hard to wrap our heads around how anybody could interpret our mellow and innocent video this way. After some digging we found that it was just one person from the jury that got deeply offended by the video and made a big issue out of it. That is a good example how differently people interpret things and that if you are a creator then whatever you do there will always be someone who will be offended by your work. In the end art is all about triggering the emotional response in people, so we definitely nailed it in that regard.
 
 
-<!-- This is v1.0 of this article. -->
+<!-- This is v1.0.1 of this article. -->
