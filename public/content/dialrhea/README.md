@@ -118,4 +118,13 @@ Apparently we were not the only ones willing to waste our time building ridiculo
 
 Compared to Dialrhea, Yoshino's device doesn't utilize handset at all forcing you to dial `1` to shoot (which is way less fun than frantically mashing the handset). Also you need to connect it to the computer via cable while Dialrhea is fully wireless and supports Bluetooth LE. Just another example how technologically superior solution doesn't always win the market, marketing does.
 
-<!-- This is v1.3 of this article. -->
+
+## Another 15 minutes of fame
+
+In 2024 I went to Creative Coding Amsterdam meetup which I randomly found online. It's a gathering of people who use code to create art or are interested in doing so. I did an improvised presentation of Dialrhea and made everybody laugh. One of the members named Stanko (who by the way has [absolutely amazing generative art projects on his website](https://muffinman.io/projects/)) then posted it on [Hacker News with a title "Doom on a modified rotary phone"](https://news.ycombinator.com/item?id=41643690) and it started trending.
+
+![Dialrhea on Hacker News](https://tamulaitis.lt/images/dialrhea/dilrhea-on-hacker-news-2024.webp#full-width)
+
+Thousands of people flocked into my website and watched Dialrhea video, also some very interesting discussions started in Hacker News thread. Doom on everything purists were arguing that Dialrhea is just a case mod and that using the phrase "play Doom on rotary phone" is false advertising. Others were sharing how they ran Doom on favicon (that small icon in the browser tab), 64x40 pixel LED matrix or controlled it with voice via actual phone, also discussing what devices are yet left for Doom to conquer. Some spiralled off into talking about remotely controlled cockroaches, whatever that is.
+
+<!-- This is v1.4 of this article. -->
