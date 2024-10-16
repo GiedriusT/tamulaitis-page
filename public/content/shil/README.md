@@ -8,17 +8,17 @@ Travel in the hyper-stylized realms made out of silhouettes. Follow your intuiti
 
 This game will make you smart. Not Oxford-smart, more like microdosing-in-Silicon Valley-smart. Twisted logics will blend your mind, so be aware that you may never see things the same after playing one of the most bizarre games of the year.
 
-[![Watch Shil Gameplay](https://img.youtube.com/vi/13HJVO0rknQ/0.jpg)](https://www.youtube.com/watch?v=13HJVO0rknQ)
+[![Watch Shil Gameplay](https://img.youtube.com/vi/jvvp9RXSmGc/0.jpg)](https://www.youtube.com/watch?v=jvvp9RXSmGc)
 
-[Watch Shil Gameplay](https://www.youtube.com/watch?v=13HJVO0rknQ)
+[Watch Shil Gameplay](https://www.youtube.com/watch?v=jvvp9RXSmGc)
 
 ---
 
-Game is currently in development and set to be released in Q1 2026. Primary platform is PC, but I am also looking into consoles and have VR adaptation.
+Game is currently in development and set to be released in Q2 2026. Game is planned to be released on PC and consoles. We will also have VR adaptation.
 
 **We are currently looking for a publishing partner who would be eager to help us make this game a commercial success.**
 
-If you are interested, please **contact me at [shil@tamulaitis.lt](mailto:shil@tamulaitis.lt)**
+If you are interested, please **contact us at [shil@tamulaitis.lt](mailto:shil@tamulaitis.lt)**
 
 
 <!--
@@ -34,3 +34,5 @@ In conclusion, Shil is a unique and compelling video game that offers an immersi
 
 This gibberish was written by ChatGPT.
 -->
+
+<!-- This is v0.3 of this article. -->
