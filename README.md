@@ -23,7 +23,7 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[Garo - Kamchatka](/public/content/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
 ### **[Dialrhea](/public/content/dialrhea/README.md)** - play Doom on rotary phone
 ### **[Wave Twisters VR](/public/content/wavetwisters-vr/README.md)** - ambitious game prototype
-### **[Garo - Sewers](/public/content/sewers/README.md)** - album released as a game console cartridge
+### **[Garo - Sewers](/public/content/sewers/README.md)** - album on game console cartridge
 ### **[Moon Love](/public/content/moon-love/README.md)** - unexpectedly controversial music video
 ### **[Skraidantis Radijas](/public/content/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
 ### **[Captain Badass](/public/content/captain-badass/README.md)** - game that killed the company

@@ -1,4 +1,4 @@
-# Garo - Sewers - album released as a game console cartridge
+# Garo - Sewers - album on game console cartridge
 
 Sewers is my second EP, released in 2011. It revolves around the theme of Teenage Mutant Ninja Turtles, the cartoon I was absolutely fascinated by while growing up. It was released in a digital format accompanied by a limited edition of game cartridges that contained special link for downloading the EP with additional content.
 
