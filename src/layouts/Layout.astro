@@ -21,7 +21,7 @@ const isHomepage = Astro.url.pathname === "/";
     <meta name="description" content={description} />
     <meta property="og:image" content={ogImage} />
     <link rel="canonical" href={canonicalUrl} />
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: MY_NAME,
