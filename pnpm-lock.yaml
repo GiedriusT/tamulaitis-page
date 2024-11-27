@@ -21,8 +21,8 @@ importers:
         specifier: ^11.10.0
         version: 11.10.0
       marked:
-        specifier: ^13.0.0
-        version: 13.0.0
+        specifier: ^15.0.2
+        version: 15.0.2
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2056,8 +2056,8 @@ packages:
   markdown-table@3.0.3:
     resolution: {integrity: sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==}
 
-  marked@13.0.0:
-    resolution: {integrity: sha512-VTeDCd9txf4KLLljUZ0nljE/Incb9SrWuueE44QVuU0pkOdh4sfCeW1Z6lPcxyDRSVY6rm8db/0OPaN75RNUmw==}
+  marked@15.0.2:
+    resolution: {integrity: sha512-85RUkoYKIVB21PbMKrnD6aCl9ws+XKEyhJNMbLn206NyD3jbBo7Ec7Wi4Jrsn4dV1a2ng7K/jfkmIN0DNoS41w==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -5626,7 +5626,7 @@ snapshots:
 
   markdown-table@3.0.3: {}
 
-  marked@13.0.0: {}
+  marked@15.0.2: {}
 
   mdast-util-definitions@6.0.0:
     dependencies:
