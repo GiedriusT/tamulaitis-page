@@ -38,7 +38,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^3.6.3",
     "@astrojs/sitemap": "^3.2.1",
-    "@playwright/test": "^1.44.1",
+    "@playwright/test": "^1.49.0",
     "@types/node": "18",
     "@types/react": "^18.3.3",
     "@types/react-transition-group": "^4.4.10",
