@@ -1,10 +1,10 @@
 # Skraidantis Radijas - no nonsense radio with nonsense
 
-Skraidantis Radijas (Flying Radio in english) is a radio show we were hosting for six years. It started back in 2006 on then newly founded StartFM radio station that promised an alternative to mainstream radio stations and focused on underground music.
+Skraidantis Radijas (Flying Radio in english) is a radio show where absolute nonsense was spoken and amazing music was played for over six years. It started back in 2005 on newly founded StartFM radio station that promised an alternative to mainstream radio stations and focused on underground music.
 
 ![Skraidantis Radijas logo](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-hero.webp#full-width)
 
-It was the first live show that ever aired on StartFM, even their [Wikipedia page](https://lt.wikipedia.org/wiki/Start_FM) admits that. And it was probably the most rebellious and off beat show on the station as well. Many times we were talking about absurd topics, inventing stuff as we go, consulting non-existent "experts" about subjects they know nothing about, etc. Stories were deliberately subjective, many times full of irrelevant details, kind of resembling Gonzo journalism in a way. But we always played nice and rare music.
+Skraidantis Radijas was the first live show that ever aired on StartFM, even their [Wikipedia page](https://lt.wikipedia.org/wiki/Start_FM) admits that. And it was probably the most rebellious and off beat show on the station as well. On numerous occasions we were discussing absurd topics, inventing stuff on the go, consulting non-existent "experts" about subjects they know nothing about, etc. Stories were deliberately subjective, many times full of irrelevant details, kind of resembling Gonzo journalism in a way. But we always played nice and rare music.
 
 There were two types of listeners of the show: "I can't stand the talks, how is it possible to talk such rubbish on live air, but I love the music" and "I love the talks, don't care much about the music". The fan base was small but very dedicated. I heard stories about people listening to our show in the bathtub, because that was the only place where the reception for FM signal was good enough.
 
@@ -16,7 +16,7 @@ Skraidantis Radijas went through a lot of transformations during the years. The 
 
 ## First iteration
 
-It all started in 2005 when my friend and colleague Mark Splinter came to me and said: "Hey Garo, let's do a radio show". I was hesitant at first as radio at the time was seen as this ancient thing that only plays "commercial" pop music. On top of that I was always a bit shy about my voice as whenever I heard it played back I thought I sounded stupid. This is actually an interesting phenomena and most people experience it, but there is a very simple [scientific explanation of why our own voice sounds stupid to us](https://www.youtube.com/watch?v=tRi_ReC4lPw).
+It all started in 2005 when my friend and colleague Mark Splinter came to me and said: "Hey Garo, let's do a radio show". I was hesitant at first as radio at the time was seen as this ancient thing that only plays "commercial" pop music. On top of that I was always a bit shy about my voice as whenever I heard it played back I thought I sounded stupid. This is actually an interesting phenomena and most people experience it, but there is a very simple [scientific explanation why our own voice sounds stupid to us](https://www.youtube.com/watch?v=tRi_ReC4lPw).
 
 Anyway, to mitigate my worries about the lameness of the radio stations in general Mark told me that some enthusiastic students from Vilnius University got FM broadcaster license and convinced university to allocate some money for building a broadcasting studio with areas for recording and running live shows. And instead of a boring traditional student radio they aimed to build a proper radio station with a schedule of live shows from people outside university and lots of creative freedom. They gave it a name StartFM. After some back and forth I agreed to try out to do a few shows and see how it goes.
 
@@ -45,7 +45,7 @@ We were joined by Aidas Simanavičius a.k.a. Allanas, the colleague from the Fre
 
 ![Skraidantis Radijas is back](https://tamulaitis.lt/images/skraidantis-radijas/skraidantis-radijas-naujas-sezonas.webp)
 
-Once again we became the first live show to air on the new version of StartFM. January 3-rd, 2007 was the day that we came back into our small, red carpet insulated studio. These were the golden years for the station. They had a team of super motivated young people taking care of all the aspects of running StartFM as well as hosting all sorts of shows. You could find shows about heavy metal, feminism, trance music, politics and all sorts of other topics. Even football hooligans had their show on StartFM.
+Once again we became the first live show to air on the new version of StartFM. January 3-rd, 2007 was the day that we came back into our small, red carpet insulated studio. These were the golden years for the station. They had a team of super motivated young people taking care of all the aspects of running StartFM as well as hosting all sorts of shows. You could find shows about heavy metal, feminism, trance music, breakfast, politics and all sorts of other topics. Even football hooligans had their show on StartFM.
 
 <!-- Studijos nuotraukos -->
 
@@ -152,4 +152,4 @@ Overall, Skraidantis Radijas was a unique and engaging radio show that offered s
 This gibberish was written by ChatGPT.
 -->
 
-<!-- This is v1.1 of this article. Might be added: story about the strength of FM signal, friendly conflict with feminist radio show, more photos from old studio. -->
+<!-- This is v1.1.1 of this article. Might be added: story about the strength of FM signal, friendly conflict with feminist radio show, more photos from old studio. -->
