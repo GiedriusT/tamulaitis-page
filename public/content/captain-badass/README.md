@@ -60,6 +60,48 @@ The mastermind behind Warblade as well as original Deluxe Galaga is Edgar Vigdal
 
 Warblade is an amazing example of game design: addictive, satisfying, intense and always challenging. It has interesting weapons, good leveling up system. And when you finish all 100 levels you start over from level 1 but enemies are a bit faster and more powerful. So it creates this dynamic where after really hard final battles in end levels, you are thrown back into first level and things feel so easy and you feel overpowered. You feel like god for a while and then things become challenging again. And you can go forever like this. Actually Warblade is so addictive that I have to admit I once missed university exam because I was playing it till 6 in the morning.
 
-<!-- ## Visual concept, ## Soundtrack, ## Level design, ## The icon, ## Achievements -->
 
-This is v0.7 of this article. Coming soon: lots of media and animated images from the game and ground shaking soundtrack that ended up being way more impressive than the game itself.
+## Icon
+
+Icon is one of the hardest thing to do when creating a mobile game. It's so important, because it is many times the only thing that has potential to capture the attention of the player. It is also very small and has to follow specific rules of each platform, like how rounded the corners should be etc. Of course all the competitor games are doing exactly the same and trying to make their icons stand out and attract the attention.
+
+<!-- DIfferent icon versions -->
+
+We had experimented with many different ideas and variations, doing tests with users and seeing which version captures most of attention, adjusting and trying again. We had quite heated arguments with our art lead as he came from artistic background and we were trying to force him to saturate colors to extreme to make icon pop out, something that seemed off and over the top from artistic point of view. I think he hated the final result, but we loved it.
+
+
+## Achievements
+
+A place where we definitely spent way too much time was working on illustrations for achievements. Achievements, along side leaderboards we new cool thing offered by iOS at the time, it added social element to any single player game and another layer of engagement. Most of the games were approaching them practically, making simple icons for each achievement and many times reusing the same visuals. We however wanted them to stand out, so we spend time having a nice drawing for each of them.
+
+<!-- Reel of achievement boards -->
+
+It was really fun coming up with silly names for the achievements and looking at nice illustrations, but from practical standpoint we were just wasting our time. They are only shown very briefly and when you view all your achievements as a li
+st icons are so small that you don't even see all the details. However, our illustrator was from conventional drawing background, so he loved the fact that he could spend time drawing all these different images.
+
+
+## Level design
+
+Towards the end of the project we had stable and robust enough builds so that we could start designing levels and testing them out with real players. We did a usual mistake of making too many levels before starting testing. I remember I was working on all these different levels and trying them out myself and my main worry was that it won't be challenging enough, everything up to first boss seemed so trivial and easy. But after the first play-testing session we realized that almost none of the players were able to finish the first level. Everything was way too hard.
+
+It's a very hard thing to nail the challenge curve right. There are so many different types of players and other random variables affecting the complexity of the game play. What will be too easy and non engaging for one player can be crazy hard for the other. So even for games with huge budgets it's still somewhat of a gamble. But one lesson that I definitely learned during the making of "Captain Badass" is to be as agile as possible: make a small piece, test it out with real players, adjust and test again. And never trust yourself, you are the worst tester there can be.
+
+Another super important thing is how fast can you iterate. This we did understand already back then and that's why I wrote a simple level editor where you can quickly throw together a level and test it out on actual device. We went for a very simple custom format for storing level data where different letters represent different enemy and power up types and hash symbol represent an empty space. We could then just store this as a text file, field in a database or any other form. Also it's easy to work with it on level editor, but also possible to quickly change it by modifying the text itself. That part actually worked pretty well for us and didn't take too long to come up with.
+
+
+## Soundtrack
+
+I come from music background, so soundtrack was very important for me. And I was the one responsible for making one. I took a theme and made many variations that ended up being used in different levels. It was energetic, even borrowing sounds from music styles like drum'n'bass and dubstep. It was fun and people liked it in general, even thou some mentioned that it might be too intense and you feel like in the rave, not the video game.
+
+<!-- Level background music in some nice player -->
+
+One more thing that also happened was that during the long night sessions of working on these tracks some started popping out and I couldn't resist spending more time and making them into the full tracks. That actually ended up as a separate release featuring three banging tracks that was distributed via iTunes and other major stores of that time. The tracks themselves were not even used in the game, because they became too professional sounding and long, featuring vocals and heavy bass, something that didn't fit small speakers of iPad or iPhone.
+
+<!-- Spotify embed of the soundtrack -->
+
+We still sometimes talk with Donatas that we should release the vinyl version of the soundtrack, the cover with that ass resembling pear would look really cool.
+
+
+<!-- ## Visual concept -->
+
+This is v0.8 of this article. Coming soon: lots of media and animated images from the game and ground shaking soundtrack that ended up being way more impressive than the game itself.
