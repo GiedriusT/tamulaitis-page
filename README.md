@@ -20,7 +20,7 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ## Projects
 
 ### **[Social Sequencer](/public/content/social-sequencer/README.md)** - interactive music device
-### **[Garo - Kamchatka](/public/content/kamchatka-vinyl/README.md)** - vinyl re-issue of my first album
+### **[Garo - Kamchatka](/public/content/kamchatka-vinyl/README.md)** - my first album on vinyl
 ### **[Dialrhea](/public/content/dialrhea/README.md)** - play Doom on rotary phone
 ### **[Wave Twisters VR](/public/content/wavetwisters-vr/README.md)** - ambitious game prototype
 ### **[Garo - Sewers](/public/content/sewers/README.md)** - album on game console cartridge
