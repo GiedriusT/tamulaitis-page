@@ -21,6 +21,7 @@ export const isGitHubUrl = (url: string): boolean => {
   try {
     const urlParts = new URL(url);
     return urlParts.hostname === 'github.com' && urlParts.protocol === 'https:';
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (e) {
     return false;
   }

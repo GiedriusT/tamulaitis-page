@@ -3,6 +3,7 @@ export interface AstNode {
   type: 'root' | 'link' | 'html' | 'text' | 'image' | 'paragraph' | 'break' | 'heading' | 'pre';
   value: string;
   children?: AstNode[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   properties?: Record<string, any>;
 }
 

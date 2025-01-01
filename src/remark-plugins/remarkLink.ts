@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { visit } from 'unist-util-visit';
 import type { AstLinkNode, AstNode } from './types';
 import { SITE_URL } from '../constants';

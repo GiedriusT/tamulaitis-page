@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { visit } from 'unist-util-visit';
 import hljs from 'highlight.js';
 import type { AstLinkNode, AstNode } from './types';

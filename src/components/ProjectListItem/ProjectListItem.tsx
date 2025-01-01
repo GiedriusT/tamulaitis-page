@@ -108,7 +108,7 @@ function ProjectListItem({ project }: ProjectListItemProps) {
       window.removeEventListener('resize', handleMobilePositionChange);
       window.removeEventListener('scroll', handleMobilePositionChange);
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   const renderInternalContainer = () => (
     <div className={S.projectListItemIternalContainer} ref={elementRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

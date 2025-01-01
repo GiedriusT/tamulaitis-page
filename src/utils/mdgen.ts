@@ -50,5 +50,4 @@ for (const { templateFilename, outputFilename } of MARKDOWN_FILES) {
   fs.writeFileSync(outputFilename, output);
 }
 
-// eslint-disable-next-line no-console
 console.log(`Generated files ${MARKDOWN_FILES.map((obj) => `'${obj.outputFilename}'`).join(', ')}!`);

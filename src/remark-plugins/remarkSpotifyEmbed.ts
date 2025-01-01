@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { visit } from 'unist-util-visit';
 import { isInlineLink } from './utils';
 import type { AstLinkNode, AstNode } from './types';
