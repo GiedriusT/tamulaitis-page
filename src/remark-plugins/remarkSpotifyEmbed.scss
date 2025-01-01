@@ -1,5 +1,5 @@
-@import "../theme/mixins.scss";
+@use "../theme/mixins.scss";
 
 .spotify-embed {
-  @include media-embed;
+  @include mixins.media-embed;
 }

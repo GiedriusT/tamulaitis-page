@@ -1,8 +1,10 @@
+@use "../theme/mixins";
+
 @mixin shared-image-styles {
   display: block;
 
-  @include media-embed;
-  @include media-embed-full-width-on-mobile;
+  @include mixins.media-embed;
+  @include mixins.media-embed-full-width-on-mobile;
 
   &.full-width {
     max-width: none;

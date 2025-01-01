@@ -17,5 +17,12 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['fsevents'],
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
   },
 });

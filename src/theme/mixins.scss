@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@use "variables.scss";
 
 @mixin media-embed {
   width: 100%;
@@ -13,9 +13,9 @@
 @mixin media-embed-full-width-on-mobile {
   @media (max-width: 499px) {
     /* @media (max-width: 560px) { */
-    width: calc(100% + 2 * $page-padding-horizontal);
-    margin-left: -$page-padding-horizontal;
-    margin-right: -$page-padding-horizontal;
+    width: calc(100% + 2 * variables.$page-padding-horizontal);
+    margin-left: -(variables.$page-padding-horizontal);
+    margin-right: -(variables.$page-padding-horizontal);
   }
 }
 
@@ -23,8 +23,8 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $page-padding-horizontal;
-  padding-right: $page-padding-horizontal;
+  padding-left: variables.$page-padding-horizontal;
+  padding-right: variables.$page-padding-horizontal;
   display: flex;
   flex-direction: column;
 }

@@ -1,6 +1,6 @@
-@import "../theme/variables.scss";
-@import "../theme/mixins.scss";
-@import './remarkImageShared.scss';
+@use "../theme/variables.scss";
+@use "../theme/mixins.scss";
+@use "remarkImageShared.scss";
 
 .image-gallery {
   width: 100%;
@@ -18,12 +18,14 @@
     height: auto;
 
     img {
-      @include shared-image-styles;
-      
-      width: 100%;
-      display: block;
-      @include phone-only {
-        width: calc(100% + 2 * $page-padding-horizontal);
+      @include remarkImageShared.shared-image-styles;
+
+      & {
+        width: 100%;
+        display: block;
+        @include mixins.phone-only {
+          width: calc(100% + 2 * variables.$page-padding-horizontal);
+        }
       }
     }
   }

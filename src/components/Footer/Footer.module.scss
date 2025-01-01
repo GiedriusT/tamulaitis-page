@@ -1,14 +1,14 @@
-@import "../../theme/variables.scss";
-@import "../../theme/mixins.scss";
+@use "../../theme/variables.scss";
+@use "../../theme/mixins.scss";
 
 .footerContainer {
   padding-top: calc(2 * 1.66em);
   padding-bottom: calc(4 * 1.66em);
-  color: $color-footer-text;
-  background-color: $color-footer-background;
+  color: variables.$color-footer-text;
+  background-color: variables.$color-footer-background;
 
   .infoContainer {
-    @include padded-container;
+    @include mixins.padded-container;
     padding-top: 30px;
   }
 
@@ -50,7 +50,7 @@
   
   @mixin profile-link {
     margin: 0 0.83rem;
-    color: $color-footer-text;
+    color: variables.$color-footer-text;
   }
   
   .profileLinkScreen {

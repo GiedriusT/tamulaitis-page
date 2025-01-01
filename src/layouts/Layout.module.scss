@@ -1,4 +1,4 @@
-@import "../theme/mixins.scss";
+@use "../theme/mixins.scss";
 
 .container {
   width: 100%;
@@ -6,7 +6,7 @@
 }
 
 .paddedContainer {
-  @include padded-container;
+  @include mixins.padded-container;
 }
 
 .contentContainer {

@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@use "variables.scss";
 
 html,
 body {
@@ -7,8 +7,8 @@ body {
   border: 0;
   width: 100%;
   height: 100%;
-  font-family: $font-family;
-  background-color: $color-primary-background;
+  font-family: variables.$font-family;
+  background-color: variables.$color-primary-background;
   line-height: 1.9;
   letter-spacing: 0.5px;
   @media print {
@@ -24,7 +24,7 @@ a {
 }
 
 p {
-  font-size: $font-size-regular;
+  font-size: variables.$font-size-regular;
   margin-block-end: 1.66em;
   font-weight: 400;
 }

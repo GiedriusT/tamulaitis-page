@@ -1,8 +1,8 @@
-@import "./remarkImageShared.scss";
-@import "./remarkImageFrameStripKeyframes.scss";
+@use "remarkImageShared.scss";
+@use "remarkImageFrameStripKeyframes.scss";
 
 img:not(.animated-frames-container *), .animated-frames-container {
-  @include shared-image-styles;
+  @include remarkImageShared.shared-image-styles;
 }
 
 .animated-frames-container {

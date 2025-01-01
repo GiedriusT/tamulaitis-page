@@ -1,4 +1,4 @@
-@import "../theme/variables.scss";
+@use "../theme/variables.scss";
 
 h1 {
   .separator,
@@ -12,8 +12,8 @@ h1 {
     }
     .subtitle {
       display: table;
-      background-color: $color-footer-background;
-      color: $color-footer-text;
+      background-color: variables.$color-footer-background;
+      color: variables.$color-footer-text;
       font-size: 1.1rem;
       padding: 0.415em 0.83em;
       margin-top: 0.415em;
