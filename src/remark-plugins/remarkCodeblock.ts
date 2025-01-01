@@ -2,7 +2,12 @@
 import { visit } from 'unist-util-visit';
 import hljs from 'highlight.js';
 import type { AstLinkNode, AstNode } from './types';
-import { isGitHubUrl, processRemoteCodeUrl, shouldBeEmbedded } from './remarkCodeblock.utils';
+import {
+  isGitHubUrl,
+  isRemoteCodeUrl,
+  processRemoteCodeUrl,
+  shouldBeEmbedded,
+} from './remarkCodeblock.utils';
 import { getTranslations } from '../i18n/utils';
 
 // This is one ugly ass file right here and I hate all the code that I wrote here. The reason why I resorted
@@ -18,7 +23,7 @@ const remarkLink = () => async function transformer(tree: AstNode) {
   const t = getTranslations();
   const transformations: (() => Promise<void>)[] = [];
   visit(tree, 'link', (node: AstLinkNode) => {
-    if (isGitHubUrl(node.url) && shouldBeEmbedded(node.url)) {
+    if ((isGitHubUrl(node.url) || isRemoteCodeUrl(node.url)) && shouldBeEmbedded(node.url)) {
       transformations.push((async () => {
         const response = await fetch(processRemoteCodeUrl(node.url));
         const remoteCode = await response.text();

@@ -11,6 +11,12 @@ export const getRemoteCodeLink = (children?: string): string => {
   return match ? match[0] : '';
 };
 
+export const isRemoteCodeUrl = (url: string): boolean => {
+  const urlWithoutHash = url.split('#')[0];
+  const extension = urlWithoutHash.split('.').pop() || '';
+  return Object.keys(supportedExtensions).includes(extension);
+};
+
 export const isGitHubUrl = (url: string): boolean => {
   try {
     const urlParts = new URL(url);
