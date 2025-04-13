@@ -57,6 +57,12 @@ const projects: Project[] = [
     subtitle: 'über eclectic record label',
     description: 'Bembis Bembio Motina Records is an uber eclectic record label that I started back in a day. It started as a joke and the literal translation of the name is Bamby Bamby\'s mother if you must know.',
   },
+  {
+    slug: 'mondayjazz',
+    title: 'Mondayjazz',
+    subtitle: 'live visuals for fresh beats',
+    description: 'Mondayjazz was a collective of creative people releasing mixes of fresh electronic music every monday. They were also throwing crazy parties and I was making live visuals for those.',
+  },
   // HIDDEN PROJECTS
   {
     slug: 'shil',
