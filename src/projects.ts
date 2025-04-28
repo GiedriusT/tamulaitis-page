@@ -58,24 +58,23 @@ const projects: Project[] = [
     description: 'Bembis Bembio Motina Records is an uber eclectic record label that I started back in a day. It started as a joke and the literal translation of the name is Bamby Bamby\'s mother if you must know.',
   },
   {
+    slug: 'hub-attack-vr',
+    title: 'Hub Attack VR',
+    subtitle: 'immersive with casualties',
+    description: 'Hub Attack VR is a virtual reality game set in Sapiegos Tech Part where bunch of rude boys try to ruin your working day by blasting hardbass music and dancing on the tables.',
+  },
+  {
     slug: 'mondayjazz',
     title: 'Mondayjazz',
     subtitle: 'live visuals for fresh beats',
     description: 'Mondayjazz was a collective of creative people releasing mixes of fresh electronic music every monday. They were also throwing crazy parties and I was making live visuals for those.',
   },
   {
-    slug: 'hub-attack-vr',
-    title: 'Hub Attack VR',
-    subtitle: 'immersive with casualties',
-    description: 'Hub Attack VR is a virtual reality game set in Sapiegos Tech Part where bunch of rude boys try to ruin your working day by blasting hardbass music and dancing on the tables.',
+    slug: 'english-kitchen-vr',
+    title: 'English Kitchen VR',
+    subtitle: 'learn English the fun way',
+    description: 'English Kitchen VR is a platform that makes learning English language more immersive and fun by utilizing virtual reality. It ended up as a prototype and was never released commercially.',
   },
-  // {
-  //   slug: 'english-kitchen-vr',
-  //   title: 'English Kitchen VR',
-  //   subtitle: 'learn English the fun way',
-  //   description: 'English Kitchen VR is a platform that makes learning English 
-  // language more immersive and fun by utilizing virtual reality. It ended up as a prototype and was never released commercially.',
-  // },
 ];
 
 export default projects;
