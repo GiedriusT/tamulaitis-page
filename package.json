@@ -15,7 +15,7 @@
     "lint:fix": "pnpm lint --fix",
     "test": "pnpm playwright test",
     "test:ui": "pnpm playwright test --ui",
-    "generate:md": "pnpm dlx ts-node --esm --experimental-specifier-resolution=node src/utils/mdgen.ts",
+    "generate:md": "pnpm dlx tsx src/utils/mdgen.ts",
     "prepare": "husky",
     "pre-commit": "lint-staged",
     "update-interactive": "pnpm update --latest --interactive",
