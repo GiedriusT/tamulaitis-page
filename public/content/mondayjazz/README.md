@@ -19,6 +19,7 @@ One of the best times we had was with Fulgeance (real name Pierre Troel), a very
 ![Fulgeance: Rotating Akai](https://tamulaitis.lt/images/mondayjazz/fulgeance/akai-rotating.gif)
 ![Fulgeance: Overlaping Squares](https://tamulaitis.lt/images/mondayjazz/fulgeance/overlaping-squares.gif)
 
+<!--
 ![Fulgeance: Rotating Akai Surreal](https://tamulaitis.lt/images/mondayjazz/fulgeance/akai-surreal.gif)
 ![Fulgeance: Mondayjazz Popart](https://tamulaitis.lt/images/mondayjazz/fulgeance/mondayjazz-popart.gif)
 ![Fulgeance: Qbert](https://tamulaitis.lt/images/mondayjazz/fulgeance/qbert.gif)
@@ -26,6 +27,7 @@ One of the best times we had was with Fulgeance (real name Pierre Troel), a very
 ![Fulgeance: Akai Squares](https://tamulaitis.lt/images/mondayjazz/fulgeance/akai-surreal-kvadrats.gif)
 ![Fulgeance: Rubiks Cube](https://tamulaitis.lt/images/mondayjazz/fulgeance/rubiks-cube.gif)
 ![Fulgeance: Only Squares](https://tamulaitis.lt/images/mondayjazz/fulgeance/only-kvadrats.gif)
+-->
 
 
 His signature set-up featured two Akai MPC2000 samplers side by side that he used to play his tracks live. I was using Akai MPD16 MIDI controller for tigerring video clips live, so it was a very memorable experience standing side by side with him with our set-ups and him hitting MPC pads to make sounds and me trying to mimick his moves to play video in sync with the music.
@@ -45,6 +47,7 @@ Another alter ego of Pierre Troel is Peter Digital Orchestra. Using same stage s
 ![Peter Digital Orchestra: Face Fast](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-face-fast.gif)
 ![Peter Digital Orchestra: Red Face](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-red-face.gif)
 
+<!--
 ![Peter Digital Orchestra: Redik Face](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-redik-face.gif)
 ![Peter Digital Orchestra: Konky Face](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-konky-face.gif)
 ![Peter Digital Orchestra: Doppel Face](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-from-doppel-face.gif)
@@ -52,6 +55,7 @@ Another alter ego of Pierre Troel is Peter Digital Orchestra. Using same stage s
 ![Peter Digital Orchestra: Facial Hair Show](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-facial-hair-show.gif)
 ![Peter Digital Orchestra: Red Background](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-red-bg-6.gif)
 ![Peter Digital Orchestra: Andrelis18 Face](https://tamulaitis.lt/images/mondayjazz/peter-digital/peter-digital-andrelis-face.gif)
+-->
 
 We did an amazing show during the legendary Satta Outside festival in 2008. Satta Outside was incredible festival both in terms of location and the artists they were bringing. It was held in an old yacht club in the port city of Klaipėda. You could see the lights of the city at night and big ships passing by and making "too too" sounds. All this next to the soundtrack of best underground electronic artists from Lithuanian and great selection of musicians from abroad. Images below are taken from a beautiful [video about Satta Outside 2008 by Dovydas Augaitis](https://www.youtube.com/watch?v=pyOOgMrb4qo), it reflects very accurately the atmosphere of the festival.
 
@@ -71,16 +75,18 @@ Another amazing artist we did a show with was Dorian Concept, an Austrian compos
 <div style="max-width: 700px; margin: 0 auto; margin-bottom: 1.66rem;"><iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4259864242/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="https://dorianconcept.bandcamp.com/album/the-jitters">The Jitters by Dorian Concept</a></iframe></div>
 
 ![Dorian Concept: Dark Biski Geliai](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-dar-biski-geliu.gif)
-![Dorian Concept: Differential Flowers](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-differential-flowers.gif)
+![Dorian Concept: Title](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-title.gif)
 ![Dorian Concept: Dark Keys](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-dark-keys.gif)
 
+<!--
 ![Dorian Concept: Fisheye Flowers](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-fisheye-flowers.gif)
-![Dorian Concept: Title](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-title.gif)
+![Dorian Concept: Differential Flowers](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-differential-flowers.gif)
 ![Dorian Concept: Kaleido Flow Power](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-kaleido-flow-pow.gif)
 
 ![Dorian Concept: Just Keys](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-just-keys.gif)
 ![Dorian Concept: Leaves Purple](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-leaves-purple.gif)
 ![Dorian Concept: Korg](https://tamulaitis.lt/images/mondayjazz/dorian-concept/dorian-concept-korg.gif)
+-->
 
 It was one of the few parties that had the sponsor, alcoholic drink called Becherovka. It's a weird drink with lots of cinnamon or something. I was told that the logo of Becherovka has to be in the visuals and was not too happy about that, because at the time we were very proud to be part of the underground scene, and big brand sponsor was not exactly in line with the idealistic values. I did put it in, but also added a hairy leg that kicks the logo out of the screen just at it appears. Some found this hilarious, but others were worried that the sponson might not like it. At that point it was too late to change anything and I ended up showing this scene. I don't remember if Becherovka ever sponsored another Mondayjazz party, but I personally had a good laugh making the visuals.
 
@@ -158,4 +164,4 @@ Part of why Mondayjazz appreared so professional was very strong visual identity
 
 Mondayjazz ended up releasing 267 mixes, an incredible amount for people only driven by passion and genuine will to spread the music that they love. As all good things Mondayjazz ended after a few years, but left a very strong footprint in Litnuanian electronic music scene, and it was really nice being a tiny part of it myself.
 
-<!-- This is v1.0 of this article. Visuals for Jon Kennedy, Dimlite and Hudson Mohawke coming. -->
+<!-- This is v1.0.1 of this article. Visuals for Jon Kennedy, Dimlite and Hudson Mohawke coming. -->
