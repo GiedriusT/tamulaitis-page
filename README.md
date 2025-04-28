@@ -28,6 +28,8 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 ### **[Skraidantis Radijas](/public/content/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
 ### **[Captain Badass](/public/content/captain-badass/README.md)** - game that killed the company
 ### **[Bembis Bembio Motina](/public/content/bembis-bembio-motina/README.md)** - über eclectic record label
+### **[Mondayjazz](/public/content/mondayjazz/README.md)** - live visuals for fresh beats
+### **[Hub Attack VR](/public/content/hub-attack-vr/README.md)** - immersive with casualties
 
 
 Coming soon: my collaborations with MC Messiah, live visuals for Boogaloo and Mondayjazz parties, attempt to solve locomotion in VR, first computer programs written in Pascal on 386 computer, tracks made with FastTracker, recording studios in smelly basements, legendary Fresh Rice Crew and more VR game prototypes.
