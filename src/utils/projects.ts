@@ -1,19 +1,14 @@
-import type { MarkdownInstance } from 'astro';
-import type React from 'react';
+import type { MarkdownInstance, MDXInstance } from 'astro';
 import { PROJECT_ASSETS_PATH } from '../constants';
 import type { Project } from '../types';
 import projects from '../projects';
 import { absoluteUrl } from './url';
 
-export type ProjectMarkdownFrontmatter = Omit<Project, 'slug'>;
-type ProjectMarkdownInstance = MarkdownInstance<ProjectMarkdownFrontmatter>;
+type ProjectMarkdownFrontmatter = Omit<Project, 'slug'>;
+export type ProjectMdxInstance = MDXInstance<ProjectMarkdownFrontmatter>;
 
-// New type for import.meta.glob structure
-export interface GlobMarkdownInstance {
-  file: string;
-  frontmatter: ProjectMarkdownFrontmatter;
-  Content: React.ComponentType;
-}
+// TODO: Remove when MDX approach is fully working
+type ProjectMarkdownInstance = MarkdownInstance<ProjectMarkdownFrontmatter>;
 
 export const getProjects = (includeHidden: boolean = false): Project[] => projects.filter((o) => includeHidden || !o.isHidden);
 
@@ -25,20 +20,6 @@ export const getProjectVideoUrl = (projectSlug: string): string => (
   `/${PROJECT_ASSETS_PATH}/${projectSlug}/${projectSlug}.mp4`
 );
 
-// Gets the markdown instance by slug from the original MD file path (not used anymore as we use temporary MDX file approach)
-// TODO: Remove when MDX approach is fully working
-export function getMarkdownInstanceBySlug(markdownInstances: ProjectMarkdownInstance[], slug: string): ProjectMarkdownInstance | null {
-  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
-}
-
-// Extracts slug from original MD file path (not used anymore as we use temporary MDX file approach)
-// TODO: Remove when MDX approach is fully working
-export function getSlugFromPath(path: string): string | null {
-  const filenameParts = path.split('/');
-  if (filenameParts.length < 2) return null;
-  return filenameParts[filenameParts.length - 2];
-}
-
 // Extracts slug from temporarily generated MDX path
 export function getSlugFromMdxPath(path: string): string | null {
   const filenameParts = path.split('/');
@@ -46,8 +27,22 @@ export function getSlugFromMdxPath(path: string): string | null {
   return filenameParts[filenameParts.length - 2];
 }
 
-export function getMdxInstanceBySlug(mdxInstances: GlobMarkdownInstance[], slug: string): GlobMarkdownInstance | null {
+export function getMdxInstanceBySlug(mdxInstances: ProjectMdxInstance[], slug: string): ProjectMdxInstance | null {
   return mdxInstances.find((o) => getSlugFromMdxPath(o.file) === slug) || null;
+}
+
+// TODO: Remove when MDX approach is fully working
+// Gets the markdown instance by slug from the original MD file path (not used anymore as we use temporary MDX file approach)
+export function getMarkdownInstanceBySlug(markdownInstances: ProjectMarkdownInstance[], slug: string): ProjectMarkdownInstance | null {
+  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
+}
+
+// TODO: Remove when MDX approach is fully working
+// Extracts slug from original MD file path (not used anymore as we use temporary MDX file approach)
+export function getSlugFromPath(path: string): string | null {
+  const filenameParts = path.split('/');
+  if (filenameParts.length < 2) return null;
+  return filenameParts[filenameParts.length - 2];
 }
 
 export function getProjectBySlug(slug: string): Project | null {

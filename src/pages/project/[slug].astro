@@ -1,8 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ArticleContainer from '../../components/ArticleContainer/ArticleContainer';
+// import TestComponent from '../../components/TestComponent.astro';
 import {
-  type ProjectMarkdownFrontmatter,
+  type ProjectMdxInstance,
   getMdxInstanceBySlug,
   getProjectBySlug,
   getProjects,
@@ -17,16 +18,12 @@ const { slug } = Astro.params;
 
 // Load the pre-converted .mdx files from temp folder at root
 // Note: import.meta.glob requires string literals, constants are not supported
-const modules = import.meta.glob<{ frontmatter: ProjectMarkdownFrontmatter; default: any }>(
+const modules = import.meta.glob<ProjectMdxInstance>(
   '../../../temp/*/*.mdx',
   { eager: true }
 );
 
-const articles = Object.entries(modules).map(([path, module]) => ({
-  file: path,
-  frontmatter: module.frontmatter,
-  Content: module.default,
-}));
+const articles = Object.entries(modules).map(([path, module]) => module);
 
 const project = getProjectBySlug(slug);
 const markdownInstance = getMdxInstanceBySlug(articles, slug);
