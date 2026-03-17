@@ -16,6 +16,7 @@
     "test": "pnpm playwright test",
     "test:ui": "pnpm playwright test --ui",
     "generate:md": "pnpm dlx tsx src/utils/mdgen.ts",
+    "gif-to-webp": "node scripts/gifToWebp.js",
     "prepare": "husky",
     "pre-commit": "lint-staged",
     "update-interactive": "pnpm update --latest --interactive",
