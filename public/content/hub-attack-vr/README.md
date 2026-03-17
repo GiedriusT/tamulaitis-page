@@ -15,7 +15,7 @@ During the time when first proper consumer VR headsets were coming out and were 
 ![Sapiegos Tech Part Co-Working](https://tamulaitis.lt/images/hub-attack-vr/tech-park-vilnius-1.webp)
 ![Sapiegos Tech Part Co-Working](https://tamulaitis.lt/images/hub-attack-vr/tech-park-vilnius-2.webp)
 
-If I remember correctly I was just testing out some animations that I bought from Unity Assert Store and applying them on different models. Some combinations looked very funny, especially the chubby bald guy dancing ballet. I tried putting some hardbass music on the background and ended up laughing for like half an hour straight. After that I decided I want to make a silly game with these characters.
+If I remember correctly I was just testing out some animations that I bought from Unity Asset Store and applying them on different models. Some combinations looked very funny, especially the chubby bald guy dancing ballet. I tried putting some hardbass music on the background and ended up laughing for like half an hour straight. After that I decided I want to make a silly game with these characters.
 
 ## The mechanic
 
@@ -24,7 +24,7 @@ The mechanic of the game ended up being really simple. The rude boys spawn and e
 ![Hub Attack VR Rudeboy](https://tamulaitis.lt/images/hub-attack-vr/hub-attack-vr-rudeboy.webp)
 ![Hub Attack VR Mleko Zambrowskie](https://tamulaitis.lt/images/hub-attack-vr/mleko-zambrowskie-meadow.webp)
 
-The somewhat exotic choice of weapon was based on the fact that the kitchen of the co-working space was always filled with boxes of "Mleko Zambrowskie" and people working in Sapiegos Tech Part already had some inside jokes about it. Diving deep into unnecessary details it's worth mentioning that Poland always have better prices than the ones we have in Lithuania, therefore big companies tend to choose polish products and "Mleko Zambrowskie" is one of them. But usually the names of these, as most polish words, sound funny to us lithuanians.
+The somewhat exotic choice of weapon was based on the fact that the kitchen of the co-working space was always filled with boxes of "Mleko Zambrowskie" and people working in Sapiegos Tech Part already had some inside jokes about it. Diving deep into unnecessary details it's worth mentioning that Poland always has better prices than the ones we have in Lithuania, therefore big companies tend to choose polish products and "Mleko Zambrowskie" is one of the examples. But usually the names of these, as most polish words, sound funny to us lithuanians.
 
 When you hit the rude boy with the pack of "Mleko Zambrowskie" he explodes into a cloud of sunflower seeds and says a funny taunt. The more of them you manage to hit during the given time, the more points you score. That's the whole gameplay loop.
 
@@ -45,7 +45,7 @@ One of the main techniques is baking so called lightmaps where rays from static 
 ![Lightmap: light](https://tamulaitis.lt/images/hub-attack-vr/hub-attack-lightmap-comp-light.webp)
 ![Lightmap: direction](https://tamulaitis.lt/images/hub-attack-vr/hub-attack-lightmap-comp-dir.webp)
 
-All other parts went pretty smoothly and in a few days I had a prototype with the whole environment and all the mechanics working.
+All other parts went pretty smoothly and in a few days I had a prototype with the full environment and all the mechanics working.
 
 ## Demo Day that didn't end well
 
