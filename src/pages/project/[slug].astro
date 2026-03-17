@@ -15,9 +15,10 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-// Load the pre-converted .mdx files from src/temp-content folder
+// Load the pre-converted .mdx files from temp folder at root
+// Note: import.meta.glob requires string literals, constants are not supported
 const modules = import.meta.glob<{ frontmatter: ProjectMarkdownFrontmatter; default: any }>(
-  '../../temp-content/*/*.mdx',
+  '../../../temp/*/*.mdx',
   { eager: true }
 );
 

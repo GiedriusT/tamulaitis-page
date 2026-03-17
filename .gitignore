@@ -5,7 +5,7 @@ artifacts
 dist/
 
 # temporary files
-src/temp-content/
+temp/
 
 # generated types
 .astro/
