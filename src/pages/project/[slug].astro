@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import ArticleContainer from '../../components/ArticleContainer/ArticleContainer';
 import {
   type ProjectMarkdownFrontmatter,
-  getGlobMarkdownInstanceBySlug,
+  getMdxInstanceBySlug,
   getProjectBySlug,
   getProjects,
 } from '../../utils/projects';
@@ -15,10 +15,9 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-
-
+// Load the pre-converted .mdx files from src/temp-content folder
 const modules = import.meta.glob<{ frontmatter: ProjectMarkdownFrontmatter; default: any }>(
-  '../../../public/content/*/*.md',
+  '../../temp-content/*/*.mdx',
   { eager: true }
 );
 
@@ -27,8 +26,9 @@ const articles = Object.entries(modules).map(([path, module]) => ({
   frontmatter: module.frontmatter,
   Content: module.default,
 }));
+
 const project = getProjectBySlug(slug);
-const markdownInstance = getGlobMarkdownInstanceBySlug(articles, slug);
+const markdownInstance = getMdxInstanceBySlug(articles, slug);
 
 if (!project || !markdownInstance) return Astro.redirect('/404', 404);
 ---

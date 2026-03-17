@@ -4,6 +4,9 @@ artifacts
 # build output
 dist/
 
+# temporary files
+src/temp-content/
+
 # generated types
 .astro/
 

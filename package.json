@@ -22,8 +22,10 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.5",
     "astro": "^5.1.1",
     "dotenv": "^16.4.7",
+    "glob": "^11.0.3",
     "highlight.js": "^11.11.1",
     "marked": "^15.0.4",
     "react": "^19.0.0",

@@ -25,18 +25,29 @@ export const getProjectVideoUrl = (projectSlug: string): string => (
   `/${PROJECT_ASSETS_PATH}/${projectSlug}/${projectSlug}.mp4`
 );
 
+// Gets the markdown instance by slug from the original MD file path (not used anymore as we use temporary MDX file approach)
+// TODO: Remove when MDX approach is fully working
+export function getMarkdownInstanceBySlug(markdownInstances: ProjectMarkdownInstance[], slug: string): ProjectMarkdownInstance | null {
+  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
+}
+
+// Extracts slug from original MD file path (not used anymore as we use temporary MDX file approach)
+// TODO: Remove when MDX approach is fully working
 export function getSlugFromPath(path: string): string | null {
   const filenameParts = path.split('/');
   if (filenameParts.length < 2) return null;
   return filenameParts[filenameParts.length - 2];
 }
 
-export function getMarkdownInstanceBySlug(markdownInstances: ProjectMarkdownInstance[], slug: string): ProjectMarkdownInstance | null {
-  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
+// Extracts slug from temporarily generated MDX path
+export function getSlugFromMdxPath(path: string): string | null {
+  const filenameParts = path.split('/');
+  if (filenameParts.length < 2) return null;
+  return filenameParts[filenameParts.length - 2];
 }
 
-export function getGlobMarkdownInstanceBySlug(markdownInstances: GlobMarkdownInstance[], slug: string): GlobMarkdownInstance | null {
-  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
+export function getMdxInstanceBySlug(mdxInstances: GlobMarkdownInstance[], slug: string): GlobMarkdownInstance | null {
+  return mdxInstances.find((o) => getSlugFromMdxPath(o.file) === slug) || null;
 }
 
 export function getProjectBySlug(slug: string): Project | null {
