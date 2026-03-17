@@ -1,4 +1,5 @@
 import type { MarkdownInstance } from 'astro';
+import type React from 'react';
 import { PROJECT_ASSETS_PATH } from '../constants';
 import type { Project } from '../types';
 import projects from '../projects';
@@ -6,6 +7,13 @@ import { absoluteUrl } from './url';
 
 export type ProjectMarkdownFrontmatter = Omit<Project, 'slug'>;
 type ProjectMarkdownInstance = MarkdownInstance<ProjectMarkdownFrontmatter>;
+
+// New type for import.meta.glob structure
+export interface GlobMarkdownInstance {
+  file: string;
+  frontmatter: ProjectMarkdownFrontmatter;
+  Content: React.ComponentType;
+}
 
 export const getProjects = (includeHidden: boolean = false): Project[] => projects.filter((o) => includeHidden || !o.isHidden);
 
@@ -24,6 +32,10 @@ export function getSlugFromPath(path: string): string | null {
 }
 
 export function getMarkdownInstanceBySlug(markdownInstances: ProjectMarkdownInstance[], slug: string): ProjectMarkdownInstance | null {
+  return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
+}
+
+export function getGlobMarkdownInstanceBySlug(markdownInstances: GlobMarkdownInstance[], slug: string): GlobMarkdownInstance | null {
   return markdownInstances.find((o) => getSlugFromPath(o.file) === slug) || null;
 }
 

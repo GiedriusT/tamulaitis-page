@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import ArticleContainer from '../../components/ArticleContainer/ArticleContainer';
 import {
   type ProjectMarkdownFrontmatter,
-  getMarkdownInstanceBySlug,
+  getGlobMarkdownInstanceBySlug,
   getProjectBySlug,
   getProjects,
 } from '../../utils/projects';
@@ -15,11 +15,20 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const articles = await Astro.glob<ProjectMarkdownFrontmatter>(
+
+
+const modules = import.meta.glob<{ frontmatter: ProjectMarkdownFrontmatter; default: any }>(
   '../../../public/content/*/*.md',
+  { eager: true }
 );
+
+const articles = Object.entries(modules).map(([path, module]) => ({
+  file: path,
+  frontmatter: module.frontmatter,
+  Content: module.default,
+}));
 const project = getProjectBySlug(slug);
-const markdownInstance = getMarkdownInstanceBySlug(articles, slug);
+const markdownInstance = getGlobMarkdownInstanceBySlug(articles, slug);
 
 if (!project || !markdownInstance) return Astro.redirect('/404', 404);
 ---
