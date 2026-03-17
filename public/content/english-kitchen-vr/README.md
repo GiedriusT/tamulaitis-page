@@ -23,7 +23,23 @@ After some brainstorming sessions we decided to go for simple idea of putting us
 
 I started prototyping the core mechanics and Vilius started working on models. He already had a lot of high quality models he was using in his real estate projects so this went fast, the most complex part was creating the curved table as we wanted user to be able to interact with all the objects while standing still in one place. I don't actually know if it was complex for him to create that curved table, but as for someone who tried to learn 3D modelling with Blender and ran out of swearwords that table looked like magic.
 
-Developing the gameplay and core mechanics was also going smoothly, I have already done a few projects in VR and knew my tooling pretty well. It was before the OpenXR standard was in place, so I was using VRTK tool kit to communicate with VR hardware.
+Photo of rounded table
+
+Developing the gameplay and core mechanics was also going smoothly, I have already done a few projects in VR and knew my tooling pretty well. It was before the OpenXR standard was in place, so I was using VRTK tool kit to communicate with VR hardware. One thing that I learner during that project id how LODs work. LOD starnd for level of detail and is a technique of replacing detailed 3D model with less detailed versions depending of how far away from the camera it is. Here is the exmple of an object and 3 LOD variants of it.
+
+Photo of LOD paprika or something
+
+When objects are at the same distance from the camera the difference is obvious, and LOD2 model is looking pretty terrible. But when it is far away from the camera you can barely notice the difference.
+
+Proto of the same object being far away.
+
+The reason this technique is used is performance. The more triangles there are in the scene, the more work GPU has to do to render it. Even most powerful modern GPUs can quickly choke if they need to render scene with very highly detailed and not optimised models. If you look at the triangle counts for different LOD version, you can see, that lowest LOD model has Y.Yx times less triangles than most detailed version. If you have hundred objects like these the savings are huge.
+
+There is even term triangle budgets that game developers have to regularly check to make sure that overall number of triengles that need to be rendered doesn't exceed certain numbers as otherwise the framerates will drop. It's even more important on platforms like mobile or VR. On mobile and standalone VR the problem is that the hardware is more limited due to the fact that it has to fit small form factor and be very energy efficient. On tethered VR the problem is that GPU basically needs to render each frame twice, once for each eye. Below is the recommended triangle budgets for different types of platforms.
+
+Triangle budget reccomendations
+
+The last step in LOD system is completely culling the object when it is really far away from the camera so it's not rendered at all, or changing it to 2D sprite image that resemples the shape of that 3D object from certain angle. It works well, but there are visual artifacts, sometimes in games you can see some objects appearing, or object doing little twitch. That's system of LOD in action.
 
 ## Demo
 
