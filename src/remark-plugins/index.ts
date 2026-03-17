@@ -1,5 +1,5 @@
 import remarkImage from './remarkImage';
-import remarkArticleTitle from './remarkArticleTitle';
+// import remarkArticleTitle from './remarkArticleTitle';
 import remarkArticleVersion from './remarkArticleVersion';
 import remarkImageGallery from './remarkImageGallery';
 import remarkLink from './remarkLink';
@@ -13,7 +13,7 @@ const plugins = [
   remarkSpotifyEmbed,
   remarkImage,
   remarkImageGallery,
-  remarkArticleTitle,
+  // remarkArticleTitle, // Disabled - now using React component approach
   remarkArticleVersion,
   remarkLink,
 ];

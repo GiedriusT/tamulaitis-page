@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ArticleContainer from '../../components/ArticleContainer/ArticleContainer';
-// import TestComponent from '../../components/TestComponent.astro';
+import ArticleHeader from '../../components/ArticleHeader/ArticleHeader.tsx';
 import {
   type ProjectMdxInstance,
   getMdxInstanceBySlug,
@@ -33,6 +33,6 @@ if (!project || !markdownInstance) return Astro.redirect('/404', 404);
 
 <Layout {...getProjectPageMetadata(project)}>
   <ArticleContainer>
-    <markdownInstance.Content />
+    <markdownInstance.Content components={{ h1: ArticleHeader }} />
   </ArticleContainer>
 </Layout>
