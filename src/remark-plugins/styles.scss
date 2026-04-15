@@ -1,6 +1,1 @@
-@use "sass:meta";
-@use '../theme/mixins.scss';
 
-.article-container {
-  @include meta.load-css("remarkYoutubeVideo.scss");
-}

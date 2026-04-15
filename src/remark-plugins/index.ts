@@ -4,12 +4,12 @@ import remarkArticleVersion from './remarkArticleVersion';
 import remarkImageGallery from './remarkImageGallery';
 import remarkLink from './remarkLink';
 import remarkSpotifyEmbed from './remarkSpotifyEmbed';
-import remarkYoutubeVideo from './remarkYoutubeVideo';
+import remarkYoutubeEmbed from './remarkYoutubeEmbed';
 import remarkCodeblock from './remarkCodeblock';
 
 const plugins = [
   remarkCodeblock,
-  remarkYoutubeVideo,
+  remarkYoutubeEmbed,
   remarkSpotifyEmbed,
   remarkImage,
   remarkImageGallery,

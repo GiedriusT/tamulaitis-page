@@ -20,7 +20,7 @@ Table of contents:
 
 ## YouTube embeds
 
-Logic in: [remarkYoutubeVideo.ts](../src/remark-plugins/remarkYoutubeVideo.ts)
+Logic in: [remarkYoutubeEmbed.ts](../src/remark-plugins/remarkYoutubeEmbed.ts)
 
 YouTube links that are wrapped by empty lines will be automatically converted to embeds. Also, if it's a YouTube link with an image instead of text, it would be completely removed as we only need them for displaying in GitHub so there is some thumbnail to the video. You should always use the text version of the link right after the image link, like:
 

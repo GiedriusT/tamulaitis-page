@@ -15,32 +15,30 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
   if (!isYoutubeLink(node) || isInlineLink(parent)) return;
 
   if (isYoutubeTextLink(node)) {
-    const watchUrl = node.url;
-    const embedUrl = node.url.replace('watch?v=', 'embed/');
     const title = node.children?.find((child) => child.type === 'text')?.value || 'YouTube Video Player';
+    const embedUrl = node.url.replace('watch?v=', 'embed/');
+    const aspectIdx = embedUrl.indexOf('#aspect_');
+    const aspectDigits = aspectIdx === -1
+      ? null
+      : embedUrl
+        .substring(aspectIdx + 8)
+        .split('_')
+        .map((digit) => parseInt(digit, 10));
+    const aspectW = aspectDigits && aspectDigits[0] ? aspectDigits[0] : null;
+    const aspectH = aspectDigits && aspectDigits[1] ? aspectDigits[1] : null;
 
-    const iFrameParams = [
-      `src="${embedUrl}"`,
-      `title="${title}"`,
-      'frameborder="0"',
-      'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"',
-      'allowfullscreen',
+    node.type = 'mdxJsxFlowElement';
+    node.name = 'ArticleYoutubeEmbed';
+    node.attributes = [
+      { type: 'mdxJsxAttribute', name: 'url', value: node.url },
+      { type: 'mdxJsxAttribute', name: 'title', value: title },
+      ...(aspectW && aspectH ? [
+        { type: 'mdxJsxAttribute', name: 'aspectW', value: aspectW },
+        { type: 'mdxJsxAttribute', name: 'aspectH', value: aspectH },
+      ] : []),
     ];
-    if (embedUrl.indexOf('#aspect_') !== -1) {
-      const digits = embedUrl.substring(embedUrl.indexOf('#aspect_') + 8).split('_').map((digit) => parseInt(digit, 10));
-      if (digits[0] && digits[1]) {
-        iFrameParams.push(`style="aspect-ratio: ${digits[0]} / ${digits[1]}"`);
-      }
-    }
-
-    node.type = 'html';
-    node.value = `
-      <div class="youtube-embed">
-        <iframe ${iFrameParams.join(' ')}></iframe>
-        <span class="youtube-embed-print-text"><strong>${title}</strong>: ${watchUrl}</span>
-      </div>
-    `;
-    delete node.children;
+    node.children = [];
+    delete node.value;
   } else if (isYoutubeImageLink(node)) {
     node.type = 'text';
     node.value = '';
@@ -50,8 +48,9 @@ const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode)
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/
 // List of supported node types: https://github.com/syntax-tree/mdast
-const remarkYoutubeVideo = () => function transformer(tree: AstNode) {
+const remarkYoutubeEmbed = () => function transformer(tree: AstNode) {
   visit(tree, 'link', processLink);
 };
 
-export default remarkYoutubeVideo;
+export default remarkYoutubeEmbed;
+

@@ -1,6 +1,6 @@
-@use "../theme/mixins.scss";
+@use "../../theme/mixins.scss";
 
-.youtube-embed {
+.youtubeEmbed {
   @include mixins.media-embed;
   @include mixins.media-embed-full-width-on-mobile;
 
@@ -8,7 +8,7 @@
     aspect-ratio: 16 / 9;
   }
 
-  & .youtube-embed-print-text {
+  & .youtubeEmbedPrintText {
     display: none;
   }
 
@@ -17,8 +17,9 @@
       display: none;
     }
 
-    & .youtube-embed-print-text {
+    & .youtubeEmbedPrintText {
       display: inline;
     }
   }
 }
+
