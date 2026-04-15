@@ -16,36 +16,22 @@ const isImageGallery = (node: AstNode) => {
   return true;
 };
 
-const generateImageParams = (image: AstImageNode): string[] => {
-  const classes = extractCustomImageClasses(image);
-  const imageParams = [
-    `src="${image.url}"`,
-    `alt="${image.alt}"`,
-  ];
-  if (classes.length > 0) imageParams.push(`class="${classes.join(' ')}"`);
-  return imageParams;
-};
-
 // const processParagraph = (node: AstNode, _indexInParent: number, _parent: AstNode) => {
 const processParagraph = (node: AstNode) => {
   if (!isImageGallery(node)) return;
 
   const images = extractValidImages(node);
 
-  const wrapperClasses = ['image-gallery'];
-  if (images.length === 3) wrapperClasses.push('image-gallery-3');
-
-  node.type = 'html';
-  node.value = `
-    <div class="${wrapperClasses.join(' ')}">
-      ${images.map((image) => (`
-        <div class="image-gallery-item">
-          <img ${generateImageParams(image).join(' ')}/>
-        </div>
-      `)).join('')}
-    </div>
-  `;
-  delete node.children;
+  node.type = 'mdxJsxFlowElement';
+  node.name = 'ArticleImageGallery';
+  const imagesJson = JSON.stringify(images.map((image) => ({
+    src: image.url,
+    alt: image.alt,
+    classes: extractCustomImageClasses(image).join(' '),
+  })));
+  node.attributes = [{ type: 'mdxJsxAttribute', name: 'imagesJson', value: imagesJson }];
+  node.children = [];
+  delete node.value;
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/

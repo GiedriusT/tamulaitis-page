@@ -5,6 +5,7 @@ import ArticleHeader from '../../components/ArticleHeader/ArticleHeader.tsx';
 import ArticleVersion from '../../components/ArticleVersion/ArticleVersion.tsx';
 import ArticleImage from '../../components/ArticleImage/ArticleImage.tsx';
 import ArticleAnimatedStrip from '../../components/ArticleAnimatedStrip/ArticleAnimatedStrip.tsx';
+import ArticleImageGallery from '../../components/ArticleImageGallery/ArticleImageGallery.tsx';
 import {
   type ProjectMdxInstance,
   getMdxInstanceBySlug,
@@ -36,6 +37,6 @@ if (!project || !markdownInstance) return Astro.redirect('/404', 404);
 
 <Layout {...getProjectPageMetadata(project)}>
   <ArticleContainer>
-    <markdownInstance.Content components={{ h1: ArticleHeader, ArticleVersion, ArticleImage, ArticleAnimatedStrip }} />
+    <markdownInstance.Content components={{ h1: ArticleHeader, ArticleVersion, ArticleImage, ArticleAnimatedStrip, ArticleImageGallery }} />
   </ArticleContainer>
 </Layout>

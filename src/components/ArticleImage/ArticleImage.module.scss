@@ -1,7 +1,7 @@
-@use "../../remark-plugins/remarkImageShared.scss";
+@use "./ArticleImageShared.scss";
 
 .image {
-  @include remarkImageShared.shared-image-styles;
+  @include ArticleImageShared.shared-image-styles;
 }
 
 .image:global(.full-width) {

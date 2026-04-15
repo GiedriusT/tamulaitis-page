@@ -1,7 +1,7 @@
-@use "../../remark-plugins/remarkImageShared.scss";
+@use "../ArticleImage/ArticleImageShared.scss";
 
 .container {
-  @include remarkImageShared.shared-image-styles;
+  @include ArticleImageShared.shared-image-styles;
   position: relative;
   overflow: hidden;
 }
