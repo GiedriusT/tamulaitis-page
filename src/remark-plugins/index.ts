@@ -1,5 +1,4 @@
 import remarkImage from './remarkImage';
-// import remarkArticleTitle from './remarkArticleTitle';
 import remarkArticleVersion from './remarkArticleVersion';
 import remarkImageGallery from './remarkImageGallery';
 import remarkLink from './remarkLink';

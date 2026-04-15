@@ -1,9 +1,4 @@
 import React from 'react';
-// Here we do an exception to importing SCSS as modules because the approach
-// doesn't work with remark plugins. That's why remark plugin SCSS files export
-// global styles and then we scope them to .article-container class in
-// remark-plugins/styles.scss.
-import '../../remark-plugins/styles.scss';
 
 const DEFAULT_MIN_HEIGHT = 100;
 
