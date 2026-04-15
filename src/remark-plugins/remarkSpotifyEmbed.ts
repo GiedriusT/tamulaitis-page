@@ -7,25 +7,13 @@ const isSpotifyLink = (node: AstLinkNode) => node.url.indexOf('https://open.spot
 const processLink = (node: AstLinkNode, _indexInParent: number, parent: AstNode) => {
   if (!isSpotifyLink(node) || isInlineLink(parent)) return;
 
-  const url = node.url.replace('https://open.spotify.com/', 'https://open.spotify.com/embed/');
-  const iFrameParams = [
-    'style="border-radius:12px"',
-    `src="${url}"`,
-    'width="100%"',
-    'height="472"',
-    'frameBorder="0"',
-    'allowfullscreen=""',
-    'allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"',
-    'loading="lazy"',
+  node.type = 'mdxJsxFlowElement';
+  node.name = 'ArticleSpotifyEmbed';
+  node.attributes = [
+    { type: 'mdxJsxAttribute', name: 'url', value: node.url },
   ];
-
-  node.type = 'html';
-  node.value = `
-    <div class="spotify-embed">
-      <iframe ${iFrameParams.join(' ')}></iframe>
-    </div>
-  `;
-  delete node.children;
+  node.children = [];
+  delete node.value;
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/
