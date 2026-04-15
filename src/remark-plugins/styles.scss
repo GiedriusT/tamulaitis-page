@@ -4,5 +4,4 @@
 .article-container {
   @include meta.load-css("remarkSpotifyEmbed.scss");
   @include meta.load-css("remarkYoutubeVideo.scss");
-  @include meta.load-css("remarkCodeblock.scss");
 }
