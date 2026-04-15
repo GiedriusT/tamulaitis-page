@@ -50,40 +50,27 @@ const processImage = (node: AstNode, _indexInParent: number, parent: AstNode) =>
   const hasAnimatedFramesClass = animatedFrameData != null;
   const imageClasses = animatedFrameData ? classes.filter((c) => c !== animatedFrameData.animatedFrameClass) : [...classes];
 
-  const imageParams = [
-    `src="${image.url}"`,
-    `alt="${image.alt}"`,
-  ];
-
-  node.type = 'html';
-
-  if (hasAnimatedFramesClass) {
-    const containerClasses = ['animated-frames-container', `frames-${animatedFrameData.numberOfFrames}`, ...imageClasses];
-    if (animatedFrameData.isReversed) containerClasses.push('reversed');
-    const imageStyles = [];
-    if (animatedFrameData.duration) imageStyles.push(`animation-duration: ${animatedFrameData.duration};`);
-    if (imageStyles.length > 0) imageParams.push(`style="${imageStyles.join(' ')}"`);
-    const containerParams = [
-      `class="${containerClasses.join(' ')}"`,
-    ];
-    node.value = `
-      <div ${containerParams.join(' ')}>
-        <img ${imageParams.join(' ')} />
-        <img ${imageParams.join(' ')} />
-      </div>
-    `;
-  } else {
-    if (imageClasses.length > 0) imageParams.push(`class="${imageClasses.join(' ')}"`);
-    node.value = `
-      <img ${imageParams.join(' ')} />
-    `;
-  }
+  parent.type = 'mdxJsxFlowElement';
+  parent.name = hasAnimatedFramesClass ? 'ArticleAnimatedStrip' : 'ArticleImage';
+  parent.attributes = [
+    { type: 'mdxJsxAttribute', name: 'src', value: image.url },
+    { type: 'mdxJsxAttribute', name: 'alt', value: image.alt },
+    { type: 'mdxJsxAttribute', name: 'classes', value: imageClasses.join(' ') },
+    ...(hasAnimatedFramesClass ? [
+      { type: 'mdxJsxAttribute', name: 'frames', value: animatedFrameData.numberOfFrames },
+      { type: 'mdxJsxAttribute', name: 'reversed', value: animatedFrameData.isReversed },
+      { type: 'mdxJsxAttribute', name: 'duration', value: animatedFrameData.duration || '' },
+    ] : []),
+  ];  
+  parent.children = [];
+  delete parent.value;
+  delete parent.properties;
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/
 // List of supported node types: https://github.com/syntax-tree/mdast
-const remarkImageGallery = () => function transformer(tree: AstNode) {
+const remarkImage = () => function transformer(tree: AstNode) {
   visit(tree, 'image', processImage);
 };
 
-export default remarkImageGallery;
+export default remarkImage;
