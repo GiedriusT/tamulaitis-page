@@ -2,7 +2,7 @@
 
 Sewers is my second EP, released in 2011. It revolves around the theme of Teenage Mutant Ninja Turtles, the cartoon I was absolutely fascinated by while growing up. It was released in a digital format accompanied by a limited edition of game cartridges that contained special link for downloading the EP with additional content.
 
-[Listen to Sewers EP on Spotify](https://open.spotify.com/album/4iaDsRDf6yEUWVrZM5ty3Z)
+[Listen to Sewers EP on Bandcamp](https://garo.bandcamp.com/album/sewers)
 
 Cartridges I used were the original ones from Zhiliton console system which was popular in Lithuania in the 90s. The artwork was hand painted by Andrius Labašauskas.
 

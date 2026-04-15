@@ -20,7 +20,7 @@ I want this vinyl to be available in as many physical record shops across as man
 
 Original version of the album was released in 2010 as a limited edition of 50 CDs as well as digital format. You can listen to the album on [Spotify](https://open.spotify.com/album/3MFM6vUUTnfpY3vG2Wu7vI) or [YouTube](https://www.youtube.com/playlist?list=PLonFfrVv0r_pC90Qxf9rMd2eSI12gVqkF), however these are the old versions. New remastered versions do not exist in the digital format and are only available on vinyl.
 
-[Listen to Kamchatka EP on Spotify](https://open.spotify.com/album/3MFM6vUUTnfpY3vG2Wu7vI)
+[Listen to Kamchatka EP on Bandcamp](https://garo.bandcamp.com/album/kamchatka-ep)
 
 
 ## Bonus material

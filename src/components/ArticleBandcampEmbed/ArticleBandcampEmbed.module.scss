@@ -1,0 +1,14 @@
+@use "../../theme/mixins.scss";
+
+.bandcampEmbed {
+  @include mixins.media-embed;
+  @include mixins.media-embed-full-width-on-mobile;
+
+  & iframe {
+    border: 0;
+    aspect-ratio: 400 / 241;
+    height: auto;
+    display: block;
+  }
+}
+

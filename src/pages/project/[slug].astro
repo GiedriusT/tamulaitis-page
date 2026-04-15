@@ -9,6 +9,7 @@ import ArticleImageGallery from '../../components/ArticleImageGallery/ArticleIma
 import ArticleCodeblock from '../../components/ArticleCodeblock/ArticleCodeblock.tsx';
 import ArticleSpotifyEmbed from '../../components/ArticleSpotifyEmbed/ArticleSpotifyEmbed.tsx';
 import ArticleYoutubeEmbed from '../../components/ArticleYoutubeEmbed/ArticleYoutubeEmbed.tsx';
+import ArticleBandcampEmbed from '../../components/ArticleBandcampEmbed/ArticleBandcampEmbed.tsx';
 import {
   type ProjectMdxInstance,
   getMdxInstanceBySlug,
@@ -48,6 +49,7 @@ if (!project || !markdownInstance) return Astro.redirect('/404', 404);
       ArticleImageGallery,
       ArticleCodeblock,
       ArticleSpotifyEmbed,
+      ArticleBandcampEmbed,
       ArticleYoutubeEmbed,
     }} />
   </ArticleContainer>
