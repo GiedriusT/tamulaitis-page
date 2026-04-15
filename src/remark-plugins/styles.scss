@@ -3,7 +3,6 @@
 
 .article-container {
   @include meta.load-css("remarkArticleTitle.scss");
-  @include meta.load-css("remarkArticleVersion.scss");
   @include meta.load-css("remarkImage.scss");
   @include meta.load-css("remarkImageGallery.scss");
   @include meta.load-css("remarkSpotifyEmbed.scss");

@@ -1,6 +1,7 @@
-@use "../theme/variables.scss";
+@use "../../theme/variables.scss";
 
-.article-version {
+.articleVersion {
   color: variables.$color-primary-text-silent;
   font-size: 0.8rem;
 }
+

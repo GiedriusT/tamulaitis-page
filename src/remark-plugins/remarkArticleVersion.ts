@@ -2,7 +2,7 @@ import { visit } from 'unist-util-visit';
 import type { AstNode } from './types';
 
 const extractText = (node: AstNode): string => {
-  if (node.type === 'text') return node.value;
+  if (node.type === 'text') return node.value || '';
 
   if (node.children) return node.children.map(extractText).join('');
 
@@ -21,7 +21,7 @@ const isArticleVersionParagraph = (node: AstNode, indexInParent: number, parent:
   if (indexInParent !== childrenCount - 1) return false;
 
   const regex = /v\d+\.\d+(\.\d+)?(?:\s+\w+)*\s+article/i;
-  const textLooksValid = regex.test(textNode.value);
+  const textLooksValid = regex.test(textNode.value || '');
   if (!textLooksValid) return false;
 
   return true;
@@ -30,11 +30,11 @@ const isArticleVersionParagraph = (node: AstNode, indexInParent: number, parent:
 const processParagraph = (node: AstNode, indexInParent: number, parent: AstNode) => {
   if (!isArticleVersionParagraph(node, indexInParent, parent)) return;
 
-  node.type = 'html';
-  node.value = `
-    <div class="article-version">${extractText(node)}</div>
-  `;
-  delete node.children;
+  node.type = 'mdxJsxFlowElement';
+  node.name = 'ArticleVersion';
+  node.attributes = [];
+  node.children = [{ type: 'text', value: extractText(node) } as AstNode];
+  delete node.value;
 };
 
 // Written by following: https://swizec.com/blog/how-to-build-a-remark-plugin-to-supercharge-your-static-site/

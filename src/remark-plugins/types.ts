@@ -1,10 +1,13 @@
 // Defining subset types here, because I wasn't able to find it in any package
 export interface AstNode {
-  type: 'root' | 'link' | 'html' | 'text' | 'image' | 'paragraph' | 'break' | 'heading' | 'pre';
-  value: string;
+  type: 'root' | 'link' | 'html' | 'text' | 'image' | 'paragraph' | 'break' | 'heading' | 'pre' | 'mdxJsxFlowElement' | 'mdxJsxTextElement';
+  value?: string;
   children?: AstNode[];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   properties?: Record<string, any>;
+  name?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  attributes?: any[];
 }
 
 export interface AstLinkNode extends AstNode {

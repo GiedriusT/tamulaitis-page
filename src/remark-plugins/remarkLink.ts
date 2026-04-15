@@ -6,7 +6,7 @@ const extractLinkText = (node: AstLinkNode): string => {
   const [textNode] = node.children || [];
   if (!textNode || textNode.type !== 'text') return '';
 
-  return textNode.value;
+  return textNode.value || '';
 };
 
 const isExternalLink = (node: AstLinkNode): boolean => {

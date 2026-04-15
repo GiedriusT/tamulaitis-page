@@ -7,7 +7,7 @@ const processHeading = (node: AstHeadingNode) => {
 
   const children = node.children || [];
 
-  const segments = children[0].value.split(' - ');
+  const segments = (children[0]?.value || '').split(' - ');
   const hasSubtitle = segments.length > 1;
   const title = hasSubtitle ? segments.slice(0, -1).join(' - ') : segments[0];
   const subtitle = hasSubtitle ? segments.slice(-1)[0] || '' : '';
