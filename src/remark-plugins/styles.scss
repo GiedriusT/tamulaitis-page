@@ -2,7 +2,6 @@
 @use '../theme/mixins.scss';
 
 .article-container {
-  @include meta.load-css("remarkArticleTitle.scss");
   @include meta.load-css("remarkImageGallery.scss");
   @include meta.load-css("remarkSpotifyEmbed.scss");
   @include meta.load-css("remarkYoutubeVideo.scss");

@@ -13,7 +13,6 @@ const plugins = [
   remarkSpotifyEmbed,
   remarkImage,
   remarkImageGallery,
-  // remarkArticleTitle, // Disabled - now using React component approach
   remarkArticleVersion,
   remarkLink,
 ];
