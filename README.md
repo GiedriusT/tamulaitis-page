@@ -21,15 +21,15 @@ Live version is available at [https://tamulaitis.lt](https://tamulaitis.lt). You
 
 ### **[Social Sequencer](/public/content/social-sequencer/README.md)** - interactive music device
 ### **[Garo - Kamchatka](/public/content/kamchatka-vinyl/README.md)** - my first album on vinyl
-### **[Dialrhea](/public/content/dialrhea/README.md)** - play Doom on rotary phone
+### **[Doom Phone](/public/content/dialrhea/README.md)** - play Doom on rotary phone
 ### **[Wave Twisters VR](/public/content/wavetwisters-vr/README.md)** - ambitious game prototype
 ### **[Garo - Sewers](/public/content/sewers/README.md)** - album on game console cartridge
 ### **[Moon Love](/public/content/moon-love/README.md)** - unexpectedly controversial music video
 ### **[Skraidantis Radijas](/public/content/skraidantis-radijas/README.md)** - no nonsense radio with nonsense
 ### **[Captain Badass](/public/content/captain-badass/README.md)** - game that killed the company
 ### **[Bembis Bembio Motina](/public/content/bembis-bembio-motina/README.md)** - über eclectic record label
-### **[Mondayjazz](/public/content/mondayjazz/README.md)** - live visuals for fresh beats
 ### **[Hub Attack VR](/public/content/hub-attack-vr/README.md)** - immersive with casualties
+### **[Mondayjazz](/public/content/mondayjazz/README.md)** - live visuals for fresh beats
 ### **[English Kitchen VR](/public/content/english-kitchen-vr/README.md)** - learn English the fun way
 
 

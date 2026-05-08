@@ -1,12 +1,12 @@
-# Dialrhea - play Doom on rotary phone
+# Doom Phone - play Doom on rotary phone
 
-Dialrhea is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Dialrhea in action:
+Doom Phone is a modified rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania. The theme of this hackathon was to build devices that are completely useless, but fully functional. Here is Doom Phone in action:
 
-[![Watch Dialrhea in action](https://img.youtube.com/vi/YNjw6ZKlyNM/0.jpg)](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
+[![Watch Doom Phone in action](https://img.youtube.com/vi/YNjw6ZKlyNM/0.jpg)](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
 
-[Watch Dialrhea in action](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
+[Watch Doom Phone in action](https://www.youtube.com/watch?v=YNjw6ZKlyNM)
 
-During the same weekend we also made a "slick" promotional video demonstrating capabilities of this revolutionary shitty machine.
+Original name we came up with was Dialrhea which we thought reflects the essence of the device quite well. During the same weekend we also made a "slick" promotional video demonstrating capabilities of this revolutionary shitty machine.
 
 [![Watch Dialrhea promotional video](https://img.youtube.com/vi/RVSE1t3wHlI/0.jpg)](https://www.youtube.com/watch?v=RVSE1t3wHlI)
 

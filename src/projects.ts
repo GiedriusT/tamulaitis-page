@@ -17,9 +17,9 @@ const projects: Project[] = [
   },
   {
     slug: 'dialrhea',
-    title: 'Dialrhea',
+    title: 'Doom Phone',
     subtitle: 'play Doom on rotary phone',
-    description: 'Dialrhea is a rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania.',
+    description: 'Doom Phone is a rotary phone that has been repurposed to control the classic first-person shooter game Doom via Bluetooth. We built it in two days during the "Internet Of Shit" hackathon organized by Technarium crew in Vilnius, Lithuania.',
   },
   {
     slug: 'wavetwisters-vr',
