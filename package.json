@@ -3,6 +3,7 @@
   "homepage": "https://tamulaitis.lt",
   "private": true,
   "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
