@@ -2,13 +2,15 @@ on: push
 name: Deploy website on push
 permissions:
   contents: read
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   web-deploy:
     name: Test and deploy
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     # - name: Install PNPM
     #   uses: pnpm/action-setup@v2
@@ -16,7 +18,7 @@ jobs:
     #     version: 8 
 
     - name: Setup node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         node-version: 22
         # cache: pnpm
@@ -32,7 +34,7 @@ jobs:
 
     - name: Run Playwright tests
       run: pnpm playwright test
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v5
       if: always()
       with:
         name: playwright-report
