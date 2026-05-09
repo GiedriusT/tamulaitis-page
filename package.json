@@ -19,7 +19,7 @@
     "generate:md": "npx tsx src/utils/mdgen.ts",
     "gif-to-webp": "node scripts/gifToWebp.js",
     "prepare": "husky",
-    "pre-commit": "lint-staged",
+    "pre-commit": "npx --yes lint-staged",
     "update-interactive": "npm update --save --save-dev --interactive"
   },
   "dependencies": {
