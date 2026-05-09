@@ -3,25 +3,24 @@
   "homepage": "https://tamulaitis.lt",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "npm@10.9.2",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "start": "pnpm dev",
+    "start": "npm run dev",
     "check": "rm -r dist || astro check",
-    "build": "pnpm check && astro build",
+    "build": "npm run check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint ./src",
-    "lint:fix": "pnpm lint --fix",
-    "test": "pnpm playwright test",
-    "test:ui": "pnpm playwright test --ui",
-    "generate:md": "pnpm dlx tsx src/utils/mdgen.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "generate:md": "npx tsx src/utils/mdgen.ts",
     "gif-to-webp": "node scripts/gifToWebp.js",
     "prepare": "husky",
     "pre-commit": "lint-staged",
-    "update-interactive": "pnpm update --latest --interactive",
-    "preinstall": "npx only-allow pnpm"
+    "update-interactive": "npm update --save --save-dev --interactive"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",
@@ -58,9 +57,7 @@
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.2"
   },
-  "pnpm": {
-    "overrides": {
-      "rollup": "npm:@rollup/wasm-node"
-    }
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
   }
 }
