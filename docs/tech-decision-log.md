@@ -17,3 +17,6 @@ Here is the list of technical decisions and transformations the project went thr
 - As a temporary solution added index `PHP` script that injects title, description and other meta parameters before serving the HTML. Needed to write `custom Vite plug-in` for generating the metadata into JSON format. Was pretty happy how plug-in system works.
 - Understood that I definitely need server side generation approach as articles were not showing up in Google. Started the project over with `Astro` and moved all functionality to the new project. Ditched `styled-components` and refactored styles to `SCSS` as `Astro` was working much better with this approach. Vite + React version is preserved in [`vite-react-version-pre-2024`](https://github.com/GiedriusT/tamulaitis-page/tree/vite-react-version-pre-2024) branch.
 - Decided to use `SCSS modules` for importing and managing styles and having auto-complete functionality.
+- Changed project manager from `PNPM` back to `NPM` as any performance gains are negligible for this project and `NPM` makes tooling simpler.
+- Refactored `Remark / Rehype` system to use intermediate `MDX` files that enable them to output `React` components instead of raw HTML. Much cleaner and more maintainable code.
+- Upgraded the project through `Astro 4`, `6`, and `7`, `React 19`, and `TypeScript 6`.
