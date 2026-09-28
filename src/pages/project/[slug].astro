@@ -36,7 +36,7 @@ const articles = Object.entries(modules).map(([path, module]) => module);
 const project = getProjectBySlug(slug);
 const markdownInstance = getMdxInstanceBySlug(articles, slug);
 
-if (!project || !markdownInstance) return Astro.redirect('/404', 404);
+if (!project || !markdownInstance) return new Response(null, { status: 404, headers: { Location: '/404' } });
 ---
 
 <Layout {...getProjectPageMetadata(project)}>
