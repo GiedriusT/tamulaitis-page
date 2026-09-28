@@ -12,6 +12,10 @@ export function mdxPreBuildIntegration(): AstroIntegration {
         console.log('🔄 Converting .md files to temporary .mdx files before build...');
         await generateTemporaryMdxFiles();
       },
+      'astro:server:setup': async () => {
+        console.log('🔄 Converting .md files to temporary .mdx files for dev server...');
+        await generateTemporaryMdxFiles();
+      },
       'astro:build:done': () => {
         console.log('🧹 Cleaning up temporary .mdx files... THIS NEEDS TO BE IMPLEMENTED');
         // Note: We'll add cleanup logic here later if needed
