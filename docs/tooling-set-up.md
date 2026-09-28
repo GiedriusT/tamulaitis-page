@@ -4,13 +4,13 @@ Page uses quite some tooling around the development pipeline that can be quite h
 
 ## ESLint
 
-ESLint is set up to lint the project and integrate well with IDEs. Configuration is available in [.eslintrc](../.eslintrc). You can run `pnpm run lint` to lint the whole project or `pnpm run lint:fix` to lint and fix it. Linting is also run automatically before each commit thanks to Husky.
+ESLint is set up to lint the project and integrate well with IDEs. Configuration is available in [.eslintrc](../.eslintrc). You can run `npm run lint` to lint the whole project or `npm run lint:fix` to lint and fix it. Linting is also run automatically before each commit thanks to Husky.
 
 ## Husky (and lint-staged)
 
-Husky is currently set up to run scripts before each commit. Pre-commit hook is configured in [.husky/pre-commit](../.husky/pre-commit) and currently set to run `pnpm pre-commit` command that is defined in [package.json](../package.json).
+Husky is currently set up to run scripts before each commit. Pre-commit hook is configured in [.husky/pre-commit](../.husky/pre-commit) and currently set to run `npm run pre-commit` command that is defined in [package.json](../package.json).
 
-Running `pnpm pre-commit` in turn executes `lint-staged` that lints files that are staged for being committed, `lint-staged` config can be found in [.lintstagedrc](../.lintstagedrc)
+Running `npm run pre-commit` in turn executes `lint-staged` that lints files that are staged for being committed, `lint-staged` config can be found in [.lintstagedrc](../.lintstagedrc)
 
 ## Playwright
 

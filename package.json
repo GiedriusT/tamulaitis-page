@@ -5,10 +5,13 @@
   "version": "1.0.0",
   "packageManager": "npm@10.9.2",
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "npm run dev",
-    "check": "rm -r dist || astro check",
+    "check": "astro check",
     "build": "npm run check && astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -16,15 +19,15 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
-    "generate:md": "npx tsx src/utils/mdgen.ts",
+    "generate:md": "tsx src/utils/mdgen.ts",
     "gif-to-webp": "node scripts/gifToWebp.js",
     "prepare": "husky",
-    "pre-commit": "npx --yes lint-staged",
+    "pre-commit": "lint-staged",
     "update-interactive": "npm update --save --save-dev --interactive"
   },
   "dependencies": {
-    "@astrojs/mdx": "^5.0.3",
-    "astro": "^6.1.7",
+    "@astrojs/mdx": "^8.0.2",
+    "astro": "^7.3.5",
     "dotenv": "^17.4.2",
     "glob": "^13.0.6",
     "highlight.js": "^11.11.1",
@@ -38,26 +41,20 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/react": "^5.0.3",
-    "@astrojs/sitemap": "^3.7.2",
-    "@eslint/eslintrc": "^3.3.5",
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/react": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.4",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-transition-group": "^4.4.12",
-    "@typescript-eslint/parser": "^8.58.2",
     "eslint": "^10.2.0",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "react-compiler-runtime": "19.0.0-beta-55955c9-20241229",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.2"
-  },
-  "overrides": {
-    "rollup": "npm:@rollup/wasm-node"
   }
 }

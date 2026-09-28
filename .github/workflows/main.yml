@@ -1,29 +1,25 @@
 on: push
-name: Deploy website on push
+name: Test and deploy website
 permissions:
   contents: read
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
-  web-deploy:
-    name: Test and deploy
+  test:
+    name: Check, lint, test and build
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
       uses: actions/checkout@v5
 
-    # - name: Install PNPM
-    #   uses: pnpm/action-setup@v2
-    #   with:
-    #     version: 8 
-
     - name: Setup node
       uses: actions/setup-node@v5
       with:
-        node-version: 22
+        node-version: 22.12.0
+        cache: npm
 
     - name: Install dependencies
-      run: npm install --legacy-peer-deps
+      run: npm ci
       env:
         HUSKY: 0
 
@@ -46,9 +42,25 @@ jobs:
       env:
         HUSKY: 0
 
-    - name: Change directory to dist
-      run: cd dist
-    
+    - name: Upload build output
+      uses: actions/upload-artifact@v6
+      with:
+        name: dist
+        path: dist/
+        retention-days: 1
+
+  deploy:
+    name: Deploy to production
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download build output
+      uses: actions/download-artifact@v6
+      with:
+        name: dist
+        path: dist
+
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
