@@ -26,8 +26,8 @@
     "update-interactive": "npm update --save --save-dev --interactive"
   },
   "dependencies": {
-    "@astrojs/mdx": "^5.0.3",
-    "astro": "^6.1.7",
+    "@astrojs/mdx": "^8.0.2",
+    "astro": "^7.3.5",
     "dotenv": "^17.4.2",
     "glob": "^13.0.6",
     "highlight.js": "^11.11.1",
@@ -41,9 +41,10 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/react": "^5.0.3",
-    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/react": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.4",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
@@ -55,8 +56,5 @@
     "tsx": "^4.23.15",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.2"
-  },
-  "overrides": {
-    "rollup": "npm:@rollup/wasm-node"
   }
 }
