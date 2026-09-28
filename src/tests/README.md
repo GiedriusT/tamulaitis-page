@@ -8,7 +8,7 @@ cp .env.example .env
 And then run Playwright install script to install needed browsers.
 
 ```
-pnpm playwright install
+npx playwright install
 ```
 
-Then you can run tests with the command `pnpm run test` for headless mode or `pnpm run test:ui` for interactive mode with UI.
+Then you can run tests with the command `npm run test` for headless mode or `npm run test:ui` for interactive mode with UI.
